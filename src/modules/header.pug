@@ -1,3 +1,23 @@
-header 
-    .header 
-        h1 Шапка сайта
+header.container
+  .header
+    .logo
+      a.logo__link
+        img.logo__img(src='images/logo.png')
+    .right
+      nav.right-menu
+        .right-menu__item
+          a(href="").right-menu__link О нас
+        .right-menu__item
+          a(href="").right-menu__link
+            | Услуги
+            span.right-menu__icon expand_more
+        .right-menu__item
+          a(href="").right-menu__link Вакансии
+        .right-menu__item
+          a(href="").right-menu__link Новости
+        .right-menu__item
+          a(href="").right-menu__link
+            | Соглашения
+            span.right-menu__icon expand_more
+      button.right__btn.right__btn-in войти
+      button.right__btn.right__btn-reg зарегистрироваться
