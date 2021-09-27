@@ -145,6 +145,8 @@
           justify-content: space-between;
   padding-left: 140px;
   padding-right: 140px;
+  border-bottom: 1px solid #E5E5E5;
+  padding-bottom: 100px;
 }
 
 .footer-item {
@@ -221,6 +223,50 @@
   line-height: 24px;
   color: #bc9cff;
 }
+
+.copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.copyright-block {
+  padding-left: 125px;
+  padding-right: 125px;
+  margin-top: 26px;
+}
+
+.copyright-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17,07px;
+  color: rgba(31, 32, 65, 0.75);
+  letter-spacing: 1px;
+}
+
+.copyright-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.copyright-list__item {
+  margin-left: 20px;
+}
 /*# sourceMappingURL=style.css.map */
     </style>
   </head>
@@ -281,6 +327,18 @@
           <form class="footer-form" action=""> 
             <input class="footer-form__input" type="text" placeholder="Email"><a class="footer-form__link" href=""> <span class="footer-form__icon">arrow_forward</span></a>
           </form>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright-block">
+          <div class="copyright"> 
+            <div class="copyright-text">Copyright &copy; 2018 Toxin отель. Все права защищены.</div>
+            <ul class="copyright-list">
+              <li class="copyright-list__item"><a class="copyright-list__link" href=""> <img class="copyright socials__img" src="images/socials/twitter.png" alt=""></a></li>
+              <li class="copyright-list__item"><a class="copyright-list__link" href=""> <img class="copyright socials__img" src="images/socials/facebook.png" alt=""></a></li>
+              <li class="copyright-list__item"><a class="copyright-list__link" href=""> <img class="copyright socials__img" src="images/socials/insta.png" alt=""></a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
