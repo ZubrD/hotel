@@ -260,4 +260,109 @@
 .copyright-list__item {
   margin-left: 20px;
 }
+
+.datepicker {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #4a4a4a;
+  width: 250px;
+  width: 320px;
+  height: 369px;
+}
+
+.datepicker--body {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.datepicker--days-names {
+  margin-bottom: 18px;
+}
+
+.datepicker--day-name {
+  color: #BC9CFF;
+  font-weight: 700;
+  text-transform: none;
+}
+
+.datepicker--cell {
+  height: 39px;
+}
+
+.datepicker--cell-day {
+  width: 14.28571%;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.datepicker--nav-title {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 23.16px;
+  color: #1F2041;
+  padding-top: 20px;
+  padding-bottom: 26px;
+}
+
+.datepicker--cell.-selected- {
+  background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 50%;
+}
+
+.datepicker--cell.-focus- {
+  background: -webkit-gradient(linear, left top, left bottom, from(#6FCF97), to(#66D2EA));
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  border-radius: 50%;
+}
+
+.datepicker--cell.-in-range- {
+  background: rgba(188, 156, 255, 0.25);
+}
+
+.datepicker-form {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.datepicker__clear {
+  position: absolute;
+  top: 354px;
+  left: 20px;
+  text-transform: lowercase;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  color: #bc9cff;
+}
+
+.datepicker__ok {
+  position: absolute;
+  top: 354px;
+  left: 215px;
+  text-transform: lowercase;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  color: #bc9cff;
+}
+
+.datepicker--nav-action path {
+  stroke-width: 0;
+  fill: #BC9CFF;
+}
+
+.calendar-forms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dates-form {
+  margin-top: 100px;
+  margin-left: 150px;
+}
 /*# sourceMappingURL=style.css.map */

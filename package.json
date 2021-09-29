@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "air-datepicker": "^2.2.3",
     "pug": "^3.0.2"
   }
 }
