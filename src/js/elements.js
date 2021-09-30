@@ -14,7 +14,18 @@ $('#calendar').datepicker({
     }
 })
 
+$('.datepicker__clear').on('click', function(){
+    $('#date_1').val('');
+    $('#date_2').val('');
+})
 
+$('.datepicker__ok').on('click', function(){
+    $('.datepicker-form').hide()
+})
+
+$('.dates-form__input').on('click', function(){
+    $('.datepicker-form').show()
+})
 
 
 
