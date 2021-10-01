@@ -25,6 +25,11 @@ $('.datepicker__ok').on('click', function(){
 
 $('.dates-form__input').on('click', function(){
     $('.datepicker-form').show()
+    console.log('Is this working?');
+})
+
+$(function() {
+    $('.iqdropdown').iqDropdown();
 })
 
 
