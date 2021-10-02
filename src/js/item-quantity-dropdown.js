@@ -54,8 +54,8 @@
         var n = {
           maxItems: 1 / 0,
           minItems: 0,
-          selectionText: "item",
-          textPlural: "items",
+          selectionText: "Гость35545",
+          textPlural: "Гостей",
           controls: {
             position: "right",
             displayCls: "iqdropdown-content",
@@ -72,7 +72,13 @@
           },
           setSelectionText: function(t, n) {
             var e = 1 !== n && this.textPlural.length > 0 ? this.textPlural : this.selectionText;
-            return "".concat(n, " ").concat(e)
+            if (n == 0) {
+              // return "" .concat(n, " ").concat(e)
+              return "Сколько гостей"
+            } else {
+              return "".concat(n, " ").concat(e)
+            }
+            
           }
         };
         t.fn.iqDropdown = function(e) {
@@ -108,8 +114,8 @@
                 }(e, n),
                 function(n, e) {
                   var o = t("<div />").addClass(c.controls.controlsCls),
-                    r = t('\n          <button class="button-decrement">\n            <i class="icon-decrement"></i>\n          </button>\n        '),
-                    i = t('\n          <button class="button-increment">\n            <i class="icon-decrement icon-increment"></i>\n          </button>\n        '),
+                    r = t('\n          <button class="button-newdecrement"><span class="button-newdecrement__icon">remove</span>\n            <i class="icon-decrement"></i>\n          </button>\n        '),
+                    i = t('\n          <button class="button-newincrement"><span class="button-newincrement__icon">add</span>\n            <i class="icon-decrement icon-increment"></i>\n          </button>\n        '),
                     u = t("<span>".concat(a[n], "</span>")).addClass(c.controls.counterCls);
                   e.children("div").addClass(c.controls.displayCls), o.append(r, u, i), "right" === c.controls.position ? e.append(o) : e.prepend(o), r.click(function(t) {
                     var e = c.items,
