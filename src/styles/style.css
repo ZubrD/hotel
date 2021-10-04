@@ -643,4 +643,77 @@ button {
 .copyright-list__item {
   margin-left: 20px;
 }
+
+.search-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1440px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.search-sidebar {
+  width: 466px;
+  padding-right: 60px;
+  padding-left: 140px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px dashed red;
+}
+
+.search-room {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border: 1px dashed green;
+}
+
+.stay-guest-form__item {
+  position: relative;
+}
+
+.stay-guest-form__item:last-child {
+  margin-top: 22px;
+}
+
+.stay-guest-form__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.stay-guest-form__input {
+  width: 100%;
+  height: 44px;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.75);
+  padding-top: 11px;
+  padding-bottom: 13px;
+  padding-left: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+}
+
+.stay-guest-form__icon {
+  position: absolute;
+  top: 30px;
+  left: 233px;
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  vertical-align: middle;
+  color: rgba(31, 32, 65, 0.5);
+}
 /*# sourceMappingURL=style.css.map */

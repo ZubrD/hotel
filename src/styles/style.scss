@@ -560,3 +560,75 @@ button {
 }
 
 ////////////////////////////////////END FOOTER//////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////SEARCH PAGE///////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+
+
+.search {
+    &-wrapper {
+        display: flex;
+        max-width: 1440px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto; 
+    }
+    &-sidebar {
+        width: 466px;
+        padding-right: 60px;
+        padding-left: 140px;
+        box-sizing: border-box;
+        border: 1px dashed red;        
+    }
+    &-room {
+        flex-grow: 1;
+        border: 1px dashed green;        
+    }
+}
+
+.stay-guest-form {
+    &__item {
+        position: relative;
+        &:last-child {
+            margin-top: 22px;
+        }
+    }
+    &__title {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        text-transform: uppercase; 
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    &__input {
+        width: 100%;
+        height: 44px;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: rgba(31, 32, 65, 0.75);
+        padding-top: 11px;
+        padding-bottom: 13px;
+        padding-left: 15px;
+        box-sizing: border-box;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 4px;
+    }
+    &__icon {
+        position: absolute;
+        top: 30px;
+        left: 233px;
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 1;
+        vertical-align: middle;
+        color: rgba(31, 32, 65, 0.5);
+    }
+
+}
+

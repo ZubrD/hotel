@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Hotel</title>
-    <link rel="stylesheet" href="../src/styles/item-quantity-dropdown.css">
+    <title>Поиск номеров</title>
+    <link rel="stylesheet" href="../src/styles/ion.rangeSlider.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -1367,62 +1367,22 @@ button {
         </div>
       </div>
     </header>
-<section class="container index-main"><img class="index-main__img" src="images/index_image.png" alt=""/>
-  <div class="index-main__title">Лучшие номера для вашей работы, отдыха и просто вдохновения</div>
-  <div class="wishes">
-    <h1 class="wishes__title">Найдём номера под ваши пожелания</h1>
-    <div class="calendar-forms">
-      <form class="dates-form" action="">
-        <div class="dates-form__item">
-          <p class="dates-form__title">Прибытие </p>
-          <input class="dates-form__input" type="text" placeholder="дд.мм.гггг" id="date_1"/><span class="dates-form__icon">expand_more</span>
-        </div>
-        <div class="dates-form__item">
-          <p class="dates-form__title">Выезд </p>
-          <input class="dates-form__input" type="text" placeholder="дд.мм.гггг" id="date_2"/><span class="dates-form__icon">expand_more</span>
-        </div>
-      </form>
-      <div class="datepicker-wrapper">
-        <form class="datepicker-form" action="" hidden="hidden">
-          <input class="datepicker-position" id="calendar" type="text" hidden="hidden"/>
-          <div class="datepicker__clear">Очистить</div>
-          <div class="datepicker__ok">Применить</div>
-        </form>
+<div class="search-wrapper">
+  <section class="search-sidebar">
+    <form class="stay-guest-form" action="">
+      <div class="stay-guest-form__item">
+        <p class="stay-guest-form__title">Даты пребывания в отеле </p>
+        <input class="stay-guest-form__input" type="text" placeholder="19 авг - 23 авг"/><span class="stay-guest-form__icon">expand_more</span>
       </div>
-    </div>
-    <div class="guests"> 
-      <form class="guest-form" action=""> 
-        <p class="guest-form__title">Гости </p>
-        <div class="iqdropdown">
-          <p class="iqdropdown-selection" data-selection-text="Гость"></p>
-          <div class="iqdropdown-menu">
-            <div class="iqdrop-wrapper">
-              <div class="iqdropdown-menu-text">Взрослые</div>
-              <div class="iqdropdown-menu-option" data-id="item1"></div>
-            </div>
-            <div class="iqdrop-wrapper">
-              <div class="iqdropdown-menu-text">Дети</div>
-              <div class="iqdropdown-menu-option" data-id="item2"></div>
-            </div>
-            <div class="iqdrop-wrapper">
-              <div class="iqdropdown-menu-text">Младенцы</div>
-              <div class="iqdropdown-menu-option" data-id="item3"></div>
-            </div>
-            <div class="iqdrop-wrapper">
-              <div class="guests__clear">Очистить</div>
-              <div class="guests__ok">Применить</div>
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
-    <div class="pickup">
-      <div class="pickup-wrapper">
-        <button class="pickup__button">Подобрать номер</button><span class="pickup__icon">arrow_forward</span>
+      <div class="stay-guest-form__item">
+        <p class="stay-guest-form__title">Гости </p>
+        <input class="stay-guest-form__input" type="text" placeholder="3 гостя, 1 младенец"/><span class="stay-guest-form__icon">expand_more  </span>
       </div>
-    </div>
-  </div>
-</section>
+    </form>
+    <input class="js-range-slider" type="text" name="my_range" value=""/>
+  </section>
+  <section class="search-room">Контент</section>
+</div>
 <footer class="container">
   <div class="footer"> 
     <div class="footer-item"> <a class="footer-logo" href=""><img class="footer-logo__img" src="images/logo.png" alt=""/></a>
@@ -1475,8 +1435,7 @@ button {
     </div>
   </div>
 </footer>
-    <script src="../src/js/datepicker.min.js"></script>
-    <script src="../src/js/item-quantity-dropdown.js"></script>
+    <script src="../src/js/ion.rangeSlider.js"></script>
     <script src="../src/js/elements.js"></script>
   </body>
 </html>
