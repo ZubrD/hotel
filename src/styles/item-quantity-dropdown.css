@@ -142,6 +142,7 @@ body {
 .iqdropdown.menu-open .iqdropdown-menu {
     display: block;
     width: 322px;
+    height: 163px;
 }
 @media only screen and (max-width: 640px) {
     .iqdropdown .iqdropdown-menu.mobile-top-menu {
@@ -210,12 +211,13 @@ body {
     padding: 0 15px;
     position: relative;
     width: 322px;
+
 }
 .iqdropdown .iqdropdown-selection {
-    color: #4a4a4a;
-    font-family: "OpenSans", sans-serif;
-    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    color: rgba(31, 32, 65, 0.75);
+    font-size: 14px;
     flex: 1;
     position: relative;
 }

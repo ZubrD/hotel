@@ -2,15 +2,19 @@ doctype html
 html(lang="en")
   head
     title Hotel
+    link(rel="stylesheet", href="../src/styles/item-quantity-dropdown.css")
     link(href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet')
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap")
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js')
     style 
       include styles/normalize.css
+      include styles/datepicker.css
       include styles/style.css
 
   body
     include modules/header
-    section.container.index-main
-      img(src="images/index_image.png", alt="").index-main__img
-      .index-main__title Лучшие номера для вашей работы, отдыха и просто вдохновения
-
-    include modules/footer
+    include modules/index_content.html
+    include modules/footer.html
+    script(src='../src/js/datepicker.min.js')
+    script(src='../src/js/item-quantity-dropdown.js')
+    script(src='../src/js/elements.js')

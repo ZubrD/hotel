@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-
 .container {
     max-width: 1440px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
 }
+
+// HEADER//////////////////////////////////////////////////////////////////////////////////
 
 .header {
     display: flex;
@@ -32,7 +33,6 @@
             font-weight: 400;
             font-style: normal;
             line-height: 17.07px;
-            letter-spacing: 1px;
             font-size: 14px;
         }
         &__icon {
@@ -85,133 +85,36 @@
     }
 }
 
+/////////////////////// END HEADER ////////////////////////////////////////////////////////
+
+///////////////////////INDEX MAIN CONTENT /////////////////////////////////////////////////
+
+
 .index-main {
-    margin-bottom: 100px;
+    margin-bottom: 95px;
     position: relative;
     &__img {
-    height: 900px;
+    height: 830px;
     width: 100%;
     }
     &__title {
         position: absolute;
         font-family: 'Montserrat', sans-serif;
-        color: rgba(31, 32, 65, 0.75);
-        top: 834px;
-        left: 1030px;
-        width: 297px;
-        text-align: end;
-        line-height: 22px;
-    }
-}
-
-
-.footer {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 140px;
-    padding-right: 140px;
-    border-bottom: 1px solid #E5E5E5;
-    padding-bottom: 100px;
-    &-item {
-        font-family: 'Montserrat', sans-serif;
-    }
-    &-text {
-        width: 250px;
-        color: #1F2041;
-        font-size: 14px;
-        opacity: 0.75;
-        line-height: 24px;
-        margin-top: 12px;
-        letter-spacing: 1px;
-    }
-    &-list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        &__title {
-            font-size: 12px;
-            font-weight: 700;
-            text-transform: uppercase;
-            padding: 0;
-            margin: 0;
-            margin-bottom: 10px;
-            margin-top: 5px;
-        }
-        &__item {
-            margin-top: 20px;
-            line-height: 17px;
-            font-size: 14px;
-            letter-spacing: 1px;
-        }
-        &__link {
-            text-decoration: none;
-            color: #1F2041;
-            opacity: 0.5;
-        }
-    }
-
-    &-form {
-        position: relative;
-        &__input {
-            height: 44px;
-            width: 260px;
-            border: 1px solid rgba(31, 32, 65, 0.25);
-            box-sizing: border-box;
-            border-radius: 4px;
-            margin-top: 20px;
-            padding-top: 12px;
-            padding-bottom: 8px;
-            padding-left: 15px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 400;
-            font-size: 14px;
-        }
-        &__icon {
-            position: absolute;
-            top: 30px;
-            right: 8px;
-            font-family: 'Material Icons';
-            font-style: normal;
-            font-weight: normal;
-            font-size: 24px;
-            line-height: 24px;
-            color: rgb(188,156,255);
-            
-        } 
-    }
-}
-.copyright {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    &-block {
-        padding-left: 125px;
-        padding-right: 125px;
-        margin-top: 26px;        
-    }
-    &-text {
-        font-family: 'Montserrat', sans-serif;
         font-weight: 400;
         font-size: 14px;
-        line-height: 17,07px;
         color: rgba(31, 32, 65, 0.75);
-        letter-spacing: 1px;
-    }
-    &-list {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        list-style: none;
-
-        &__item {
-            margin-left: 20px;
-            
-        }
+        top: 760px;
+        left: 1025px;
+        width: 297px;
+        text-align: end;
+        line-height: 24px;
     }
 }
 
 .wishes {
     position: absolute;
+    top: 67px;
+    left: 155px;
     width: 380px;
     height: 374;
     background: #FFFFFF;
@@ -322,8 +225,31 @@
             color: rgba(31, 32, 65, 0.5);
         }
     }
-}
 
+    &__clear {
+        position: absolute;
+        top: 132px;
+        left: 14px;
+        text-transform: lowercase;
+        font-size: 14px;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+        color: rgba(188, 156, 255, 1);
+        cursor: pointer;
+    }
+    &__ok {
+        position: absolute;
+        top: 132px;
+        left: 227px;
+        text-transform: lowercase;
+        font-size: 14px;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+        color: rgba(188, 156, 255, 1);
+        cursor: pointer;
+    }
+
+}
 
 .pickup {           
     &-wrapper {
@@ -464,11 +390,6 @@ button {
     border-radius: 50%;
 }
 
-
-// .counter {
-
-// }
-
 .iqdrop-wrapper {
     display: flex;
     justify-content: space-between;
@@ -516,3 +437,126 @@ button {
     }
 }
 
+////////////////////////////////////END INDEX MAIN CONTENT////////////////////////////////
+
+//////////////////////////////////FOOTER///////////////////////////////////////////////////
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 140px;
+    padding-right: 140px;
+    border-bottom: 1px solid #E5E5E5;
+    padding-bottom: 100px;
+    &-item {
+        font-family: 'Montserrat', sans-serif;
+    }
+    &-text {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        width: 260px;
+        color: #1F2041;
+        font-size: 14px;
+        opacity: 0.75;
+        line-height: 24px;
+        margin-top: 12px;
+        letter-spacing: 0;
+    }
+    &-text-subscribe {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        width: 260px;
+        color: #1F2041;
+        font-size: 14px;
+        opacity: 0.75;
+        line-height: 24px;
+        margin-top: 19px;
+        letter-spacing: 0;
+    }
+    &-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        &__title {
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 0;
+            margin: 0;
+            margin-bottom: 10px;
+            margin-top: 5px;
+        }
+        &__item {
+            margin-top: 20px;
+            line-height: 17px;
+            font-size: 14px;
+            letter-spacing: 0;
+        }
+        &__link {
+            text-decoration: none;
+            color: #1F2041;
+            opacity: 0.5;
+        }
+    }
+
+    &-form {
+        position: relative;
+        &__input {
+            height: 44px;
+            width: 260px;
+            border: 1px solid rgba(31, 32, 65, 0.25);
+            box-sizing: border-box;
+            border-radius: 4px;
+            margin-top: 20px;
+            padding-top: 12px;
+            padding-bottom: 8px;
+            padding-left: 15px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+        }
+        &__icon {
+            position: absolute;
+            top: 30px;
+            right: 8px;
+            font-family: 'Material Icons';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 24px;
+            color: rgb(188,156,255);
+            
+        } 
+    }
+}
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-block {
+        padding-left: 125px;
+        padding-right: 125px;
+        margin-top: 16px;        
+    }
+    &-text {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17,07px;
+        color: rgba(31, 32, 65, 0.75);
+        letter-spacing: 0;
+    }
+    &-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+
+        &__item {
+            margin-left: 20px;
+            
+        }
+    }
+}
+
+////////////////////////////////////END FOOTER//////////////////////////////////////////////
