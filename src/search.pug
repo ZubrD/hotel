@@ -2,7 +2,8 @@ doctype html
 html(lang="en")
   head
     title Поиск номеров
-    link(rel="stylesheet", href="../src/styles/ion.rangeSlider.css")
+    link(rel="stylesheet", href="../src/libs/ion.rangeSlider.css")
+    link(rel="stylesheet", href="../src/libs/nouislider.min.css")
     link(href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet')
     link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap")
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js')
@@ -15,5 +16,8 @@ html(lang="en")
     include modules/header
     include modules/search_content.html
     include modules/footer.html
-    script(src='../src/js/ion.rangeSlider.js')
+    script(src='../src/libs/ion.rangeSlider.js')
+    script(src="../src/libs/nouislider.min.js") 
     script(src='../src/js/elements.js')
+    script(src="../src/js/ion_slider.js") 
+    script(src="../src/js/noui_slider.js") 

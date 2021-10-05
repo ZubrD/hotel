@@ -9,6 +9,18 @@
                 p.stay-guest-form__title Гости 
                 input(type="text" placeholder='3 гостя, 1 младенец').stay-guest-form__input
                 span.stay-guest-form__icon expand_more  
-        input(type="text" name='my_range' value='').js-range-slider
+        .slider 
+            .slider-title-wrapper 
+                .slider-title Диапазон цены
+                .slider-label-wrapper
+                    label.slider__label 
+                        input(type="number" placeholder='5000').slider__input#input-0
+                        span.slider__span ₽ -
+                    label.slider__label 
+                        input(type="number" placeholder='10000').slider__input#input-1  
+                        span.slider__span ₽    
+            #nouislider
+            .slider-bottom-title Стоимость за сутки пребывания в номере
+            
 
     section.search-room Контент

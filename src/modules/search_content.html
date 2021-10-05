@@ -11,7 +11,21 @@
         <input class="stay-guest-form__input" type="text" placeholder="3 гостя, 1 младенец"/><span class="stay-guest-form__icon">expand_more  </span>
       </div>
     </form>
-    <input class="js-range-slider" type="text" name="my_range" value=""/>
+    <div class="slider"> 
+      <div class="slider-title-wrapper"> 
+        <div class="slider-title">Диапазон цены</div>
+        <div class="slider-label-wrapper">
+          <label class="slider__label"> 
+            <input class="slider__input" type="number" placeholder="5000" id="input-0"/><span class="slider__span">₽ -</span>
+          </label>
+          <label class="slider__label"> 
+            <input class="slider__input" type="number" placeholder="10000" id="input-1"/><span class="slider__span">₽    </span>
+          </label>
+        </div>
+      </div>
+      <div id="nouislider"></div>
+      <div class="slider-bottom-title">Стоимость за сутки пребывания в номере</div>
+    </div>
   </section>
   <section class="search-room">Контент</section>
 </div>

@@ -629,6 +629,102 @@ button {
         vertical-align: middle;
         color: rgba(31, 32, 65, 0.5);
     }
-
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.slider {
+    &-title-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+    &-label-wrapper {
+      display: flex;
+      align-items: flex-start;
+    }
+    &-title {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        text-transform: uppercase; 
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    &__label {
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    &__input {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: rgba(31, 32, 65, 0.5);
+        border: none;
+        width: 45px;
+        text-align: right;
+        padding: 0;
+    }
+    &__span {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: rgba(31, 32, 65, 0.5);
+        margin-left: 5px;
+    }
+    &-bottom-title {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: rgba(31, 32, 65, 0.5);
+    }
+}
+
+#nouislider {
+    margin-bottom: 15px;
+}
+
+.noUi-target {
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    height: 6px;
+}
+
+.noUi-connect {
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    border: none;
+}
+
+.noUi-handle {
+    cursor: default;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+}
+
+.noUi-horizontal .noUi-handle {
+    width: 12px;
+    height: 12px;
+    right: -4px;
+    top: -4px;
+}
+
+.noUi-handle:after, .noUi-handle:before {
+    display: none;
+}
