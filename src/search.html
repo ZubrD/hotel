@@ -1531,6 +1531,82 @@ input[type=number] {
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
 }
+
+.availability-form {
+  margin-top: 32px;
+}
+
+.availability-form__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+.availability-form__item {
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+.availability-form__label {
+  position: relative;
+  margin-left: 0px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba(31, 32, 65, 0.75);
+  cursor: pointer;
+}
+
+.availability-form__label::before {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 20px;
+  left: -32px;
+  top: -3px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+}
+
+.availability-form__input[type="checkbox"] {
+  display: none;
+}
+
+.availability-form__input[type="checkbox"]:hover ~ label::before {
+  border-color: #BC9CFF;
+}
+
+.availability-form__input[type="checkbox"]:checked ~ label::after {
+  position: absolute;
+  content: '';
+  width: 8px;
+  height: 6px;
+  top: 2px;
+  left: -25px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  border: 2px solid transparent;
+  -o-border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+     border-image: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+     border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-image-slice: 1;
+  border-top-style: none;
+  border-right-style: none;
+}
+
+.availability-form__text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(31, 32, 65, 0.5);
+  margin: 0;
+  margin-top: 5px;
+}
 /*# sourceMappingURL=style.css.map */
     </style>
   </head>
@@ -1590,7 +1666,22 @@ input[type=number] {
       </div>
       <div class="home-rule-form__item"> 
         <input class="home-rule-form__input" type="checkbox" id="guests"/>
-        <label class="home-rule-form__label" for="guests">Можно пригласить гостей (до 10 человек)                                </label>
+        <label class="home-rule-form__label" for="guests">Можно пригласить гостей (до 10 человек) </label>
+      </div>
+    </form>
+    <form class="availability-form" action="">
+      <div class="availability-form__title">Доступность</div>
+      <div class="availability-form__item">
+        <input class="availability-form__input" type="checkbox" id="corridor"/>
+        <label class="availability-form__label" for="corridor">Широкий коридор
+          <p class="availability-form__text">Ширина коридоров в номере не менее 91 см.             </p>
+        </label>
+      </div>
+      <div class="availability-form__item"> 
+        <input class="availability-form__input" type="checkbox" id="assistant"/>
+        <label class="availability-form__label" for="assistant">Помощник для инвалидов
+          <p class="availability-form__text">На 1 этаже вас встретит специалист и проводит до номера.                    </p>
+        </label>
       </div>
     </form>
   </section>

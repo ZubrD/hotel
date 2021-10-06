@@ -899,4 +899,80 @@ input[type=number] {
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
 }
+
+.availability-form {
+  margin-top: 32px;
+}
+
+.availability-form__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+.availability-form__item {
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+.availability-form__label {
+  position: relative;
+  margin-left: 0px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba(31, 32, 65, 0.75);
+  cursor: pointer;
+}
+
+.availability-form__label::before {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 20px;
+  left: -32px;
+  top: -3px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+}
+
+.availability-form__input[type="checkbox"] {
+  display: none;
+}
+
+.availability-form__input[type="checkbox"]:hover ~ label::before {
+  border-color: #BC9CFF;
+}
+
+.availability-form__input[type="checkbox"]:checked ~ label::after {
+  position: absolute;
+  content: '';
+  width: 8px;
+  height: 6px;
+  top: 2px;
+  left: -25px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  border: 2px solid transparent;
+  -o-border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+     border-image: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+     border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-image-slice: 1;
+  border-top-style: none;
+  border-right-style: none;
+}
+
+.availability-form__text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(31, 32, 65, 0.5);
+  margin: 0;
+  margin-top: 5px;
+}
 /*# sourceMappingURL=style.css.map */

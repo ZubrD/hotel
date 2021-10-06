@@ -24,14 +24,25 @@
         form(action="").home-rule-form
             .home-rule-form__title Правила дома
             .home-rule-form__item 
-                input(type="checkbox" id='smoke').home-rule-form__input
+                input(type="checkbox" id="smoke").home-rule-form__input
                 label(for="smoke").home-rule-form__label Можно курить 
             .home-rule-form__item 
-                input(type="checkbox" id='pets').home-rule-form__input
+                input(type="checkbox" id="pets").home-rule-form__input
                 label(for="pets").home-rule-form__label Можно с питомцами
             .home-rule-form__item 
-                input(type="checkbox" id='guests').home-rule-form__input
-                label(for="guests").home-rule-form__label Можно пригласить гостей (до 10 человек)                                
+                input(type="checkbox" id="guests").home-rule-form__input
+                label(for="guests").home-rule-form__label Можно пригласить гостей (до 10 человек) 
+        form(action="").availability-form
+            .availability-form__title Доступность
+            .availability-form__item
+                input(type="checkbox" id="corridor").availability-form__input
+                label(for="corridor").availability-form__label Широкий коридор
+                    p.availability-form__text Ширина коридоров в номере не менее 91 см.             
+
+            .availability-form__item 
+                input(type="checkbox" id="assistant").availability-form__input
+                label(for="assistant").availability-form__label Помощник для инвалидов
+                    p.availability-form__text На 1 этаже вас встретит специалист и проводит до номера.                    
             
 
     section.search-room Контент
