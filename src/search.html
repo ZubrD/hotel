@@ -1465,6 +1465,72 @@ input[type=number] {
 .noUi-handle:after, .noUi-handle:before {
   display: none;
 }
+
+.home-rule-form {
+  margin-top: 30px;
+}
+
+.home-rule-form__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+.home-rule-form__item {
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+.home-rule-form__input[type="checkbox"] {
+  display: none;
+}
+
+.home-rule-form__input[type="checkbox"]:hover ~ label::before {
+  border-color: #BC9CFF;
+}
+
+.home-rule-form__input[type="checkbox"]:checked ~ label::after {
+  position: absolute;
+  content: '';
+  width: 8px;
+  height: 6px;
+  top: 2px;
+  left: -25px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  border: 2px solid transparent;
+  -o-border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+     border-image: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+     border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-image-slice: 1;
+  border-top-style: none;
+  border-right-style: none;
+}
+
+.home-rule-form__label {
+  position: relative;
+  margin-left: 0px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba(31, 32, 65, 0.5);
+  cursor: pointer;
+}
+
+.home-rule-form__label::before {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 20px;
+  left: -32px;
+  top: -3px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+}
 /*# sourceMappingURL=style.css.map */
     </style>
   </head>
@@ -1512,6 +1578,21 @@ input[type=number] {
       <div id="nouislider"></div>
       <div class="slider-bottom-title">Стоимость за сутки пребывания в номере</div>
     </div>
+    <form class="home-rule-form" action="">
+      <div class="home-rule-form__title">Правила дома</div>
+      <div class="home-rule-form__item"> 
+        <input class="home-rule-form__input" type="checkbox" id="smoke"/>
+        <label class="home-rule-form__label" for="smoke">Можно курить </label>
+      </div>
+      <div class="home-rule-form__item"> 
+        <input class="home-rule-form__input" type="checkbox" id="pets"/>
+        <label class="home-rule-form__label" for="pets">Можно с питомцами</label>
+      </div>
+      <div class="home-rule-form__item"> 
+        <input class="home-rule-form__input" type="checkbox" id="guests"/>
+        <label class="home-rule-form__label" for="guests">Можно пригласить гостей (до 10 человек)                                </label>
+      </div>
+    </form>
   </section>
   <section class="search-room">Контент</section>
 </div>

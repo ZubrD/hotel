@@ -21,6 +21,17 @@
                         span.slider__span ₽    
             #nouislider
             .slider-bottom-title Стоимость за сутки пребывания в номере
+        form(action="").home-rule-form
+            .home-rule-form__title Правила дома
+            .home-rule-form__item 
+                input(type="checkbox" id='smoke').home-rule-form__input
+                label(for="smoke").home-rule-form__label Можно курить 
+            .home-rule-form__item 
+                input(type="checkbox" id='pets').home-rule-form__input
+                label(for="pets").home-rule-form__label Можно с питомцами
+            .home-rule-form__item 
+                input(type="checkbox" id='guests').home-rule-form__input
+                label(for="guests").home-rule-form__label Можно пригласить гостей (до 10 человек)                                
             
 
     section.search-room Контент
