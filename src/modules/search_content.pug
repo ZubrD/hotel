@@ -38,11 +38,35 @@
                 input(type="checkbox" id="corridor").availability-form__input
                 label(for="corridor").availability-form__label Широкий коридор
                     p.availability-form__text Ширина коридоров в номере не менее 91 см.             
-
             .availability-form__item 
                 input(type="checkbox" id="assistant").availability-form__input
                 label(for="assistant").availability-form__label Помощник для инвалидов
                     p.availability-form__text На 1 этаже вас встретит специалист и проводит до номера.                    
-            
+        .amenity
+            .amenity__title Удобства номера
+            form(action="").amenity-form
+                input(type="text" placeholder="2 спальни, 2 кровати" sleep=0).amenity-form__input
+                span.amenity-form__icon expand_more
+            .amenity-block
+                .amenity-item 
+                    .amenity-item__title Спальни
+                    .amenity-item-buttons
+                        button.amenity-item__button#minus-sleep -
+                        .amenity-item__result 0              
+                        button.amenity-item__button#plus-sleep +
+                .amenity-item 
+                    .amenity-item__title Кровати
+                    .amenity-item-buttons
+                        button.amenity-item__button#minus-sleep -
+                        .amenity-item__result 0              
+                        button.amenity-item__button#plus-sleep +
+                .amenity-item 
+                    .amenity-item__title Ванные комнаты
+                    .amenity-item-buttons
+                        button.amenity-item__button#minus-sleep -
+                        .amenity-item__result 0              
+                        button.amenity-item__button#plus-sleep +                                                
+
+       
 
     section.search-room Контент

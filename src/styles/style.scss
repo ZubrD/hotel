@@ -855,3 +855,80 @@ input[type=number] {
         margin-top: 5px;
     }
 }
+
+.amenity {
+    &__title {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        text-transform: uppercase; 
+        margin-top: 31px;
+        margin-bottom: 6px;
+    }
+    &-form {
+        position: relative;
+        &__input {
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid rgba(31, 32, 65, 0.5);
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            height: 44px;
+            padding-left: 15px;
+            padding-top: 0px;
+        }
+        &__icon {
+            position: absolute;
+            top: 10px;
+            left: 232px;
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;  /* Preferred icon size */
+            line-height: 1;
+            vertical-align: middle;
+            color: rgba(31, 32, 65, 0.75);
+        }
+    }
+    &-block {
+        // display: none;
+        border: 1px solid rgba(31, 32, 65, 0.5);
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+    &-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 5px;
+        &__title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 12px;
+            text-transform: uppercase; 
+            line-height: 14,63px;
+            padding-left: 15px;
+        }
+        &-buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 92px;
+            padding-right: 5px;
+        }
+        &__button {
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            background-color: #fff;
+            border: 1px solid rgba(31, 32, 65, 0.25);
+        }
+        &__result {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 12px;
+        }        
+    }      
+
+
+}
