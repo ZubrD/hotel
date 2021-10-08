@@ -1607,6 +1607,10 @@ input[type=number] {
   margin-top: 5px;
 }
 
+.amenity {
+  position: relative;
+}
+
 .amenity__title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -1621,6 +1625,11 @@ input[type=number] {
 }
 
 .amenity-form__input {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1629,6 +1638,7 @@ input[type=number] {
   border-top-right-radius: 4px;
   height: 44px;
   padding-left: 15px;
+  padding-right: 30px;
   padding-top: 0px;
 }
 
@@ -1647,9 +1657,15 @@ input[type=number] {
 }
 
 .amenity-block {
+  position: absolute;
   border: 1px solid rgba(31, 32, 65, 0.5);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+  background-color: #fff;
+  z-index: 10;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .amenity-item {
@@ -1692,14 +1708,27 @@ input[type=number] {
   border-radius: 50%;
   width: 30px;
   height: 30px;
+  cursor: pointer;
   background-color: #fff;
   border: 1px solid rgba(31, 32, 65, 0.25);
+}
+
+.amenity-item__button-minus {
+  border: 1px solid rgba(31, 32, 65, 0.1);
 }
 
 .amenity-item__result {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 12px;
+}
+
+.amenity-item:last-child {
+  padding-bottom: 10px;
+}
+
+.block-open {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
     </style>
@@ -1781,31 +1810,31 @@ input[type=number] {
     <div class="amenity">
       <div class="amenity__title">Удобства номера</div>
       <form class="amenity-form" action="">
-        <input class="amenity-form__input" type="text" placeholder="2 спальни, 2 кровати" sleep="0"/><span class="amenity-form__icon">expand_more</span>
+        <input class="amenity-form__input" type="text" placeholder="Укажите количество удобств" sleep="0" bed="0" bath="0"/><span class="amenity-form__icon">expand_more</span>
       </form>
-      <div class="amenity-block">
+      <div class="amenity-block block-open">
         <div class="amenity-item"> 
           <div class="amenity-item__title">Спальни</div>
           <div class="amenity-item-buttons">
-            <button class="amenity-item__button" id="minus-sleep">-</button>
-            <div class="amenity-item__result">0              </div>
+            <button class="amenity-item__button amenity-item__button-minus" id="minus-sleep">-</button>
+            <div class="amenity-item__result" id="sleep-result">0              </div>
             <button class="amenity-item__button" id="plus-sleep">+</button>
           </div>
         </div>
         <div class="amenity-item"> 
           <div class="amenity-item__title">Кровати</div>
           <div class="amenity-item-buttons">
-            <button class="amenity-item__button" id="minus-sleep">-</button>
-            <div class="amenity-item__result">0              </div>
-            <button class="amenity-item__button" id="plus-sleep">+</button>
+            <button class="amenity-item__button amenity-item__button-minus" id="minus-bed">-</button>
+            <div class="amenity-item__result" id="bed-result">0              </div>
+            <button class="amenity-item__button" id="plus-bed">+</button>
           </div>
         </div>
         <div class="amenity-item"> 
           <div class="amenity-item__title">Ванные комнаты</div>
           <div class="amenity-item-buttons">
-            <button class="amenity-item__button" id="minus-sleep">-</button>
-            <div class="amenity-item__result">0              </div>
-            <button class="amenity-item__button" id="plus-sleep">+                                                </button>
+            <button class="amenity-item__button amenity-item__button-minus" id="minus-bath">-</button>
+            <div class="amenity-item__result" id="bath-result">0              </div>
+            <button class="amenity-item__button" id="plus-bath">+                                                </button>
           </div>
         </div>
       </div>

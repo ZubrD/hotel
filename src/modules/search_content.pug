@@ -45,27 +45,27 @@
         .amenity
             .amenity__title Удобства номера
             form(action="").amenity-form
-                input(type="text" placeholder="2 спальни, 2 кровати" sleep=0).amenity-form__input
+                input(type="text" placeholder="Укажите количество удобств" sleep=0 bed=0 bath=0 ).amenity-form__input
                 span.amenity-form__icon expand_more
-            .amenity-block
+            .amenity-block.block-open
                 .amenity-item 
                     .amenity-item__title Спальни
                     .amenity-item-buttons
-                        button.amenity-item__button#minus-sleep -
-                        .amenity-item__result 0              
+                        button.amenity-item__button.amenity-item__button-minus#minus-sleep -
+                        .amenity-item__result#sleep-result 0              
                         button.amenity-item__button#plus-sleep +
                 .amenity-item 
                     .amenity-item__title Кровати
                     .amenity-item-buttons
-                        button.amenity-item__button#minus-sleep -
-                        .amenity-item__result 0              
-                        button.amenity-item__button#plus-sleep +
+                        button.amenity-item__button.amenity-item__button-minus#minus-bed -
+                        .amenity-item__result#bed-result 0              
+                        button.amenity-item__button#plus-bed +
                 .amenity-item 
                     .amenity-item__title Ванные комнаты
                     .amenity-item-buttons
-                        button.amenity-item__button#minus-sleep -
-                        .amenity-item__result 0              
-                        button.amenity-item__button#plus-sleep +                                                
+                        button.amenity-item__button.amenity-item__button-minus#minus-bath -
+                        .amenity-item__result#bath-result 0              
+                        button.amenity-item__button#plus-bath +                                                
 
        
 
