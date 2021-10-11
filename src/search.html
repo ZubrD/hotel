@@ -1730,6 +1730,101 @@ input[type=number] {
 .block-open {
   display: none;
 }
+
+.additional {
+  position: relative;
+}
+
+.additional__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-top: 31px;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+.additional__icon {
+  position: absolute;
+  top: -5px;
+  left: 232px;
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  line-height: 1;
+  vertical-align: middle;
+  color: rgba(31, 32, 65, 0.75);
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.additional-block-form {
+  margin-top: 20px;
+}
+
+.additional-block-form__item {
+  margin-bottom: 11px;
+  margin-left: 30px;
+}
+
+.additional-block-form__input[type="checkbox"] {
+  display: none;
+}
+
+.additional-block-form__input[type="checkbox"]:hover ~ label::before {
+  border-color: #BC9CFF;
+}
+
+.additional-block-form__input[type="checkbox"]:checked ~ label::after {
+  position: absolute;
+  content: '';
+  width: 8px;
+  height: 6px;
+  top: 2px;
+  left: -25px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  border: 2px solid transparent;
+  -o-border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+     border-image: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+     border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-image-slice: 1;
+  border-top-style: none;
+  border-right-style: none;
+}
+
+.additional-block-form__label {
+  position: relative;
+  margin-left: 0px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba(31, 32, 65, 0.5);
+  cursor: pointer;
+}
+
+.additional-block-form__label::before {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 20px;
+  left: -32px;
+  top: -3px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+}
+
+.rotated__icon {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
 /*# sourceMappingURL=style.css.map */
     </style>
   </head>
@@ -1839,6 +1934,46 @@ input[type=number] {
         </div>
       </div>
     </div>
+    <div class="additional"> 
+      <div class="additional__title">Дополнительные удобства</div>
+      <div class="additional__icon">expand_more</div>
+      <div class="additional-block block-open">
+        <form class="additional-block-form" action="">
+          <div class="additional-block-form__item"> 
+            <input class="additional-block-form__input" type="checkbox" id="breakfast"/>
+            <label class="additional-block-form__label" for="breakfast">Завтрак</label>
+          </div>
+          <div class="additional-block-form__item"> 
+            <input class="additional-block-form__input" type="checkbox" id="desk"/>
+            <label class="additional-block-form__label" for="desk">Письменный стол</label>
+          </div>
+          <div class="additional-block-form__item"> 
+            <input class="additional-block-form__input" type="checkbox" id="chair"/>
+            <label class="additional-block-form__label" for="chair">Стул для кормления</label>
+          </div>
+          <div class="additional-block-form__item"> 
+            <input class="additional-block-form__input" type="checkbox" id="little-bed"/>
+            <label class="additional-block-form__label" for="little-bed">Кроватка</label>
+          </div>
+          <div class="additional-block-form__item"> 
+            <input class="additional-block-form__input" type="checkbox" id="TV-1"/>
+            <label class="additional-block-form__label" for="TV-1">Телевизор</label>
+          </div>
+          <div class="additional-block-form__item"> 
+            <input class="additional-block-form__input" type="checkbox" id="shampoo-1"/>
+            <label class="additional-block-form__label" for="shampoo-1">Шампунь</label>
+          </div>
+          <div class="additional-block-form__item"> 
+            <input class="additional-block-form__input" type="checkbox" id="TV-2"/>
+            <label class="additional-block-form__label" for="TV-2">Телевизор</label>
+          </div>
+          <div class="additional-block-form__item"> 
+            <input class="additional-block-form__input" type="checkbox" id="shampoo-2"/>
+            <label class="additional-block-form__label" for="shampoo-2">Шампунь                                                                                                                                                                        </label>
+          </div>
+        </form>
+      </div>
+    </div>
   </section>
   <section class="search-room">Контент</section>
 </div>
@@ -1898,5 +2033,6 @@ input[type=number] {
     <script src="../src/js/elements.js"></script>
     <script src="../src/js/noui_slider.js"> </script>
     <script src="../src/js/amenity.js"></script>
+    <script src="../src/js/additional.js"></script>
   </body>
 </html>

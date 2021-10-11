@@ -66,7 +66,35 @@
                         button.amenity-item__button.amenity-item__button-minus#minus-bath -
                         .amenity-item__result#bath-result 0              
                         button.amenity-item__button#plus-bath +                                                
-
-       
+        .additional 
+            .additional__title Дополнительные удобства
+            .additional__icon expand_more
+            .additional-block.block-open
+                form(action="").additional-block-form
+                    .additional-block-form__item 
+                        input(type="checkbox" id="breakfast").additional-block-form__input
+                        label(for="breakfast").additional-block-form__label Завтрак
+                    .additional-block-form__item 
+                        input(type="checkbox" id="desk").additional-block-form__input
+                        label(for="desk").additional-block-form__label Письменный стол
+                    .additional-block-form__item 
+                        input(type="checkbox" id="chair").additional-block-form__input
+                        label(for="chair").additional-block-form__label Стул для кормления
+                    .additional-block-form__item 
+                        input(type="checkbox" id="little-bed").additional-block-form__input
+                        label(for="little-bed").additional-block-form__label Кроватка
+                    .additional-block-form__item 
+                        input(type="checkbox" id="TV-1").additional-block-form__input
+                        label(for="TV-1").additional-block-form__label Телевизор
+                    .additional-block-form__item 
+                        input(type="checkbox" id="shampoo-1").additional-block-form__input
+                        label(for="shampoo-1").additional-block-form__label Шампунь
+                    .additional-block-form__item 
+                        input(type="checkbox" id="TV-2").additional-block-form__input
+                        label(for="TV-2").additional-block-form__label Телевизор
+                    .additional-block-form__item 
+                        input(type="checkbox" id="shampoo-2").additional-block-form__input
+                        label(for="shampoo-2").additional-block-form__label Шампунь                                                                                                                                                                        
+    
 
     section.search-room Контент
