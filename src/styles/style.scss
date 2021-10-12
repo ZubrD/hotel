@@ -599,7 +599,7 @@ button {
         font-weight: 700;
         font-size: 12px;
         text-transform: uppercase; 
-        margin-top: 0;
+        margin-top: 27px;
         margin-bottom: 5px;
     }
     &__input {
@@ -1034,4 +1034,125 @@ input[type=number] {
 .rotated__icon {
     transform: rotate(180deg);
     transition: 0.5s;
+}
+
+.search-room {
+    &__title {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    &-items {
+
+    }
+    &__item {
+        width: 270px;
+        box-shadow: 0 0 20px rgba(31, 32, 65, 0.2);
+    }
+    &__link {
+
+    }
+    &__img {
+        width: 100%;
+        margin-bottom: 19px;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+    &-wrapper {
+        margin-left: 23px;
+        margin-right: 14px;
+    }
+    &-digits{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+        padding-bottom: 10px;
+        margin-bottom: 9px;
+    }
+    &-numbers {
+        display: flex;
+    }
+    &__symbol {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17.5px;
+        padding-top: 2px;
+    }
+    &__number {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 700;
+        font-size: 23px;
+        line-height: 17.5px;
+        margin-left: 3px;
+    }
+    &__rank {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        text-transform: uppercase;
+        line-height: 14.6px;
+        padding-top: 2px;
+        color: rgba(188, 156, 255, 1);
+        margin-left: 10px;
+    }
+    &-price {
+        display: flex;
+    }
+    &__rubl {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        color: rgba(31, 32, 65, 0.5);
+    }
+    &__period {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: rgba(31, 32, 65, 0.5);
+        margin-left: 5px;
+    }
+    &-bottom {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 20px;
+    }
+    &-stars {
+
+    }
+    &__star {
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;  /* Preferred icon size */
+        line-height: 1;
+        vertical-align: middle;
+        // background: rgb(188,156,255);
+        color: rgb(188,156,255);
+    }
+    &-feedback {
+        display: flex;
+        align-items: flex-end;
+        &__numbers {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 18px;
+            color: rgba(31, 32, 65, 0.5);
+        }
+        &__title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;  
+            color: rgba(31, 32, 65, 0.5); 
+            margin-left: 5px; 
+            margin-right: 4px;        
+        }
+    }
 }

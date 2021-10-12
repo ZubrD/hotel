@@ -683,7 +683,7 @@ button {
   font-weight: 700;
   font-size: 12px;
   text-transform: uppercase;
-  margin-top: 0;
+  margin-top: 27px;
   margin-bottom: 5px;
 }
 
@@ -1193,5 +1193,148 @@ input[type=number] {
           transform: rotate(180deg);
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.search-room__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.search-room__item {
+  width: 270px;
+  -webkit-box-shadow: 0 0 20px rgba(31, 32, 65, 0.2);
+          box-shadow: 0 0 20px rgba(31, 32, 65, 0.2);
+}
+
+.search-room__img {
+  width: 100%;
+  margin-bottom: 19px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.search-room-wrapper {
+  margin-left: 23px;
+  margin-right: 14px;
+}
+
+.search-room-digits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+  padding-bottom: 10px;
+  margin-bottom: 9px;
+}
+
+.search-room-numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.search-room__symbol {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17.5px;
+  padding-top: 2px;
+}
+
+.search-room__number {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 17.5px;
+  margin-left: 3px;
+}
+
+.search-room__rank {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 14.6px;
+  padding-top: 2px;
+  color: #bc9cff;
+  margin-left: 10px;
+}
+
+.search-room-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.search-room__rubl {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.search-room__period {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+  margin-left: 5px;
+}
+
+.search-room-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.search-room__star {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  line-height: 1;
+  vertical-align: middle;
+  color: #bc9cff;
+}
+
+.search-room-feedback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.search-room-feedback__numbers {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.search-room-feedback__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+  margin-left: 5px;
+  margin-right: 4px;
 }
 /*# sourceMappingURL=style.css.map */
