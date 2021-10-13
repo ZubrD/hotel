@@ -582,7 +582,8 @@ button {
         border: 1px dashed red;        
     }
     &-room {
-        flex-grow: 1;
+        width: 974px;
+        // flex-grow: 1;
         border: 1px dashed green;        
     }
 }
@@ -1046,11 +1047,14 @@ input[type=number] {
         margin-bottom: 20px;
     }
     &-items {
-
+        display: flex;
+        flex-wrap: wrap;
     }
     &__item {
         width: 270px;
         box-shadow: 0 0 20px rgba(31, 32, 65, 0.2);
+        margin-right: 12px;
+        margin-bottom: 20px;
     }
     &__link {
 

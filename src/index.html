@@ -1296,9 +1296,7 @@ button {
 }
 
 .search-room {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  width: 974px;
   border: 1px dashed green;
 }
 
@@ -1836,10 +1834,20 @@ input[type=number] {
   margin-bottom: 20px;
 }
 
+.search-room-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .search-room__item {
   width: 270px;
   -webkit-box-shadow: 0 0 20px rgba(31, 32, 65, 0.2);
           box-shadow: 0 0 20px rgba(31, 32, 65, 0.2);
+  margin-right: 12px;
+  margin-bottom: 20px;
 }
 
 .search-room__img {
