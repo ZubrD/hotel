@@ -1976,6 +1976,61 @@ input[type=number] {
   margin-left: 5px;
   margin-right: 4px;
 }
+
+.paginator {
+  width: 241px;
+  margin-left: 299px;
+  margin-top: 23px;
+  margin-bottom: 104px;
+}
+
+.paginator__item {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  color: rgba(31, 32, 65, 0.5);
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.paginator__current {
+  background: linear-gradient(151deg, #bc9cff 0%, rgba(139, 164, 249, 0.496236) 100%);
+  color: #fff;
+}
+
+.paginator__icon {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  line-height: 1;
+  vertical-align: middle;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#6FCF97), to(#66D2EA));
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+.paginator__text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  margin-top: 5px;
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
     </style>
   </head>
@@ -2388,11 +2443,14 @@ input[type=number] {
             <div class="search-room-stars"><span class="search-room__star">star</span><span class="search-room__star">star</span><span class="search-room__star">star</span><span class="search-room__star">star_border</span><span class="search-room__star">star_border</span></div>
             <div class="search-room-feedback"> 
               <div class="search-room-feedback__numbers">55</div>
-              <div class="search-room-feedback__title">Отзывов                                                                                                                                                                                                                                                            </div>
+              <div class="search-room-feedback__title">Отзывов   </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+    <div class="paginator"> <a class="paginator__item paginator__current" href="">1                                                                                                                                                                                                                                                                        </a><a class="paginator__item">2                                                                                                                                                                                                                                                                        </a><a class="paginator__item">3                                                                                                                                                                                                                                                                       </a><a class="paginator__item">&hellip;                                                                                                                                                                                                                                                                       </a><a class="paginator__item">15                                                                                                                                                                                                                                                                       </a><a class="paginator__icon">arrow_forward</a>
+      <div class="paginator__text">1 – 12 из 100+ вариантов аренды                                                                                                                                                                                                                                                                       </div>
     </div>
   </section>
 </div>
