@@ -1400,4 +1400,65 @@ input[type=number] {
   margin-top: 5px;
   text-align: center;
 }
+
+.slider {
+  position: relative;
+}
+
+.slider-inner {
+  width: 270px;
+  overflow: hidden;
+}
+
+.slider-slides {
+  width: 813px;
+}
+
+.slider__input {
+  display: none;
+}
+
+.slider-controls {
+  position: absolute;
+  top: 129px;
+  left: 213px;
+  z-index: 10;
+}
+
+.slider__label {
+  display: inline-block;
+  margin-right: 4px;
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#room1-btn-1:checked ~ .slider-controls label[for="room1-btn-1"],
+#room1-btn-2:checked ~ .slider-controls label[for="room1-btn-2"],
+#room1-btn-3:checked ~ .slider-controls label[for="room1-btn-3"] {
+  background-color: #fff;
+}
+
+#room1-btn-1:checked ~ .slider-inner .slider-slides {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#room1-btn-2:checked ~ .slider-inner .slider-slides {
+  -webkit-transform: translate(-270px);
+          transform: translate(-270px);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#room1-btn-3:checked ~ .slider-inner .slider-slides {
+  -webkit-transform: translate(-540px);
+          transform: translate(-540px);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
 /*# sourceMappingURL=style.css.map */
