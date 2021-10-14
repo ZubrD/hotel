@@ -1408,6 +1408,9 @@ input[type=number] {
 .slider-inner {
   width: 270px;
   overflow: hidden;
+  margin-bottom: 19px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 
 .slider-slides {

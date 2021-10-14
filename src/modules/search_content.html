@@ -132,7 +132,20 @@
   <section class="search-room">
     <h1 class="search-room__title">Номера, которые мы для вас подобрали</h1>
     <div class="search-room-items"> 
-      <div class="search-room__item"><a class="search-room__link" href=""><img class="search-room__img" src="images/rooms/room1.png" alt=""/></a>
+      <div class="search-room__item"><a class="search-room__link" href="">
+          <div class="slider">
+            <input class="slider__input" type="radio" id="room1-btn-1" name="toggle" checked="checked"/>
+            <input class="slider__input" type="radio" id="room1-btn-2" name="toggle"/>
+            <input class="slider__input" type="radio" id="room1-btn-3" name="toggle"/>
+            <div class="slider-controls"> 
+              <label class="slider__label" for="room1-btn-1"> </label>
+              <label class="slider__label" for="room1-btn-2"> </label>
+              <label class="slider__label" for="room1-btn-3">  </label>
+            </div>
+            <div class="slider-inner">
+              <div class="slider-slides"> <img class="slider__img" src="images/rooms/room1.png" alt=""/><img class="slider__img" src="images/rooms/room1.png" alt=""/><img class="slider__img" src="images/rooms/room1.png" alt=""/></div>
+            </div>
+          </div></a>
         <div class="search-room-wrapper">
           <div class="search-room-digits"> 
             <div class="search-room-numbers"> 
@@ -399,19 +412,6 @@
     </div>
     <div class="paginator"> <a class="paginator__item paginator__current" href="">1                                                                                                                                                                                                                                                                        </a><a class="paginator__item">2                                                                                                                                                                                                                                                                        </a><a class="paginator__item">3                                                                                                                                                                                                                                                                       </a><a class="paginator__item">&hellip;                                                                                                                                                                                                                                                                       </a><a class="paginator__item">15                                                                                                                                                                                                                                                                       </a><a class="paginator__icon">arrow_forward</a>
       <div class="paginator__text">1 – 12 из 100+ вариантов аренды  </div>
-    </div>
-    <div class="slider">
-      <input class="slider__input" type="radio" id="room1-btn-1" name="toggle" checked="checked"/>
-      <input class="slider__input" type="radio" id="room1-btn-2" name="toggle"/>
-      <input class="slider__input" type="radio" id="room1-btn-3" name="toggle"/>
-      <div class="slider-controls"> 
-        <label class="slider__label" for="room1-btn-1"> </label>
-        <label class="slider__label" for="room1-btn-2"> </label>
-        <label class="slider__label" for="room1-btn-3">  </label>
-      </div>
-      <div class="slider-inner">
-        <div class="slider-slides"> <img class="slider__img" src="images/rooms/room1.png" alt=""/><img class="slider__img" src="images/rooms/room1.png" alt=""/><img class="slider__img" src="images/rooms/room1.png" alt=""/></div>
-      </div>
     </div>
   </section>
 </div>
