@@ -1143,6 +1143,13 @@ button {
   padding-bottom: 100px;
 }
 
+.footer-line {
+  height: 1px;
+  background-color: rgba(31, 32, 65, 0.25);
+  color: rgba(31, 32, 65, 0.25);
+  margin-bottom: 100px;
+}
+
 .footer-item {
   font-family: 'Montserrat', sans-serif;
 }
@@ -1292,12 +1299,10 @@ button {
   padding-left: 140px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 1px dashed red;
 }
 
 .search-room {
   width: 974px;
-  border: 1px dashed green;
 }
 
 .stay-guest-form__item {
@@ -1359,7 +1364,7 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-.slider-title-wrapper {
+.sliderp-title-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1370,7 +1375,7 @@ input[type=number] {
   margin-top: 30px;
 }
 
-.slider-label-wrapper {
+.sliderp-label-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1379,7 +1384,7 @@ input[type=number] {
           align-items: flex-start;
 }
 
-.slider-title {
+.sliderp-title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 12px;
@@ -1388,7 +1393,7 @@ input[type=number] {
   margin-bottom: 5px;
 }
 
-.slider__label {
+.sliderp__label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1399,7 +1404,7 @@ input[type=number] {
           box-sizing: border-box;
 }
 
-.slider__input {
+.sliderp__input {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -1411,7 +1416,7 @@ input[type=number] {
   padding: 0;
 }
 
-.slider__span {
+.sliderp__span {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -1420,7 +1425,7 @@ input[type=number] {
   margin-left: 5px;
 }
 
-.slider-bottom-title {
+.sliderp-bottom-title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -1982,7 +1987,7 @@ input[type=number] {
   width: 241px;
   margin-left: 299px;
   margin-top: 23px;
-  margin-bottom: 104px;
+  margin-bottom: 60px;
 }
 
 .paginator__item {
@@ -2046,7 +2051,7 @@ input[type=number] {
 }
 
 .slider-slides {
-  width: 813px;
+  width: 1084px;
 }
 
 .slider__input {
@@ -2056,7 +2061,7 @@ input[type=number] {
 .slider-controls {
   position: absolute;
   top: 129px;
-  left: 213px;
+  left: 195px;
   z-index: 10;
 }
 
@@ -2072,27 +2077,123 @@ input[type=number] {
 
 #room1-btn-1:checked ~ .slider-controls label[for="room1-btn-1"],
 #room1-btn-2:checked ~ .slider-controls label[for="room1-btn-2"],
-#room1-btn-3:checked ~ .slider-controls label[for="room1-btn-3"] {
+#room1-btn-3:checked ~ .slider-controls label[for="room1-btn-3"],
+#room1-btn-4:checked ~ .slider-controls label[for="room1-btn-4"],
+#room2-btn-1:checked ~ .slider-controls label[for="room2-btn-1"],
+#room2-btn-2:checked ~ .slider-controls label[for="room2-btn-2"],
+#room2-btn-3:checked ~ .slider-controls label[for="room2-btn-3"],
+#room2-btn-4:checked ~ .slider-controls label[for="room2-btn-4"],
+#room3-btn-1:checked ~ .slider-controls label[for="room3-btn-1"],
+#room3-btn-2:checked ~ .slider-controls label[for="room3-btn-2"],
+#room3-btn-3:checked ~ .slider-controls label[for="room3-btn-3"],
+#room3-btn-4:checked ~ .slider-controls label[for="room3-btn-4"],
+#room4-btn-1:checked ~ .slider-controls label[for="room4-btn-1"],
+#room4-btn-2:checked ~ .slider-controls label[for="room4-btn-2"],
+#room4-btn-3:checked ~ .slider-controls label[for="room4-btn-3"],
+#room4-btn-4:checked ~ .slider-controls label[for="room4-btn-4"],
+#room5-btn-1:checked ~ .slider-controls label[for="room5-btn-1"],
+#room5-btn-2:checked ~ .slider-controls label[for="room5-btn-2"],
+#room5-btn-3:checked ~ .slider-controls label[for="room5-btn-3"],
+#room5-btn-4:checked ~ .slider-controls label[for="room5-btn-4"],
+#room6-btn-1:checked ~ .slider-controls label[for="room6-btn-1"],
+#room6-btn-2:checked ~ .slider-controls label[for="room6-btn-2"],
+#room6-btn-3:checked ~ .slider-controls label[for="room6-btn-3"],
+#room6-btn-4:checked ~ .slider-controls label[for="room6-btn-4"],
+#room7-btn-1:checked ~ .slider-controls label[for="room7-btn-1"],
+#room7-btn-2:checked ~ .slider-controls label[for="room7-btn-2"],
+#room7-btn-3:checked ~ .slider-controls label[for="room7-btn-3"],
+#room7-btn-4:checked ~ .slider-controls label[for="room7-btn-4"],
+#room8-btn-1:checked ~ .slider-controls label[for="room8-btn-1"],
+#room8-btn-2:checked ~ .slider-controls label[for="room8-btn-2"],
+#room8-btn-3:checked ~ .slider-controls label[for="room8-btn-3"],
+#room8-btn-4:checked ~ .slider-controls label[for="room8-btn-4"],
+#room9-btn-1:checked ~ .slider-controls label[for="room9-btn-1"],
+#room9-btn-2:checked ~ .slider-controls label[for="room9-btn-2"],
+#room9-btn-3:checked ~ .slider-controls label[for="room9-btn-3"],
+#room9-btn-4:checked ~ .slider-controls label[for="room9-btn-4"],
+#room10-btn-1:checked ~ .slider-controls label[for="room10-btn-1"],
+#room10-btn-2:checked ~ .slider-controls label[for="room10-btn-2"],
+#room10-btn-3:checked ~ .slider-controls label[for="room10-btn-3"],
+#room10-btn-4:checked ~ .slider-controls label[for="room10-btn-4"],
+#room11-btn-1:checked ~ .slider-controls label[for="room11-btn-1"],
+#room11-btn-2:checked ~ .slider-controls label[for="room11-btn-2"],
+#room11-btn-3:checked ~ .slider-controls label[for="room11-btn-3"],
+#room11-btn-4:checked ~ .slider-controls label[for="room11-btn-4"],
+#room12-btn-1:checked ~ .slider-controls label[for="room12-btn-1"],
+#room12-btn-2:checked ~ .slider-controls label[for="room12-btn-2"],
+#room12-btn-3:checked ~ .slider-controls label[for="room12-btn-3"],
+#room12-btn-4:checked ~ .slider-controls label[for="room12-btn-4"] {
   background-color: #fff;
 }
 
-#room1-btn-1:checked ~ .slider-inner .slider-slides {
+#room1-btn-1:checked ~ .slider-inner .slider-slides,
+#room2-btn-1:checked ~ .slider-inner .slider-slides,
+#room3-btn-1:checked ~ .slider-inner .slider-slides,
+#room4-btn-1:checked ~ .slider-inner .slider-slides,
+#room5-btn-1:checked ~ .slider-inner .slider-slides,
+#room6-btn-1:checked ~ .slider-inner .slider-slides,
+#room7-btn-1:checked ~ .slider-inner .slider-slides,
+#room8-btn-1:checked ~ .slider-inner .slider-slides,
+#room9-btn-1:checked ~ .slider-inner .slider-slides,
+#room10-btn-1:checked ~ .slider-inner .slider-slides,
+#room11-btn-1:checked ~ .slider-inner .slider-slides,
+#room12-btn-1:checked ~ .slider-inner .slider-slides {
   -webkit-transform: translate(0);
           transform: translate(0);
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-#room1-btn-2:checked ~ .slider-inner .slider-slides {
+#room1-btn-2:checked ~ .slider-inner .slider-slides,
+#room2-btn-2:checked ~ .slider-inner .slider-slides,
+#room3-btn-2:checked ~ .slider-inner .slider-slides,
+#room4-btn-2:checked ~ .slider-inner .slider-slides,
+#room5-btn-2:checked ~ .slider-inner .slider-slides,
+#room6-btn-2:checked ~ .slider-inner .slider-slides,
+#room7-btn-2:checked ~ .slider-inner .slider-slides,
+#room8-btn-2:checked ~ .slider-inner .slider-slides,
+#room9-btn-2:checked ~ .slider-inner .slider-slides,
+#room10-btn-2:checked ~ .slider-inner .slider-slides,
+#room11-btn-2:checked ~ .slider-inner .slider-slides,
+#room12-btn-2:checked ~ .slider-inner .slider-slides {
   -webkit-transform: translate(-270px);
           transform: translate(-270px);
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-#room1-btn-3:checked ~ .slider-inner .slider-slides {
+#room1-btn-3:checked ~ .slider-inner .slider-slides,
+#room2-btn-3:checked ~ .slider-inner .slider-slides,
+#room3-btn-3:checked ~ .slider-inner .slider-slides,
+#room4-btn-3:checked ~ .slider-inner .slider-slides,
+#room5-btn-3:checked ~ .slider-inner .slider-slides,
+#room6-btn-3:checked ~ .slider-inner .slider-slides,
+#room7-btn-3:checked ~ .slider-inner .slider-slides,
+#room8-btn-3:checked ~ .slider-inner .slider-slides,
+#room9-btn-3:checked ~ .slider-inner .slider-slides,
+#room10-btn-3:checked ~ .slider-inner .slider-slides,
+#room11-btn-3:checked ~ .slider-inner .slider-slides,
+#room12-btn-3:checked ~ .slider-inner .slider-slides {
   -webkit-transform: translate(-540px);
           transform: translate(-540px);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#room1-btn-4:checked ~ .slider-inner .slider-slides,
+#room2-btn-4:checked ~ .slider-inner .slider-slides,
+#room3-btn-4:checked ~ .slider-inner .slider-slides,
+#room4-btn-4:checked ~ .slider-inner .slider-slides,
+#room5-btn-4:checked ~ .slider-inner .slider-slides,
+#room6-btn-4:checked ~ .slider-inner .slider-slides,
+#room7-btn-4:checked ~ .slider-inner .slider-slides,
+#room8-btn-4:checked ~ .slider-inner .slider-slides,
+#room9-btn-4:checked ~ .slider-inner .slider-slides,
+#room10-btn-4:checked ~ .slider-inner .slider-slides,
+#room11-btn-4:checked ~ .slider-inner .slider-slides,
+#room12-btn-4:checked ~ .slider-inner .slider-slides {
+  -webkit-transform: translate(-810px);
+          transform: translate(-810px);
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -2173,6 +2274,7 @@ input[type=number] {
   </div>
 </section>
 <footer class="container">
+  <hr class="footer-line"/>
   <div class="footer"> 
     <div class="footer-item"> <a class="footer-logo" href=""><img class="footer-logo__img" src="images/logo.png" alt=""/></a>
       <div class="footer-text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>

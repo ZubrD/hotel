@@ -9,18 +9,18 @@
                 p.stay-guest-form__title Гости 
                 input(type="text" placeholder='3 гостя, 1 младенец').stay-guest-form__input
                 span.stay-guest-form__icon expand_more  
-        .slider 
-            .slider-title-wrapper 
-                .slider-title Диапазон цены
-                .slider-label-wrapper
-                    label.slider__label 
-                        input(type="number" placeholder='5000').slider__input#input-0
-                        span.slider__span ₽ -
-                    label.slider__label 
-                        input(type="number" placeholder='10000').slider__input#input-1  
-                        span.slider__span ₽    
+        .sliderp 
+            .sliderp-title-wrapper 
+                .sliderp-title Диапазон цены
+                .sliderp-label-wrapper
+                    label.sliderp__label 
+                        input(type="number" placeholder='5000').sliderp__input#input-0
+                        span.sliderp__span ₽ -
+                    label.sliderp__label 
+                        input(type="number" placeholder='10000').sliderp__input#input-1  
+                        span.sliderp__span ₽    
             #nouislider
-            .slider-bottom-title Стоимость за сутки пребывания в номере
+            .sliderp-bottom-title Стоимость за сутки пребывания в номере
         form(action="").home-rule-form
             .home-rule-form__title Правила дома
             .home-rule-form__item 
@@ -103,19 +103,21 @@
             .search-room__item
                 a(href="").search-room__link
                     .slider
-                        input(type="radio" id="room1-btn-1" name="toggle" checked).slider__input           
-                        input(type="radio" id="room1-btn-2" name="toggle").slider__input
-                        input(type="radio" id="room1-btn-3" name="toggle").slider__input
+                        input(type="radio" id="room1-btn-1" name="toggle-1" checked).slider__input           
+                        input(type="radio" id="room1-btn-2" name="toggle-1").slider__input
+                        input(type="radio" id="room1-btn-3" name="toggle-1").slider__input
+                        input(type="radio" id="room1-btn-4" name="toggle-1").slider__input
                         .slider-controls 
                             label(for="room1-btn-1").slider__label  
                             label(for="room1-btn-2").slider__label  
                             label(for="room1-btn-3").slider__label   
+                            label(for="room1-btn-4").slider__label   
                         .slider-inner
                             .slider-slides  
                                 img(src="images/rooms/room1.png", alt="").slider__img                                                                                                                                                                                                                                                                              
                                 img(src="images/rooms/room1.png", alt="").slider__img                                                                                                                                                                                                                                                                              
                                 img(src="images/rooms/room1.png", alt="").slider__img             
-                //-     img(src="images/rooms/room1.png", alt="").search-room__img
+                                img(src="images/rooms/room1.png", alt="").slider__img             
                 .search-room-wrapper
                     .search-room-digits 
                         .search-room-numbers 
@@ -137,7 +139,22 @@
                             .search-room-feedback__title Отзывов
             .search-room__item
                 a(href="").search-room__link
-                    img(src="images/rooms/room2.png", alt="").search-room__img
+                    .slider
+                        input(type="radio" id="room2-btn-1" name="toggle-2" checked).slider__input           
+                        input(type="radio" id="room2-btn-2" name="toggle-2").slider__input
+                        input(type="radio" id="room2-btn-3" name="toggle-2").slider__input
+                        input(type="radio" id="room2-btn-4" name="toggle-2").slider__input
+                        .slider-controls 
+                            label(for="room2-btn-1").slider__label  
+                            label(for="room2-btn-2").slider__label  
+                            label(for="room2-btn-3").slider__label   
+                            label(for="room2-btn-4").slider__label   
+                        .slider-inner
+                            .slider-slides  
+                                img(src="images/rooms/room2.png", alt="").slider__img                                                                                                                                                                                                                                                                              
+                                img(src="images/rooms/room2.png", alt="").slider__img                                                                                                                                                                                                                                                                              
+                                img(src="images/rooms/room2.png", alt="").slider__img                      
+                                img(src="images/rooms/room2.png", alt="").slider__img                      
                 .search-room-wrapper
                     .search-room-digits 
                         .search-room-numbers 
@@ -159,7 +176,22 @@
                             .search-room-feedback__title Отзывов
             .search-room__item
                 a(href="").search-room__link
-                    img(src="images/rooms/room3.png", alt="").search-room__img
+                    .slider
+                        input(type="radio" id="room3-btn-1" name="toggle-3" checked).slider__input           
+                        input(type="radio" id="room3-btn-2" name="toggle-3").slider__input
+                        input(type="radio" id="room3-btn-3" name="toggle-3").slider__input
+                        input(type="radio" id="room3-btn-4" name="toggle-3").slider__input
+                        .slider-controls 
+                            label(for="room3-btn-1").slider__label  
+                            label(for="room3-btn-2").slider__label  
+                            label(for="room3-btn-3").slider__label   
+                            label(for="room3-btn-4").slider__label   
+                        .slider-inner
+                            .slider-slides  
+                                img(src="images/rooms/room3.png", alt="").slider__img                                                                                                                                                                                                                                                                              
+                                img(src="images/rooms/room3.png", alt="").slider__img                                                                                                                                                                                                                                                                              
+                                img(src="images/rooms/room3.png", alt="").slider__img                     
+                                img(src="images/rooms/room3.png", alt="").slider__img                     
                 .search-room-wrapper
                     .search-room-digits 
                         .search-room-numbers 
@@ -181,7 +213,22 @@
                             .search-room-feedback__title Отзывов   
             .search-room__item
                 a(href="").search-room__link
-                    img(src="images/rooms/room4.png", alt="").search-room__img
+                    .slider
+                        input(type="radio" id="room4-btn-1" name="toggle-4" checked).slider__input           
+                        input(type="radio" id="room4-btn-2" name="toggle-4").slider__input
+                        input(type="radio" id="room4-btn-3" name="toggle-4").slider__input
+                        input(type="radio" id="room4-btn-4" name="toggle-4").slider__input
+                        .slider-controls 
+                            label(for="room4-btn-1").slider__label  
+                            label(for="room4-btn-2").slider__label  
+                            label(for="room4-btn-3").slider__label   
+                            label(for="room4-btn-4").slider__label   
+                        .slider-inner
+                            .slider-slides  
+                                img(src="images/rooms/room4.png", alt="").slider__img                                                                                                                                                                                                                                                                              
+                                img(src="images/rooms/room4.png", alt="").slider__img                                                                                                                                                                                                                                                                              
+                                img(src="images/rooms/room4.png", alt="").slider__img                     
+                                img(src="images/rooms/room4.png", alt="").slider__img                     
                 .search-room-wrapper
                     .search-room-digits 
                         .search-room-numbers 
@@ -203,7 +250,22 @@
                             .search-room-feedback__title Отзывов   
             .search-room__item
                 a(href="").search-room__link
-                    img(src="images/rooms/room5.png", alt="").search-room__img
+                    .slider
+                        input(type="radio" id="room5-btn-1" name="toggle-5" checked).slider__input           
+                        input(type="radio" id="room5-btn-2" name="toggle-5").slider__input
+                        input(type="radio" id="room5-btn-3" name="toggle-5").slider__input
+                        input(type="radio" id="room5-btn-4" name="toggle-5").slider__input
+                        .slider-controls 
+                            label(for="room5-btn-1").slider__label  
+                            label(for="room5-btn-2").slider__label  
+                            label(for="room5-btn-3").slider__label   
+                            label(for="room5-btn-4").slider__label   
+                        .slider-inner
+                            .slider-slides  
+                                img(src="images/rooms/room5.png", alt="").slider__img                                                                                                                                                                                                                                                                              
+                                img(src="images/rooms/room5.png", alt="").slider__img                                                                                                                                                                                                                                                                              
+                                img(src="images/rooms/room5.png", alt="").slider__img                 
+                                img(src="images/rooms/room5.png", alt="").slider__img                 
                 .search-room-wrapper
                     .search-room-digits 
                         .search-room-numbers 
@@ -225,7 +287,22 @@
                             .search-room-feedback__title Отзывов
             .search-room__item
                 a(href="").search-room__link
-                    img(src="images/rooms/room6.png", alt="").search-room__img
+                    .slider
+                        input(type="radio" id="room6-btn-1" name="toggle-6" checked).slider__input           
+                        input(type="radio" id="room6-btn-2" name="toggle-6").slider__input
+                        input(type="radio" id="room6-btn-3" name="toggle-6").slider__input
+                        input(type="radio" id="room6-btn-4" name="toggle-6").slider__input
+                        .slider-controls 
+                            label(for="room6-btn-1").slider__label  
+                            label(for="room6-btn-2").slider__label  
+                            label(for="room6-btn-3").slider__label   
+                            label(for="room6-btn-4").slider__label   
+                        .slider-inner
+                            .slider-slides  
+                                img(src="images/rooms/room6.png", alt="").slider__img                                                                                                                                                                                                                                                                              
+                                img(src="images/rooms/room6.png", alt="").slider__img                                                                                                                                                                                                                                                                              
+                                img(src="images/rooms/room6.png", alt="").slider__img                
+                                img(src="images/rooms/room6.png", alt="").slider__img                
                 .search-room-wrapper
                     .search-room-digits 
                         .search-room-numbers 
@@ -247,7 +324,22 @@
                             .search-room-feedback__title Отзывов
             .search-room__item
                 a(href="").search-room__link
-                    img(src="images/rooms/room7.png", alt="").search-room__img
+                    .slider
+                        input(type="radio" id="room7-btn-1" name="toggle-7" checked).slider__input           
+                        input(type="radio" id="room7-btn-2" name="toggle-7").slider__input
+                        input(type="radio" id="room7-btn-3" name="toggle-7").slider__input
+                        input(type="radio" id="room7-btn-4" name="toggle-7").slider__input
+                        .slider-controls 
+                            label(for="room7-btn-1").slider__label  
+                            label(for="room7-btn-2").slider__label  
+                            label(for="room7-btn-3").slider__label   
+                            label(for="room7-btn-4").slider__label   
+                        .slider-inner
+                            .slider-slides  
+                                img(src="images/rooms/room7.png", alt="").slider__img                                                                                                                                                                                                                                                                              
+                                img(src="images/rooms/room7.png", alt="").slider__img                                                                                                                                                                                                                                                                              
+                                img(src="images/rooms/room7.png", alt="").slider__img                 
+                                img(src="images/rooms/room7.png", alt="").slider__img                 
                 .search-room-wrapper
                     .search-room-digits 
                         .search-room-numbers 
@@ -269,7 +361,22 @@
                             .search-room-feedback__title Отзывов
             .search-room__item
                 a(href="").search-room__link
-                    img(src="images/rooms/room8.png", alt="").search-room__img
+                    .slider
+                        input(type="radio" id="room8-btn-1" name="toggle-8" checked).slider__input           
+                        input(type="radio" id="room8-btn-2" name="toggle-8").slider__input
+                        input(type="radio" id="room8-btn-3" name="toggle-8").slider__input
+                        input(type="radio" id="room8-btn-4" name="toggle-8").slider__input
+                        .slider-controls 
+                            label(for="room8-btn-1").slider__label  
+                            label(for="room8-btn-2").slider__label  
+                            label(for="room8-btn-3").slider__label   
+                            label(for="room8-btn-4").slider__label   
+                        .slider-inner
+                            .slider-slides  
+                                img(src="images/rooms/room8.png", alt="").slider__img                                                                                                                                                                                                                                                                              
+                                img(src="images/rooms/room8.png", alt="").slider__img                                                                                                                                                                                                                                                                              
+                                img(src="images/rooms/room8.png", alt="").slider__img                
+                                img(src="images/rooms/room8.png", alt="").slider__img                
                 .search-room-wrapper
                     .search-room-digits 
                         .search-room-numbers 
@@ -291,7 +398,22 @@
                             .search-room-feedback__title Отзывов
             .search-room__item
                 a(href="").search-room__link
-                    img(src="images/rooms/room9.png", alt="").search-room__img
+                    .slider
+                        input(type="radio" id="room9-btn-1" name="toggle-9" checked).slider__input           
+                        input(type="radio" id="room9-btn-2" name="toggle-9").slider__input
+                        input(type="radio" id="room9-btn-3" name="toggle-9").slider__input
+                        input(type="radio" id="room9-btn-4" name="toggle-9").slider__input
+                        .slider-controls 
+                            label(for="room9-btn-1").slider__label  
+                            label(for="room9-btn-2").slider__label  
+                            label(for="room9-btn-3").slider__label   
+                            label(for="room9-btn-4").slider__label   
+                        .slider-inner
+                            .slider-slides  
+                                img(src="images/rooms/room9.png", alt="").slider__img                                                                                                                                                                                                                                                                              
+                                img(src="images/rooms/room9.png", alt="").slider__img                                                                                                                                                                                                                                                                              
+                                img(src="images/rooms/room9.png", alt="").slider__img                 
+                                img(src="images/rooms/room9.png", alt="").slider__img                 
                 .search-room-wrapper
                     .search-room-digits 
                         .search-room-numbers 
@@ -313,7 +435,22 @@
                             .search-room-feedback__title Отзывов
             .search-room__item
                 a(href="").search-room__link
-                    img(src="images/rooms/room10.png", alt="").search-room__img
+                    .slider
+                        input(type="radio" id="room10-btn-1" name="toggle-10" checked).slider__input           
+                        input(type="radio" id="room10-btn-2" name="toggle-10").slider__input
+                        input(type="radio" id="room10-btn-3" name="toggle-10").slider__input
+                        input(type="radio" id="room10-btn-4" name="toggle-10").slider__input
+                        .slider-controls 
+                            label(for="room10-btn-1").slider__label  
+                            label(for="room10-btn-2").slider__label  
+                            label(for="room10-btn-3").slider__label   
+                            label(for="room10-btn-4").slider__label   
+                        .slider-inner
+                            .slider-slides  
+                                img(src="images/rooms/room10.png", alt="").slider__img                                                                                                                                                                                                                                                                              
+                                img(src="images/rooms/room10.png", alt="").slider__img                                                                                                                                                                                                                                                                              
+                                img(src="images/rooms/room10.png", alt="").slider__img                  
+                                img(src="images/rooms/room10.png", alt="").slider__img                  
                 .search-room-wrapper
                     .search-room-digits 
                         .search-room-numbers 
@@ -335,7 +472,22 @@
                             .search-room-feedback__title Отзывов
             .search-room__item
                 a(href="").search-room__link
-                    img(src="images/rooms/room11.png", alt="").search-room__img
+                    .slider
+                        input(type="radio" id="room11-btn-1" name="toggle-11" checked).slider__input           
+                        input(type="radio" id="room11-btn-2" name="toggle-11").slider__input
+                        input(type="radio" id="room11-btn-3" name="toggle-11").slider__input
+                        input(type="radio" id="room11-btn-4" name="toggle-11").slider__input
+                        .slider-controls 
+                            label(for="room11-btn-1").slider__label  
+                            label(for="room11-btn-2").slider__label  
+                            label(for="room11-btn-3").slider__label   
+                            label(for="room11-btn-4").slider__label   
+                        .slider-inner
+                            .slider-slides  
+                                img(src="images/rooms/room11.png", alt="").slider__img                                                                                                                                                                                                                                                                              
+                                img(src="images/rooms/room11.png", alt="").slider__img                                                                                                                                                                                                                                                                              
+                                img(src="images/rooms/room11.png", alt="").slider__img                 
+                                img(src="images/rooms/room11.png", alt="").slider__img                 
                 .search-room-wrapper
                     .search-room-digits 
                         .search-room-numbers 
@@ -357,7 +509,22 @@
                             .search-room-feedback__title Отзывов
             .search-room__item
                 a(href="").search-room__link
-                    img(src="images/rooms/room12.png", alt="").search-room__img
+                    .slider
+                        input(type="radio" id="room12-btn-1" name="toggle-12" checked).slider__input           
+                        input(type="radio" id="room12-btn-2" name="toggle-12").slider__input
+                        input(type="radio" id="room12-btn-3" name="toggle-12").slider__input
+                        input(type="radio" id="room12-btn-4" name="toggle-12").slider__input
+                        .slider-controls 
+                            label(for="room12-btn-1").slider__label  
+                            label(for="room12-btn-2").slider__label  
+                            label(for="room12-btn-3").slider__label   
+                            label(for="room12-btn-4").slider__label   
+                        .slider-inner
+                            .slider-slides  
+                                img(src="images/rooms/room12.png", alt="").slider__img                                                                                                                                                                                                                                                                              
+                                img(src="images/rooms/room12.png", alt="").slider__img                                                                                                                                                                                                                                                                              
+                                img(src="images/rooms/room12.png", alt="").slider__img                 
+                                img(src="images/rooms/room12.png", alt="").slider__img                 
                 .search-room-wrapper
                     .search-room-digits 
                         .search-room-numbers 

@@ -94,8 +94,8 @@
     margin-bottom: 95px;
     position: relative;
     &__img {
-    height: 830px;
-    width: 100%;
+        height: 830px;
+        width: 100%;
     }
     &__title {
         position: absolute;
@@ -448,6 +448,12 @@ button {
     padding-right: 140px;
     border-bottom: 1px solid #E5E5E5;
     padding-bottom: 100px;
+    &-line {
+        height: 1px;
+        background-color: rgba(31, 32, 65, 0.25);
+        color: rgba(31, 32, 65, 0.25);
+        margin-bottom: 100px;
+    }
     &-item {
         font-family: 'Montserrat', sans-serif;
     }
@@ -579,12 +585,10 @@ button {
         padding-right: 60px;
         padding-left: 140px;
         box-sizing: border-box;
-        border: 1px dashed red;        
     }
     &-room {
         width: 974px;
         // flex-grow: 1;
-        border: 1px dashed green;        
     }
 }
 
@@ -644,7 +648,7 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-.slider {
+.sliderp {
     &-title-wrapper {
         display: flex;
         justify-content: space-between;
@@ -1165,7 +1169,7 @@ input[type=number] {
     // margin: 0 auto;
     margin-left: 299px;
     margin-top: 23px;
-    margin-bottom: 104px;
+    margin-bottom: 60px;
     &__item {
         display: inline-block;
         width: 40px;
@@ -1220,7 +1224,7 @@ input[type=number] {
         border-top-right-radius: 4px;
     }    
     &-slides {
-        width: 813px;
+        width: 1084px;
         // transform: translate(-500px);
     }
     &__input {
@@ -1230,7 +1234,7 @@ input[type=number] {
     &-controls {
         position: absolute;
         top: 129px;
-        left: 213px;
+        left: 195px;
         z-index: 10;
     }
     &__label {
@@ -1247,21 +1251,115 @@ input[type=number] {
 
 #room1-btn-1:checked ~ .slider-controls label[for="room1-btn-1"],
 #room1-btn-2:checked ~ .slider-controls label[for="room1-btn-2"],
-#room1-btn-3:checked ~ .slider-controls label[for="room1-btn-3"] {
+#room1-btn-3:checked ~ .slider-controls label[for="room1-btn-3"],
+#room1-btn-4:checked ~ .slider-controls label[for="room1-btn-4"],
+#room2-btn-1:checked ~ .slider-controls label[for="room2-btn-1"],
+#room2-btn-2:checked ~ .slider-controls label[for="room2-btn-2"],
+#room2-btn-3:checked ~ .slider-controls label[for="room2-btn-3"],
+#room2-btn-4:checked ~ .slider-controls label[for="room2-btn-4"],
+#room3-btn-1:checked ~ .slider-controls label[for="room3-btn-1"],
+#room3-btn-2:checked ~ .slider-controls label[for="room3-btn-2"],
+#room3-btn-3:checked ~ .slider-controls label[for="room3-btn-3"],
+#room3-btn-4:checked ~ .slider-controls label[for="room3-btn-4"],
+#room4-btn-1:checked ~ .slider-controls label[for="room4-btn-1"],
+#room4-btn-2:checked ~ .slider-controls label[for="room4-btn-2"],
+#room4-btn-3:checked ~ .slider-controls label[for="room4-btn-3"],
+#room4-btn-4:checked ~ .slider-controls label[for="room4-btn-4"],
+#room5-btn-1:checked ~ .slider-controls label[for="room5-btn-1"],
+#room5-btn-2:checked ~ .slider-controls label[for="room5-btn-2"],
+#room5-btn-3:checked ~ .slider-controls label[for="room5-btn-3"],
+#room5-btn-4:checked ~ .slider-controls label[for="room5-btn-4"],
+#room6-btn-1:checked ~ .slider-controls label[for="room6-btn-1"],
+#room6-btn-2:checked ~ .slider-controls label[for="room6-btn-2"],
+#room6-btn-3:checked ~ .slider-controls label[for="room6-btn-3"],
+#room6-btn-4:checked ~ .slider-controls label[for="room6-btn-4"],
+#room7-btn-1:checked ~ .slider-controls label[for="room7-btn-1"],
+#room7-btn-2:checked ~ .slider-controls label[for="room7-btn-2"],
+#room7-btn-3:checked ~ .slider-controls label[for="room7-btn-3"],
+#room7-btn-4:checked ~ .slider-controls label[for="room7-btn-4"],
+#room8-btn-1:checked ~ .slider-controls label[for="room8-btn-1"],
+#room8-btn-2:checked ~ .slider-controls label[for="room8-btn-2"],
+#room8-btn-3:checked ~ .slider-controls label[for="room8-btn-3"],
+#room8-btn-4:checked ~ .slider-controls label[for="room8-btn-4"],
+#room9-btn-1:checked ~ .slider-controls label[for="room9-btn-1"],
+#room9-btn-2:checked ~ .slider-controls label[for="room9-btn-2"],
+#room9-btn-3:checked ~ .slider-controls label[for="room9-btn-3"],
+#room9-btn-4:checked ~ .slider-controls label[for="room9-btn-4"],
+#room10-btn-1:checked ~ .slider-controls label[for="room10-btn-1"],
+#room10-btn-2:checked ~ .slider-controls label[for="room10-btn-2"],
+#room10-btn-3:checked ~ .slider-controls label[for="room10-btn-3"],
+#room10-btn-4:checked ~ .slider-controls label[for="room10-btn-4"],
+#room11-btn-1:checked ~ .slider-controls label[for="room11-btn-1"],
+#room11-btn-2:checked ~ .slider-controls label[for="room11-btn-2"],
+#room11-btn-3:checked ~ .slider-controls label[for="room11-btn-3"],
+#room11-btn-4:checked ~ .slider-controls label[for="room11-btn-4"],
+#room12-btn-1:checked ~ .slider-controls label[for="room12-btn-1"],
+#room12-btn-2:checked ~ .slider-controls label[for="room12-btn-2"],
+#room12-btn-3:checked ~ .slider-controls label[for="room12-btn-3"],
+#room12-btn-4:checked ~ .slider-controls label[for="room12-btn-4"] {
   background-color: #fff;
 }
 
-#room1-btn-1:checked ~ .slider-inner .slider-slides {
+#room1-btn-1:checked ~ .slider-inner .slider-slides,
+#room2-btn-1:checked ~ .slider-inner .slider-slides,
+#room3-btn-1:checked ~ .slider-inner .slider-slides,
+#room4-btn-1:checked ~ .slider-inner .slider-slides,
+#room5-btn-1:checked ~ .slider-inner .slider-slides,
+#room6-btn-1:checked ~ .slider-inner .slider-slides,
+#room7-btn-1:checked ~ .slider-inner .slider-slides,
+#room8-btn-1:checked ~ .slider-inner .slider-slides,
+#room9-btn-1:checked ~ .slider-inner .slider-slides,
+#room10-btn-1:checked ~ .slider-inner .slider-slides,
+#room11-btn-1:checked ~ .slider-inner .slider-slides,
+#room12-btn-1:checked ~ .slider-inner .slider-slides {
     transform: translate(0);
     transition: 1s;
 }
 
-#room1-btn-2:checked ~ .slider-inner .slider-slides {
+#room1-btn-2:checked ~ .slider-inner .slider-slides,
+#room2-btn-2:checked ~ .slider-inner .slider-slides,
+#room3-btn-2:checked ~ .slider-inner .slider-slides,
+#room4-btn-2:checked ~ .slider-inner .slider-slides,
+#room5-btn-2:checked ~ .slider-inner .slider-slides,
+#room6-btn-2:checked ~ .slider-inner .slider-slides,
+#room7-btn-2:checked ~ .slider-inner .slider-slides,
+#room8-btn-2:checked ~ .slider-inner .slider-slides,
+#room9-btn-2:checked ~ .slider-inner .slider-slides,
+#room10-btn-2:checked ~ .slider-inner .slider-slides,
+#room11-btn-2:checked ~ .slider-inner .slider-slides,
+#room12-btn-2:checked ~ .slider-inner .slider-slides {
     transform: translate(-270px);
     transition: 1s;
 }
 
-#room1-btn-3:checked ~ .slider-inner .slider-slides {
+#room1-btn-3:checked ~ .slider-inner .slider-slides,
+#room2-btn-3:checked ~ .slider-inner .slider-slides,
+#room3-btn-3:checked ~ .slider-inner .slider-slides,
+#room4-btn-3:checked ~ .slider-inner .slider-slides,
+#room5-btn-3:checked ~ .slider-inner .slider-slides,
+#room6-btn-3:checked ~ .slider-inner .slider-slides,
+#room7-btn-3:checked ~ .slider-inner .slider-slides,
+#room8-btn-3:checked ~ .slider-inner .slider-slides,
+#room9-btn-3:checked ~ .slider-inner .slider-slides,
+#room10-btn-3:checked ~ .slider-inner .slider-slides,
+#room11-btn-3:checked ~ .slider-inner .slider-slides,
+#room12-btn-3:checked ~ .slider-inner .slider-slides {
     transform: translate(-540px);
+    transition: 1s;
+}
+
+#room1-btn-4:checked ~ .slider-inner .slider-slides,
+#room2-btn-4:checked ~ .slider-inner .slider-slides,
+#room3-btn-4:checked ~ .slider-inner .slider-slides,
+#room4-btn-4:checked ~ .slider-inner .slider-slides,
+#room5-btn-4:checked ~ .slider-inner .slider-slides,
+#room6-btn-4:checked ~ .slider-inner .slider-slides,
+#room7-btn-4:checked ~ .slider-inner .slider-slides,
+#room8-btn-4:checked ~ .slider-inner .slider-slides,
+#room9-btn-4:checked ~ .slider-inner .slider-slides,
+#room10-btn-4:checked ~ .slider-inner .slider-slides,
+#room11-btn-4:checked ~ .slider-inner .slider-slides,
+#room12-btn-4:checked ~ .slider-inner .slider-slides {
+    transform: translate(-810px);
     transition: 1s;
 }

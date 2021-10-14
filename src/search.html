@@ -1142,6 +1142,13 @@ button {
   padding-bottom: 100px;
 }
 
+.footer-line {
+  height: 1px;
+  background-color: rgba(31, 32, 65, 0.25);
+  color: rgba(31, 32, 65, 0.25);
+  margin-bottom: 100px;
+}
+
 .footer-item {
   font-family: 'Montserrat', sans-serif;
 }
@@ -1291,12 +1298,10 @@ button {
   padding-left: 140px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 1px dashed red;
 }
 
 .search-room {
   width: 974px;
-  border: 1px dashed green;
 }
 
 .stay-guest-form__item {
@@ -1358,7 +1363,7 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-.slider-title-wrapper {
+.sliderp-title-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1369,7 +1374,7 @@ input[type=number] {
   margin-top: 30px;
 }
 
-.slider-label-wrapper {
+.sliderp-label-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1378,7 +1383,7 @@ input[type=number] {
           align-items: flex-start;
 }
 
-.slider-title {
+.sliderp-title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 12px;
@@ -1387,7 +1392,7 @@ input[type=number] {
   margin-bottom: 5px;
 }
 
-.slider__label {
+.sliderp__label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1398,7 +1403,7 @@ input[type=number] {
           box-sizing: border-box;
 }
 
-.slider__input {
+.sliderp__input {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -1410,7 +1415,7 @@ input[type=number] {
   padding: 0;
 }
 
-.slider__span {
+.sliderp__span {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -1419,7 +1424,7 @@ input[type=number] {
   margin-left: 5px;
 }
 
-.slider-bottom-title {
+.sliderp-bottom-title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -1981,7 +1986,7 @@ input[type=number] {
   width: 241px;
   margin-left: 299px;
   margin-top: 23px;
-  margin-bottom: 104px;
+  margin-bottom: 60px;
 }
 
 .paginator__item {
@@ -2045,7 +2050,7 @@ input[type=number] {
 }
 
 .slider-slides {
-  width: 813px;
+  width: 1084px;
 }
 
 .slider__input {
@@ -2055,7 +2060,7 @@ input[type=number] {
 .slider-controls {
   position: absolute;
   top: 129px;
-  left: 213px;
+  left: 195px;
   z-index: 10;
 }
 
@@ -2071,27 +2076,123 @@ input[type=number] {
 
 #room1-btn-1:checked ~ .slider-controls label[for="room1-btn-1"],
 #room1-btn-2:checked ~ .slider-controls label[for="room1-btn-2"],
-#room1-btn-3:checked ~ .slider-controls label[for="room1-btn-3"] {
+#room1-btn-3:checked ~ .slider-controls label[for="room1-btn-3"],
+#room1-btn-4:checked ~ .slider-controls label[for="room1-btn-4"],
+#room2-btn-1:checked ~ .slider-controls label[for="room2-btn-1"],
+#room2-btn-2:checked ~ .slider-controls label[for="room2-btn-2"],
+#room2-btn-3:checked ~ .slider-controls label[for="room2-btn-3"],
+#room2-btn-4:checked ~ .slider-controls label[for="room2-btn-4"],
+#room3-btn-1:checked ~ .slider-controls label[for="room3-btn-1"],
+#room3-btn-2:checked ~ .slider-controls label[for="room3-btn-2"],
+#room3-btn-3:checked ~ .slider-controls label[for="room3-btn-3"],
+#room3-btn-4:checked ~ .slider-controls label[for="room3-btn-4"],
+#room4-btn-1:checked ~ .slider-controls label[for="room4-btn-1"],
+#room4-btn-2:checked ~ .slider-controls label[for="room4-btn-2"],
+#room4-btn-3:checked ~ .slider-controls label[for="room4-btn-3"],
+#room4-btn-4:checked ~ .slider-controls label[for="room4-btn-4"],
+#room5-btn-1:checked ~ .slider-controls label[for="room5-btn-1"],
+#room5-btn-2:checked ~ .slider-controls label[for="room5-btn-2"],
+#room5-btn-3:checked ~ .slider-controls label[for="room5-btn-3"],
+#room5-btn-4:checked ~ .slider-controls label[for="room5-btn-4"],
+#room6-btn-1:checked ~ .slider-controls label[for="room6-btn-1"],
+#room6-btn-2:checked ~ .slider-controls label[for="room6-btn-2"],
+#room6-btn-3:checked ~ .slider-controls label[for="room6-btn-3"],
+#room6-btn-4:checked ~ .slider-controls label[for="room6-btn-4"],
+#room7-btn-1:checked ~ .slider-controls label[for="room7-btn-1"],
+#room7-btn-2:checked ~ .slider-controls label[for="room7-btn-2"],
+#room7-btn-3:checked ~ .slider-controls label[for="room7-btn-3"],
+#room7-btn-4:checked ~ .slider-controls label[for="room7-btn-4"],
+#room8-btn-1:checked ~ .slider-controls label[for="room8-btn-1"],
+#room8-btn-2:checked ~ .slider-controls label[for="room8-btn-2"],
+#room8-btn-3:checked ~ .slider-controls label[for="room8-btn-3"],
+#room8-btn-4:checked ~ .slider-controls label[for="room8-btn-4"],
+#room9-btn-1:checked ~ .slider-controls label[for="room9-btn-1"],
+#room9-btn-2:checked ~ .slider-controls label[for="room9-btn-2"],
+#room9-btn-3:checked ~ .slider-controls label[for="room9-btn-3"],
+#room9-btn-4:checked ~ .slider-controls label[for="room9-btn-4"],
+#room10-btn-1:checked ~ .slider-controls label[for="room10-btn-1"],
+#room10-btn-2:checked ~ .slider-controls label[for="room10-btn-2"],
+#room10-btn-3:checked ~ .slider-controls label[for="room10-btn-3"],
+#room10-btn-4:checked ~ .slider-controls label[for="room10-btn-4"],
+#room11-btn-1:checked ~ .slider-controls label[for="room11-btn-1"],
+#room11-btn-2:checked ~ .slider-controls label[for="room11-btn-2"],
+#room11-btn-3:checked ~ .slider-controls label[for="room11-btn-3"],
+#room11-btn-4:checked ~ .slider-controls label[for="room11-btn-4"],
+#room12-btn-1:checked ~ .slider-controls label[for="room12-btn-1"],
+#room12-btn-2:checked ~ .slider-controls label[for="room12-btn-2"],
+#room12-btn-3:checked ~ .slider-controls label[for="room12-btn-3"],
+#room12-btn-4:checked ~ .slider-controls label[for="room12-btn-4"] {
   background-color: #fff;
 }
 
-#room1-btn-1:checked ~ .slider-inner .slider-slides {
+#room1-btn-1:checked ~ .slider-inner .slider-slides,
+#room2-btn-1:checked ~ .slider-inner .slider-slides,
+#room3-btn-1:checked ~ .slider-inner .slider-slides,
+#room4-btn-1:checked ~ .slider-inner .slider-slides,
+#room5-btn-1:checked ~ .slider-inner .slider-slides,
+#room6-btn-1:checked ~ .slider-inner .slider-slides,
+#room7-btn-1:checked ~ .slider-inner .slider-slides,
+#room8-btn-1:checked ~ .slider-inner .slider-slides,
+#room9-btn-1:checked ~ .slider-inner .slider-slides,
+#room10-btn-1:checked ~ .slider-inner .slider-slides,
+#room11-btn-1:checked ~ .slider-inner .slider-slides,
+#room12-btn-1:checked ~ .slider-inner .slider-slides {
   -webkit-transform: translate(0);
           transform: translate(0);
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-#room1-btn-2:checked ~ .slider-inner .slider-slides {
+#room1-btn-2:checked ~ .slider-inner .slider-slides,
+#room2-btn-2:checked ~ .slider-inner .slider-slides,
+#room3-btn-2:checked ~ .slider-inner .slider-slides,
+#room4-btn-2:checked ~ .slider-inner .slider-slides,
+#room5-btn-2:checked ~ .slider-inner .slider-slides,
+#room6-btn-2:checked ~ .slider-inner .slider-slides,
+#room7-btn-2:checked ~ .slider-inner .slider-slides,
+#room8-btn-2:checked ~ .slider-inner .slider-slides,
+#room9-btn-2:checked ~ .slider-inner .slider-slides,
+#room10-btn-2:checked ~ .slider-inner .slider-slides,
+#room11-btn-2:checked ~ .slider-inner .slider-slides,
+#room12-btn-2:checked ~ .slider-inner .slider-slides {
   -webkit-transform: translate(-270px);
           transform: translate(-270px);
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-#room1-btn-3:checked ~ .slider-inner .slider-slides {
+#room1-btn-3:checked ~ .slider-inner .slider-slides,
+#room2-btn-3:checked ~ .slider-inner .slider-slides,
+#room3-btn-3:checked ~ .slider-inner .slider-slides,
+#room4-btn-3:checked ~ .slider-inner .slider-slides,
+#room5-btn-3:checked ~ .slider-inner .slider-slides,
+#room6-btn-3:checked ~ .slider-inner .slider-slides,
+#room7-btn-3:checked ~ .slider-inner .slider-slides,
+#room8-btn-3:checked ~ .slider-inner .slider-slides,
+#room9-btn-3:checked ~ .slider-inner .slider-slides,
+#room10-btn-3:checked ~ .slider-inner .slider-slides,
+#room11-btn-3:checked ~ .slider-inner .slider-slides,
+#room12-btn-3:checked ~ .slider-inner .slider-slides {
   -webkit-transform: translate(-540px);
           transform: translate(-540px);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#room1-btn-4:checked ~ .slider-inner .slider-slides,
+#room2-btn-4:checked ~ .slider-inner .slider-slides,
+#room3-btn-4:checked ~ .slider-inner .slider-slides,
+#room4-btn-4:checked ~ .slider-inner .slider-slides,
+#room5-btn-4:checked ~ .slider-inner .slider-slides,
+#room6-btn-4:checked ~ .slider-inner .slider-slides,
+#room7-btn-4:checked ~ .slider-inner .slider-slides,
+#room8-btn-4:checked ~ .slider-inner .slider-slides,
+#room9-btn-4:checked ~ .slider-inner .slider-slides,
+#room10-btn-4:checked ~ .slider-inner .slider-slides,
+#room11-btn-4:checked ~ .slider-inner .slider-slides,
+#room12-btn-4:checked ~ .slider-inner .slider-slides {
+  -webkit-transform: translate(-810px);
+          transform: translate(-810px);
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -2127,20 +2228,20 @@ input[type=number] {
         <input class="stay-guest-form__input" type="text" placeholder="3 гостя, 1 младенец"/><span class="stay-guest-form__icon">expand_more  </span>
       </div>
     </form>
-    <div class="slider"> 
-      <div class="slider-title-wrapper"> 
-        <div class="slider-title">Диапазон цены</div>
-        <div class="slider-label-wrapper">
-          <label class="slider__label"> 
-            <input class="slider__input" type="number" placeholder="5000" id="input-0"/><span class="slider__span">₽ -</span>
+    <div class="sliderp"> 
+      <div class="sliderp-title-wrapper"> 
+        <div class="sliderp-title">Диапазон цены</div>
+        <div class="sliderp-label-wrapper">
+          <label class="sliderp__label"> 
+            <input class="sliderp__input" type="number" placeholder="5000" id="input-0"/><span class="sliderp__span">₽ -</span>
           </label>
-          <label class="slider__label"> 
-            <input class="slider__input" type="number" placeholder="10000" id="input-1"/><span class="slider__span">₽    </span>
+          <label class="sliderp__label"> 
+            <input class="sliderp__input" type="number" placeholder="10000" id="input-1"/><span class="sliderp__span">₽    </span>
           </label>
         </div>
       </div>
       <div id="nouislider"></div>
-      <div class="slider-bottom-title">Стоимость за сутки пребывания в номере</div>
+      <div class="sliderp-bottom-title">Стоимость за сутки пребывания в номере</div>
     </div>
     <form class="home-rule-form" action="">
       <div class="home-rule-form__title">Правила дома</div>
@@ -2250,16 +2351,18 @@ input[type=number] {
     <div class="search-room-items"> 
       <div class="search-room__item"><a class="search-room__link" href="">
           <div class="slider">
-            <input class="slider__input" type="radio" id="room1-btn-1" name="toggle" checked="checked"/>
-            <input class="slider__input" type="radio" id="room1-btn-2" name="toggle"/>
-            <input class="slider__input" type="radio" id="room1-btn-3" name="toggle"/>
+            <input class="slider__input" type="radio" id="room1-btn-1" name="toggle-1" checked="checked"/>
+            <input class="slider__input" type="radio" id="room1-btn-2" name="toggle-1"/>
+            <input class="slider__input" type="radio" id="room1-btn-3" name="toggle-1"/>
+            <input class="slider__input" type="radio" id="room1-btn-4" name="toggle-1"/>
             <div class="slider-controls"> 
               <label class="slider__label" for="room1-btn-1"> </label>
               <label class="slider__label" for="room1-btn-2"> </label>
               <label class="slider__label" for="room1-btn-3">  </label>
+              <label class="slider__label" for="room1-btn-4">  </label>
             </div>
             <div class="slider-inner">
-              <div class="slider-slides"> <img class="slider__img" src="images/rooms/room1.png" alt=""/><img class="slider__img" src="images/rooms/room1.png" alt=""/><img class="slider__img" src="images/rooms/room1.png" alt=""/></div>
+              <div class="slider-slides"> <img class="slider__img" src="images/rooms/room1.png" alt=""/><img class="slider__img" src="images/rooms/room1.png" alt=""/><img class="slider__img" src="images/rooms/room1.png" alt=""/><img class="slider__img" src="images/rooms/room1.png" alt=""/></div>
             </div>
           </div></a>
         <div class="search-room-wrapper">
@@ -2283,7 +2386,22 @@ input[type=number] {
           </div>
         </div>
       </div>
-      <div class="search-room__item"><a class="search-room__link" href=""><img class="search-room__img" src="images/rooms/room2.png" alt=""/></a>
+      <div class="search-room__item"><a class="search-room__link" href="">
+          <div class="slider">
+            <input class="slider__input" type="radio" id="room2-btn-1" name="toggle-2" checked="checked"/>
+            <input class="slider__input" type="radio" id="room2-btn-2" name="toggle-2"/>
+            <input class="slider__input" type="radio" id="room2-btn-3" name="toggle-2"/>
+            <input class="slider__input" type="radio" id="room2-btn-4" name="toggle-2"/>
+            <div class="slider-controls"> 
+              <label class="slider__label" for="room2-btn-1"> </label>
+              <label class="slider__label" for="room2-btn-2"> </label>
+              <label class="slider__label" for="room2-btn-3">  </label>
+              <label class="slider__label" for="room2-btn-4">  </label>
+            </div>
+            <div class="slider-inner">
+              <div class="slider-slides"> <img class="slider__img" src="images/rooms/room2.png" alt=""/><img class="slider__img" src="images/rooms/room2.png" alt=""/><img class="slider__img" src="images/rooms/room2.png" alt=""/><img class="slider__img" src="images/rooms/room2.png" alt=""/></div>
+            </div>
+          </div></a>
         <div class="search-room-wrapper">
           <div class="search-room-digits"> 
             <div class="search-room-numbers"> 
@@ -2305,7 +2423,22 @@ input[type=number] {
           </div>
         </div>
       </div>
-      <div class="search-room__item"><a class="search-room__link" href=""><img class="search-room__img" src="images/rooms/room3.png" alt=""/></a>
+      <div class="search-room__item"><a class="search-room__link" href="">
+          <div class="slider">
+            <input class="slider__input" type="radio" id="room3-btn-1" name="toggle-3" checked="checked"/>
+            <input class="slider__input" type="radio" id="room3-btn-2" name="toggle-3"/>
+            <input class="slider__input" type="radio" id="room3-btn-3" name="toggle-3"/>
+            <input class="slider__input" type="radio" id="room3-btn-4" name="toggle-3"/>
+            <div class="slider-controls"> 
+              <label class="slider__label" for="room3-btn-1"> </label>
+              <label class="slider__label" for="room3-btn-2"> </label>
+              <label class="slider__label" for="room3-btn-3">  </label>
+              <label class="slider__label" for="room3-btn-4">  </label>
+            </div>
+            <div class="slider-inner">
+              <div class="slider-slides"> <img class="slider__img" src="images/rooms/room3.png" alt=""/><img class="slider__img" src="images/rooms/room3.png" alt=""/><img class="slider__img" src="images/rooms/room3.png" alt=""/><img class="slider__img" src="images/rooms/room3.png" alt=""/></div>
+            </div>
+          </div></a>
         <div class="search-room-wrapper">
           <div class="search-room-digits"> 
             <div class="search-room-numbers"> 
@@ -2327,7 +2460,22 @@ input[type=number] {
           </div>
         </div>
       </div>
-      <div class="search-room__item"><a class="search-room__link" href=""><img class="search-room__img" src="images/rooms/room4.png" alt=""/></a>
+      <div class="search-room__item"><a class="search-room__link" href="">
+          <div class="slider">
+            <input class="slider__input" type="radio" id="room4-btn-1" name="toggle-4" checked="checked"/>
+            <input class="slider__input" type="radio" id="room4-btn-2" name="toggle-4"/>
+            <input class="slider__input" type="radio" id="room4-btn-3" name="toggle-4"/>
+            <input class="slider__input" type="radio" id="room4-btn-4" name="toggle-4"/>
+            <div class="slider-controls"> 
+              <label class="slider__label" for="room4-btn-1"> </label>
+              <label class="slider__label" for="room4-btn-2"> </label>
+              <label class="slider__label" for="room4-btn-3">  </label>
+              <label class="slider__label" for="room4-btn-4">  </label>
+            </div>
+            <div class="slider-inner">
+              <div class="slider-slides"> <img class="slider__img" src="images/rooms/room4.png" alt=""/><img class="slider__img" src="images/rooms/room4.png" alt=""/><img class="slider__img" src="images/rooms/room4.png" alt=""/><img class="slider__img" src="images/rooms/room4.png" alt=""/></div>
+            </div>
+          </div></a>
         <div class="search-room-wrapper">
           <div class="search-room-digits"> 
             <div class="search-room-numbers"> 
@@ -2349,7 +2497,22 @@ input[type=number] {
           </div>
         </div>
       </div>
-      <div class="search-room__item"><a class="search-room__link" href=""><img class="search-room__img" src="images/rooms/room5.png" alt=""/></a>
+      <div class="search-room__item"><a class="search-room__link" href="">
+          <div class="slider">
+            <input class="slider__input" type="radio" id="room5-btn-1" name="toggle-5" checked="checked"/>
+            <input class="slider__input" type="radio" id="room5-btn-2" name="toggle-5"/>
+            <input class="slider__input" type="radio" id="room5-btn-3" name="toggle-5"/>
+            <input class="slider__input" type="radio" id="room5-btn-4" name="toggle-5"/>
+            <div class="slider-controls"> 
+              <label class="slider__label" for="room5-btn-1"> </label>
+              <label class="slider__label" for="room5-btn-2"> </label>
+              <label class="slider__label" for="room5-btn-3">  </label>
+              <label class="slider__label" for="room5-btn-4">  </label>
+            </div>
+            <div class="slider-inner">
+              <div class="slider-slides"> <img class="slider__img" src="images/rooms/room5.png" alt=""/><img class="slider__img" src="images/rooms/room5.png" alt=""/><img class="slider__img" src="images/rooms/room5.png" alt=""/><img class="slider__img" src="images/rooms/room5.png" alt=""/></div>
+            </div>
+          </div></a>
         <div class="search-room-wrapper">
           <div class="search-room-digits"> 
             <div class="search-room-numbers"> 
@@ -2371,7 +2534,22 @@ input[type=number] {
           </div>
         </div>
       </div>
-      <div class="search-room__item"><a class="search-room__link" href=""><img class="search-room__img" src="images/rooms/room6.png" alt=""/></a>
+      <div class="search-room__item"><a class="search-room__link" href="">
+          <div class="slider">
+            <input class="slider__input" type="radio" id="room6-btn-1" name="toggle-6" checked="checked"/>
+            <input class="slider__input" type="radio" id="room6-btn-2" name="toggle-6"/>
+            <input class="slider__input" type="radio" id="room6-btn-3" name="toggle-6"/>
+            <input class="slider__input" type="radio" id="room6-btn-4" name="toggle-6"/>
+            <div class="slider-controls"> 
+              <label class="slider__label" for="room6-btn-1"> </label>
+              <label class="slider__label" for="room6-btn-2"> </label>
+              <label class="slider__label" for="room6-btn-3">  </label>
+              <label class="slider__label" for="room6-btn-4">  </label>
+            </div>
+            <div class="slider-inner">
+              <div class="slider-slides"> <img class="slider__img" src="images/rooms/room6.png" alt=""/><img class="slider__img" src="images/rooms/room6.png" alt=""/><img class="slider__img" src="images/rooms/room6.png" alt=""/><img class="slider__img" src="images/rooms/room6.png" alt=""/></div>
+            </div>
+          </div></a>
         <div class="search-room-wrapper">
           <div class="search-room-digits"> 
             <div class="search-room-numbers"> 
@@ -2393,7 +2571,22 @@ input[type=number] {
           </div>
         </div>
       </div>
-      <div class="search-room__item"><a class="search-room__link" href=""><img class="search-room__img" src="images/rooms/room7.png" alt=""/></a>
+      <div class="search-room__item"><a class="search-room__link" href="">
+          <div class="slider">
+            <input class="slider__input" type="radio" id="room7-btn-1" name="toggle-7" checked="checked"/>
+            <input class="slider__input" type="radio" id="room7-btn-2" name="toggle-7"/>
+            <input class="slider__input" type="radio" id="room7-btn-3" name="toggle-7"/>
+            <input class="slider__input" type="radio" id="room7-btn-4" name="toggle-7"/>
+            <div class="slider-controls"> 
+              <label class="slider__label" for="room7-btn-1"> </label>
+              <label class="slider__label" for="room7-btn-2"> </label>
+              <label class="slider__label" for="room7-btn-3">  </label>
+              <label class="slider__label" for="room7-btn-4">  </label>
+            </div>
+            <div class="slider-inner">
+              <div class="slider-slides"> <img class="slider__img" src="images/rooms/room7.png" alt=""/><img class="slider__img" src="images/rooms/room7.png" alt=""/><img class="slider__img" src="images/rooms/room7.png" alt=""/><img class="slider__img" src="images/rooms/room7.png" alt=""/></div>
+            </div>
+          </div></a>
         <div class="search-room-wrapper">
           <div class="search-room-digits"> 
             <div class="search-room-numbers"> 
@@ -2415,7 +2608,22 @@ input[type=number] {
           </div>
         </div>
       </div>
-      <div class="search-room__item"><a class="search-room__link" href=""><img class="search-room__img" src="images/rooms/room8.png" alt=""/></a>
+      <div class="search-room__item"><a class="search-room__link" href="">
+          <div class="slider">
+            <input class="slider__input" type="radio" id="room8-btn-1" name="toggle-8" checked="checked"/>
+            <input class="slider__input" type="radio" id="room8-btn-2" name="toggle-8"/>
+            <input class="slider__input" type="radio" id="room8-btn-3" name="toggle-8"/>
+            <input class="slider__input" type="radio" id="room8-btn-4" name="toggle-8"/>
+            <div class="slider-controls"> 
+              <label class="slider__label" for="room8-btn-1"> </label>
+              <label class="slider__label" for="room8-btn-2"> </label>
+              <label class="slider__label" for="room8-btn-3">  </label>
+              <label class="slider__label" for="room8-btn-4">  </label>
+            </div>
+            <div class="slider-inner">
+              <div class="slider-slides"> <img class="slider__img" src="images/rooms/room8.png" alt=""/><img class="slider__img" src="images/rooms/room8.png" alt=""/><img class="slider__img" src="images/rooms/room8.png" alt=""/><img class="slider__img" src="images/rooms/room8.png" alt=""/></div>
+            </div>
+          </div></a>
         <div class="search-room-wrapper">
           <div class="search-room-digits"> 
             <div class="search-room-numbers"> 
@@ -2437,7 +2645,22 @@ input[type=number] {
           </div>
         </div>
       </div>
-      <div class="search-room__item"><a class="search-room__link" href=""><img class="search-room__img" src="images/rooms/room9.png" alt=""/></a>
+      <div class="search-room__item"><a class="search-room__link" href="">
+          <div class="slider">
+            <input class="slider__input" type="radio" id="room9-btn-1" name="toggle-9" checked="checked"/>
+            <input class="slider__input" type="radio" id="room9-btn-2" name="toggle-9"/>
+            <input class="slider__input" type="radio" id="room9-btn-3" name="toggle-9"/>
+            <input class="slider__input" type="radio" id="room9-btn-4" name="toggle-9"/>
+            <div class="slider-controls"> 
+              <label class="slider__label" for="room9-btn-1"> </label>
+              <label class="slider__label" for="room9-btn-2"> </label>
+              <label class="slider__label" for="room9-btn-3">  </label>
+              <label class="slider__label" for="room9-btn-4">  </label>
+            </div>
+            <div class="slider-inner">
+              <div class="slider-slides"> <img class="slider__img" src="images/rooms/room9.png" alt=""/><img class="slider__img" src="images/rooms/room9.png" alt=""/><img class="slider__img" src="images/rooms/room9.png" alt=""/><img class="slider__img" src="images/rooms/room9.png" alt=""/></div>
+            </div>
+          </div></a>
         <div class="search-room-wrapper">
           <div class="search-room-digits"> 
             <div class="search-room-numbers"> 
@@ -2459,7 +2682,22 @@ input[type=number] {
           </div>
         </div>
       </div>
-      <div class="search-room__item"><a class="search-room__link" href=""><img class="search-room__img" src="images/rooms/room10.png" alt=""/></a>
+      <div class="search-room__item"><a class="search-room__link" href="">
+          <div class="slider">
+            <input class="slider__input" type="radio" id="room10-btn-1" name="toggle-10" checked="checked"/>
+            <input class="slider__input" type="radio" id="room10-btn-2" name="toggle-10"/>
+            <input class="slider__input" type="radio" id="room10-btn-3" name="toggle-10"/>
+            <input class="slider__input" type="radio" id="room10-btn-4" name="toggle-10"/>
+            <div class="slider-controls"> 
+              <label class="slider__label" for="room10-btn-1"> </label>
+              <label class="slider__label" for="room10-btn-2"> </label>
+              <label class="slider__label" for="room10-btn-3">  </label>
+              <label class="slider__label" for="room10-btn-4">  </label>
+            </div>
+            <div class="slider-inner">
+              <div class="slider-slides"> <img class="slider__img" src="images/rooms/room10.png" alt=""/><img class="slider__img" src="images/rooms/room10.png" alt=""/><img class="slider__img" src="images/rooms/room10.png" alt=""/><img class="slider__img" src="images/rooms/room10.png" alt=""/></div>
+            </div>
+          </div></a>
         <div class="search-room-wrapper">
           <div class="search-room-digits"> 
             <div class="search-room-numbers"> 
@@ -2481,7 +2719,22 @@ input[type=number] {
           </div>
         </div>
       </div>
-      <div class="search-room__item"><a class="search-room__link" href=""><img class="search-room__img" src="images/rooms/room11.png" alt=""/></a>
+      <div class="search-room__item"><a class="search-room__link" href="">
+          <div class="slider">
+            <input class="slider__input" type="radio" id="room11-btn-1" name="toggle-11" checked="checked"/>
+            <input class="slider__input" type="radio" id="room11-btn-2" name="toggle-11"/>
+            <input class="slider__input" type="radio" id="room11-btn-3" name="toggle-11"/>
+            <input class="slider__input" type="radio" id="room11-btn-4" name="toggle-11"/>
+            <div class="slider-controls"> 
+              <label class="slider__label" for="room11-btn-1"> </label>
+              <label class="slider__label" for="room11-btn-2"> </label>
+              <label class="slider__label" for="room11-btn-3">  </label>
+              <label class="slider__label" for="room11-btn-4">  </label>
+            </div>
+            <div class="slider-inner">
+              <div class="slider-slides"> <img class="slider__img" src="images/rooms/room11.png" alt=""/><img class="slider__img" src="images/rooms/room11.png" alt=""/><img class="slider__img" src="images/rooms/room11.png" alt=""/><img class="slider__img" src="images/rooms/room11.png" alt=""/></div>
+            </div>
+          </div></a>
         <div class="search-room-wrapper">
           <div class="search-room-digits"> 
             <div class="search-room-numbers"> 
@@ -2503,7 +2756,22 @@ input[type=number] {
           </div>
         </div>
       </div>
-      <div class="search-room__item"><a class="search-room__link" href=""><img class="search-room__img" src="images/rooms/room12.png" alt=""/></a>
+      <div class="search-room__item"><a class="search-room__link" href="">
+          <div class="slider">
+            <input class="slider__input" type="radio" id="room12-btn-1" name="toggle-12" checked="checked"/>
+            <input class="slider__input" type="radio" id="room12-btn-2" name="toggle-12"/>
+            <input class="slider__input" type="radio" id="room12-btn-3" name="toggle-12"/>
+            <input class="slider__input" type="radio" id="room12-btn-4" name="toggle-12"/>
+            <div class="slider-controls"> 
+              <label class="slider__label" for="room12-btn-1"> </label>
+              <label class="slider__label" for="room12-btn-2"> </label>
+              <label class="slider__label" for="room12-btn-3">  </label>
+              <label class="slider__label" for="room12-btn-4">  </label>
+            </div>
+            <div class="slider-inner">
+              <div class="slider-slides"> <img class="slider__img" src="images/rooms/room12.png" alt=""/><img class="slider__img" src="images/rooms/room12.png" alt=""/><img class="slider__img" src="images/rooms/room12.png" alt=""/><img class="slider__img" src="images/rooms/room12.png" alt=""/></div>
+            </div>
+          </div></a>
         <div class="search-room-wrapper">
           <div class="search-room-digits"> 
             <div class="search-room-numbers"> 
@@ -2532,6 +2800,7 @@ input[type=number] {
   </section>
 </div>
 <footer class="container">
+  <hr class="footer-line"/>
   <div class="footer"> 
     <div class="footer-item"> <a class="footer-logo" href=""><img class="footer-logo__img" src="images/logo.png" alt=""/></a>
       <div class="footer-text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
