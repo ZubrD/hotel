@@ -1363,3 +1363,55 @@ input[type=number] {
     transform: translate(-810px);
     transition: 1s;
 }
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////        DETAILS ROOM     ////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.roominfo {
+    &__title {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 23px;
+        color: rgba(31, 32, 65, 1);
+        margin-bottom: 21px;
+    }
+    &-item {
+        display: flex;
+        width: 291px;
+        border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+        padding-bottom: 17px;
+        margin-bottom: 22px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &__span {
+            font-family: 'Material Icons';
+            font-weight: 400;
+            font-style: normal;
+            font-size: 48px;
+            line-height: 41px;
+            vertical-align: middle;
+            color: rgb(188,156,255);
+            padding-top: 4px;
+        }
+        &-text {
+            margin-left: 10px;
+            &__title {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 24px;
+                color: rgba(31, 32, 65, 0.75);
+            }
+            &__desc {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                color: rgba(31, 32, 65, 0.75);
+            }            
+        }
+    }
+}
