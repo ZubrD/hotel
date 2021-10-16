@@ -2249,6 +2249,176 @@ input[type=number] {
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
 }
+
+.reviews {
+  width: 712px;
+}
+
+.reviews-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reviews-top__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 23px;
+  color: #1f2041;
+}
+
+.reviews-top__number {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: rgba(31, 32, 65, 0.5);
+  margin-top: 7px;
+}
+
+.reviews-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 22px;
+}
+
+.reviews-item-left__img {
+  border-radius: 50%;
+  border: 1px solid #fff;
+  -webkit-box-shadow: 0 0 20px rgba(31, 32, 65, 0.2);
+          box-shadow: 0 0 20px rgba(31, 32, 65, 0.2);
+}
+
+.reviews-item-left__favor {
+  position: relative;
+  width: 37px;
+  height: 19px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white)), -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+  background-image: linear-gradient(white, white), linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.reviews-item-left__icon {
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  font-family: 'Material Icons';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 10px;
+  line-height: 9px;
+  vertical-align: middle;
+  color: #bc9cff;
+}
+
+.reviews-item-left__favortext {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 19px;
+  padding-top: 3px;
+  color: #bc9cff;
+}
+
+.reviews-item-right {
+  margin-left: 8px;
+}
+
+.reviews-item-right__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.reviews-item-right__days {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.reviews-item-right__text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  margin-top: 10px;
+}
+
+.rules {
+  width: 292px;
+}
+
+.rules__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 23px;
+  color: #434472;
+  margin-bottom: 19px;
+  margin-left: 26px;
+}
+
+.rules-item {
+  position: relative;
+  margin-left: 25px;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.rules-item::before {
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: -20px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  background-color: rgba(31, 32, 65, 0.25);
+}
+
+.canceling {
+  width: 341px;
+}
+
+.canceling__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 23px;
+  color: #1f2041;
+  margin-bottom: 20px;
+}
+
+.canceling__text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
 /*# sourceMappingURL=style.css.map */
     </style>
   </head>
@@ -2286,9 +2456,49 @@ input[type=number] {
   <div class="roominfo-item"> <span class="roominfo-item__span">whatshot</span>
     <div class="roominfo-item-text">
       <div class="roominfo-item-text__title">Уют</div>
-      <div class="roominfo-item-text__desc">Номер оснащён камином                      </div>
+      <div class="roominfo-item-text__desc">Номер оснащён камином  </div>
     </div>
   </div>
+</div>
+<div class="reviews">
+  <div class="reviews-top"> 
+    <div class="reviews-top__title">Отзывы посетителей номера</div>
+    <div class="reviews-top__number">2 отзыва</div>
+  </div>
+  <div class="reviews-item"> 
+    <div class="reviews-item-left"> <img class="reviews-item-left__img" src="images/visitors/vizitor_1.jpg" alt=""/>
+      <div class="reviews-item-left__favor"><span class="reviews-item-left__icon">favorite</span>
+        <div class="reviews-item-left__favortext">12</div>
+      </div>
+    </div>
+    <div class="reviews-item-right">
+      <div class="reviews-item-right__title">Мурад Сарафанов</div>
+      <div class="reviews-item-right__days">5 дней назад</div>
+      <div class="reviews-item-right__text">Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.</div>
+    </div>
+  </div>
+  <div class="reviews-item"> 
+    <div class="reviews-item-left"> <img class="reviews-item-left__img" src="images/visitors/vizitor_2.jpg" alt=""/>
+      <div class="reviews-item-left__favor"><span class="reviews-item-left__icon">favorite_border</span>
+        <div class="reviews-item-left__favortext">12</div>
+      </div>
+    </div>
+    <div class="reviews-item-right">
+      <div class="reviews-item-right__title">Патрисия Стёклышкова</div>
+      <div class="reviews-item-right__days">Неделю назад</div>
+      <div class="reviews-item-right__text">Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент            </div>
+    </div>
+  </div>
+</div>
+<div class="rules"> 
+  <div class="rules__title">Правила</div>
+  <div class="rules-item">Нельзя с питомцами             </div>
+  <div class="rules-item">Без вечеринок и мероприятий            </div>
+  <div class="rules-item">Время прибытия — после 13:00, а выезд до 12:00    </div>
+</div>
+<div class="canceling"> 
+  <div class="canceling__title">Отмена</div>
+  <div class="canceling__text">Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.</div>
 </div>
 <footer class="container">
   <hr class="footer-line"/>
