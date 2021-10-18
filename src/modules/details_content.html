@@ -60,3 +60,51 @@
   <div class="canceling__title">Отмена</div>
   <div class="canceling__text">Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.</div>
 </div>
+<div class="chart">
+  <div class="chart__title">Впечатления от номера</div>
+  <div class="chart-wrapper">
+    <svg class="chart-donut" viewBox="0 0 42 42">
+      <lineargradient id="linearColors-1" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#BC9CFF"></stop>
+        <stop offset="100%" stop-color="#8BA4F9"></stop>
+      </lineargradient>
+      <lineargradient id="linearColors-2" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#6FCF97"></stop>
+        <stop offset="100%" stop-color="#66D2EA"></stop>
+      </lineargradient>
+      <lineargradient id="linearColors-3" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#FFE39C"></stop>
+        <stop offset="100%" stop-color="#FFBA9C">       </stop>
+      </lineargradient>
+      <circle class="chart-donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"> </circle>
+      <circle class="chart-donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#fff"></circle>
+      <circle class="chart-donut-segment__1" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="url(#linearColors-1)" stroke-dasharray="24.7 75"></circle>
+      <circle class="chart-donut-segment__2" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="url(#linearColors-2)" stroke-dasharray="24.7 75"></circle>
+      <circle class="chart-donut-segment__3" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="url(#linearColors-3)" stroke-dasharray="49.7 49.7"></circle>
+      <g class="chart-donut-text">
+        <text class="chart-donut-text__number" x="50%" y="50%">260</text>
+        <text class="chart-donut-text__label" x="50%" y="50%">голосов</text>
+      </g>
+    </svg>
+    <div class="chart-legend">
+      <div class="chart-legend-list"> 
+        <div class="chart-legend-list-item"> 
+          <div class="chart-legend-list-item__marker chart-legend-list-item__marker--fine"> </div>
+          <div class="chart-legend-list-item__text">Великолепно</div>
+        </div>
+        <div class="chart-legend-list-item"> 
+          <div class="chart-legend-list-item__marker chart-legend-list-item__marker--good"> </div>
+          <div class="chart-legend-list-item__text">Хорошо</div>
+        </div>
+        <div class="chart-legend-list-item"> 
+          <div class="chart-legend-list-item__marker chart-legend-list-item__marker--notbad"> </div>
+          <div class="chart-legend-list-item__text">Удовлетворительно</div>
+        </div>
+        <div class="chart-legend-list-item"> 
+          <div class="chart-legend-list-item__marker chart-legend-list-item__marker--disappointed"> </div>
+          <div class="chart-legend-list-item__text">Разочарован                                                </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

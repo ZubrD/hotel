@@ -1534,10 +1534,9 @@ input[type=number] {
             content: '';
             top: 5px;
             left: -20px;
-            width: 10px;
-            height: 10px;
+            width: 12px;
+            height: 12px;
             border-radius: 50%;
-            border: 1px solid rgba(31, 32, 65, 0.25);
             background-color: rgba(31, 32, 65, 0.25);
         }
         
@@ -1562,3 +1561,97 @@ input[type=number] {
         color: rgba(31, 32, 65, 0.75);
     }
 }
+
+.chart {
+    &__title {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 23px;
+        color: rgba(31, 32, 65, 1);
+        margin-bottom: 5px;
+    }
+    &-wrapper {
+        display: flex;        
+    }
+    &-donut {
+        width: 155px;
+        height: 155px;
+        margin-left: -17px;
+        &-hole {
+
+        }
+        &-ring {                /* кольцо - незаполненная область */
+            stroke-width: 1;    
+        }
+        &-segment__1 {
+            stroke-dashoffset: 25;
+            stroke-width: 1;      
+        }
+        &-segment__2 {
+            stroke-dashoffset: 99.8;
+            stroke-width: 1;      
+        }
+        &-segment__3 {
+            stroke-dashoffset: 74.6;
+            stroke-width: 1;     
+        }
+        &-text {
+            &__number {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                font-size: 6px;
+                line-height: 15px;
+                fill: rgba(188, 156, 255, 1);
+                text-anchor: middle;
+                transform: translateY(-1px);
+            }
+            &__label {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                font-size: 4px;
+                line-height: 15px;
+                fill: rgba(188, 156, 255, 1);
+                text-anchor: middle;
+                transform: translateY(4px);
+            }
+        }       
+    }
+    &-legend {
+        margin-top: 44px;
+        margin-left: 11px;
+        &-list {
+            &-item {
+                display: flex;
+                align-items: center;
+                &__marker {
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    &--fine {
+                        background: linear-gradient(151deg, rgba(255,227,156,1) 0%, rgba(255,186,156,1) 100%);
+                    }
+                    &--good {
+                        background: linear-gradient(151deg, rgba(111,207,151,1) 0%, rgba(102,210,234,1) 100%);
+                    } 
+                    &--notbad {
+                        background: linear-gradient(151deg, rgba(188,156,255,1) 0%, rgba(139,164,249,1) 100%);
+                    } 
+                    &--disappointed {
+                        background: linear-gradient(151deg, rgba(144,144,144,1) 0%, rgba(61,73,117,1) 100%);
+                    }                                                          
+                }
+                &__text {
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: rgba(31, 32, 65, 0.75);
+                    margin-left: 6px;
+                }
+            }
+        }
+    }   
+}
+
+
