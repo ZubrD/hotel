@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+@font-face {                            /* https://htmlacademy.ru/courses/73/run/9 */
+    font-family: "Roboto";
+    src:
+      local("Roboto Regular"),
+      url("roboto.woff") format("woff");
+  }
+
 .container {
     max-width: 1440px;
     padding-left: 15px;
@@ -442,7 +449,9 @@ button {
 //////////////////////////////////FOOTER///////////////////////////////////////////////////
 
 .footer {
-    display: flex;
+    // display: flex;
+    display: grid;
+    grid-template-columns: 214px 115px 115px 116px 260px;
     justify-content: space-between;
     padding-left: 140px;
     padding-right: 140px;
@@ -456,6 +465,26 @@ button {
     }
     &-item {
         font-family: 'Montserrat', sans-serif;
+        &-1 {
+            width: 143px;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+        &-2 {
+            width: 108px;
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }  
+        &-3 {
+            width: 149px;
+            grid-column-start: 4;
+            grid-column-end: 5;
+        }  
+        &-4 {
+            width: 260px;
+            grid-column-start: 5;
+            grid-column-end: 6;
+        }                    
     }
     &-text {
         font-family: 'Montserrat', sans-serif;
@@ -489,11 +518,10 @@ button {
             text-transform: uppercase;
             padding: 0;
             margin: 0;
-            margin-bottom: 10px;
             margin-top: 5px;
         }
         &__item {
-            margin-top: 20px;
+            margin-top: 22px;
             line-height: 17px;
             font-size: 14px;
             letter-spacing: 0;
@@ -1368,6 +1396,43 @@ input[type=number] {
 ///////////////////////////////////////        DETAILS ROOM     ////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+.photo-wrapper {
+    max-width: 1440px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    margin-bottom: 70px;  
+    height: 485px;  
+    display: grid;
+    grid-template-columns: 981px 459px;
+    grid-template-rows: 244px 242px;
+}
+
+.photo {
+    &__img-1 {
+        width: 981px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    &__img-2 {
+        width: 459px;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }  
+    &__img-3 {
+        width: 459px;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        margin-top: -1px;
+    }        
+}
+
 .roominfo {
     width: 291px;
     &__title {
@@ -1859,7 +1924,7 @@ input[type=number] {
 
 .details-wrapper {
     display: grid;
-    grid-template-columns: auto auto 380px;
+    grid-template-columns: 360px auto 380px;
     grid-template-rows: 273px 306px 220px;
     grid-row-gap: 30px;
     max-width: 1160px;
@@ -1874,14 +1939,12 @@ input[type=number] {
 .reviews {
     grid-column-start: 1;
     grid-column-end: 3;
-    // margin-top: 16px;
 }
 .chart {
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 2;
     grid-column-end: 3;
-    margin-left: -5px;
 }
 .rules {
     grid-column-start: 1;
@@ -1895,7 +1958,6 @@ input[type=number] {
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
-    margin-left: -5px;
 }
 
 .summary {
