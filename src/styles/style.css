@@ -1567,6 +1567,10 @@ input[type=number] {
   transition: 1s;
 }
 
+.roominfo {
+  width: 291px;
+}
+
 .roominfo__title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -2147,5 +2151,70 @@ input[type=number] {
   position: relative;
   margin-top: 22px;
   margin-bottom: 30px;
+}
+
+.details-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto 380px;
+      grid-template-columns: auto auto 380px;
+  -ms-grid-rows: 273px 306px 220px;
+      grid-template-rows: 273px 306px 220px;
+  grid-row-gap: 30px;
+  max-width: 1160px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.roominfo {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.reviews {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.chart {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  margin-left: -5px;
+}
+
+.rules {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 4;
+  margin-left: -7px;
+}
+
+.canceling {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 4;
+  margin-left: -5px;
+}
+
+.summary {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 4;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
 }
 /*# sourceMappingURL=style.css.map */

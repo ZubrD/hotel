@@ -1369,6 +1369,7 @@ input[type=number] {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .roominfo {
+    width: 291px;
     &__title {
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
@@ -1852,5 +1853,54 @@ input[type=number] {
     }
 }
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////СЕТКА GRID ДЛЯ СТРАНИЦЫ DETAILS////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+.details-wrapper {
+    display: grid;
+    grid-template-columns: auto auto 380px;
+    grid-template-rows: 273px 306px 220px;
+    grid-row-gap: 30px;
+    max-width: 1160px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto; 
+}
+.roominfo {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.reviews {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    // margin-top: 16px;
+}
+.chart {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-left: -5px;
+}
+.rules {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin-left: -7px;
+}
+.canceling {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin-left: -5px;
+}
 
+.summary {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
