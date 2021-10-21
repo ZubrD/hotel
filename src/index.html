@@ -1289,7 +1289,7 @@ button {
 .copyright-block {
   padding-left: 125px;
   padding-right: 125px;
-  margin-top: 16px;
+  margin-top: 6px;
 }
 
 .copyright-text {
@@ -2387,8 +2387,8 @@ input[type=number] {
   height: 19px;
   border: 1px solid transparent;
   border-radius: 10px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white)), -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
-  background-image: linear-gradient(white, white), linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white)), -webkit-gradient(linear, left top, left bottom, from(#a09ea5), to(#8BA4F9));
+  background-image: linear-gradient(white, white), linear-gradient(180deg, #a09ea5 0%, #8BA4F9 100%);
   background-origin: border-box;
   background-clip: content-box, border-box;
   margin-top: 5px;
@@ -2926,6 +2926,277 @@ input[type=number] {
   -ms-grid-row: 1;
       grid-row-start: 1;
   grid-row-end: 3;
+}
+
+.registration-wrapper {
+  max-width: 1440px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  height: 763px;
+}
+
+.registration__img {
+  height: 753px;
+  background-image: url("images/registration.png");
+  position: relative;
+}
+
+.registration-card {
+  position: absolute;
+  top: 17px;
+  left: 532px;
+  width: 380px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.registration-card-wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.registration-card__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 20px;
+}
+
+.registration-card-form__input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 44px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  margin-bottom: 10px;
+  border-radius: 4px;
+  color: rgba(31, 32, 65, 0.25);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  padding-left: 15px;
+  padding-top: 2px;
+}
+
+.registration-card-form-sex {
+  margin-top: -3px;
+  margin-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.registration-card-form-sex-item {
+  margin-left: 30px;
+  margin-right: 20px;
+}
+
+.registration-card-form-sex__input {
+  display: none;
+}
+
+.registration-card-form-sex__input[name="sex"]:checked ~ label::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.registration-card-form-sex__label {
+  position: relative;
+  margin-left: 0px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.registration-card-form-sex__label::before {
+  position: absolute;
+  top: 0px;
+  left: -30px;
+  content: '';
+  width: 14px;
+  height: 14px;
+  border: 3px solid #fff;
+  -webkit-box-shadow: 0 0 3px #bc9cff;
+          box-shadow: 0 0 3px #bc9cff;
+  border-radius: 50px;
+}
+
+.registration-card-form-sex__label::after {
+  position: absolute;
+  top: 0px;
+  left: -30px;
+  content: '';
+  width: 14px;
+  height: 14px;
+  border: 3px solid #fff;
+  -webkit-box-shadow: 0 0 3px #bc9cff;
+          box-shadow: 0 0 3px #bc9cff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-radius: 50px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.registration-card-form__title {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.registration-card-form-proposal {
+  margin-top: -2px;
+}
+
+.registration-card-form-proposal__input {
+  display: none;
+}
+
+.registration-card-form-proposal__input[name="proposal"]:checked ~ label::after {
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  -webkit-transform: translateX(17px);
+          transform: translateX(17px);
+}
+
+.registration-card-form-proposal__input[name="proposal"]:checked ~ label::before {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white)), -webkit-gradient(linear, left top, left bottom, from(#a09ea5), to(#8BA4F9));
+  background-image: linear-gradient(white, white), linear-gradient(180deg, #a09ea5 0%, #8BA4F9 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.registration-card-form-proposal__label {
+  position: relative;
+  margin-left: 50px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  cursor: pointer;
+}
+
+.registration-card-form-proposal__label::before {
+  position: absolute;
+  left: -50px;
+  top: -1px;
+  content: '';
+  width: 38px;
+  height: 18px;
+  border-radius: 10px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+}
+
+.registration-card-form-proposal__label::after {
+  position: absolute;
+  top: 2px;
+  right: 241px;
+  content: '';
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  background-color: rgba(31, 32, 65, 0.25);
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+}
+
+.registration-card-form-send {
+  position: relative;
+  margin-top: 22px;
+  margin-bottom: 32px;
+}
+
+.registration-card-form-send__button {
+  width: 100%;
+  height: 34px;
+  border-radius: 22px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14.63px;
+  padding-top: 14px;
+  padding-bottom: 27px;
+  text-transform: uppercase;
+  border: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  color: #FFFFFF;
+  border: none;
+}
+
+.registration-card-form-send__icon {
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  vertical-align: middle;
+  color: #ffffff;
+}
+
+.registration-card-form-enter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 44px;
+}
+
+.registration-card-form-enter__link {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18;
+  color: black;
+}
+
+.registration-card-form-enter__button {
+  position: relative;
+  width: 95px;
+  height: 42px;
+  border-radius: 22px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #bc9cff;
+  border: 1px solid transparent;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white)), -webkit-gradient(linear, left top, left bottom, from(#a09ea5), to(#8BA4F9));
+  background-image: linear-gradient(white, white), linear-gradient(180deg, #a09ea5 0%, #8BA4F9 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.registration-card-form-enter__button::after {
+  position: absolute;
+  content: 'Войти';
+  top: 15px;
+  right: 25px;
 }
 /*# sourceMappingURL=style.css.map */
     </style>
