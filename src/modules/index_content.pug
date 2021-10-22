@@ -1,44 +1,47 @@
-section.container.index-main
-  img(src="images/index_image.png", alt="").index-main__img
-  .index-main__title Лучшие номера для вашей работы, отдыха и просто вдохновения
-  .wishes
-    h1.wishes__title Найдём номера под ваши пожелания
-    .calendar-forms
-      form(action="").dates-form
-        .dates-form__item
-          p.dates-form__title Прибытие 
-          input(type="text" placeholder='дд.мм.гггг')#date_1.dates-form__input
-          span.dates-form__icon expand_more
-        .dates-form__item
-          p.dates-form__title Выезд 
-          input(type="text" placeholder='дд.мм.гггг')#date_2.dates-form__input
-          span.dates-form__icon expand_more
-      .datepicker-wrapper
-        form.datepicker-form(action="")(hidden)
-          input#calendar.datepicker-position(type='text', hidden)
-          .datepicker__clear Очистить
-          .datepicker__ok Применить
-    .guests 
-      form(action="").guest-form 
-        p.guest-form__title Гости 
-        .iqdropdown
-            p.iqdropdown-selection(data-selection-text="Гость")
-            .iqdropdown-menu
-                .iqdrop-wrapper
-                  .iqdropdown-menu-text Взрослые
-                  .iqdropdown-menu-option(data-id='item1')
-                .iqdrop-wrapper
-                  .iqdropdown-menu-text Дети
-                  .iqdropdown-menu-option(data-id='item2')
-                .iqdrop-wrapper
-                  .iqdropdown-menu-text Младенцы
-                  .iqdropdown-menu-option(data-id='item3')
-                .iqdrop-wrapper
-                  .guests__clear Очистить
-                  .guests__ok Применить
+.index-wrapper
+  .index-main
+    //- img(src="images/index_image.png", alt="").index-main__img
+    img(src="images/index_image.png", alt="Фото номера на заставке").index-main__img
+    .index-main__title Лучшие номера для вашей работы, отдыха и просто вдохновения
+    .wishes
+      h1.wishes__title Найдём номера под ваши пожелания
+      .calendar-forms
+        form(action="").dates-form
+          .dates-form__item
+            p.dates-form__title Прибытие 
+            input(type="text" placeholder='дд.мм.гггг')#date_1.dates-form__input
+            span.dates-form__icon expand_more
+          .dates-form__item
+            p.dates-form__title Выезд 
+            input(type="text" placeholder='дд.мм.гггг')#date_2.dates-form__input
+            span.dates-form__icon expand_more
+        .datepicker-wrapper
+          form.datepicker-form(action="")(hidden)
+            input#calendar.datepicker-position(type='text', hidden)
+            .datepicker__clear Очистить
+            .datepicker__ok Применить
+      .guests 
+        form(action="").guest-form 
+          p.guest-form__title Гости 
+          .iqdropdown
+              p.iqdropdown-selection(data-selection-text="Гость")
+              .iqdropdown-menu
+                  .iqdrop-wrapper
+                    .iqdropdown-menu-text Взрослые
+                    .iqdropdown-menu-option(data-id='item1')
+                  .iqdrop-wrapper
+                    .iqdropdown-menu-text Дети
+                    .iqdropdown-menu-option(data-id='item2')
+                  .iqdrop-wrapper
+                    .iqdropdown-menu-text Младенцы
+                    .iqdropdown-menu-option(data-id='item3')
+                  .iqdrop-wrapper
+                    .guests__clear Очистить
+                    .guests__ok Применить
 
-    .pickup
-      .pickup-wrapper
-        button.pickup__button Подобрать номер
-        span.pickup__icon arrow_forward
+      .pickup
+        .pickup-wrapper
+          a(href="/src/details.html" target="_blank").pickup-wrapper-empty
+            button.pickup__button Подобрать номер
+            span.pickup__icon arrow_forward
 

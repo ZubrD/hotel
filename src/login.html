@@ -89,6 +89,7 @@
   margin-bottom: 18px;
   text-transform: uppercase;
   border: none;
+  cursor: pointer;
 }
 
 .right__btn:last-child {
@@ -102,6 +103,7 @@
           box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   color: #BC9CFF;
   position: relative;
+  cursor: pointer;
 }
 
 .right__btn-in::after {
@@ -122,6 +124,14 @@
   border: none;
 }
 
+.index-wrapper {
+  max-width: 1440px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  height: 818px;
+}
+
 .index-main {
   margin-bottom: 95px;
   position: relative;
@@ -139,7 +149,7 @@
   font-size: 14px;
   color: rgba(31, 32, 65, 0.75);
   top: 760px;
-  left: 1025px;
+  left: 1007px;
   width: 297px;
   text-align: end;
   line-height: 24px;
@@ -148,7 +158,7 @@
 .wishes {
   position: absolute;
   top: 67px;
-  left: 155px;
+  left: 138px;
   width: 380px;
   height: 374;
   background: #FFFFFF;
@@ -326,6 +336,7 @@
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   color: #FFFFFF;
   border: none;
+  cursor: pointer;
 }
 
 .pickup__icon {
@@ -1420,12 +1431,12 @@ input[type=number] {
 }
 
 .paginator__icon {
+  display: inline-block;
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
   font-size: 24px;
   /* Preferred icon size */
-  line-height: 1;
   vertical-align: middle;
   color: #fff;
   background: -webkit-gradient(linear, left top, left bottom, from(#6FCF97), to(#66D2EA));
@@ -1437,6 +1448,7 @@ input[type=number] {
   text-align: center;
   vertical-align: middle;
   border-radius: 50%;
+  text-decoration: none;
 }
 
 .paginator__text {
@@ -2607,23 +2619,35 @@ input[type=number] {
 .registration-card-enter {
   top: 233px;
 }
+
+.empty-wrapper {
+  max-width: 1440px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.empty__img {
+  background-image: url("images/reconst.jpg");
+  height: 500px;
+}
 /*# sourceMappingURL=style.css.map */
     </style>
   </head>
   <body>
     <header class="container">
       <div class="header">
-        <div class="logo"><a class="logo__link"><img class="logo__img" src="images/logo.png"></a></div>
+        <div class="logo"><a class="logo__link" href="/src/index.html" target="_blank"><img class="logo__img" src="images/logo.png" alt="Логотип"></a></div>
         <div class="right">
           <nav class="right-menu">
-            <div class="right-menu__item"><a class="right-menu__link" href="">О нас</a></div>
-            <div class="right-menu__item"><a class="right-menu__link" href="">Услуги<span class="right-menu__icon">expand_more</span></a></div>
-            <div class="right-menu__item"><a class="right-menu__link" href="">Вакансии</a></div>
-            <div class="right-menu__item"><a class="right-menu__link" href="">Новости</a></div>
-            <div class="right-menu__item"><a class="right-menu__link" href="">Соглашения<span class="right-menu__icon">expand_more</span></a></div>
-          </nav>
-          <button class="right__btn right__btn-in">войти</button>
-          <button class="right__btn right__btn-reg">зарегистрироваться</button>
+            <div class="right-menu__item"><a class="right-menu__link" href="/src/empty.html" target="_blank">О нас</a></div>
+            <div class="right-menu__item"><a class="right-menu__link" href="/src/empty.html" target="_blank">Услуги<span class="right-menu__icon">expand_more</span></a></div>
+            <div class="right-menu__item"><a class="right-menu__link" href="/src/empty.html" target="_blank">Вакансии</a></div>
+            <div class="right-menu__item"><a class="right-menu__link" href="/src/empty.html" target="_blank">Новости</a></div>
+            <div class="right-menu__item"><a class="right-menu__link" href="/src/empty.html" target="_blank">Соглашения<span class="right-menu__icon">expand_more</span></a></div>
+          </nav><a class="right-enter__link" href="/src/login.html" target="_blank">
+            <button class="right__btn right__btn-in">войти</button></a><a class="right-enter__register" href="/src/registration.html" target="_blank">
+            <button class="right__btn right__btn-reg">зарегистрироваться</button></a>
         </div>
       </div>
     </header>
@@ -2635,10 +2659,10 @@ input[type=number] {
         <form class="registration-card-form" action=""> 
           <input class="registration-card-form__input" type="text" placeholder="Email"/>
           <input class="registration-card-form__input" type="text" placeholder="Пароль"/>
-          <div class="registration-card-form-send"> 
+          <div class="registration-card-form-send"><a class="registration-card-form-send__link" href="/src/login.html" target="_blank"> </a>
             <button class="registration-card-form-send__button">Войти</button><span class="registration-card-form-send__icon">arrow_forward</span>
           </div>
-          <div class="registration-card-form-enter"> <a class="registration-card-form-enter__link" href="">Нет аккаунта на Toxin?</a><a class="registration-card-form-enter__button-create" href=""></a></div>
+          <div class="registration-card-form-enter"> <a class="registration-card-form-enter__link" href="/src/registration.html" target="_blank">Нет аккаунта на Toxin?</a><a class="registration-card-form-enter__button-create" href="/src/registration.html" target="_blank"></a></div>
         </form>
       </div>
     </div>
@@ -2647,40 +2671,40 @@ input[type=number] {
 <footer class="container">
   <hr class="footer-line"/>
   <div class="footer"> 
-    <div class="footer-item"> <a class="footer-logo" href=""><img class="footer-logo__img" src="images/logo.png" alt=""/></a>
+    <div class="footer-item"> <a class="footer-logo" href="/src/index.html" target="_blank"><img class="footer-logo__img" src="images/logo.png" alt="Логотип"/></a>
       <div class="footer-text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
     </div>
     <div class="footer-item footer-item-1"> 
       <p class="footer-list__title">Навигация</p>
       <ul class="footer-list">             
-        <li class="footer-list__item"><a class="footer-list__link" href="">О нас                </a></li>
-        <li class="footer-list__item"><a class="footer-list__link" href="">Новости</a></li>
-        <li class="footer-list__item"><a class="footer-list__link" href="">Служба поддержки                               </a></li>
-        <li class="footer-list__item"><a class="footer-list__link" href="">Услуги   </a></li>
+        <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">О нас                </a></li>
+        <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">Новости</a></li>
+        <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">Служба поддержки                               </a></li>
+        <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">Услуги   </a></li>
       </ul>
     </div>
     <div class="footer-item footer-item-2"> 
       <p class="footer-list__title">О нас</p>
       <ul class="footer-list">                
-        <li class="footer-list__item"><a class="footer-list__link" href="">О сервисе                </a></li>
-        <li class="footer-list__item"><a class="footer-list__link" href="">Наша команда</a></li>
-        <li class="footer-list__item"><a class="footer-list__link" href="">Вакансии                              </a></li>
-        <li class="footer-list__item"><a class="footer-list__link" href="">Инвесторы</a></li>
+        <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">О сервисе                </a></li>
+        <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">Наша команда</a></li>
+        <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">Вакансии                              </a></li>
+        <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">Инвесторы</a></li>
       </ul>
     </div>
     <div class="footer-item footer-item-3"> 
       <p class="footer-list__title">Служба поддержки </p>
       <ul class="footer-list">           
-        <li class="footer-list__item"><a class="footer-list__link" href="">Соглашения </a></li>
-        <li class="footer-list__item"><a class="footer-list__link" href="">Сообщества                               </a></li>
-        <li class="footer-list__item"><a class="footer-list__link" href="">Связь с нами  </a></li>
+        <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">Соглашения </a></li>
+        <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">Сообщества                               </a></li>
+        <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">Связь с нами  </a></li>
       </ul>
     </div>
     <div class="footer-item footer-item-4"> 
       <p class="footer-list__title">Подписка</p>
       <div class="footer-text-subscribe">Получайте специальные предложения и новости сервиса</div>
       <form class="footer-form" action=""> 
-        <input class="footer-form__input" type="text" placeholder="Email"/><a class="footer-form__link" href=""> <span class="footer-form__icon">arrow_forward</span></a>
+        <input class="footer-form__input" type="text" placeholder="Email"/><a class="footer-form__link" href="/src/empty.html" target="_blank"> <span class="footer-form__icon">arrow_forward</span></a>
       </form>
     </div>
   </div>
@@ -2689,9 +2713,9 @@ input[type=number] {
       <div class="copyright"> 
         <div class="copyright-text">Copyright &copy; 2018 Toxin отель. Все права защищены.</div>
         <ul class="copyright-list">
-          <li class="copyright-list__item"><a class="copyright-list__link" href=""> <img class="copyright socials__img" src="images/socials/twitter.png" alt=""/></a></li>
-          <li class="copyright-list__item"><a class="copyright-list__link" href=""> <img class="copyright socials__img" src="images/socials/facebook.png" alt=""/></a></li>
-          <li class="copyright-list__item"><a class="copyright-list__link" href=""> <img class="copyright socials__img" src="images/socials/insta.png" alt=""/></a></li>
+          <li class="copyright-list__item"><a class="copyright-list__link" href="/src/empty.html" target="_blank"> <img class="copyright socials__img" src="images/socials/twitter.png" alt=""/></a></li>
+          <li class="copyright-list__item"><a class="copyright-list__link" href="/src/empty.html" target="_blank"> <img class="copyright socials__img" src="images/socials/facebook.png" alt=""/></a></li>
+          <li class="copyright-list__item"><a class="copyright-list__link" href="/src/empty.html" target="_blank"> <img class="copyright socials__img" src="images/socials/insta.png" alt=""/></a></li>
         </ul>
       </div>
     </div>

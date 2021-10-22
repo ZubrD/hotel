@@ -22,9 +22,10 @@
                     .registration-card-form-proposal
                         input(type="checkbox" id="proposal" name="proposal").registration-card-form-proposal__input
                         label(for="proposal").registration-card-form-proposal__label Получать спецпредложения
-                    .registration-card-form-send 
-                        button.registration-card-form-send__button Зарегистрироваться
-                        span.registration-card-form-send__icon arrow_forward
+                    .registration-card-form-send
+                        a(href="").registration-card-form-send__link
+                            button.registration-card-form-send__button Зарегистрироваться
+                            span.registration-card-form-send__icon arrow_forward
                     .registration-card-form-enter 
-                        a(href="").registration-card-form-enter__link Уже есть аккаунт на Toxin
-                        a(href="").registration-card-form-enter__button
+                        a(href="/src/login.html" target="_blank").registration-card-form-enter__link Уже есть аккаунт на Toxin
+                        a(href="/src/login.html" target="_blank").registration-card-form-enter__button

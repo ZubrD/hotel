@@ -712,6 +712,7 @@
   margin-bottom: 18px;
   text-transform: uppercase;
   border: none;
+  cursor: pointer;
 }
 
 .right__btn:last-child {
@@ -725,6 +726,7 @@
           box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   color: #BC9CFF;
   position: relative;
+  cursor: pointer;
 }
 
 .right__btn-in::after {
@@ -745,6 +747,14 @@
   border: none;
 }
 
+.index-wrapper {
+  max-width: 1440px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  height: 818px;
+}
+
 .index-main {
   margin-bottom: 95px;
   position: relative;
@@ -762,7 +772,7 @@
   font-size: 14px;
   color: rgba(31, 32, 65, 0.75);
   top: 760px;
-  left: 1025px;
+  left: 1007px;
   width: 297px;
   text-align: end;
   line-height: 24px;
@@ -771,7 +781,7 @@
 .wishes {
   position: absolute;
   top: 67px;
-  left: 155px;
+  left: 138px;
   width: 380px;
   height: 374;
   background: #FFFFFF;
@@ -949,6 +959,7 @@
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   color: #FFFFFF;
   border: none;
+  cursor: pointer;
 }
 
 .pickup__icon {
@@ -2043,12 +2054,12 @@ input[type=number] {
 }
 
 .paginator__icon {
+  display: inline-block;
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
   font-size: 24px;
   /* Preferred icon size */
-  line-height: 1;
   vertical-align: middle;
   color: #fff;
   background: -webkit-gradient(linear, left top, left bottom, from(#6FCF97), to(#66D2EA));
@@ -2060,6 +2071,7 @@ input[type=number] {
   text-align: center;
   vertical-align: middle;
   border-radius: 50%;
+  text-decoration: none;
 }
 
 .paginator__text {
@@ -3230,23 +3242,35 @@ input[type=number] {
 .registration-card-enter {
   top: 233px;
 }
+
+.empty-wrapper {
+  max-width: 1440px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.empty__img {
+  background-image: url("images/reconst.jpg");
+  height: 500px;
+}
 /*# sourceMappingURL=style.css.map */
     </style>
   </head>
   <body>
     <header class="container">
       <div class="header">
-        <div class="logo"><a class="logo__link"><img class="logo__img" src="images/logo.png"></a></div>
+        <div class="logo"><a class="logo__link" href="/src/index.html" target="_blank"><img class="logo__img" src="images/logo.png" alt="Логотип"></a></div>
         <div class="right">
           <nav class="right-menu">
-            <div class="right-menu__item"><a class="right-menu__link" href="">О нас</a></div>
-            <div class="right-menu__item"><a class="right-menu__link" href="">Услуги<span class="right-menu__icon">expand_more</span></a></div>
-            <div class="right-menu__item"><a class="right-menu__link" href="">Вакансии</a></div>
-            <div class="right-menu__item"><a class="right-menu__link" href="">Новости</a></div>
-            <div class="right-menu__item"><a class="right-menu__link" href="">Соглашения<span class="right-menu__icon">expand_more</span></a></div>
-          </nav>
-          <button class="right__btn right__btn-in">войти</button>
-          <button class="right__btn right__btn-reg">зарегистрироваться</button>
+            <div class="right-menu__item"><a class="right-menu__link" href="/src/empty.html" target="_blank">О нас</a></div>
+            <div class="right-menu__item"><a class="right-menu__link" href="/src/empty.html" target="_blank">Услуги<span class="right-menu__icon">expand_more</span></a></div>
+            <div class="right-menu__item"><a class="right-menu__link" href="/src/empty.html" target="_blank">Вакансии</a></div>
+            <div class="right-menu__item"><a class="right-menu__link" href="/src/empty.html" target="_blank">Новости</a></div>
+            <div class="right-menu__item"><a class="right-menu__link" href="/src/empty.html" target="_blank">Соглашения<span class="right-menu__icon">expand_more</span></a></div>
+          </nav><a class="right-enter__link" href="/src/login.html" target="_blank">
+            <button class="right__btn right__btn-in">войти</button></a><a class="right-enter__register" href="/src/registration.html" target="_blank">
+            <button class="right__btn right__btn-reg">зарегистрироваться</button></a>
         </div>
       </div>
     </header>
@@ -3383,7 +3407,7 @@ input[type=number] {
   <section class="search-room">
     <h1 class="search-room__title">Номера, которые мы для вас подобрали</h1>
     <div class="search-room-items"> 
-      <div class="search-room__item"><a class="search-room__link" href="">
+      <div class="search-room__item"><a class="search-room__link" href="/src/empty.html" target="_blank">
           <div class="slider">
             <input class="slider__input" type="radio" id="room1-btn-1" name="toggle-1" checked="checked"/>
             <input class="slider__input" type="radio" id="room1-btn-2" name="toggle-1"/>
@@ -3396,7 +3420,7 @@ input[type=number] {
               <label class="slider__label" for="room1-btn-4">  </label>
             </div>
             <div class="slider-inner">
-              <div class="slider-slides"> <img class="slider__img" src="images/rooms/room1.png" alt=""/><img class="slider__img" src="images/rooms/room1.png" alt=""/><img class="slider__img" src="images/rooms/room1.png" alt=""/><img class="slider__img" src="images/rooms/room1.png" alt=""/></div>
+              <div class="slider-slides"> <img class="slider__img" src="images/rooms/room1.png" alt="Фото номера"/><img class="slider__img" src="images/rooms/room1.png" alt="Фото номера"/><img class="slider__img" src="images/rooms/room1.png" alt="Фото номера"/><img class="slider__img" src="images/rooms/room1.png" alt="Фото номера"/></div>
             </div>
           </div></a>
         <div class="search-room-wrapper">
@@ -3420,7 +3444,7 @@ input[type=number] {
           </div>
         </div>
       </div>
-      <div class="search-room__item"><a class="search-room__link" href="">
+      <div class="search-room__item"><a class="search-room__link" href="/src/empty.html" target="_blank">
           <div class="slider">
             <input class="slider__input" type="radio" id="room2-btn-1" name="toggle-2" checked="checked"/>
             <input class="slider__input" type="radio" id="room2-btn-2" name="toggle-2"/>
@@ -3433,7 +3457,7 @@ input[type=number] {
               <label class="slider__label" for="room2-btn-4">  </label>
             </div>
             <div class="slider-inner">
-              <div class="slider-slides"> <img class="slider__img" src="images/rooms/room2.png" alt=""/><img class="slider__img" src="images/rooms/room2.png" alt=""/><img class="slider__img" src="images/rooms/room2.png" alt=""/><img class="slider__img" src="images/rooms/room2.png" alt=""/></div>
+              <div class="slider-slides"> <img class="slider__img" src="images/rooms/room2.png" alt="Фото номера"/><img class="slider__img" src="images/rooms/room2.png" alt="Фото номера"/><img class="slider__img" src="images/rooms/room2.png" alt="Фото номера"/><img class="slider__img" src="images/rooms/room2.png" alt="Фото номера"/></div>
             </div>
           </div></a>
         <div class="search-room-wrapper">
@@ -3457,7 +3481,7 @@ input[type=number] {
           </div>
         </div>
       </div>
-      <div class="search-room__item"><a class="search-room__link" href="">
+      <div class="search-room__item"><a class="search-room__link" href="/src/empty.html" target="_blank">
           <div class="slider">
             <input class="slider__input" type="radio" id="room3-btn-1" name="toggle-3" checked="checked"/>
             <input class="slider__input" type="radio" id="room3-btn-2" name="toggle-3"/>
@@ -3470,7 +3494,7 @@ input[type=number] {
               <label class="slider__label" for="room3-btn-4">  </label>
             </div>
             <div class="slider-inner">
-              <div class="slider-slides"> <img class="slider__img" src="images/rooms/room3.png" alt=""/><img class="slider__img" src="images/rooms/room3.png" alt=""/><img class="slider__img" src="images/rooms/room3.png" alt=""/><img class="slider__img" src="images/rooms/room3.png" alt=""/></div>
+              <div class="slider-slides"> <img class="slider__img" src="images/rooms/room3.png" alt="Фото номера"/><img class="slider__img" src="images/rooms/room3.png" alt="Фото номера"/><img class="slider__img" src="images/rooms/room3.png" alt="Фото номера"/><img class="slider__img" src="images/rooms/room3.png" alt="Фото номера"/></div>
             </div>
           </div></a>
         <div class="search-room-wrapper">
@@ -3494,7 +3518,7 @@ input[type=number] {
           </div>
         </div>
       </div>
-      <div class="search-room__item"><a class="search-room__link" href="">
+      <div class="search-room__item"><a class="search-room__link" href="/src/empty.html" target="_blank">
           <div class="slider">
             <input class="slider__input" type="radio" id="room4-btn-1" name="toggle-4" checked="checked"/>
             <input class="slider__input" type="radio" id="room4-btn-2" name="toggle-4"/>
@@ -3507,7 +3531,7 @@ input[type=number] {
               <label class="slider__label" for="room4-btn-4">  </label>
             </div>
             <div class="slider-inner">
-              <div class="slider-slides"> <img class="slider__img" src="images/rooms/room4.png" alt=""/><img class="slider__img" src="images/rooms/room4.png" alt=""/><img class="slider__img" src="images/rooms/room4.png" alt=""/><img class="slider__img" src="images/rooms/room4.png" alt=""/></div>
+              <div class="slider-slides"> <img class="slider__img" src="images/rooms/room4.png" alt="Фото номера"/><img class="slider__img" src="images/rooms/room4.png" alt="Фото номера"/><img class="slider__img" src="images/rooms/room4.png" alt="Фото номера"/><img class="slider__img" src="images/rooms/room4.png" alt="Фото номера"/></div>
             </div>
           </div></a>
         <div class="search-room-wrapper">
@@ -3531,7 +3555,7 @@ input[type=number] {
           </div>
         </div>
       </div>
-      <div class="search-room__item"><a class="search-room__link" href="">
+      <div class="search-room__item"><a class="search-room__link" href="/src/empty.html" target="_blank">
           <div class="slider">
             <input class="slider__input" type="radio" id="room5-btn-1" name="toggle-5" checked="checked"/>
             <input class="slider__input" type="radio" id="room5-btn-2" name="toggle-5"/>
@@ -3544,7 +3568,7 @@ input[type=number] {
               <label class="slider__label" for="room5-btn-4">  </label>
             </div>
             <div class="slider-inner">
-              <div class="slider-slides"> <img class="slider__img" src="images/rooms/room5.png" alt=""/><img class="slider__img" src="images/rooms/room5.png" alt=""/><img class="slider__img" src="images/rooms/room5.png" alt=""/><img class="slider__img" src="images/rooms/room5.png" alt=""/></div>
+              <div class="slider-slides"> <img class="slider__img" src="images/rooms/room5.png" alt="Фото номера"/><img class="slider__img" src="images/rooms/room5.png" alt="Фото номера"/><img class="slider__img" src="images/rooms/room5.png" alt="Фото номера"/><img class="slider__img" src="images/rooms/room5.png" alt="Фото номера"/></div>
             </div>
           </div></a>
         <div class="search-room-wrapper">
@@ -3568,7 +3592,7 @@ input[type=number] {
           </div>
         </div>
       </div>
-      <div class="search-room__item"><a class="search-room__link" href="">
+      <div class="search-room__item"><a class="search-room__link" href="/src/empty.html" target="_blank">
           <div class="slider">
             <input class="slider__input" type="radio" id="room6-btn-1" name="toggle-6" checked="checked"/>
             <input class="slider__input" type="radio" id="room6-btn-2" name="toggle-6"/>
@@ -3581,7 +3605,7 @@ input[type=number] {
               <label class="slider__label" for="room6-btn-4">  </label>
             </div>
             <div class="slider-inner">
-              <div class="slider-slides"> <img class="slider__img" src="images/rooms/room6.png" alt=""/><img class="slider__img" src="images/rooms/room6.png" alt=""/><img class="slider__img" src="images/rooms/room6.png" alt=""/><img class="slider__img" src="images/rooms/room6.png" alt=""/></div>
+              <div class="slider-slides"> <img class="slider__img" src="images/rooms/room6.png" alt="Фото номера"/><img class="slider__img" src="images/rooms/room6.png" alt="Фото номера"/><img class="slider__img" src="images/rooms/room6.png" alt="Фото номера"/><img class="slider__img" src="images/rooms/room6.png" alt="Фото номера"/></div>
             </div>
           </div></a>
         <div class="search-room-wrapper">
@@ -3605,7 +3629,7 @@ input[type=number] {
           </div>
         </div>
       </div>
-      <div class="search-room__item"><a class="search-room__link" href="">
+      <div class="search-room__item"><a class="search-room__link" href="/src/empty.html" target="_blank">
           <div class="slider">
             <input class="slider__input" type="radio" id="room7-btn-1" name="toggle-7" checked="checked"/>
             <input class="slider__input" type="radio" id="room7-btn-2" name="toggle-7"/>
@@ -3618,7 +3642,7 @@ input[type=number] {
               <label class="slider__label" for="room7-btn-4">  </label>
             </div>
             <div class="slider-inner">
-              <div class="slider-slides"> <img class="slider__img" src="images/rooms/room7.png" alt=""/><img class="slider__img" src="images/rooms/room7.png" alt=""/><img class="slider__img" src="images/rooms/room7.png" alt=""/><img class="slider__img" src="images/rooms/room7.png" alt=""/></div>
+              <div class="slider-slides"> <img class="slider__img" src="images/rooms/room7.png" alt="Фото номера"/><img class="slider__img" src="images/rooms/room7.png" alt="Фото номера"/><img class="slider__img" src="images/rooms/room7.png" alt="Фото номера"/><img class="slider__img" src="images/rooms/room7.png" alt="Фото номера"/></div>
             </div>
           </div></a>
         <div class="search-room-wrapper">
@@ -3642,7 +3666,7 @@ input[type=number] {
           </div>
         </div>
       </div>
-      <div class="search-room__item"><a class="search-room__link" href="">
+      <div class="search-room__item"><a class="search-room__link" href="/src/empty.html" target="_blank">
           <div class="slider">
             <input class="slider__input" type="radio" id="room8-btn-1" name="toggle-8" checked="checked"/>
             <input class="slider__input" type="radio" id="room8-btn-2" name="toggle-8"/>
@@ -3655,7 +3679,7 @@ input[type=number] {
               <label class="slider__label" for="room8-btn-4">  </label>
             </div>
             <div class="slider-inner">
-              <div class="slider-slides"> <img class="slider__img" src="images/rooms/room8.png" alt=""/><img class="slider__img" src="images/rooms/room8.png" alt=""/><img class="slider__img" src="images/rooms/room8.png" alt=""/><img class="slider__img" src="images/rooms/room8.png" alt=""/></div>
+              <div class="slider-slides"> <img class="slider__img" src="images/rooms/room8.png" alt="Фото номера"/><img class="slider__img" src="images/rooms/room8.png" alt="Фото номера"/><img class="slider__img" src="images/rooms/room8.png" alt="Фото номера"/><img class="slider__img" src="images/rooms/room8.png" alt="Фото номера"/></div>
             </div>
           </div></a>
         <div class="search-room-wrapper">
@@ -3679,7 +3703,7 @@ input[type=number] {
           </div>
         </div>
       </div>
-      <div class="search-room__item"><a class="search-room__link" href="">
+      <div class="search-room__item"><a class="search-room__link" href="/src/empty.html" target="_blank">
           <div class="slider">
             <input class="slider__input" type="radio" id="room9-btn-1" name="toggle-9" checked="checked"/>
             <input class="slider__input" type="radio" id="room9-btn-2" name="toggle-9"/>
@@ -3692,7 +3716,7 @@ input[type=number] {
               <label class="slider__label" for="room9-btn-4">  </label>
             </div>
             <div class="slider-inner">
-              <div class="slider-slides"> <img class="slider__img" src="images/rooms/room9.png" alt=""/><img class="slider__img" src="images/rooms/room9.png" alt=""/><img class="slider__img" src="images/rooms/room9.png" alt=""/><img class="slider__img" src="images/rooms/room9.png" alt=""/></div>
+              <div class="slider-slides"> <img class="slider__img" src="images/rooms/room9.png" alt="Фото номера"/><img class="slider__img" src="images/rooms/room9.png" alt="Фото номера"/><img class="slider__img" src="images/rooms/room9.png" alt="Фото номера"/><img class="slider__img" src="images/rooms/room9.png" alt="Фото номера"/></div>
             </div>
           </div></a>
         <div class="search-room-wrapper">
@@ -3716,7 +3740,7 @@ input[type=number] {
           </div>
         </div>
       </div>
-      <div class="search-room__item"><a class="search-room__link" href="">
+      <div class="search-room__item"><a class="search-room__link" href="/src/empty.html" target="_blank">
           <div class="slider">
             <input class="slider__input" type="radio" id="room10-btn-1" name="toggle-10" checked="checked"/>
             <input class="slider__input" type="radio" id="room10-btn-2" name="toggle-10"/>
@@ -3729,7 +3753,7 @@ input[type=number] {
               <label class="slider__label" for="room10-btn-4">  </label>
             </div>
             <div class="slider-inner">
-              <div class="slider-slides"> <img class="slider__img" src="images/rooms/room10.png" alt=""/><img class="slider__img" src="images/rooms/room10.png" alt=""/><img class="slider__img" src="images/rooms/room10.png" alt=""/><img class="slider__img" src="images/rooms/room10.png" alt=""/></div>
+              <div class="slider-slides"> <img class="slider__img" src="images/rooms/room10.png" alt="Фото номера"/><img class="slider__img" src="images/rooms/room10.png" alt="Фото номера"/><img class="slider__img" src="images/rooms/room10.png" alt="Фото номера"/><img class="slider__img" src="images/rooms/room10.png" alt="Фото номера"/></div>
             </div>
           </div></a>
         <div class="search-room-wrapper">
@@ -3753,7 +3777,7 @@ input[type=number] {
           </div>
         </div>
       </div>
-      <div class="search-room__item"><a class="search-room__link" href="">
+      <div class="search-room__item"><a class="search-room__link" href="/src/empty.html" target="_blank">
           <div class="slider">
             <input class="slider__input" type="radio" id="room11-btn-1" name="toggle-11" checked="checked"/>
             <input class="slider__input" type="radio" id="room11-btn-2" name="toggle-11"/>
@@ -3766,7 +3790,7 @@ input[type=number] {
               <label class="slider__label" for="room11-btn-4">  </label>
             </div>
             <div class="slider-inner">
-              <div class="slider-slides"> <img class="slider__img" src="images/rooms/room11.png" alt=""/><img class="slider__img" src="images/rooms/room11.png" alt=""/><img class="slider__img" src="images/rooms/room11.png" alt=""/><img class="slider__img" src="images/rooms/room11.png" alt=""/></div>
+              <div class="slider-slides"> <img class="slider__img" src="images/rooms/room11.png" alt="Фото номера"/><img class="slider__img" src="images/rooms/room11.png" alt="Фото номера"/><img class="slider__img" src="images/rooms/room11.png" alt="Фото номера"/><img class="slider__img" src="images/rooms/room11.png" alt="Фото номера"/></div>
             </div>
           </div></a>
         <div class="search-room-wrapper">
@@ -3790,7 +3814,7 @@ input[type=number] {
           </div>
         </div>
       </div>
-      <div class="search-room__item"><a class="search-room__link" href="">
+      <div class="search-room__item"><a class="search-room__link" href="/src/empty.html" target="_blank">
           <div class="slider">
             <input class="slider__input" type="radio" id="room12-btn-1" name="toggle-12" checked="checked"/>
             <input class="slider__input" type="radio" id="room12-btn-2" name="toggle-12"/>
@@ -3803,7 +3827,7 @@ input[type=number] {
               <label class="slider__label" for="room12-btn-4">  </label>
             </div>
             <div class="slider-inner">
-              <div class="slider-slides"> <img class="slider__img" src="images/rooms/room12.png" alt=""/><img class="slider__img" src="images/rooms/room12.png" alt=""/><img class="slider__img" src="images/rooms/room12.png" alt=""/><img class="slider__img" src="images/rooms/room12.png" alt=""/></div>
+              <div class="slider-slides"> <img class="slider__img" src="images/rooms/room12.png" alt="Фото номера"/><img class="slider__img" src="images/rooms/room12.png" alt="Фото номера"/><img class="slider__img" src="images/rooms/room12.png" alt="Фото номера"/><img class="slider__img" src="images/rooms/room12.png" alt="Фото номера"/></div>
             </div>
           </div></a>
         <div class="search-room-wrapper">
@@ -3828,7 +3852,7 @@ input[type=number] {
         </div>
       </div>
     </div>
-    <div class="paginator"> <a class="paginator__item paginator__current" href="">1                                                                                                                                                                                                                                                                        </a><a class="paginator__item">2                                                                                                                                                                                                                                                                        </a><a class="paginator__item">3                                                                                                                                                                                                                                                                       </a><a class="paginator__item">&hellip;                                                                                                                                                                                                                                                                       </a><a class="paginator__item">15                                                                                                                                                                                                                                                                       </a><a class="paginator__icon">arrow_forward</a>
+    <div class="paginator"> <a class="paginator__item paginator__current" href="/src/empty.html" target="_blank">1                                                                                                                                                                                                                                                                        </a><a class="paginator__item" href="/src/empty.html" target="_blank">2                                                                                                                                                                                                                                                                        </a><a class="paginator__item" href="/src/empty.html" target="_blank">3                                                                                                                                                                                                                                                                       </a><a class="paginator__item" href="/src/empty.html" target="_blank">&hellip;                                                                                                                                                                                                                                                                       </a><a class="paginator__item" href="/src/empty.html" target="_blank">15                                                                                                                                                                                                                                                                       </a><a class="paginator__icon" href="/src/empty.html" target="_blank">arrow_forward</a>
       <div class="paginator__text">1 – 12 из 100+ вариантов аренды  </div>
     </div>
   </section>
@@ -3836,40 +3860,40 @@ input[type=number] {
 <footer class="container">
   <hr class="footer-line"/>
   <div class="footer"> 
-    <div class="footer-item"> <a class="footer-logo" href=""><img class="footer-logo__img" src="images/logo.png" alt=""/></a>
+    <div class="footer-item"> <a class="footer-logo" href="/src/index.html" target="_blank"><img class="footer-logo__img" src="images/logo.png" alt="Логотип"/></a>
       <div class="footer-text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
     </div>
     <div class="footer-item footer-item-1"> 
       <p class="footer-list__title">Навигация</p>
       <ul class="footer-list">             
-        <li class="footer-list__item"><a class="footer-list__link" href="">О нас                </a></li>
-        <li class="footer-list__item"><a class="footer-list__link" href="">Новости</a></li>
-        <li class="footer-list__item"><a class="footer-list__link" href="">Служба поддержки                               </a></li>
-        <li class="footer-list__item"><a class="footer-list__link" href="">Услуги   </a></li>
+        <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">О нас                </a></li>
+        <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">Новости</a></li>
+        <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">Служба поддержки                               </a></li>
+        <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">Услуги   </a></li>
       </ul>
     </div>
     <div class="footer-item footer-item-2"> 
       <p class="footer-list__title">О нас</p>
       <ul class="footer-list">                
-        <li class="footer-list__item"><a class="footer-list__link" href="">О сервисе                </a></li>
-        <li class="footer-list__item"><a class="footer-list__link" href="">Наша команда</a></li>
-        <li class="footer-list__item"><a class="footer-list__link" href="">Вакансии                              </a></li>
-        <li class="footer-list__item"><a class="footer-list__link" href="">Инвесторы</a></li>
+        <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">О сервисе                </a></li>
+        <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">Наша команда</a></li>
+        <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">Вакансии                              </a></li>
+        <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">Инвесторы</a></li>
       </ul>
     </div>
     <div class="footer-item footer-item-3"> 
       <p class="footer-list__title">Служба поддержки </p>
       <ul class="footer-list">           
-        <li class="footer-list__item"><a class="footer-list__link" href="">Соглашения </a></li>
-        <li class="footer-list__item"><a class="footer-list__link" href="">Сообщества                               </a></li>
-        <li class="footer-list__item"><a class="footer-list__link" href="">Связь с нами  </a></li>
+        <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">Соглашения </a></li>
+        <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">Сообщества                               </a></li>
+        <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">Связь с нами  </a></li>
       </ul>
     </div>
     <div class="footer-item footer-item-4"> 
       <p class="footer-list__title">Подписка</p>
       <div class="footer-text-subscribe">Получайте специальные предложения и новости сервиса</div>
       <form class="footer-form" action=""> 
-        <input class="footer-form__input" type="text" placeholder="Email"/><a class="footer-form__link" href=""> <span class="footer-form__icon">arrow_forward</span></a>
+        <input class="footer-form__input" type="text" placeholder="Email"/><a class="footer-form__link" href="/src/empty.html" target="_blank"> <span class="footer-form__icon">arrow_forward</span></a>
       </form>
     </div>
   </div>
@@ -3878,9 +3902,9 @@ input[type=number] {
       <div class="copyright"> 
         <div class="copyright-text">Copyright &copy; 2018 Toxin отель. Все права защищены.</div>
         <ul class="copyright-list">
-          <li class="copyright-list__item"><a class="copyright-list__link" href=""> <img class="copyright socials__img" src="images/socials/twitter.png" alt=""/></a></li>
-          <li class="copyright-list__item"><a class="copyright-list__link" href=""> <img class="copyright socials__img" src="images/socials/facebook.png" alt=""/></a></li>
-          <li class="copyright-list__item"><a class="copyright-list__link" href=""> <img class="copyright socials__img" src="images/socials/insta.png" alt=""/></a></li>
+          <li class="copyright-list__item"><a class="copyright-list__link" href="/src/empty.html" target="_blank"> <img class="copyright socials__img" src="images/socials/twitter.png" alt=""/></a></li>
+          <li class="copyright-list__item"><a class="copyright-list__link" href="/src/empty.html" target="_blank"> <img class="copyright socials__img" src="images/socials/facebook.png" alt=""/></a></li>
+          <li class="copyright-list__item"><a class="copyright-list__link" href="/src/empty.html" target="_blank"> <img class="copyright socials__img" src="images/socials/insta.png" alt=""/></a></li>
         </ul>
       </div>
     </div>

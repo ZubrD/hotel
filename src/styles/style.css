@@ -81,6 +81,7 @@
   margin-bottom: 18px;
   text-transform: uppercase;
   border: none;
+  cursor: pointer;
 }
 
 .right__btn:last-child {
@@ -94,6 +95,7 @@
           box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   color: #BC9CFF;
   position: relative;
+  cursor: pointer;
 }
 
 .right__btn-in::after {
@@ -114,6 +116,14 @@
   border: none;
 }
 
+.index-wrapper {
+  max-width: 1440px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  height: 818px;
+}
+
 .index-main {
   margin-bottom: 95px;
   position: relative;
@@ -131,7 +141,7 @@
   font-size: 14px;
   color: rgba(31, 32, 65, 0.75);
   top: 760px;
-  left: 1025px;
+  left: 1007px;
   width: 297px;
   text-align: end;
   line-height: 24px;
@@ -140,7 +150,7 @@
 .wishes {
   position: absolute;
   top: 67px;
-  left: 155px;
+  left: 138px;
   width: 380px;
   height: 374;
   background: #FFFFFF;
@@ -318,6 +328,7 @@
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   color: #FFFFFF;
   border: none;
+  cursor: pointer;
 }
 
 .pickup__icon {
@@ -1412,12 +1423,12 @@ input[type=number] {
 }
 
 .paginator__icon {
+  display: inline-block;
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
   font-size: 24px;
   /* Preferred icon size */
-  line-height: 1;
   vertical-align: middle;
   color: #fff;
   background: -webkit-gradient(linear, left top, left bottom, from(#6FCF97), to(#66D2EA));
@@ -1429,6 +1440,7 @@ input[type=number] {
   text-align: center;
   vertical-align: middle;
   border-radius: 50%;
+  text-decoration: none;
 }
 
 .paginator__text {
@@ -2598,5 +2610,17 @@ input[type=number] {
 
 .registration-card-enter {
   top: 233px;
+}
+
+.empty-wrapper {
+  max-width: 1440px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.empty__img {
+  background-image: url("images/reconst.jpg");
+  height: 500px;
 }
 /*# sourceMappingURL=style.css.map */
