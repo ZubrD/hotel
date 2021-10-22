@@ -2309,19 +2309,22 @@ input[type=number] {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  height: 763px;
+  height: 744px;
 }
 
 .registration__img {
   height: 753px;
   background-image: url("images/registration.png");
-  position: relative;
+  padding-top: 17px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.registration__img-enter {
+  padding-top: 233px;
 }
 
 .registration-card {
-  position: absolute;
-  top: 17px;
-  left: 532px;
   width: 380px;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
@@ -2514,6 +2517,7 @@ input[type=number] {
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   color: #FFFFFF;
   border: none;
+  cursor: pointer;
 }
 
 .registration-card-form-send__icon {
@@ -2573,6 +2577,35 @@ input[type=number] {
   content: 'Войти';
   top: 15px;
   right: 25px;
+}
+
+.registration-card-form-enter__button-create {
+  position: relative;
+  width: 95px;
+  height: 42px;
+  border-radius: 22px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #bc9cff;
+  border: 1px solid transparent;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white)), -webkit-gradient(linear, left top, left bottom, from(#a09ea5), to(#8BA4F9));
+  background-image: linear-gradient(white, white), linear-gradient(180deg, #a09ea5 0%, #8BA4F9 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.registration-card-form-enter__button-create::after {
+  position: absolute;
+  content: 'Создать';
+  top: 15px;
+  right: 16px;
+}
+
+.registration-card-enter {
+  top: 233px;
 }
 /*# sourceMappingURL=style.css.map */
     </style>
