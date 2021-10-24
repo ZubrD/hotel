@@ -21,6 +21,14 @@
   margin: 0 auto;
 }
 
+.substrate-burger {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #bc9cff;
+  z-index: 1;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,27 +44,73 @@
   padding-right: 140px;
 }
 
+.header-burger {
+  display: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 .right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 71px;
 }
 
 .right-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.right-menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.right-menu-list-burger {
+  display: block;
+  z-index: 2;
+  margin-top: 400px;
 }
 
 .right-menu__item {
-  vertical-align: middle;
   margin-right: 20px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  display: block;
+}
+
+.right-menu__item:nth-child(2) {
+  margin-right: 46px;
+}
+
+.right-menu__item:nth-child(5) {
+  margin-right: 44px;
+}
+
+.right-menu__item:nth-child(6) {
+  margin-right: 0px;
+}
+
+.right-menu__item:nth-child(7) {
+  margin-right: 0px;
+}
+
+.right-menu__item-burger {
+  margin-bottom: 30px;
 }
 
 .right-menu__link {
+  position: relative;
   text-decoration: none;
   color: #1F204180;
   font-family: "Montserrat", sans-serif;
@@ -66,7 +120,17 @@
   font-size: 14px;
 }
 
+.right-menu__link-burger {
+  font-size: 24px;
+}
+
+.right-menu__link--burger {
+  display: none;
+}
+
 .right-menu__icon {
+  position: absolute;
+  top: -2px;
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
@@ -90,10 +154,6 @@
   text-transform: uppercase;
   border: none;
   cursor: pointer;
-}
-
-.right__btn:last-child {
-  margin-right: 0;
 }
 
 .right__btn-in {
@@ -122,6 +182,83 @@
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   color: #FFFFFF;
   border: none;
+  margin-right: 0px;
+}
+
+@media (max-width: 1210px) {
+  .header {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .header {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 1010px) {
+  .header {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media (max-width: 930px) {
+  .right-enter__link, .right-enter__register {
+    display: none;
+  }
+  .right-menu__link--burger {
+    display: block;
+  }
+  .right-menu__item:nth-child(6) {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 830px) {
+  .header-burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 2;
+  }
+  .header-burger::before, .header-burger::after {
+    content: '';
+    background-color: red;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+  }
+  .header-burger::before {
+    top: 0;
+  }
+  .header-burger::after {
+    bottom: 0;
+  }
+  .header-burger__span {
+    position: absolute;
+    background-color: red;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+  }
+  .logo {
+    z-index: 2;
+  }
+  .right-menu-list {
+    display: none;
+  }
+  .display-block {
+    display: block;
+  }
+  .display-none {
+    display: none;
+  }
 }
 
 .index-wrapper {
@@ -148,8 +285,9 @@
   font-weight: 400;
   font-size: 14px;
   color: rgba(31, 32, 65, 0.75);
-  top: 760px;
-  left: 1007px;
+  top: 91%;
+  left: 68%;
+  /* Если в пиксель, то 70%, но при сжатии выпадает */
   width: 297px;
   text-align: end;
   line-height: 24px;
@@ -522,6 +660,12 @@ button {
   line-height: 1;
   vertical-align: middle;
   color: rgba(31, 32, 65, 0.5);
+}
+
+@media (max-width: 1050px) {
+  .index-main__title {
+    left: 30%;
+  }
 }
 
 .footer {
@@ -2635,20 +2779,26 @@ input[type=number] {
     </style>
   </head>
   <body>
+    <div class="substrate"></div>
     <header class="container">
       <div class="header">
         <div class="logo"><a class="logo__link" href="/src/index.html" target="_blank"><img class="logo__img" src="images/logo.png" alt="Логотип"></a></div>
         <div class="right">
           <nav class="right-menu">
-            <div class="right-menu__item"><a class="right-menu__link" href="/src/empty.html" target="_blank">О нас</a></div>
-            <div class="right-menu__item"><a class="right-menu__link" href="/src/empty.html" target="_blank">Услуги<span class="right-menu__icon">expand_more</span></a></div>
-            <div class="right-menu__item"><a class="right-menu__link" href="/src/empty.html" target="_blank">Вакансии</a></div>
-            <div class="right-menu__item"><a class="right-menu__link" href="/src/empty.html" target="_blank">Новости</a></div>
-            <div class="right-menu__item"><a class="right-menu__link" href="/src/empty.html" target="_blank">Соглашения<span class="right-menu__icon">expand_more</span></a></div>
-          </nav><a class="right-enter__link" href="/src/login.html" target="_blank">
-            <button class="right__btn right__btn-in">войти</button></a><a class="right-enter__register" href="/src/registration.html" target="_blank">
-            <button class="right__btn right__btn-reg">зарегистрироваться</button></a>
+            <ul class="right-menu-list"> 
+              <li class="right-menu__item"> <a class="right-menu__link" href="/src/empty.html" target="_blank">О нас</a></li>
+              <li class="right-menu__item"> <a class="right-menu__link" href="/src/empty.html" target="_blank">Услуги<span class="right-menu__icon">expand_more</span></a></li>
+              <li class="right-menu__item"> <a class="right-menu__link" href="/src/empty.html" target="_blank">Вакансии</a></li>
+              <li class="right-menu__item"> <a class="right-menu__link" href="/src/empty.html" target="_blank">Новости</a></li>
+              <li class="right-menu__item"> <a class="right-menu__link" href="/src/empty.html" target="_blank">Соглашения<span class="right-menu__icon">expand_more</span></a></li>
+              <li class="right-menu__item"> <a class="right-menu__link right-menu__link--burger" href="/src/login.html" target="_blank">Войти</a><a class="right-enter__link" href="/src/login.html" target="_blank">
+                  <button class="right__btn right__btn-in">войти            </button></a></li>
+              <li class="right-menu__item"> <a class="right-menu__link right-menu__link--burger" href="/src/registration.html" target="_blank">Зарегистироваться</a><a class="right-enter__register" href="/src/registration.html" target="_blank">
+                  <button class="right__btn right__btn-reg">зарегистрироваться  </button></a></li>
+            </ul>
+          </nav>
         </div>
+        <div class="header-burger"> <span class="header-burger__span">                                                                                             </span></div>
       </div>
     </header>
 <div class="empty-wrapper">

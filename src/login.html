@@ -4,6 +4,8 @@
     <title>Вход в аккаунт</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
        /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
 /*# sourceMappingURL=normalize.min.css.map */@charset "UTF-8";
@@ -21,6 +23,14 @@
   margin: 0 auto;
 }
 
+.substrate-burger {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #bc9cff;
+  z-index: 1;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,27 +46,73 @@
   padding-right: 140px;
 }
 
+.header-burger {
+  display: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 .right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 71px;
 }
 
 .right-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.right-menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.right-menu-list-burger {
+  display: block;
+  z-index: 2;
+  margin-top: 400px;
 }
 
 .right-menu__item {
-  vertical-align: middle;
   margin-right: 20px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  display: block;
+}
+
+.right-menu__item:nth-child(2) {
+  margin-right: 46px;
+}
+
+.right-menu__item:nth-child(5) {
+  margin-right: 44px;
+}
+
+.right-menu__item:nth-child(6) {
+  margin-right: 0px;
+}
+
+.right-menu__item:nth-child(7) {
+  margin-right: 0px;
+}
+
+.right-menu__item-burger {
+  margin-bottom: 30px;
 }
 
 .right-menu__link {
+  position: relative;
   text-decoration: none;
   color: #1F204180;
   font-family: "Montserrat", sans-serif;
@@ -66,7 +122,17 @@
   font-size: 14px;
 }
 
+.right-menu__link-burger {
+  font-size: 24px;
+}
+
+.right-menu__link--burger {
+  display: none;
+}
+
 .right-menu__icon {
+  position: absolute;
+  top: -2px;
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
@@ -90,10 +156,6 @@
   text-transform: uppercase;
   border: none;
   cursor: pointer;
-}
-
-.right__btn:last-child {
-  margin-right: 0;
 }
 
 .right__btn-in {
@@ -122,6 +184,83 @@
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   color: #FFFFFF;
   border: none;
+  margin-right: 0px;
+}
+
+@media (max-width: 1210px) {
+  .header {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .header {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 1010px) {
+  .header {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media (max-width: 930px) {
+  .right-enter__link, .right-enter__register {
+    display: none;
+  }
+  .right-menu__link--burger {
+    display: block;
+  }
+  .right-menu__item:nth-child(6) {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 830px) {
+  .header-burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 2;
+  }
+  .header-burger::before, .header-burger::after {
+    content: '';
+    background-color: red;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+  }
+  .header-burger::before {
+    top: 0;
+  }
+  .header-burger::after {
+    bottom: 0;
+  }
+  .header-burger__span {
+    position: absolute;
+    background-color: red;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+  }
+  .logo {
+    z-index: 2;
+  }
+  .right-menu-list {
+    display: none;
+  }
+  .display-block {
+    display: block;
+  }
+  .display-none {
+    display: none;
+  }
 }
 
 .index-wrapper {
@@ -148,8 +287,9 @@
   font-weight: 400;
   font-size: 14px;
   color: rgba(31, 32, 65, 0.75);
-  top: 760px;
-  left: 1007px;
+  top: 91%;
+  left: 68%;
+  /* Если в пиксель, то 70%, но при сжатии выпадает */
   width: 297px;
   text-align: end;
   line-height: 24px;
@@ -522,6 +662,12 @@ button {
   line-height: 1;
   vertical-align: middle;
   color: rgba(31, 32, 65, 0.5);
+}
+
+@media (max-width: 1050px) {
+  .index-main__title {
+    left: 30%;
+  }
 }
 
 .footer {
@@ -2635,20 +2781,26 @@ input[type=number] {
     </style>
   </head>
   <body>
+    <div class="substrate"></div>
     <header class="container">
       <div class="header">
         <div class="logo"><a class="logo__link" href="/src/index.html" target="_blank"><img class="logo__img" src="images/logo.png" alt="Логотип"></a></div>
         <div class="right">
           <nav class="right-menu">
-            <div class="right-menu__item"><a class="right-menu__link" href="/src/empty.html" target="_blank">О нас</a></div>
-            <div class="right-menu__item"><a class="right-menu__link" href="/src/empty.html" target="_blank">Услуги<span class="right-menu__icon">expand_more</span></a></div>
-            <div class="right-menu__item"><a class="right-menu__link" href="/src/empty.html" target="_blank">Вакансии</a></div>
-            <div class="right-menu__item"><a class="right-menu__link" href="/src/empty.html" target="_blank">Новости</a></div>
-            <div class="right-menu__item"><a class="right-menu__link" href="/src/empty.html" target="_blank">Соглашения<span class="right-menu__icon">expand_more</span></a></div>
-          </nav><a class="right-enter__link" href="/src/login.html" target="_blank">
-            <button class="right__btn right__btn-in">войти</button></a><a class="right-enter__register" href="/src/registration.html" target="_blank">
-            <button class="right__btn right__btn-reg">зарегистрироваться</button></a>
+            <ul class="right-menu-list"> 
+              <li class="right-menu__item"> <a class="right-menu__link" href="/src/empty.html" target="_blank">О нас</a></li>
+              <li class="right-menu__item"> <a class="right-menu__link" href="/src/empty.html" target="_blank">Услуги<span class="right-menu__icon">expand_more</span></a></li>
+              <li class="right-menu__item"> <a class="right-menu__link" href="/src/empty.html" target="_blank">Вакансии</a></li>
+              <li class="right-menu__item"> <a class="right-menu__link" href="/src/empty.html" target="_blank">Новости</a></li>
+              <li class="right-menu__item"> <a class="right-menu__link" href="/src/empty.html" target="_blank">Соглашения<span class="right-menu__icon">expand_more</span></a></li>
+              <li class="right-menu__item"> <a class="right-menu__link right-menu__link--burger" href="/src/login.html" target="_blank">Войти</a><a class="right-enter__link" href="/src/login.html" target="_blank">
+                  <button class="right__btn right__btn-in">войти            </button></a></li>
+              <li class="right-menu__item"> <a class="right-menu__link right-menu__link--burger" href="/src/registration.html" target="_blank">Зарегистироваться</a><a class="right-enter__register" href="/src/registration.html" target="_blank">
+                  <button class="right__btn right__btn-reg">зарегистрироваться  </button></a></li>
+            </ul>
+          </nav>
         </div>
+        <div class="header-burger"> <span class="header-burger__span">                                                                                             </span></div>
       </div>
     </header>
 <div class="registration-wrapper">
@@ -2668,58 +2820,6 @@ input[type=number] {
     </div>
   </div>
 </div>
-<footer class="container">
-  <hr class="footer-line"/>
-  <div class="footer"> 
-    <div class="footer-item"> <a class="footer-logo" href="/src/index.html" target="_blank"><img class="footer-logo__img" src="images/logo.png" alt="Логотип"/></a>
-      <div class="footer-text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
-    </div>
-    <div class="footer-item footer-item-1"> 
-      <p class="footer-list__title">Навигация</p>
-      <ul class="footer-list">             
-        <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">О нас                </a></li>
-        <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">Новости</a></li>
-        <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">Служба поддержки                               </a></li>
-        <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">Услуги   </a></li>
-      </ul>
-    </div>
-    <div class="footer-item footer-item-2"> 
-      <p class="footer-list__title">О нас</p>
-      <ul class="footer-list">                
-        <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">О сервисе                </a></li>
-        <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">Наша команда</a></li>
-        <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">Вакансии                              </a></li>
-        <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">Инвесторы</a></li>
-      </ul>
-    </div>
-    <div class="footer-item footer-item-3"> 
-      <p class="footer-list__title">Служба поддержки </p>
-      <ul class="footer-list">           
-        <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">Соглашения </a></li>
-        <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">Сообщества                               </a></li>
-        <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">Связь с нами  </a></li>
-      </ul>
-    </div>
-    <div class="footer-item footer-item-4"> 
-      <p class="footer-list__title">Подписка</p>
-      <div class="footer-text-subscribe">Получайте специальные предложения и новости сервиса</div>
-      <form class="footer-form" action=""> 
-        <input class="footer-form__input" type="text" placeholder="Email"/><a class="footer-form__link" href="/src/empty.html" target="_blank"> <span class="footer-form__icon">arrow_forward</span></a>
-      </form>
-    </div>
-  </div>
-  <div class="container">
-    <div class="copyright-block">
-      <div class="copyright"> 
-        <div class="copyright-text">Copyright &copy; 2018 Toxin отель. Все права защищены.</div>
-        <ul class="copyright-list">
-          <li class="copyright-list__item"><a class="copyright-list__link" href="/src/empty.html" target="_blank"> <img class="copyright socials__img" src="images/socials/twitter.png" alt=""/></a></li>
-          <li class="copyright-list__item"><a class="copyright-list__link" href="/src/empty.html" target="_blank"> <img class="copyright socials__img" src="images/socials/facebook.png" alt=""/></a></li>
-          <li class="copyright-list__item"><a class="copyright-list__link" href="/src/empty.html" target="_blank"> <img class="copyright socials__img" src="images/socials/insta.png" alt=""/></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</footer>
+    <script src="../src/js/logins.js"></script>
   </body>
 </html>

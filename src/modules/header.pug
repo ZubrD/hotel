@@ -1,25 +1,34 @@
+.substrate
 header.container
+  
   .header
+    
     .logo
       a(href="/src/index.html" target="_blank").logo__link
         img.logo__img(src='images/logo.png' alt="Логотип")
+
     .right
       nav.right-menu
-        .right-menu__item
-          a(href="/src/empty.html" target="_blank").right-menu__link О нас
-        .right-menu__item
-          a(href="/src/empty.html" target="_blank").right-menu__link
-            | Услуги
-            span.right-menu__icon expand_more
-        .right-menu__item
-          a(href="/src/empty.html" target="_blank").right-menu__link Вакансии
-        .right-menu__item
-          a(href="/src/empty.html" target="_blank").right-menu__link Новости
-        .right-menu__item
-          a(href="/src/empty.html" target="_blank").right-menu__link
-            | Соглашения
-            span.right-menu__icon expand_more
-      a(href="/src/login.html" target="_blank").right-enter__link
-        button.right__btn.right__btn-in войти
-      a(href="/src/registration.html" target="_blank").right-enter__register
-        button.right__btn.right__btn-reg зарегистрироваться
+        ul.right-menu-list 
+          li.right-menu__item 
+            a(href="/src/empty.html" target="_blank").right-menu__link О нас
+          li.right-menu__item 
+            a(href="/src/empty.html" target="_blank").right-menu__link Услуги
+              span.right-menu__icon expand_more
+          li.right-menu__item 
+            a(href="/src/empty.html" target="_blank").right-menu__link Вакансии
+          li.right-menu__item 
+            a(href="/src/empty.html" target="_blank").right-menu__link Новости
+          li.right-menu__item 
+            a(href="/src/empty.html" target="_blank").right-menu__link Соглашения
+              span.right-menu__icon expand_more
+          li.right-menu__item 
+            a(href="/src/login.html" target="_blank").right-menu__link.right-menu__link--burger Войти
+            a(href="/src/login.html" target="_blank").right-enter__link
+              button.right__btn.right__btn-in войти            
+          li.right-menu__item 
+            a(href="/src/registration.html" target="_blank").right-menu__link.right-menu__link--burger Зарегистироваться
+            a(href="/src/registration.html" target="_blank").right-enter__register
+              button.right__btn.right__btn-reg зарегистрироваться  
+    .header-burger 
+      span.header-burger__span                                                                                              
