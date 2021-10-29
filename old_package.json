@@ -1,0 +1,17 @@
+{
+  "name": "hotel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devserver": "live-server --browser=Opera",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "air-datepicker": "^2.2.3",
+    "pug": "^3.0.2"
+  }
+}

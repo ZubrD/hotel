@@ -1,11 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Montserrat"),
+            url("../fonts/Montserrat-Regular.ttf") format("ttf")
+} 
+  
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local("Montserrat"),
+            url("../fonts/Montserrat-Bold.ttf") format("ttf")
+} 
 
-@font-face {                            /* https://htmlacademy.ru/courses/73/run/9 */
-    font-family: "Roboto";
-    src:
-      local("Roboto Regular"),
-      url("roboto.woff") format("woff");
-  }
+body {
+    font-family: 'Montserrat', sans-serif;
+}  
 
 .container {
     max-width: 1440px;
@@ -37,12 +50,6 @@
 }
 
 
-
-.logo {
-    &__img {
-        // max-width: 100%;
-    }
-}
 ul {
     margin: 0;
     padding: 0;
@@ -123,24 +130,48 @@ ul {
         border: none;
         cursor: pointer;
 
-        &-in {
-            width: 87px;
-            background: #FFFFFF;
-            box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-            color: #BC9CFF;
+        // &-in {
+        //     width: 87px;
+        //     background: #FFFFFF;
+        //     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+        //     color: #BC9CFF;
+        //     position: relative;
+        //     cursor: pointer;
+        //     // margin-right: 20px;
+        //     &::after {
+        //         position: absolute;
+        //         content: '';
+        //         background-image: url(images/border_in.png);
+        //         width: 87px;
+        //         height: 34px;
+        //         top: -1px;
+        //         left: -1px;
+                
+        //     }
+        // }
+        &-linear {
             position: relative;
-            cursor: pointer;
-            // margin-right: 20px;
+            width: 86px;
+            height: 30px;
+            border-radius: 22px;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 15px;
+            text-align: center;
+            margin-right: 20px;
+            text-transform: uppercase;
+            color: rgba(188, 156, 255, 1);
+            border: 2px solid transparent;
+            background-image: linear-gradient(white, white),
+            linear-gradient(180deg, #a09ea5 0%, #8BA4F9 100%);
+            background-origin: border-box;
+            background-clip: content-box, border-box; 
             &::after {
                 position: absolute;
-                content: '';
-                background-image: url(images/border_in.png);
-                width: 87px;
-                height: 34px;
-                top: -1px;
-                left: -1px;
-                
-            }
+                content: 'Войти';
+                top: 8px;
+                right: 19px;
+            }               
         }
         &-reg {
             width: 196px;
@@ -1994,7 +2025,7 @@ input[type=number] {
         grid-column-end: 2;
         grid-row-start: 1;
         grid-row-end: 3;
-        background-image: url('images/details_photo/detail_photo_1.png');
+        background-image: url('../images/details_photo/detail_photo_1.png');
     }
     &__img-2 {
         width: 459px;
@@ -2002,7 +2033,7 @@ input[type=number] {
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 2;
-        background-image: url('images/details_photo/detail_photo_2.png');
+        background-image: url('../images/details_photo/detail_photo_2.png');
     }  
     &__img-3 {
         width: 459px;
@@ -2011,7 +2042,7 @@ input[type=number] {
         grid-row-start: 2;
         grid-row-end: 3;
         margin-top: -1px;
-        background-image: url('images/details_photo/detail_photo_3.png');
+        background-image: url('../images/details_photo/detail_photo_3.png');
     }        
 }
 .roominfo {
@@ -2065,7 +2096,7 @@ input[type=number] {
 .registration {
     &__img {
         height: 753px;
-        background-image: url("images/registration.png");
+        background-image: url("../images/registration.png");
         // position: relative;
         padding-top: 17px;
         box-sizing: border-box;
@@ -2322,7 +2353,7 @@ input[type=number] {
         margin: 0 auto;
     }
     &__img {
-        background-image: url("images/reconst.jpg");
+        background-image: url("../images/reconst.jpg");
         height: 500px;
     }
 }

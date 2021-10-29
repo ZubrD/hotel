@@ -631,11 +631,24 @@
     .datepicker--cell-day.-other-month-:empty, .datepicker--cell-year.-other-decade-:empty {
       background: none;
       border: none; }@charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 @font-face {
-  /* https://htmlacademy.ru/courses/73/run/9 */
-  font-family: "Roboto";
-  src: local("Roboto Regular"), url("roboto.woff") format("woff");
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Montserrat"), url("/fonts/Montserrat-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Montserrat"), url("/fonts/Montserrat-Bold.ttf") format("ttf");
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .container {
@@ -780,24 +793,30 @@ ul {
   cursor: pointer;
 }
 
-.right__btn-in {
-  width: 87px;
-  background: #FFFFFF;
-  -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-          box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-  color: #BC9CFF;
+.right__btn-linear {
   position: relative;
-  cursor: pointer;
+  width: 86px;
+  height: 30px;
+  border-radius: 22px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  margin-right: 20px;
+  text-transform: uppercase;
+  color: #bc9cff;
+  border: 2px solid transparent;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white)), -webkit-gradient(linear, left top, left bottom, from(#a09ea5), to(#8BA4F9));
+  background-image: linear-gradient(white, white), linear-gradient(180deg, #a09ea5 0%, #8BA4F9 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
 }
 
-.right__btn-in::after {
+.right__btn-linear::after {
   position: absolute;
-  content: '';
-  background-image: url(images/border_in.png);
-  width: 87px;
-  height: 34px;
-  top: -1px;
-  left: -1px;
+  content: 'Войти';
+  top: 8px;
+  right: 19px;
 }
 
 .right__btn-reg {
@@ -3527,7 +3546,7 @@ input[type=number] {
               <li class="right-menu__item"> <a class="right-menu__link" href="/src/empty.html" target="_blank">Новости</a></li>
               <li class="right-menu__item"> <a class="right-menu__link" href="/src/empty.html" target="_blank">Соглашения<span class="right-menu__icon">expand_more</span></a></li>
               <li class="right-menu__item"> <a class="right-menu__link right-menu__link--burger" href="/src/login.html" target="_blank">Войти</a><a class="right-enter__link" href="/src/login.html" target="_blank">
-                  <button class="right__btn right__btn-in">войти            </button></a></li>
+                  <div class="right__btn-linear">           </div></a></li>
               <li class="right-menu__item"> <a class="right-menu__link right-menu__link--burger" href="/src/registration.html" target="_blank">Зарегистироваться</a><a class="right-enter__register" href="/src/registration.html" target="_blank">
                   <button class="right__btn right__btn-reg">зарегистрироваться  </button></a></li>
             </ul>
