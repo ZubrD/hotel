@@ -2555,9 +2555,12 @@ input[type=number] {
 }
 
 .uikit {
+  display: grid;
+  grid-template-columns: 281px 436px;
+  column-gap: 415px;
+  margin-left: 150px;
+  margin-top: 145px;  
   &-colours-items {
-    margin-left: 150px;
-    margin-top: 145px;
     &-item {
       display: flex;
       width: 281px;
@@ -2596,15 +2599,70 @@ input[type=number] {
         margin-left: 40px;
         font-family: "Montserrat";
         font-style: normal;
-        font-weight: 700;
-        font-style: normal;
         &__title {
           font-weight: 700;
         }
         &__code {
-          
           font-weight: 400;
         }
+      }
+    }
+  }
+  &-types-items {
+    display: grid;
+    grid-template-rows: 59px 59px;
+    grid-template-columns: 37px 369px;
+    column-gap: 30px;
+    row-gap: 51px;
+    height: 321px;
+    &-item {
+      width: 436px;
+      margin-bottom: 51px;
+      &__header {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400; 
+        color: rgba(31, 32, 65, 1);
+        text-align: right;
+        &-1 {
+          font-size: 24px;
+          line-height: 29.26px;
+        }
+        &-2 {
+          font-size: 19px;
+          line-height: 23.16px;
+        }
+        &-3 {
+          font-size: 12px;
+          line-height: 14.63px;
+        }
+        &-4 {
+          font-size: 14px;
+          line-height: 24px;
+        }
+      }
+      &__text {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700; 
+        &-1 {
+          font-size: 24px;
+          line-height: 29.26px;
+        } 
+        &-2 {
+          font-size: 19px;
+          line-height: 23.16px;
+        } 
+        &-3 {
+          font-size: 12px;
+          line-height: 14.63px;
+          text-transform: uppercase;
+        } 
+        &-4 {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 24px;
+        }    
       }
     }
   }
