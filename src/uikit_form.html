@@ -3063,6 +3063,61 @@ input[type=number] {
   line-height: 24px;
 }
 
+.uikit-rule {
+  width: 222px;
+}
+
+.uikit-registration-sex {
+  margin-top: 35px;
+}
+
+.uikit-proposal-form {
+  margin-top: 38px;
+}
+
+.uikit-proposal-item {
+  margin-top: 10px;
+  margin-left: 1px;
+}
+
+.uikit-favorite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.uikit-favorite-item {
+  margin-top: 0;
+}
+
+.uikit-like__title {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.uikit-left__favor {
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  background-clip: initial;
+}
+
+.uikit-right__favor {
+  border: 1px solid #bc9cff;
+}
+
+.uikit-rate__title {
+  margin-top: 40px;
+}
+
+.uikit-rates {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 260px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .uikit-form-block-1 {
   max-width: 320px;
 }
@@ -3322,6 +3377,67 @@ input[type=number] {
           <input class="stay-guest-form-uikit__input stay-guest-form-uikit__input-sub" type="text" placeholder="Email"><span class="stay-guest-form-uikit__aricon">arrow_forward</span>
         </div>
       </form>
+    </div>
+    <div class="uikit-form-block-2">     
+      <form class="home-rule-form uikit-rule" action="">
+        <div class="home-rule-form__title">Checkbox Buttons</div>
+        <div class="home-rule-form__item"> 
+          <input class="home-rule-form__input" type="checkbox" id="smoke">
+          <label class="home-rule-form__label" for="smoke">Можно курить </label>
+        </div>
+        <div class="home-rule-form__item"> 
+          <input class="home-rule-form__input" type="checkbox" id="pets">
+          <label class="home-rule-form__label" for="pets">Можно с питомцами</label>
+        </div>
+        <div class="home-rule-form__item"> 
+          <input class="home-rule-form__input" type="checkbox" id="guests">
+          <label class="home-rule-form__label" for="guests">Можно пригласить гостей (до 10 человек)</label>
+        </div>
+      </form>
+      <form class="registration-card-form uikit-registration-sex" action=""> 
+        <div class="home-rule-form__title">Radio Buttons</div>
+        <div class="registration-card-form-sex">
+          <div class="registration-card-form-sex-item">
+            <input class="registration-card-form-sex__input" type="radio" id="male" name="sex" checked>
+            <label class="registration-card-form-sex__label" for="male">Мужчина</label>
+          </div>
+          <div class="registration-card-form-sex-item">                          
+            <input class="registration-card-form-sex__input" type="radio" id="female" name="sex">
+            <label class="registration-card-form-sex__label" for="female">Женщина </label>
+          </div>
+        </div>
+        <div class="home-rule-form__title uikit-proposal-form">Toggle       </div>
+        <div class="registration-card-form-proposal">
+          <input class="registration-card-form-proposal__input" type="checkbox" id="proposal" name="proposal">
+          <label class="registration-card-form-proposal__label" for="proposal">Получать спецпредложения   </label>
+        </div>
+        <div class="registration-card-form-proposal uikit-proposal-item">
+          <input class="registration-card-form-proposal__input" type="checkbox" id="proposal" name="proposal">
+          <label class="registration-card-form-proposal__label" for="proposal">Получать спецпредложения </label>
+        </div>
+      </form>
+      <div class="home-rule-form__title uikit-like__title">Like Button</div>
+      <div class="uikit-favorite">
+        <div class="reviews-item uikit-favorite-item"> 
+          <div class="reviews-item-left"> 
+            <div class="reviews-item-left__favor uikit-left__favor"><span class="reviews-item-left__icon">favorite_border</span>
+              <div class="reviews-item-left__favortext">12</div>
+            </div>
+          </div>
+        </div>
+        <div class="reviews-item uikit-favorite-item"> 
+          <div class="reviews-item-left"> 
+            <div class="reviews-item-left__favor uikit-right__favor"><span class="reviews-item-left__icon">favorite</span>
+              <div class="reviews-item-left__favortext">12</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="home-rule-form__title uikit-rate__title">Rate Button</div>
+      <div class="uikit-rates">
+        <div class="search-room-stars"><span class="search-room__star">star</span><span class="search-room__star">star</span><span class="search-room__star">star</span><span class="search-room__star">star</span><span class="search-room__star">star_border  </span></div>
+        <div class="search-room-stars"><span class="search-room__star">star</span><span class="search-room__star">star</span><span class="search-room__star">star</span><span class="search-room__star">star</span><span class="search-room__star">star          </span></div>
+      </div>
     </div>
   </body>
 </html>

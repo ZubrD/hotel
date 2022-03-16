@@ -2670,6 +2670,44 @@ input[type=number] {
       }
     }
   }
+  &-rule {
+    width: 222px;
+  }
+  &-registration-sex {
+    margin-top: 35px;
+  }
+  &-proposal-form {
+    margin-top: 38px;
+  }
+  &-proposal-item {
+    margin-top: 10px;
+    margin-left: 1px;
+  }
+  &-favorite {
+    display: flex;
+  }
+  &-favorite-item {
+    margin-top: 0;
+  }
+  &-like__title {
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+  &-left__favor {
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    background-clip: initial;
+  }
+  &-right__favor {
+    border: 1px solid rgba(188, 156, 255, 1);
+  } 
+  &-rate__title {
+    margin-top: 40px;
+  }
+  &-rates {
+    display: flex;
+    width: 260px;
+    justify-content: space-between;
+  } 
 }
 
 .uikit-form-block-1 {
