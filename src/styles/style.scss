@@ -2096,7 +2096,7 @@ input[type=number] {
 .registration {
     &__img {
         height: 753px;
-        background-image: url("../images/registration.png");
+        background-image: url("./images/registration.png");
         // position: relative;
         padding-top: 17px;
         box-sizing: border-box;
@@ -2708,6 +2708,84 @@ input[type=number] {
     width: 260px;
     justify-content: space-between;
   } 
+  &-sliderp {
+    width: 266px;
+  }
+  &-btn-reg {
+    width: 99px;
+    height: 44px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 0;
+    margin-right: 16px;
+    margin-bottom: 0;
+  }
+  &-btn-reg-inact {
+    width: 99px;
+    height: 44px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 0;
+    opacity: 50%;
+    margin-bottom: 0;
+  }  
+  &-buttons__title {
+    margin-top: 40px;
+  }
+  &-btn-linears {
+    display: flex;
+  }
+  &-btn-linear {
+    width: 96px;
+    height: 40px;
+    margin-top: 29px;
+    &::after {
+      content: 'Click Me';
+      top: 12px;
+    } 
+  }
+  &-btn-linear-inact {
+    width: 96px;
+    height: 40px;
+    margin-top: 29px;
+    opacity: 50;
+    background-image: linear-gradient(white, white),
+    linear-gradient(151deg, rgba(255,227,156,1) 0%, rgba(139,164,249,0.5) 100%);
+    &::after {
+      content: 'Click Me';
+      top: 12px;
+    } 
+  } 
+  &-btn-words {
+    display: flex;
+    margin-top: 22px;
+  }
+  &-btn-linear-word {
+    background-image: none;
+    margin-right: 0;
+    margin-left: -7px;
+    &::after {
+      content: 'Click me';
+    }   
+  } 
+  &-btn-linear-word-inact {
+    color: rgba(31, 32, 65, 0.5);
+    background-image: none;
+    margin-left: -10px;
+    &::after {
+      content: 'Click me';
+    }   
+  }
+  &-pickup {
+    width: 320px;
+  }
+  &-paginator {
+    margin-left: 0;
+  }  
+  &-pagination__title {
+    margin-top: 42px;
+    margin-bottom: -5px;
+  } 
 }
 
 .uikit-form-block-1 {
@@ -2822,4 +2900,5 @@ input[type=number] {
     margin-top: 23px;
   }
 }
+
 
