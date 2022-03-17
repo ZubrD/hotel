@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="../src/libs/nouislider.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
        @charset "UTF-8";
@@ -1317,7 +1318,7 @@ input[type=number] {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 19px;
+  line-height: 18px;
   color: rgba(31, 32, 65, 0.5);
   cursor: pointer;
 }
@@ -3217,6 +3218,103 @@ input[type=number] {
   margin-bottom: -5px;
 }
 
+.uikit-amenity {
+  width: 266px;
+}
+
+.uikit-amenity-second {
+  margin-top: 20px;
+}
+
+.uikit-amenity-titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.uikit-amenity__title {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.uikit-amenity__default {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.63px;
+  text-transform: uppercase;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.uikit-amenity-form__input {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  width: 266px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  height: 44px;
+  padding-left: 15px;
+  padding-right: 30px;
+  padding-top: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.uikit-amenity-block {
+  position: absolute;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-color: #fff;
+  z-index: 10;
+  width: 100%;
+}
+
+.uikit-additional {
+  margin-top: 172px;
+}
+
+.uikit-additional-second {
+  margin-top: 49px;
+}
+
+.uikit-additional__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-top: 31px;
+  margin-bottom: 6px;
+}
+
+.uikit-additional__icon {
+  position: absolute;
+  top: -5px;
+  left: 232px;
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  vertical-align: middle;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.uikit-roominfo-item {
+  margin-top: 39px;
+}
+
+.uikit-roominfo-item-second {
+  margin-top: 23px;
+}
+
 .uikit-form-block-1 {
   max-width: 320px;
 }
@@ -3572,7 +3670,112 @@ input[type=number] {
         <div class="paginator__text">1 – 12 из 100+ вариантов аренды         </div>
       </div>
     </div>
+    <div class="uikit-form-block-4">
+      <div class="amenity uikit-amenity">
+        <div class="uikit-amenity-titles">
+          <div class="amenity__title uikit-amenity__title">Dropdown</div>
+          <div class="uikit-amenity__default">Default</div>
+        </div>
+        <form class="amenity-form" action="">
+          <input class="uikit-amenity-form__input" type="text" placeholder="2 спальни, 2 кровати..." sleep="0" bed="0" bath="0"><span class="amenity-form__icon">expand_more</span>
+        </form>
+      </div>
+      <div class="amenity uikit-amenity uikit-amenity-second">
+        <div class="uikit-amenity-titles">
+          <div class="amenity__title uikit-amenity__title">Dropdown</div>
+          <div class="uikit-amenity__default">Expanded</div>
+        </div>
+        <form class="amenity-form" action="">
+          <input class="amenity-form__input" type="text" placeholder="2 спальни, 2 кровати..." sleep="0" bed="0" bath="0"><span class="amenity-form__icon">expand_more</span>
+        </form>
+        <div class="uikit-amenity-block">
+          <div class="amenity-item"> 
+            <div class="amenity-item__title">Спальни</div>
+            <div class="amenity-item-buttons">
+              <button class="amenity-item__button amenity-item__button-minus" id="minus-sleep">-</button>
+              <div class="amenity-item__result" id="sleep-result">0              </div>
+              <button class="amenity-item__button" id="plus-sleep">+</button>
+            </div>
+          </div>
+          <div class="amenity-item"> 
+            <div class="amenity-item__title">Кровати</div>
+            <div class="amenity-item-buttons">
+              <button class="amenity-item__button amenity-item__button-minus" id="minus-bed">-</button>
+              <div class="amenity-item__result" id="bed-result">0              </div>
+              <button class="amenity-item__button" id="plus-bed">+</button>
+            </div>
+          </div>
+          <div class="amenity-item"> 
+            <div class="amenity-item__title">Ванные комнаты</div>
+            <div class="amenity-item-buttons">
+              <button class="amenity-item__button amenity-item__button-minus" id="minus-bath">-</button>
+              <div class="amenity-item__result" id="bath-result">0              </div>
+              <button class="amenity-item__button" id="plus-bath">+   </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="additional uikit-additional"> 
+        <div class="uikit-additional__title">Expandable checkbox list</div>
+        <div class="uikit-additional__icon">expand_more            </div>
+      </div>
+      <div class="additional uikit-additional-second"> 
+        <div class="uikit-additional__title">Expandable checkbox list</div>
+        <div class="uikit-additional__icon rotated__icon">expand_more</div>
+        <div class="additional-block">
+          <form class="additional-block-form" action="">
+            <div class="additional-block-form__item"> 
+              <input class="additional-block-form__input" type="checkbox" id="breakfast">
+              <label class="additional-block-form__label" for="breakfast">Завтрак</label>
+            </div>
+            <div class="additional-block-form__item"> 
+              <input class="additional-block-form__input" type="checkbox" id="desk" checked>
+              <label class="additional-block-form__label" for="desk">Письменный стол</label>
+            </div>
+            <div class="additional-block-form__item"> 
+              <input class="additional-block-form__input" type="checkbox" id="chair" checked>
+              <label class="additional-block-form__label" for="chair">Стул для кормления</label>
+            </div>
+            <div class="additional-block-form__item"> 
+              <input class="additional-block-form__input" type="checkbox" id="little-bed" checked>
+              <label class="additional-block-form__label" for="little-bed">Кроватка</label>
+            </div>
+            <div class="additional-block-form__item"> 
+              <input class="additional-block-form__input" type="checkbox" id="TV-1">
+              <label class="additional-block-form__label" for="TV-1">Телевизор</label>
+            </div>
+            <div class="additional-block-form__item"> 
+              <input class="additional-block-form__input" type="checkbox" id="shampoo-1">
+              <label class="additional-block-form__label" for="shampoo-1">Шампунь</label>
+            </div>
+            <div class="additional-block-form__item"> 
+              <input class="additional-block-form__input" type="checkbox" id="TV-2">
+              <label class="additional-block-form__label" for="TV-2">Телевизор</label>
+            </div>
+            <div class="additional-block-form__item"> 
+              <input class="additional-block-form__input" type="checkbox" id="shampoo-2">
+              <label class="additional-block-form__label" for="shampoo-2">Шампунь </label>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="roominfo-item uikit-roominfo-item"> <span class="roominfo-item__span">insert_emoticon</span>
+        <div class="roominfo-item-text">
+          <div class="roominfo-item-text__title">Комфорт</div>
+          <div class="roominfo-item-text__desc">Шумопоглощающие стены</div>
+        </div>
+      </div>
+      <div class="roominfo-item uikit-roominfo-item-second"> <span class="roominfo-item__span">location_city</span>
+        <div class="roominfo-item-text">
+          <div class="roominfo-item-text__title">Удобство </div>
+          <div class="roominfo-item-text__desc">Окно в каждой из спален                </div>
+        </div>
+      </div>
+    </div>
     <script src="../src/libs/nouislider.min.js"> </script>
     <script src="../src/js/noui_slider.js"> </script>
+    <script src="../src/js/amenity.js"></script>
+    <script src="../src/js/additional.js"></script>
+    <script src="../src/js/search.js"></script>
   </body>
 </html>

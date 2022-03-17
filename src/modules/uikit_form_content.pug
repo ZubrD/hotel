@@ -134,4 +134,84 @@
     a(href="/src/empty.html" target="_blank").paginator__icon arrow_forward
     .paginator__text 1 – 12 из 100+ вариантов аренды         
 
-    
+.uikit-form-block-4
+  .amenity.uikit-amenity
+    .uikit-amenity-titles
+      .amenity__title.uikit-amenity__title Dropdown
+      .uikit-amenity__default Default
+    form(action="").amenity-form
+      input(type="text" placeholder="2 спальни, 2 кровати..." sleep=0 bed=0 bath=0 ).uikit-amenity-form__input
+      span.amenity-form__icon expand_more
+
+  .amenity.uikit-amenity.uikit-amenity-second
+    .uikit-amenity-titles
+      .amenity__title.uikit-amenity__title Dropdown
+      .uikit-amenity__default Expanded
+    form(action="").amenity-form
+      input(type="text" placeholder="2 спальни, 2 кровати..." sleep=0 bed=0 bath=0 ).amenity-form__input
+      span.amenity-form__icon expand_more
+    .uikit-amenity-block
+      .amenity-item 
+        .amenity-item__title Спальни
+        .amenity-item-buttons
+          button.amenity-item__button.amenity-item__button-minus#minus-sleep -
+          .amenity-item__result#sleep-result 0              
+          button.amenity-item__button#plus-sleep +
+      .amenity-item 
+        .amenity-item__title Кровати
+        .amenity-item-buttons
+          button.amenity-item__button.amenity-item__button-minus#minus-bed -
+          .amenity-item__result#bed-result 0              
+          button.amenity-item__button#plus-bed +
+      .amenity-item 
+        .amenity-item__title Ванные комнаты
+        .amenity-item-buttons
+          button.amenity-item__button.amenity-item__button-minus#minus-bath -
+          .amenity-item__result#bath-result 0              
+          button.amenity-item__button#plus-bath +   
+
+  .additional.uikit-additional 
+    .uikit-additional__title Expandable checkbox list
+    .uikit-additional__icon expand_more            
+ 
+  .additional.uikit-additional-second 
+    .uikit-additional__title Expandable checkbox list
+    .uikit-additional__icon.rotated__icon expand_more
+    .additional-block
+      form(action="").additional-block-form
+        .additional-block-form__item 
+          input(type="checkbox" id="breakfast").additional-block-form__input
+          label(for="breakfast").additional-block-form__label Завтрак
+        .additional-block-form__item 
+          input(type="checkbox" id="desk" checked).additional-block-form__input
+          label(for="desk").additional-block-form__label Письменный стол
+        .additional-block-form__item 
+          input(type="checkbox" id="chair" checked).additional-block-form__input
+          label(for="chair").additional-block-form__label Стул для кормления
+        .additional-block-form__item 
+          input(type="checkbox" id="little-bed" checked).additional-block-form__input
+          label(for="little-bed").additional-block-form__label Кроватка
+        .additional-block-form__item 
+          input(type="checkbox" id="TV-1").additional-block-form__input
+          label(for="TV-1").additional-block-form__label Телевизор
+        .additional-block-form__item 
+          input(type="checkbox" id="shampoo-1").additional-block-form__input
+          label(for="shampoo-1").additional-block-form__label Шампунь
+        .additional-block-form__item 
+          input(type="checkbox" id="TV-2").additional-block-form__input
+          label(for="TV-2").additional-block-form__label Телевизор
+        .additional-block-form__item 
+          input(type="checkbox" id="shampoo-2").additional-block-form__input
+          label(for="shampoo-2").additional-block-form__label Шампунь 
+
+  .roominfo-item.uikit-roominfo-item 
+    span.roominfo-item__span insert_emoticon
+    .roominfo-item-text
+      .roominfo-item-text__title Комфорт
+      .roominfo-item-text__desc Шумопоглощающие стены
+
+  .roominfo-item.uikit-roominfo-item-second 
+    span.roominfo-item__span location_city
+    .roominfo-item-text
+      .roominfo-item-text__title Удобство 
+      .roominfo-item-text__desc Окно в каждой из спален                
