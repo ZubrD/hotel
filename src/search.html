@@ -1438,6 +1438,10 @@ button {
   width: 974px;
 }
 
+.stay-guest-form {
+  position: relative;
+}
+
 .stay-guest-form__item {
   position: relative;
 }
@@ -1742,6 +1746,126 @@ input[type=number] {
   color: rgba(31, 32, 65, 0.5);
   margin: 0;
   margin-top: 5px;
+}
+
+.guests {
+  position: relative;
+}
+
+.guests__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-top: 31px;
+  margin-bottom: 6px;
+}
+
+.guests-form {
+  position: relative;
+}
+
+.guests-form__input {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  height: 44px;
+  padding-left: 15px;
+  padding-right: 30px;
+  padding-top: 0px;
+}
+
+.guests-form__icon {
+  position: absolute;
+  top: 10px;
+  left: 232px;
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  line-height: 1;
+  vertical-align: middle;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.guests-block {
+  position: absolute;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-color: #fff;
+  z-index: 10;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.guests-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5px;
+}
+
+.guests-item__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 14,63px;
+  padding-left: 15px;
+}
+
+.guests-item-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 92px;
+  padding-right: 5px;
+}
+
+.guests-item__button {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+}
+
+.guests-item__button-minus {
+  border: 1px solid rgba(31, 32, 65, 0.1);
+}
+
+.guests-item__result {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.guests-item:last-child {
+  padding-bottom: 10px;
 }
 
 .amenity {
@@ -4181,7 +4305,33 @@ input[type=number] {
       </div>
       <div class="stay-guest-form__item">
         <p class="stay-guest-form__title">Гости </p>
-        <input class="stay-guest-form__input" type="text" placeholder="3 гостя, 1 младенец"/><span class="stay-guest-form__icon">expand_more  </span>
+        <input class="stay-guest-form__input guest__input" type="text" placeholder="3 гостя, 1 младенец" adult="0" child="0" baby="0" guests="0"/><span class="stay-guest-form__icon">expand_more </span>
+      </div>
+      <div class="guests-block">          
+        <div class="guests-item"> 
+          <div class="guests-item__title">Взрослые</div>
+          <div class="guests-item-buttons">
+            <button class="guests-item__button guests-item__button-minus minus-adult">-</button>
+            <div class="guests-item__result adult-result">0              </div>
+            <button class="guests-item__button plus-adult">+</button>
+          </div>
+        </div>
+        <div class="guests-item"> 
+          <div class="guests-item__title">Дети</div>
+          <div class="guests-item-buttons">
+            <button class="guests-item__button guests-item__button-minus minus-child">-</button>
+            <div class="guests-item__result child-result">0              </div>
+            <button class="guests-item__button plus-child">+</button>
+          </div>
+        </div>
+        <div class="guests-item"> 
+          <div class="guests-item__title">Младенцы</div>
+          <div class="guests-item-buttons">
+            <button class="guests-item__button guests-item__button-minus minus-baby">-</button>
+            <div class="guests-item__result baby-result">0              </div>
+            <button class="guests-item__button plus-baby">+  </button>
+          </div>
+        </div>
       </div>
     </form>
     <div class="sliderp"> 
@@ -4238,25 +4388,25 @@ input[type=number] {
         <div class="amenity-item"> 
           <div class="amenity-item__title">Спальни</div>
           <div class="amenity-item-buttons">
-            <button class="amenity-item__button amenity-item__button-minus" id="minus-sleep">-</button>
-            <div class="amenity-item__result" id="sleep-result">0              </div>
-            <button class="amenity-item__button" id="plus-sleep">+</button>
+            <button class="amenity-item__button amenity-item__button-minus minus-sleep">-</button>
+            <div class="amenity-item__result sleep-result">0              </div>
+            <button class="amenity-item__button plus-sleep">+</button>
           </div>
         </div>
         <div class="amenity-item"> 
           <div class="amenity-item__title">Кровати</div>
           <div class="amenity-item-buttons">
-            <button class="amenity-item__button amenity-item__button-minus" id="minus-bed">-</button>
-            <div class="amenity-item__result" id="bed-result">0              </div>
-            <button class="amenity-item__button" id="plus-bed">+</button>
+            <button class="amenity-item__button amenity-item__button-minus minus-bed">-</button>
+            <div class="amenity-item__result bed-result">0              </div>
+            <button class="amenity-item__button plus-bed">+</button>
           </div>
         </div>
         <div class="amenity-item"> 
           <div class="amenity-item__title">Ванные комнаты</div>
           <div class="amenity-item-buttons">
-            <button class="amenity-item__button amenity-item__button-minus" id="minus-bath">-</button>
-            <div class="amenity-item__result" id="bath-result">0              </div>
-            <button class="amenity-item__button" id="plus-bath">+                                                </button>
+            <button class="amenity-item__button amenity-item__button-minus minus-bath">-</button>
+            <div class="amenity-item__result bath-result">0              </div>
+            <button class="amenity-item__button plus-bath">+                                                </button>
           </div>
         </div>
       </div>
@@ -4810,6 +4960,7 @@ input[type=number] {
 </footer>
     <script src="../src/libs/nouislider.min.js"> </script>
     <script src="../src/js/noui_slider.js"> </script>
+    <script src="../src/js/guests.js"></script>
     <script src="../src/js/amenity.js"></script>
     <script src="../src/js/additional.js"></script>
     <script src="../src/js/search.js"></script>

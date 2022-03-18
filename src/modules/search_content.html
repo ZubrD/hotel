@@ -8,7 +8,33 @@
       </div>
       <div class="stay-guest-form__item">
         <p class="stay-guest-form__title">Гости </p>
-        <input class="stay-guest-form__input" type="text" placeholder="3 гостя, 1 младенец"/><span class="stay-guest-form__icon">expand_more  </span>
+        <input class="stay-guest-form__input guest__input" type="text" placeholder="3 гостя, 1 младенец" adult="0" child="0" baby="0" guests="0"/><span class="stay-guest-form__icon">expand_more </span>
+      </div>
+      <div class="guests-block">          
+        <div class="guests-item"> 
+          <div class="guests-item__title">Взрослые</div>
+          <div class="guests-item-buttons">
+            <button class="guests-item__button guests-item__button-minus minus-adult">-</button>
+            <div class="guests-item__result adult-result">0              </div>
+            <button class="guests-item__button plus-adult">+</button>
+          </div>
+        </div>
+        <div class="guests-item"> 
+          <div class="guests-item__title">Дети</div>
+          <div class="guests-item-buttons">
+            <button class="guests-item__button guests-item__button-minus minus-child">-</button>
+            <div class="guests-item__result child-result">0              </div>
+            <button class="guests-item__button plus-child">+</button>
+          </div>
+        </div>
+        <div class="guests-item"> 
+          <div class="guests-item__title">Младенцы</div>
+          <div class="guests-item-buttons">
+            <button class="guests-item__button guests-item__button-minus minus-baby">-</button>
+            <div class="guests-item__result baby-result">0              </div>
+            <button class="guests-item__button plus-baby">+  </button>
+          </div>
+        </div>
       </div>
     </form>
     <div class="sliderp"> 
@@ -65,25 +91,25 @@
         <div class="amenity-item"> 
           <div class="amenity-item__title">Спальни</div>
           <div class="amenity-item-buttons">
-            <button class="amenity-item__button amenity-item__button-minus" id="minus-sleep">-</button>
-            <div class="amenity-item__result" id="sleep-result">0              </div>
-            <button class="amenity-item__button" id="plus-sleep">+</button>
+            <button class="amenity-item__button amenity-item__button-minus minus-sleep">-</button>
+            <div class="amenity-item__result sleep-result">0              </div>
+            <button class="amenity-item__button plus-sleep">+</button>
           </div>
         </div>
         <div class="amenity-item"> 
           <div class="amenity-item__title">Кровати</div>
           <div class="amenity-item-buttons">
-            <button class="amenity-item__button amenity-item__button-minus" id="minus-bed">-</button>
-            <div class="amenity-item__result" id="bed-result">0              </div>
-            <button class="amenity-item__button" id="plus-bed">+</button>
+            <button class="amenity-item__button amenity-item__button-minus minus-bed">-</button>
+            <div class="amenity-item__result bed-result">0              </div>
+            <button class="amenity-item__button plus-bed">+</button>
           </div>
         </div>
         <div class="amenity-item"> 
           <div class="amenity-item__title">Ванные комнаты</div>
           <div class="amenity-item-buttons">
-            <button class="amenity-item__button amenity-item__button-minus" id="minus-bath">-</button>
-            <div class="amenity-item__result" id="bath-result">0              </div>
-            <button class="amenity-item__button" id="plus-bath">+                                                </button>
+            <button class="amenity-item__button amenity-item__button-minus minus-bath">-</button>
+            <div class="amenity-item__result bath-result">0              </div>
+            <button class="amenity-item__button plus-bath">+                                                </button>
           </div>
         </div>
       </div>
