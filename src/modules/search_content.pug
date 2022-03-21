@@ -7,8 +7,9 @@
                 span.stay-guest-form__icon expand_more
             .stay-guest-form__item
                 p.stay-guest-form__title Гости 
-                input(type="text" placeholder='3 гостя, 1 младенец' adult=0 child=0 baby=0 guests=0).stay-guest-form__input.guest__input
+                input(type="text" placeholder='Сколько гостей' adult=0 child=0 baby=0 guests=0).stay-guest-form__input.guest__input
                 span.stay-guest-form__icon expand_more 
+            //- .guests-block.block-open           
             .guests-block           
                 .guests-item 
                     .guests-item__title Взрослые
@@ -28,6 +29,11 @@
                         button.guests-item__button.guests-item__button-minus.minus-baby -
                         .guests-item__result.baby-result 0              
                         button.guests-item__button.plus-baby +  
+                .guests-item 
+                    .guests-confirmation__clear Очистить
+                    .guests-confirmation__assume Применить
+                      
+
 
         .sliderp 
             .sliderp-title-wrapper 

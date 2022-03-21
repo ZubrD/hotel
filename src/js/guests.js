@@ -144,10 +144,9 @@ $('.minus-baby').on('click', function(event){
   $('.baby-result').text(value)
 })
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////СОСТАВЛЕНИЕ СООБЩЕНИЯ ВЫВОДА В ИНПУТ КОЛИЧЕСТВА ГОСТЕЙ////////////////////////////////////
 
 function messangeInput() {
-  console.log('вызов')
     let guests = parseInt($('.guest__input').attr('guests'))
     let baby = parseInt($('.guest__input').attr('baby'))
     let guestsPl, babyPl
@@ -165,10 +164,8 @@ function messangeInput() {
 
     if (baby == 1){
         babyPl = 'младенец'
-    } else if (baby > 1 && baby < 5) {
+    } else {
         babyPl = 'младенца'
-    } else if (baby > 4) {
-        babyPl = 'младенцев'
     }
 
     if (onlyGuests > 0 && baby == 0) {
@@ -179,3 +176,27 @@ function messangeInput() {
  
     return messange
 }
+
+///////////////////////////////////СБРОС ЗНАЧЕНИЙ В ФОРМЕ ПОДБОРА КОЛИЧЕСТВА ГОСТЕЙ///////////////////////////////
+
+$('.guests-confirmation__clear').on('click', function () {
+  $('.guest__input').val('')
+  $('.guest__input').attr('adult', 0)
+  $('.guest__input').attr('child', 0)
+  $('.guest__input').attr('baby', 0)
+  $('.guest__input').attr('guests', 0)
+
+  $('.adult-result').text('0')
+  $('.child-result').text('0')
+  $('.baby-result').text('0')
+
+  $('.minus-adult').css('border', '1px solid rgba(31, 32, 65, 0.1)')
+  $('.minus-child').css('border', '1px solid rgba(31, 32, 65, 0.1)')
+  $('.minus-baby').css('border', '1px solid rgba(31, 32, 65, 0.1)')
+})
+
+///////////////////////////////////ПРИНЯТЬ ЗНАЧЕНИЯ (СКРЫТЬ ФОРМУ)///////////////////////////////
+
+$('.guests-confirmation__assume').on('click', function () {
+  $('.guests-block').addClass('block-open')
+})
