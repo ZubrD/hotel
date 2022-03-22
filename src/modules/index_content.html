@@ -25,26 +25,38 @@
       </div>
       <div class="guests"> 
         <form class="guest-form" action=""> 
-          <p class="guest-form__title">Гости </p>
-          <div class="iqdropdown">
-            <p class="iqdropdown-selection" data-selection-text="Гость"></p>
-            <div class="iqdropdown-menu">
-              <div class="iqdrop-wrapper">
-                <div class="iqdropdown-menu-text">Взрослые</div>
-                <div class="iqdropdown-menu-option" data-id="item1"></div>
+          <div class="stay-guest-form__item">
+            <p class="stay-guest-form__title">Гости </p>
+            <input class="stay-guest-form__input guest__input" type="text" placeholder="Сколько гостей" adult="0" child="0" baby="0" guests="0"/><span class="stay-guest-form__icon">expand_more </span>
+          </div>
+          <div class="guests-block block-open">          
+            <div class="guests-item"> 
+              <div class="guests-item__title">Взрослые</div>
+              <div class="guests-item-buttons">
+                <button class="guests-item__button guests-item__button-minus minus-adult">-</button>
+                <div class="guests-item__result adult-result">0              </div>
+                <button class="guests-item__button plus-adult">+</button>
               </div>
-              <div class="iqdrop-wrapper">
-                <div class="iqdropdown-menu-text">Дети</div>
-                <div class="iqdropdown-menu-option" data-id="item2"></div>
+            </div>
+            <div class="guests-item"> 
+              <div class="guests-item__title">Дети</div>
+              <div class="guests-item-buttons">
+                <button class="guests-item__button guests-item__button-minus minus-child">-</button>
+                <div class="guests-item__result child-result">0              </div>
+                <button class="guests-item__button plus-child">+</button>
               </div>
-              <div class="iqdrop-wrapper">
-                <div class="iqdropdown-menu-text">Младенцы</div>
-                <div class="iqdropdown-menu-option" data-id="item3"></div>
+            </div>
+            <div class="guests-item"> 
+              <div class="guests-item__title">Младенцы</div>
+              <div class="guests-item-buttons">
+                <button class="guests-item__button guests-item__button-minus minus-baby">-</button>
+                <div class="guests-item__result baby-result">0              </div>
+                <button class="guests-item__button plus-baby">+  </button>
               </div>
-              <div class="iqdrop-wrapper">
-                <div class="guests__clear">Очистить</div>
-                <div class="guests__ok">Применить</div>
-              </div>
+            </div>
+            <div class="guests-item"> 
+              <div class="guests-confirmation__clear">Очистить</div>
+              <div class="guests-confirmation__assume">Применить</div>
             </div>
           </div>
         </form>
