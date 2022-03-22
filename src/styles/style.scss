@@ -765,7 +765,7 @@ button {
     &__icon {
         position: absolute;
         top: 30px;
-        left: 284px;
+        left: 234px;
         font-family: 'Material Icons';
         font-weight: normal;
         font-style: normal;
@@ -773,6 +773,9 @@ button {
         line-height: 1;
         vertical-align: middle;
         color: rgba(31, 32, 65, 0.5);
+        &-index {
+          left: 284px;
+        }
     }
 }
 
@@ -2989,6 +2992,29 @@ input[type=number] {
   }
   &-roominfo-item-second {
     margin-top: 23px;
+  }
+  &-guests-wrapper {
+    width: 320px;
+    position: relative;
+  }
+  &-guests__icon {
+    left: 285px;
+  }
+  &-availability {
+    margin-top: 256px;
+    width: 266px;
+    position: relative;
+  }
+  &-rules {
+    margin-top: 256px;
+    &__title {
+      margin-left: 7px;
+    }
+    &-wrapper {
+      margin-top: 13px;
+      margin-left: 2px;
+      width: 267px;
+    }
   }
 }
 

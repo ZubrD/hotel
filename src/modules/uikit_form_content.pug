@@ -214,4 +214,80 @@
     span.roominfo-item__span location_city
     .roominfo-item-text
       .roominfo-item-text__title Удобство 
-      .roominfo-item-text__desc Окно в каждой из спален                
+      .roominfo-item-text__desc Окно в каждой из спален  
+
+.uikit-form-block-5   
+  .uikit-guests-wrapper
+    .stay-guest-form__item
+      p.stay-guest-form__title Dropdown 
+      input(type="text" placeholder='Сколько гостей' adult=0 child=0 baby=0 guests=0).stay-guest-form__input.guest__input
+      span.stay-guest-form__icon.uikit-guests__icon expand_more 
+    .guests-block           
+      .guests-item 
+        .guests-item__title Взрослые
+        .guests-item-buttons
+          button.guests-item__button.guests-item__button-minus.minus-adult -
+          .guests-item__result.adult-result 0              
+          button.guests-item__button.plus-adult +
+      .guests-item 
+        .guests-item__title Дети
+        .guests-item-buttons
+          button.guests-item__button.guests-item__button-minus.minus-child -
+          .guests-item__result.child-result 0              
+          button.guests-item__button.plus-child +
+      .guests-item 
+        .guests-item__title Младенцы
+        .guests-item-buttons
+          button.guests-item__button.guests-item__button-minus.minus-baby -
+          .guests-item__result.baby-result 0              
+          button.guests-item__button.plus-baby +  
+      .guests-item 
+        .guests-confirmation__clear.opaque Очистить
+        .guests-confirmation__assume Применить 
+
+  form(action="").availability-form.uikit-availability
+    .availability-form__title Rich Checkbox Buttons
+    .availability-form__item
+      input(type="checkbox" id="corridor").availability-form__input
+      label(for="corridor").availability-form__label Широкий коридор
+        p.availability-form__text Ширина коридоров в номере не менее 91 см.             
+    .availability-form__item 
+      input(type="checkbox" id="assistant").availability-form__input
+      label(for="assistant").availability-form__label Помощник для инвалидов
+        p.availability-form__text На 1 этаже вас встретит специалист и проводит до номера. 
+
+.uikit-form-block-6    
+  .uikit-guests-wrapper
+    .stay-guest-form__item
+      p.stay-guest-form__title Dropdown 
+      input(type="text" placeholder='3 гостя' adult=0 child=0 baby=0 guests=0).stay-guest-form__input.guest__input
+      span.stay-guest-form__icon.uikit-guests__icon expand_more 
+    .guests-block           
+      .guests-item 
+        .guests-item__title Взрослые
+        .guests-item-buttons
+          button.guests-item__button.guests-item__button-minus.minus-adult -
+          .guests-item__result.adult-result 2              
+          button.guests-item__button.plus-adult +
+      .guests-item 
+        .guests-item__title Дети
+        .guests-item-buttons
+          button.guests-item__button.guests-item__button-minus.minus-child -
+          .guests-item__result.child-result 1              
+          button.guests-item__button.plus-child +
+      .guests-item 
+        .guests-item__title Младенцы
+        .guests-item-buttons
+          button.guests-item__button.guests-item__button-minus.minus-baby -
+          .guests-item__result.baby-result 0              
+          button.guests-item__button.plus-baby +  
+      .guests-item 
+        .guests-confirmation__clear Очистить
+        .guests-confirmation__assume Применить 
+
+  section.rules.uikit-rules 
+    .stay-guest-form__title.uikit-rules__title Bullet List
+    .uikit-rules-wrapper
+      .rules-item.uikit-rules-item Нельзя с питомцами             
+      .rules-item.uikit-rules-item Без вечеринок и мероприятий            
+      .rules-item.uikit-rules-item Время прибытия — после 13:00, а выезд до 12:00                                       
