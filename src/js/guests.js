@@ -8,6 +8,7 @@ $('.guest__input').on('focus', function(){
 
 $('.plus-adult').on('click', function(event){
   event.preventDefault()
+  $('.guests-confirmation__clear').removeClass('opaque')
   let value = parseInt($('.guest__input').attr('adult'))
   let guests = parseInt($('.guest__input').attr('guests'))
   if (guests < 10) {
@@ -40,10 +41,16 @@ $('.minus-adult').on('click', function(event){
       $('.guest__input').attr({'adult': value})         
       $('.guest__input').attr({'guests': guests})       
     }
-  } 
+  }
+
   if (value == 0) {
         $(this).css('border', '1px solid rgba(31, 32, 65, 0.1)')
   }
+
+  if (guests == 0) {
+    $('.guests-confirmation__clear').addClass('opaque')    
+  }
+
   $('.guest__input').val(messangeInput())
   $('.adult-result').text(value)
 })
@@ -52,6 +59,7 @@ $('.minus-adult').on('click', function(event){
 
 $('.plus-child').on('click', function(event){
   event.preventDefault()
+  $('.guests-confirmation__clear').removeClass('opaque')
   let value = parseInt($('.guest__input').attr('child'))
   let guests = parseInt($('.guest__input').attr('guests'))
   let adult = parseInt($('.guest__input').attr('adult'))
@@ -89,9 +97,11 @@ $('.minus-child').on('click', function(event){
       $('.guest__input').attr({'child': value})         
       $('.guest__input').attr({'guests': guests})         
   }
+
   if (value == 0) {
       $(this).css('border', '1px solid rgba(31, 32, 65, 0.1)')
   }     
+ 
   $('.guest__input').val(messangeInput())
   $('.child-result').text(value)
 })
@@ -100,6 +110,7 @@ $('.minus-child').on('click', function(event){
 
 $('.plus-baby').on('click', function(event){
   event.preventDefault()
+  $('.guests-confirmation__clear').removeClass('opaque')
   let value = parseInt($('.guest__input').attr('baby'))
   let guests = parseInt($('.guest__input').attr('guests'))
   let adult = parseInt($('.guest__input').attr('adult'))
@@ -137,9 +148,11 @@ $('.minus-baby').on('click', function(event){
       $('.guest__input').attr({'baby': value})         
       $('.guest__input').attr({'guests': guests})         
   }
+
   if (value == 0) {
       $(this).css('border', '1px solid rgba(31, 32, 65, 0.1)')
   }    
+
   $('.guest__input').val(messangeInput())
   $('.baby-result').text(value)
 })
@@ -193,6 +206,8 @@ $('.guests-confirmation__clear').on('click', function () {
   $('.minus-adult').css('border', '1px solid rgba(31, 32, 65, 0.1)')
   $('.minus-child').css('border', '1px solid rgba(31, 32, 65, 0.1)')
   $('.minus-baby').css('border', '1px solid rgba(31, 32, 65, 0.1)')
+  
+  $('.guests-confirmation__clear').addClass('opaque')    
 })
 
 ///////////////////////////////////ПРИНЯТЬ ЗНАЧЕНИЯ (СКРЫТЬ ФОРМУ)///////////////////////////////
