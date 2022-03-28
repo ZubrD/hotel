@@ -1,0 +1,119 @@
+.uikit-cards 
+  .uikit-cards-block-1    
+    .wishes.uikit-wishes
+      h1.wishes__title Найдём номера под ваши пожелания
+      .calendar-forms
+        form(action="").dates-form
+          .dates-form__item
+            p.dates-form__title Прибытие 
+            input(type="text" placeholder='дд.мм.гггг')#date_1.dates-form__input
+            span.dates-form__icon expand_more
+          .dates-form__item
+            p.dates-form__title Выезд 
+            input(type="text" placeholder='дд.мм.гггг')#date_2.dates-form__input
+            span.dates-form__icon expand_more
+        .datepicker-wrapper
+          form.datepicker-form(action="", hidden)
+            input#calendar.datepicker-position(type='text', hidden)
+            .datepicker__clear Очистить
+            .datepicker__ok Применить
+      .guests 
+        form(action="").guest-form 
+          .stay-guest-form__item
+            p.stay-guest-form__title Гости 
+            input(type="text" placeholder='Сколько гостей' adult=0 child=0 baby=0 guests=0).stay-guest-form__input.guest__input
+            span.stay-guest-form__icon.stay-guest-form__icon-index expand_more 
+      .pickup
+        .pickup-wrapper
+          a(href="/src/search.html" target="_blank").pickup-wrapper-empty
+            button.pickup__button Подобрать номер
+            span.pickup__icon arrow_forward
+
+  .uikit-cards-block-2 
+    .registration-card.uikit-registration-card
+      .registration-card-wrapper
+        .registration-card__title Регистрация аккаунта
+        form(action="").registration-card-form 
+          input(type="text" placeholder="Имя").registration-card-form__input
+          input(type="text" placeholder="Фамилия").registration-card-form__input
+          .registration-card-form-sex
+              .registration-card-form-sex-item
+                  input(type="radio" id="male" name="sex" checked).registration-card-form-sex__input
+                  label(for="male").registration-card-form-sex__label Мужчина
+              .registration-card-form-sex-item                           
+                input(type="radio" id="female" name="sex").registration-card-form-sex__input
+                label(for="female").registration-card-form-sex__label Женщина                     
+          .registration-card-form__title Дата рождения
+          input(type="text" placeholder="ДД.ММ.ГГГГ").registration-card-form__input
+          .registration-card-form__title Данные для входа в сервис
+          input(type="email" placeholder="Email").registration-card-form__input
+          input(type="password" placeholder="Пароль").registration-card-form__input
+          .registration-card-form-proposal
+            input(type="checkbox" id="proposal" name="proposal").registration-card-form-proposal__input
+            label(for="proposal").registration-card-form-proposal__label Получать спецпредложения
+          .registration-card-form-send
+            a(href="").registration-card-form-send__link
+              button.registration-card-form-send__button Зарегистрироваться
+              span.registration-card-form-send__icon arrow_forward
+          .registration-card-form-enter 
+            a(href="/src/login.html" target="_blank").registration-card-form-enter__link Уже есть аккаунт на Toxin
+            a(href="/src/login.html" target="_blank").registration-card-form-enter__button  
+  .uikit-cards-block-3
+    section.summary 
+      .summary-room
+        .summary-room-digits 
+          .summary-room-numbers 
+            .summary-room__symbol №
+            .summary-room__number 888
+            .summary-room__rank Люкс 
+          .summary-room-price 
+            .summary-room__rubl 9 990₽
+            .summary-room__period в сутки
+        form(action="").summary-dates-form
+          .summary-dates-form__item
+            p.summary-dates-form__title Прибытие 
+            input(type="text" placeholder='дд.мм.гггг').summary-dates-form__input
+            span.summary-dates-form__icon expand_more
+          .summary-dates-form__item
+            p.summary-dates-form__title Выезд 
+            input(type="text" placeholder='дд.мм.гггг').summary-dates-form__input
+            span.summary-dates-form__icon expand_more   
+        form(action="").summary-guests-form
+          .summary-guests-form__title Гости
+          input(type="text" placeholder="Сколько гостей").summary-guests-form__input
+          span.summary-guests-form__icon expand_more
+        .summary-totalprice 
+          .summary-totalprice__left 9 990₽ х 4 суток
+          .summary-totalprice__right 39 960₽
+        .summary-services 
+          .summary-services-left
+            .summary-services-left__text Сбор за услуги: скидка 2 179₽
+            .summary-services-left__icon &#9432;
+          .summary-services-right 0₽
+        .summary-services 
+          .summary-services-left
+            .summary-services-left__text-1 Сбор за дополнительные услуги
+            .summary-services-left__icon &#9432;
+          .summary-services-right 300₽ 
+        .summary-total 
+          .summary-total__text Итого
+          .summary-total__box 
+          .summary-total__number 38 081₽
+          .pickup
+        .summary-pickup
+          button.pickup__button Забронировать
+          span.pickup__icon arrow_forward 
+  .uikit-cards-block-4  
+    .registration-card.uikit-registration-card
+      .registration-card-wrapper
+        .registration-card__title Войти
+        form(action="").registration-card-form 
+          input(type="text" placeholder="Email").registration-card-form__input
+          input(type="text" placeholder="Пароль").registration-card-form__input                  
+          .registration-card-form-send
+            a(href="/src/login.html" target="_blank").registration-card-form-send__link 
+            button.registration-card-form-send__button Войти
+            span.registration-card-form-send__icon arrow_forward
+          .registration-card-form-enter 
+            a(href="/src/registration.html" target="_blank").registration-card-form-enter__link Нет аккаунта на Toxin?
+            a(href="/src/registration.html" target="_blank").registration-card-form-enter__button-create                             

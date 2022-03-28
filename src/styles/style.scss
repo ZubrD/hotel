@@ -2238,6 +2238,7 @@ input[type=number] {
         margin: 0 auto;
         box-sizing: border-box;
         border: 1px solid rgba(0, 0, 0, 0.12);
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
         background-color: #fff;
         font-family: 'Montserrat', sans-serif;
         &-wrapper {
@@ -3025,6 +3026,12 @@ input[type=number] {
   &-reviews-item {
     width: 711px;
     margin-top: 13px;
+  }
+  &-wishes {
+    position: static;
+  }
+  &-registration-card {
+    margin: 0;
   }
 }
 
