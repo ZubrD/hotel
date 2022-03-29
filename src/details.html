@@ -4461,6 +4461,113 @@ input[type=number] {
   -ms-grid-row-span: 1;
   grid-row: 4 / 5;
 }
+
+.calendar {
+  margin-top: 20px;
+  width: 320px;
+  border: 1px solid black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.calendar-top {
+  position: relative;
+}
+
+.calendar-top__title {
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 23px;
+  color: #1F2041;
+}
+
+.calendar-arrow-back {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  vertical-align: middle;
+  color: #BC9CFF;
+}
+
+.calendar-arrow-forward {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  vertical-align: middle;
+  color: #BC9CFF;
+}
+
+.calendar-days {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[7];
+      grid-template-columns: repeat(7, 1fr);
+  justify-items: center;
+  margin-top: 30px;
+}
+
+.calendar-days-item {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BC9CFF;
+}
+
+.calendar-numbers {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[7];
+      grid-template-columns: repeat(7, 1fr);
+  justify-items: center;
+  row-gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.calendar-numbers-item {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BC9CFF;
+}
+
+.calendar-numbers-item-sel {
+  border: 1px solid red;
+  padding: 10px;
+}
+
+.calendar-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.calendar-bottom-item {
+  font-family: 'Material Icons';
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BC9CFF;
+  text-transform: uppercase;
+}
 /*# sourceMappingURL=style.css.map */
     </style>
   </head>
