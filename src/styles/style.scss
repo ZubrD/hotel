@@ -3209,13 +3209,10 @@ input[type=number] {
 
 .calendar {
   margin-top: 20px;
-  width: 320px;
-  border: 1px solid black;
+  width: 277px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
   padding-left: 20px;
   padding-right: 20px;
-  &-container {
-
-  }
   &-top {
     position: relative;
     &__title {
@@ -3256,7 +3253,7 @@ input[type=number] {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     justify-items: center;
-    margin-top: 30px;
+    margin-top: 43px;
     &-item {
       font-family: 'Montserrat', sans-serif;
       font-weight: 700;
@@ -3268,25 +3265,53 @@ input[type=number] {
   &-numbers {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    justify-items: center;
-    row-gap: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 13px;
+    margin-bottom: 22px;
+    height: 200px;
     &-item {
+      display: grid;
+      place-items: center;
       font-family: 'Montserrat', sans-serif;
       font-weight: 400;
       font-size: 12px;
       line-height: 15px;
       color: #BC9CFF; 
       &-sel {
-        border: 1px solid red;
-        padding: 10px;
+        &::before {
+          content: '2';
+          background: linear-gradient(151deg, rgba(188,156,255,1) 0%, rgba(139,164,249,1) 100%);
+          position: absolute;
+          height: 38px;
+          width: 160px;
+          opacity: 0.25;
+          left: 47px;
+          z-index: -1;
+          color: gray;
+        }           
+      }  
+      &-green {
+        border-radius: 50%;
+        background: linear-gradient(151deg, rgba(111,207,151,1) 0%, rgba(102,210,234,1) 100%);
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        color: white; 
+      }
+      &-purple {
+        border-radius: 50%;
+        background: linear-gradient(151deg, rgba(188,156,255,1) 0%, rgba(139,164,249,1) 100%);
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        color: white; 
+        position: relative;
+        z-index: 2;
+  
       }
     }
   }
   &-bottom {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
     &-item {
       font-family: 'Material Icons';
       font-weight: 700;

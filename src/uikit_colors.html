@@ -3840,8 +3840,8 @@ input[type=number] {
 
 .calendar {
   margin-top: 20px;
-  width: 320px;
-  border: 1px solid black;
+  width: 277px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -3892,7 +3892,7 @@ input[type=number] {
   -ms-grid-columns: (1fr)[7];
       grid-template-columns: repeat(7, 1fr);
   justify-items: center;
-  margin-top: 30px;
+  margin-top: 43px;
 }
 
 .calendar-days-item {
@@ -3908,13 +3908,15 @@ input[type=number] {
   display: grid;
   -ms-grid-columns: (1fr)[7];
       grid-template-columns: repeat(7, 1fr);
-  justify-items: center;
-  row-gap: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 13px;
+  margin-bottom: 22px;
+  height: 200px;
 }
 
 .calendar-numbers-item {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -3922,9 +3924,34 @@ input[type=number] {
   color: #BC9CFF;
 }
 
-.calendar-numbers-item-sel {
-  border: 1px solid red;
-  padding: 10px;
+.calendar-numbers-item-sel::before {
+  content: '2';
+  background: linear-gradient(151deg, #bc9cff 0%, #8ba4f9 100%);
+  position: absolute;
+  height: 38px;
+  width: 160px;
+  opacity: 0.25;
+  left: 47px;
+  z-index: -1;
+  color: gray;
+}
+
+.calendar-numbers-item-green {
+  border-radius: 50%;
+  background: linear-gradient(151deg, #6fcf97 0%, #66d2ea 100%);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: white;
+}
+
+.calendar-numbers-item-purple {
+  border-radius: 50%;
+  background: linear-gradient(151deg, #bc9cff 0%, #8ba4f9 100%);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: white;
+  position: relative;
+  z-index: 2;
 }
 
 .calendar-bottom {
@@ -3934,6 +3961,7 @@ input[type=number] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .calendar-bottom-item {
