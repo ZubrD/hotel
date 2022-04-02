@@ -103,6 +103,22 @@ ul {
             &--burger {
                 display: none;
             }
+            &-logged {
+              position: relative;
+              margin-left: 20px;
+              &::before {
+                position: absolute;
+                content: '';
+                width: 1px;
+                height: 30px;
+                left: -17px;
+                top: calc(50% - 15px);
+                background: rgba(31, 32, 65, 0.1);
+              }
+            }
+            &-active {
+              font-weight: 700;
+            }
         }
         &__icon {
             position: absolute;
@@ -677,6 +693,8 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 13px;
+    margin-bottom: 13px;
     &-block {
         padding-left: 125px;
         padding-right: 125px;
@@ -3040,6 +3058,31 @@ input[type=number] {
   }
   &-search-room__item {
     margin-bottom: 0;
+  }
+  &-footer-container {
+    max-width: 768px;
+    text-align: center;
+  }
+  &-copyright-list {
+    width: 112px;
+    margin: 0 auto;
+    margin-top: 12px;
+  }
+  &-copyright-list__item {
+    margin: 0;
+  }
+  &-copyright-text {
+    margin-top: 15px;
+  }
+  &-headers-footers {
+    display: grid;
+    row-gap: 40px;
+  }
+  &-footer {
+    padding-top: 96px;
+  }
+  &-footer-adopted {
+    padding-top: 113px;
   }
 }
 

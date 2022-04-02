@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>UI kit Cards</title>
-    <link rel="stylesheet" href="../src/libs/nouislider.min.css">
+    <title>UI kit Headers Footers</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -4062,296 +4061,112 @@ input[type=number] {
     </style>
   </head>
   <body>
-    <div class="uikit-header"><img class="uikit-header-logo" src="images/logo_circle.png" alt="Логотип"></div>
-    <div class="uikit-cards"> 
-      <div class="uikit-cards-blocks-1-2">
-        <div class="uikit-cards-block-1">   
-          <div class="wishes uikit-wishes">
-            <h1 class="wishes__title">Найдём номера под ваши пожелания</h1>
-            <div class="calendar-forms">
-              <form class="dates-form" action="">
-                <div class="dates-form__item">
-                  <p class="dates-form__title">Прибытие </p>
-                  <input class="dates-form__input" type="text" placeholder="дд.мм.гггг" id="date_1"><span class="dates-form__icon">expand_more</span>
-                </div>
-                <div class="dates-form__item">
-                  <p class="dates-form__title">Выезд </p>
-                  <input class="dates-form__input" type="text" placeholder="дд.мм.гггг" id="date_2"><span class="dates-form__icon">expand_more</span>
-                </div>
-              </form>
-              <div class="datepicker-wrapper">
-                <form class="datepicker-form" action="" hidden>
-                  <input class="datepicker-position" id="calendar" type="text" hidden>
-                  <div class="datepicker__clear">Очистить</div>
-                  <div class="datepicker__ok">Применить</div>
-                </form>
-              </div>
-            </div>
-            <div class="guests"> 
-              <form class="guest-form" action=""> 
-                <div class="stay-guest-form__item">
-                  <p class="stay-guest-form__title">Гости </p>
-                  <input class="stay-guest-form__input guest__input" type="text" placeholder="Сколько гостей" adult="0" child="0" baby="0" guests="0"><span class="stay-guest-form__icon stay-guest-form__icon-index">expand_more </span>
-                </div>
-              </form>
-            </div>
-            <div class="pickup">
-              <div class="pickup-wrapper"><a class="pickup-wrapper-empty" href="/src/search.html" target="_blank">
-                  <button class="pickup__button">Подобрать номер</button><span class="pickup__icon">arrow_forward</span></a></div>
-            </div>
-          </div>
-        </div>
-        <div class="uikit-cards-block-2"> 
-          <div class="registration-card uikit-registration-card">
-            <div class="registration-card-wrapper">
-              <div class="registration-card__title">Регистрация аккаунта</div>
-              <form class="registration-card-form" action=""> 
-                <input class="registration-card-form__input" type="text" placeholder="Имя">
-                <input class="registration-card-form__input" type="text" placeholder="Фамилия">
-                <div class="registration-card-form-sex">
-                  <div class="registration-card-form-sex-item">
-                    <input class="registration-card-form-sex__input" type="radio" id="male" name="sex" checked>
-                    <label class="registration-card-form-sex__label" for="male">Мужчина</label>
-                  </div>
-                  <div class="registration-card-form-sex-item">                          
-                    <input class="registration-card-form-sex__input" type="radio" id="female" name="sex">
-                    <label class="registration-card-form-sex__label" for="female">Женщина                     </label>
-                  </div>
-                </div>
-                <div class="registration-card-form__title">Дата рождения</div>
-                <input class="registration-card-form__input" type="text" placeholder="ДД.ММ.ГГГГ">
-                <div class="registration-card-form__title">Данные для входа в сервис</div>
-                <input class="registration-card-form__input" type="email" placeholder="Email">
-                <input class="registration-card-form__input" type="password" placeholder="Пароль">
-                <div class="registration-card-form-proposal">
-                  <input class="registration-card-form-proposal__input" type="checkbox" id="proposal" name="proposal">
-                  <label class="registration-card-form-proposal__label" for="proposal">Получать спецпредложения</label>
-                </div>
-                <div class="registration-card-form-send"><a class="registration-card-form-send__link" href="">
-                    <button class="registration-card-form-send__button">Зарегистрироваться</button><span class="registration-card-form-send__icon">arrow_forward</span></a></div>
-                <div class="registration-card-form-enter"> <a class="registration-card-form-enter__link" href="/src/login.html" target="_blank">Уже есть аккаунт на Toxin</a><a class="registration-card-form-enter__button" href="/src/login.html" target="_blank"> </a></div>
-              </form>
+    <div class="uikit-headers-footers">
+      <div class="uikit-header-start">
+        <div class="container">
+          <div class="header">
+            <div class="logo"><a class="logo__link" href="/src/index.html" target="_blank"><img class="logo__img" src="images/logo.png" alt="Логотип"></a></div>
+            <div class="right">
+              <nav class="right-menu">
+                <ul class="right-menu-list"> 
+                  <li class="right-menu__item"> <a class="right-menu__link" href="/src/empty.html" target="_blank">О нас</a></li>
+                  <li class="right-menu__item"> <a class="right-menu__link" href="/src/empty.html" target="_blank">Услуги<span class="right-menu__icon">expand_more</span></a></li>
+                  <li class="right-menu__item"> <a class="right-menu__link" href="/src/empty.html" target="_blank">Вакансии</a></li>
+                  <li class="right-menu__item"> <a class="right-menu__link" href="/src/empty.html" target="_blank">Новости</a></li>
+                  <li class="right-menu__item"> <a class="right-menu__link" href="/src/empty.html" target="_blank">Соглашения<span class="right-menu__icon">expand_more</span></a></li>
+                  <li class="right-menu__item"> <a class="right-menu__link right-menu__link--burger" href="/src/login.html" target="_blank">Войти</a><a class="right-enter__link" href="/src/login.html" target="_blank">
+                      <div class="right__btn-linear">           </div></a></li>
+                  <li class="right-menu__item"> <a class="right-menu__link right-menu__link--burger" href="/src/registration.html" target="_blank">Зарегистироваться</a><a class="right-enter__register" href="/src/registration.html" target="_blank">
+                      <button class="right__btn right__btn-reg">зарегистрироваться </button></a></li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>
       </div>
-      <div class="uikit-cards-blocks-3-4">
-        <div class="uikit-cards-block-3">
-          <section class="summary"> 
-            <div class="summary-room">
-              <div class="summary-room-digits"> 
-                <div class="summary-room-numbers"> 
-                  <div class="summary-room__symbol">№</div>
-                  <div class="summary-room__number">888</div>
-                  <div class="summary-room__rank">Люкс </div>
-                </div>
-                <div class="summary-room-price"> 
-                  <div class="summary-room__rubl">9 990₽</div>
-                  <div class="summary-room__period">в сутки</div>
-                </div>
-              </div>
-              <form class="summary-dates-form" action="">
-                <div class="summary-dates-form__item">
-                  <p class="summary-dates-form__title">Прибытие </p>
-                  <input class="summary-dates-form__input" type="text" placeholder="дд.мм.гггг"><span class="summary-dates-form__icon">expand_more</span>
-                </div>
-                <div class="summary-dates-form__item">
-                  <p class="summary-dates-form__title">Выезд </p>
-                  <input class="summary-dates-form__input" type="text" placeholder="дд.мм.гггг"><span class="summary-dates-form__icon">expand_more   </span>
-                </div>
-              </form>
-              <form class="summary-guests-form" action="">
-                <div class="summary-guests-form__title">Гости</div>
-                <input class="summary-guests-form__input" type="text" placeholder="Сколько гостей"><span class="summary-guests-form__icon">expand_more</span>
-              </form>
-              <div class="summary-totalprice"> 
-                <div class="summary-totalprice__left">9 990₽ х 4 суток</div>
-                <div class="summary-totalprice__right">39 960₽</div>
-              </div>
-              <div class="summary-services"> 
-                <div class="summary-services-left">
-                  <div class="summary-services-left__text">Сбор за услуги: скидка 2 179₽</div>
-                  <div class="summary-services-left__icon">&#9432;</div>
-                </div>
-                <div class="summary-services-right">0₽</div>
-              </div>
-              <div class="summary-services"> 
-                <div class="summary-services-left">
-                  <div class="summary-services-left__text-1">Сбор за дополнительные услуги</div>
-                  <div class="summary-services-left__icon">&#9432;</div>
-                </div>
-                <div class="summary-services-right">300₽ </div>
-              </div>
-              <div class="summary-total"> 
-                <div class="summary-total__text">Итого</div>
-                <div class="summary-total__box"> </div>
-                <div class="summary-total__number">38 081₽</div>
-                <div class="pickup"></div>
-              </div>
-              <div class="summary-pickup">
-                <button class="pickup__button">Забронировать</button><span class="pickup__icon">arrow_forward </span>
-              </div>
-            </div>
-          </section>
-        </div>
-        <div class="uikit-cards-block-4"> 
-          <div class="registration-card uikit-registration-card">
-            <div class="registration-card-wrapper">
-              <div class="registration-card__title">Войти</div>
-              <form class="registration-card-form" action=""> 
-                <input class="registration-card-form__input" type="text" placeholder="Email">
-                <input class="registration-card-form__input" type="text" placeholder="Пароль">
-                <div class="registration-card-form-send"><a class="registration-card-form-send__link" href="/src/login.html" target="_blank"> </a>
-                  <button class="registration-card-form-send__button">Войти</button><span class="registration-card-form-send__icon">arrow_forward</span>
-                </div>
-                <div class="registration-card-form-enter"> <a class="registration-card-form-enter__link" href="/src/registration.html" target="_blank">Нет аккаунта на Toxin?</a><a class="registration-card-form-enter__button-create" href="/src/registration.html" target="_blank">                            </a></div>
-              </form>
+      <div class="uikit-header-logged">
+        <div class="container">
+          <div class="header">
+            <div class="logo"><a class="logo__link" href="/src/index.html" target="_blank"><img class="logo__img" src="images/logo.png" alt="Логотип"></a></div>
+            <div class="right">
+              <nav class="right-menu">
+                <ul class="right-menu-list"> 
+                  <li class="right-menu__item"> <a class="right-menu__link right-menu__link-active" href="/src/empty.html" target="_blank">О нас</a></li>
+                  <li class="right-menu__item"> <a class="right-menu__link" href="/src/empty.html" target="_blank">Услуги<span class="right-menu__icon">expand_more</span></a></li>
+                  <li class="right-menu__item"> <a class="right-menu__link" href="/src/empty.html" target="_blank">Вакансии</a></li>
+                  <li class="right-menu__item"> <a class="right-menu__link" href="/src/empty.html" target="_blank">Новости</a></li>
+                  <li class="right-menu__item"> <a class="right-menu__link" href="/src/empty.html" target="_blank">Соглашения<span class="right-menu__icon">expand_more  </span></a></li>
+                  <li class="right-menu__item"> <a class="right-menu__link right-menu__link-logged" href="/src/empty.html" target="_blank">Юлий Цезарь</a></li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>
       </div>
-      <div class="uikits-cards-blocks-5-7">
-        <div class="uikit-cards-block-5"> 
-          <div class="calendar"> 
-            <div class="calendar-top"> 
-              <div class="calendar-top__title">Август 2019</div><span class="calendar-arrow-back">arrow_back </span><span class="calendar-arrow-forward">arrow_forward</span>
+      <div class="uikit-footer-start">             
+        <div class="container">
+          <div class="footer uikit-footer"> 
+            <div class="footer-item"> <a class="footer-logo" href="/src/index.html" target="_blank"><img class="footer-logo__img" src="images/logo.png" alt="Логотип"></a>
+              <div class="footer-text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
             </div>
-            <div class="calendar-days">
-              <div class="calendar-days-item">Пн</div>
-              <div class="calendar-days-item">Вт</div>
-              <div class="calendar-days-item">Ср</div>
-              <div class="calendar-days-item">Чт</div>
-              <div class="calendar-days-item">Пт</div>
-              <div class="calendar-days-item">Сб</div>
-              <div class="calendar-days-item">Вс</div>
+            <div class="footer-item footer-item-1"> 
+              <p class="footer-list__title">Навигация</p>
+              <ul class="footer-list">             
+                <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">О нас                </a></li>
+                <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">Новости</a></li>
+                <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">Служба поддержки                               </a></li>
+                <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">Услуги   </a></li>
+              </ul>
             </div>
-            <div class="calendar-numbers">
-              <div class="calendar-numbers-item">29 </div>
-              <div class="calendar-numbers-item">30</div>
-              <div class="calendar-numbers-item">31</div>
-              <div class="calendar-numbers-item">1</div>
-              <div class="calendar-numbers-item">2</div>
-              <div class="calendar-numbers-item">3</div>
-              <div class="calendar-numbers-item">4</div>
-              <div class="calendar-numbers-item">5</div>
-              <div class="calendar-numbers-item">6</div>
-              <div class="calendar-numbers-item">7</div>
-              <div class="calendar-numbers-item calendar-numbers-item-green">8</div>
-              <div class="calendar-numbers-item">9</div>
-              <div class="calendar-numbers-item">10</div>
-              <div class="calendar-numbers-item">11</div>
-              <div class="calendar-numbers-item">12</div>
-              <div class="calendar-numbers-item">13</div>
-              <div class="calendar-numbers-item">14</div>
-              <div class="calendar-numbers-item">15</div>
-              <div class="calendar-numbers-item">16</div>
-              <div class="calendar-numbers-item">17</div>
-              <div class="calendar-numbers-item">18</div>
-              <div class="calendar-numbers-item calendar-numbers-item-purple">19</div>
-              <div class="calendar-numbers-item">20</div>
-              <div class="calendar-numbers-item">21</div>
-              <div class="calendar-numbers-item">22</div>
-              <div class="calendar-numbers-item calendar-numbers-item-purple">23</div>
-              <div class="calendar-numbers-item calendar-numbers-item-sel">24</div>
-              <div class="calendar-numbers-item">25</div>
-              <div class="calendar-numbers-item">26</div>
-              <div class="calendar-numbers-item">27</div>
-              <div class="calendar-numbers-item">28</div>
-              <div class="calendar-numbers-item">29</div>
-              <div class="calendar-numbers-item">30</div>
-              <div class="calendar-numbers-item">31</div>
-              <div class="calendar-numbers-item">1</div>
+            <div class="footer-item footer-item-2"> 
+              <p class="footer-list__title">О нас</p>
+              <ul class="footer-list">                
+                <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">О сервисе                </a></li>
+                <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">Наша команда</a></li>
+                <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">Вакансии                              </a></li>
+                <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">Инвесторы</a></li>
+              </ul>
             </div>
-            <div class="calendar-bottom">
-              <div class="calendar-bottom-item">Очистить</div>
-              <div class="calendar-bottom-item">Применить</div>
+            <div class="footer-item footer-item-3"> 
+              <p class="footer-list__title">Служба поддержки </p>
+              <ul class="footer-list">           
+                <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">Соглашения </a></li>
+                <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">Сообщества                               </a></li>
+                <li class="footer-list__item"><a class="footer-list__link" href="/src/empty.html" target="_blank">Связь с нами  </a></li>
+              </ul>
+            </div>
+            <div class="footer-item footer-item-4"> 
+              <p class="footer-list__title">Подписка</p>
+              <div class="footer-text-subscribe">Получайте специальные предложения и новости сервиса</div>
+              <form class="footer-form" action=""> 
+                <input class="footer-form__input" type="text" placeholder="Email"><a class="footer-form__link" href="/src/empty.html" target="_blank"> <span class="footer-form__icon">arrow_forward</span></a>
+              </form>
             </div>
           </div>
-        </div>
-        <div class="uikit-cards-block-6">  
-          <div class="search-room__item uikit-search-room__item"><a class="search-room__link" href="/src/details.html" target="_blank">
-              <div class="slider">
-                <input class="slider__input" type="radio" id="room1-btn-1" name="toggle-1" checked>
-                <input class="slider__input" type="radio" id="room1-btn-2" name="toggle-1">
-                <input class="slider__input" type="radio" id="room1-btn-3" name="toggle-1">
-                <input class="slider__input" type="radio" id="room1-btn-4" name="toggle-1">
-                <div class="slider-controls"> 
-                  <label class="slider__label" for="room1-btn-1"> </label>
-                  <label class="slider__label" for="room1-btn-2"> </label>
-                  <label class="slider__label" for="room1-btn-3">  </label>
-                  <label class="slider__label" for="room1-btn-4">  </label>
-                </div>
-                <div class="slider-inner">
-                  <div class="slider-slides"> <img class="slider__img" src="images/rooms/room1.png" alt="Фото номера"><img class="slider__img" src="images/rooms/room1.png" alt="Фото номера"><img class="slider__img" src="images/rooms/room1.png" alt="Фото номера"><img class="slider__img" src="images/rooms/room1.png" alt="Фото номера"></div>
-                </div>
-              </div></a>
-            <div class="search-room-wrapper">
-              <div class="search-room-digits"> 
-                <div class="search-room-numbers"> 
-                  <div class="search-room__symbol">№</div>
-                  <div class="search-room__number">888</div>
-                  <div class="search-room__rank">Люкс</div>
-                </div>
-                <div class="search-room-price"> 
-                  <div class="search-room__rubl">9 990₽</div>
-                  <div class="search-room__period">в сутки</div>
-                </div>
-              </div>
-              <div class="search-room-bottom"> 
-                <div class="search-room-stars"><span class="search-room__star">star</span><span class="search-room__star">star</span><span class="search-room__star">star</span><span class="search-room__star">star</span><span class="search-room__star">star</span></div>
-                <div class="search-room-feedback"> 
-                  <div class="search-room-feedback__numbers">145</div>
-                  <div class="search-room-feedback__title">Отзывов</div>
-                </div>
+          <div class="container">
+            <div class="copyright-block">
+              <div class="copyright"> 
+                <div class="copyright-text">Copyright &copy; 2018 Toxin отель. Все права защищены.</div>
+                <ul class="copyright-list">
+                  <li class="copyright-list__item"><a class="copyright-list__link" href="/src/empty.html" target="_blank"> <img class="copyright socials__img" src="images/socials/twitter.png" alt=""></a></li>
+                  <li class="copyright-list__item"><a class="copyright-list__link" href="/src/empty.html" target="_blank"> <img class="copyright socials__img" src="images/socials/facebook.png" alt=""></a></li>
+                  <li class="copyright-list__item"><a class="copyright-list__link" href="/src/empty.html" target="_blank"> <img class="copyright socials__img" src="images/socials/insta.png" alt=""></a></li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-        <div class="uikit-cards-block-7">
-          <div class="search-room__item uikit-search-room__item"><a class="search-room__link" href="/src/empty.html" target="_blank">
-              <div class="slider">
-                <input class="slider__input" type="radio" id="room2-btn-1" name="toggle-2" checked>
-                <input class="slider__input" type="radio" id="room2-btn-2" name="toggle-2">
-                <input class="slider__input" type="radio" id="room2-btn-3" name="toggle-2">
-                <input class="slider__input" type="radio" id="room2-btn-4" name="toggle-2">
-                <div class="slider-controls"> 
-                  <label class="slider__label" for="room2-btn-1"> </label>
-                  <label class="slider__label" for="room2-btn-2"> </label>
-                  <label class="slider__label" for="room2-btn-3">  </label>
-                  <label class="slider__label" for="room2-btn-4">  </label>
-                </div>
-                <div class="slider-inner">
-                  <div class="slider-slides"> <img class="slider__img" src="images/rooms/room2.png" alt="Фото номера"><img class="slider__img" src="images/rooms/room2.png" alt="Фото номера"><img class="slider__img" src="images/rooms/room2.png" alt="Фото номера"><img class="slider__img" src="images/rooms/room2.png" alt="Фото номера"></div>
-                </div>
-              </div></a>
-            <div class="search-room-wrapper">
-              <div class="search-room-digits"> 
-                <div class="search-room-numbers"> 
-                  <div class="search-room__symbol">№</div>
-                  <div class="search-room__number">840</div>
-                  <div class="search-room__rank"> </div>
-                </div>
-                <div class="search-room-price"> 
-                  <div class="search-room__rubl">9 990₽</div>
-                  <div class="search-room__period">в сутки</div>
-                </div>
-              </div>
-              <div class="search-room-bottom"> 
-                <div class="search-room-stars"><span class="search-room__star">star</span><span class="search-room__star">star</span><span class="search-room__star">star</span><span class="search-room__star">star</span><span class="search-room__star">star_border</span></div>
-                <div class="search-room-feedback"> 
-                  <div class="search-room-feedback__numbers">65</div>
-                  <div class="search-room-feedback__title">Отзывов</div>
-                </div>
-              </div>
-            </div>
-          </div>
+      </div>
+      <div class="uikit-footer-adopted"> 
+        <div class="container uikit-footer-container"><img class="footer-logo__img" src="images/logo.png" alt="Логотип">
+          <div class="copyright-text uikit-copyright-text">Copyright &copy; 2018 Toxin отель. Все права защищены.</div>
+          <ul class="copyright-list uikit-copyright-list">
+            <li class="copyright-list__item uikit-copyright-list__item"><a class="copyright-list__link" href="/src/empty.html" target="_blank"> <img class="copyright socials__img" src="images/socials/twitter.png" alt=""></a></li>
+            <li class="copyright-list__item uikit-copyright-list__item"><a class="copyright-list__link" href="/src/empty.html" target="_blank"> <img class="copyright socials__img" src="images/socials/facebook.png" alt=""></a></li>
+            <li class="copyright-list__item uikit-copyright-list__item"><a class="copyright-list__link" href="/src/empty.html" target="_blank"> <img class="copyright socials__img" src="images/socials/insta.png" alt=""></a></li>
+          </ul>
         </div>
       </div>
     </div>
-    <script src="../src/libs/nouislider.min.js"> </script>
-    <script src="../src/js/noui_slider.js"> </script>
-    <script src="../src/js/amenity.js"></script>
-    <script src="../src/js/additional.js"></script>
-    <script src="../src/js/search.js"></script>
   </body>
 </html>
