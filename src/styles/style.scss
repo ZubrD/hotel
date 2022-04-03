@@ -1768,7 +1768,8 @@ input[type=number] {
                 font-size: 10px;
                 line-height: 9px;
                 vertical-align: middle;
-                color: rgb(188,156,255);                
+                // color: rgb(188,156,255);   
+                // background: linear-gradient(151deg, rgba(188,156,255,1) 0%, rgba(139,164,249,1) 100%);             
             }
             &__favortext {
                 font-family: 'Montserrat', sans-serif;
@@ -1777,7 +1778,7 @@ input[type=number] {
                 line-height: 12px;
                 box-sizing: border-box;                
                 padding-left: 19px;
-                padding-top: 3px;
+                padding-top: 5px;
                 color: rgba(188, 156, 255, 1);
             }
         }
