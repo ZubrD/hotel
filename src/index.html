@@ -1275,6 +1275,10 @@ button {
   padding-bottom: 100px;
 }
 
+.footer-logo-adopted {
+  display: none;
+}
+
 .footer-line {
   height: 1px;
   background-color: rgba(31, 32, 65, 0.25);
@@ -1445,9 +1449,10 @@ button {
 }
 
 .search-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 466px 860px;
+      grid-template-columns: 466px 860px;
   max-width: 1440px;
   padding-left: 15px;
   padding-right: 15px;
@@ -1460,10 +1465,6 @@ button {
   padding-left: 140px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-.search-room {
-  width: 974px;
 }
 
 .stay-guest-form {
@@ -3539,9 +3540,15 @@ input[type=number] {
   .footer-item:nth-child(1) {
     display: none;
   }
-  .search-room__item:nth-child(7), .search-room__item:nth-child(8), .search-room__item:nth-child(9),
-  .search-room__item:nth-child(10), .search-room__item:nth-child(11), .search-room__item:nth-child(12) {
+  .search-room {
+    width: 600px;
+  }
+  .search-room__item:nth-child(9), .search-room__item:nth-child(10),
+  .search-room__item:nth-child(11), .search-room__item:nth-child(12) {
     display: none;
+  }
+  .paginator {
+    margin-left: 160px;
   }
   .photo-wrapper {
     display: block;
@@ -3557,16 +3564,6 @@ input[type=number] {
   }
   .photo__img-3 {
     display: none;
-  }
-}
-
-@media (max-width: 1330px) {
-  .search-room__item:nth-child(7), .search-room__item:nth-child(8), .search-room__item:nth-child(9),
-  .search-room__item:nth-child(10), .search-room__item:nth-child(11), .search-room__item:nth-child(12) {
-    display: none;
-  }
-  .paginator {
-    margin: 23px auto 60px;
   }
 }
 
@@ -3598,20 +3595,15 @@ input[type=number] {
     padding-left: 50px;
     padding-right: 50px;
   }
-  .search-room-items {
-    display: block;
+  .search-room {
+    width: 300px;
   }
-  .search-room__item {
-    margin: 20px auto;
-  }
-  .search-room__title {
-    text-align: center;
-  }
-  .search-sidebar {
-    padding-left: 50px;
-  }
-  .search-room__item:nth-child(5), .search-room__item:nth-child(6) {
+  .search-room__item:nth-child(8), .search-room__item:nth-child(7),
+  .search-room__item:nth-child(6), .search-room__item:nth-child(5) {
     display: none;
+  }
+  .paginator {
+    margin-left: 19px;
   }
   .details-wrapper {
     -ms-grid-columns: auto auto;
@@ -3711,6 +3703,97 @@ input[type=number] {
   }
   .display-none {
     display: none;
+  }
+  .search-wrapper {
+    display: block;
+  }
+  .search-sidebar {
+    margin: 0 auto;
+    max-width: 266px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .search-room {
+    margin: 0 auto;
+  }
+  .footer {
+    display: block;
+    text-align: center;
+  }
+  .footer-item-1 {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .footer-item-2 {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .footer-item-3 {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .footer-item-4 {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .copyright {
+    display: block;
+  }
+  .copyright-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 12px;
+  }
+  .copyright-block {
+    text-align: center;
+  }
+  .copyright-text {
+    margin-top: 15px;
+  }
+  .footer-logo-adopted {
+    display: block;
+  }
+  .chart {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+  }
+  .canceling {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4 / 5;
+  }
+  .summary {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 7;
+    -ms-grid-row-span: 1;
+    grid-row: 7 / 8;
+  }
+  .reviews {
+    width: 555px;
+  }
+}
+
+@media (max-width: 600px) {
+  .wishes {
+    left: 40px;
+  }
+  .index-main__title {
+    left: 14%;
+  }
+  .reviews {
+    width: 420px;
   }
 }
 
@@ -4821,7 +4904,7 @@ input[type=number] {
   </div>
   <div class="container">
     <div class="copyright-block">
-      <div class="copyright"> 
+      <div class="copyright"> <a class="footer-logo footer-logo-adopted" href="/src/index.html" target="_blank"><img class="footer-logo__img" src="images/logo.png" alt="Логотип"/></a>
         <div class="copyright-text">Copyright &copy; 2018 Toxin отель. Все права защищены.</div>
         <ul class="copyright-list">
           <li class="copyright-list__item"><a class="copyright-list__link" href="/src/empty.html" target="_blank"> <img class="copyright socials__img" src="images/socials/twitter.png" alt=""/></a></li>
