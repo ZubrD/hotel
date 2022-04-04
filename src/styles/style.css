@@ -2892,7 +2892,7 @@ input[type=number] {
 }
 
 .empty__img {
-  background-image: url("../images/reconst.jpg");
+  background-image: url("./images/reconst.jpg");
   height: 500px;
 }
 
