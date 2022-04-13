@@ -1,7 +1,9 @@
+include ../pug/libs/_libs
+
 .index-wrapper
   .index-main
-    //- img(src="images/index_image.png", alt="").index-main__img
-    img(src="images/index_image.png", alt="Фото номера на заставке").index-main__img
+    //- +image('index_image') Миксин не действует, т.к. не могу добавить к картинке стили  
+    img(src=require(`../src/images/index_image.png`) alt='Фото номера на заставке').index-main__img
     .index-main__title Лучшие номера для вашей работы, отдыха и просто вдохновения
     .wishes
       h1.wishes__title Найдём номера под ваши пожелания
@@ -51,7 +53,7 @@
 
       .pickup
         .pickup-wrapper
-          a(href="/src/search.html" target="_blank").pickup-wrapper-empty
+          a(href="search.html" target="_blank").pickup-wrapper-empty
             button.pickup__button Подобрать номер
             span.pickup__icon arrow_forward
 

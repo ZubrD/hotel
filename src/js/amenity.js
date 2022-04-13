@@ -1,3 +1,4 @@
+import $ from "jquery";
 
 $('.amenity-form__input').on('focus', function(){
   $('.amenity-block').toggleClass('block-open')
@@ -89,10 +90,13 @@ $('.minus-bath').on('click', function(){
 })
 
 function my_select() {
-    sleep = parseInt($('.amenity-form__input').attr('sleep'))
-    bed = parseInt($('.amenity-form__input').attr('bed'))
-    bath = parseInt($('.amenity-form__input').attr('bath'))
+    let sleep = parseInt($('.amenity-form__input').attr('sleep'))
+    let bed = parseInt($('.amenity-form__input').attr('bed'))
+    let bath = parseInt($('.amenity-form__input').attr('bath'))
     let sleep_pl, bed_pl, bath_pl
+    let sleep_ms
+    let bed_ms
+    let bath_ms
 
     switch (sleep) {
         case 1: sleep_pl = 'спальня'; break;

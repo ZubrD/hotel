@@ -1,4 +1,6 @@
-// 100 человек, но младенцев не больше 10
+import $ from "jquery";
+
+// 10 человек, в том числе не больше 2 младенцев
 
 $('.guest__input').on('focus', function(){
   $('.guests-block').toggleClass('block-open')
@@ -167,7 +169,6 @@ function messangeInput() {
     let onlyGuests = guests - baby
     
     if (onlyGuests == 1){
-        sleep_ms = '' 
         guestsPl = 'гость' 
     } else if (onlyGuests > 1 && onlyGuests < 5) {
         guestsPl = 'гостя'
