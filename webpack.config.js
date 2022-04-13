@@ -22,7 +22,8 @@ module.exports = {
     guests: './src/js/guests.js',
     datepicker: './src/js/datepicker.js',
     datepicker_lib: './src/js/datepicker.min.js',
-    elements: './src/js/elements.js'
+    elements: './src/js/elements.js',
+    additional: './src/js/additional.js'
   },
   output: {
     filename: '[name].[contenthash].js',   
