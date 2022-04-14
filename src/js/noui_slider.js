@@ -1,3 +1,5 @@
+import $ from "jquery";
+
 // const nouislider = $('#nouislider')[0]
 const slider = document.getElementById('nouislider');
 
