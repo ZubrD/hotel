@@ -1,8 +1,8 @@
 import $ from "jquery";
 
-new AirDatepicker('#input', {
-  inline: true
-})
+// new AirDatepicker('#input', {
+//   inline: true
+// })
 
 $('#calendar').datepicker({
     position: "bottom right",
