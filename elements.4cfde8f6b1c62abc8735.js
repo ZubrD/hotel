@@ -2,49 +2,67 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/js/noui_slider.js":
-/*!*******************************!*\
-  !*** ./src/js/noui_slider.js ***!
-  \*******************************/
+/***/ "./src/js/elements.js":
+/*!****************************!*\
+  !*** ./src/js/elements.js ***!
+  \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
- // const nouislider = $('#nouislider')[0]
+/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! air-datepicker */ "./node_modules/air-datepicker/src/js/air-datepicker.js");
+/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(air_datepicker__WEBPACK_IMPORTED_MODULE_0__);
+/* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+// import $ from "jquery";
+ // new AirDatepicker('.dates-form__input', {
+//   inline: true
+// })
+// $('.dates-form__input').datepicker({
+//     position: "bottom right",
+//     range: true,
+//     minDate: new Date(),
+//     inline: true,
+//     navTitles: {
+//         days: 'MM yyyy'
+//     },
+//     onSelect(formattedDate, date, inst) {
+//         month_1 = parseInt(date[0].getMonth(), 10) + 1;
+//         month_2 = parseInt(date[1].getMonth(), 10) + 1;
+//         $('#date_1').val(date[0].getDate() + '.' + month_1 + '.' + date[0].getFullYear());
+//         $('#date_2').val(date[1].getDate() + '.' + month_2 + '.' + date[1].getFullYear());
+//     }
+// })
 
-var slider = document.getElementById('nouislider');
+$('.datepicker__clear').on('click', function () {
+  $('#date_1').val('');
+  $('#date_2').val('');
+});
+$('.datepicker__ok').on('click', function () {
+  $('.datepicker-form').hide();
+});
+$('.dates-form__input').on('click', function () {
+  $('.datepicker-form').show();
+  console.log('Is this working?');
+});
+$(function () {
+  $('.iqdropdown').iqDropdown();
+});
+$('.header-burger').on('click', function () {
+  $('.substrate').toggleClass('substrate-burger');
 
-if (slider) {
-  noUiSlider.create(slider, {
-    start: [5000, 10000],
-    connect: true,
-    range: {
-      'min': 3000,
-      'max': 15000
+  if ($('.right-menu-list').css('display') == 'none') {
+    $('.right-menu-list').addClass('display-block');
+    $('.right-menu-list').removeClass('display-none');
+  } else {
+    if ($('.right-menu-list').css('display') == 'block') {
+      $('.right-menu-list').removeClass('display-block');
+      $('.right-menu-list').addClass('display-none');
     }
-  });
-  var input0 = document.getElementById('input-0');
-  var input1 = document.getElementById('input-1');
-  var inputs = [input0, input1];
-  slider.noUiSlider.on('update', function (values, handle) {
-    inputs[handle].value = Math.round(values[handle]);
-  });
+  }
 
-  var setRangeSlider = function setRangeSlider(i, value) {
-    var arr = [null, null];
-    arr[i] = value;
-    console.log(arr);
-    slider.noUiSlider.set(arr);
-  };
-
-  inputs.forEach(function (el, index) {
-    el.addEventListener('change', function (e) {
-      console.log(index);
-      setRangeSlider(index, e.currentTarget.value);
-    });
-  });
-}
+  $('.right-menu-list').toggleClass('right-menu-list-burger');
+  $('.right-menu__link').toggleClass('right-menu__link-burger');
+  $('.right-menu__item').toggleClass('right-menu__item-burger');
+});
 
 /***/ })
 
@@ -158,7 +176,7 @@ if (slider) {
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"noui_slider": 0
+/******/ 			"elements": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -198,7 +216,7 @@ if (slider) {
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
 /******/ 		
-/******/ 		var chunkLoadingGlobal = self["webpackChunkmaxgraph_webpack"] = self["webpackChunkmaxgraph_webpack"] || [];
+/******/ 		var chunkLoadingGlobal = self["webpackChunkzubr_webpack"] = self["webpackChunkzubr_webpack"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	})();
@@ -208,9 +226,9 @@ if (slider) {
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_jquery_dist_jquery_js"], () => (__webpack_require__("./src/js/noui_slider.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_jquery_dist_jquery_js","vendors-node_modules_air-datepicker_src_js_air-datepicker_js"], () => (__webpack_require__("./src/js/elements.js")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=noui_slider.c61440a85f55c44692ac.js.map
+//# sourceMappingURL=elements.4cfde8f6b1c62abc8735.js.map
