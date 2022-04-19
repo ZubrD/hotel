@@ -1,10 +1,11 @@
-import $ from "jquery";
+// import $ from "jquery";
+import datepicker from "air-datepicker"
 
-// new AirDatepicker('#input', {
+// new AirDatepicker('.dates-form__input', {
 //   inline: true
 // })
 
-$('#calendar').datepicker({
+$('.dates-form__input').datepicker({
     position: "bottom right",
     range: true,
     minDate: new Date(),

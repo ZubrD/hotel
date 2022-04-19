@@ -1,7 +1,7 @@
 {
-  "name": "maxgraph-webpack",
+  "name": "zubr-webpack",
   "version": "1.0.0",
-  "description": "maxgraph simple webpack",
+  "description": "starting webpack bandle for hotel",
   "main": "index.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --mode production",
@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.5",
-    "air-datepicker": "^3.1.1",
+    "air-datepicker": "^2.2.3",
     "bootstrap": "^5.1.3",
     "jquery": "^3.6.0",
     "js-datepicker": "^5.18.0",

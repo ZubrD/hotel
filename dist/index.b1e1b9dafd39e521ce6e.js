@@ -873,11 +873,10 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _libs_nouislider_min_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./libs/nouislider.min.css */ "./src/libs/nouislider.min.css");
 /* harmony import */ var _styles_index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/index.scss */ "./src/styles/index.scss");
- // import 'air-datepicker/air-datepicker.css';
 
 
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=index.9e283b23e6a5d6d0b502.js.map
+//# sourceMappingURL=index.b1e1b9dafd39e521ce6e.js.map

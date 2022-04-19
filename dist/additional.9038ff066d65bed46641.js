@@ -2,64 +2,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/js/elements.js":
-/*!****************************!*\
-  !*** ./src/js/elements.js ***!
-  \****************************/
+/***/ "./src/js/additional.js":
+/*!******************************!*\
+  !*** ./src/js/additional.js ***!
+  \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
 
-new AirDatepicker('#input', {
-  inline: true
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.additional__title').on('click', function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.additional__icon').toggleClass('rotated__icon');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.additional-block').toggleClass('block-open');
 });
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('#calendar').datepicker({
-  position: "bottom right",
-  range: true,
-  minDate: new Date(),
-  inline: true,
-  navTitles: {
-    days: 'MM yyyy'
-  },
-  onSelect: function onSelect(formattedDate, date, inst) {
-    month_1 = parseInt(date[0].getMonth(), 10) + 1;
-    month_2 = parseInt(date[1].getMonth(), 10) + 1;
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#date_1').val(date[0].getDate() + '.' + month_1 + '.' + date[0].getFullYear());
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#date_2').val(date[1].getDate() + '.' + month_2 + '.' + date[1].getFullYear());
-  }
-});
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.datepicker__clear').on('click', function () {
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#date_1').val('');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#date_2').val('');
-});
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.datepicker__ok').on('click', function () {
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.datepicker-form').hide();
-});
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.dates-form__input').on('click', function () {
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.datepicker-form').show();
-  console.log('Is this working?');
-});
-jquery__WEBPACK_IMPORTED_MODULE_0___default()(function () {
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.iqdropdown').iqDropdown();
-});
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.header-burger').on('click', function () {
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.substrate').toggleClass('substrate-burger');
-
-  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('.right-menu-list').css('display') == 'none') {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.right-menu-list').addClass('display-block');
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.right-menu-list').removeClass('display-none');
-  } else {
-    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('.right-menu-list').css('display') == 'block') {
-      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.right-menu-list').removeClass('display-block');
-      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.right-menu-list').addClass('display-none');
-    }
-  }
-
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.right-menu-list').toggleClass('right-menu-list-burger');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.right-menu__link').toggleClass('right-menu__link-burger');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.right-menu__item').toggleClass('right-menu__item-burger');
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.additional__icon').on('click', function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).toggleClass('rotated__icon');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.additional-block').toggleClass('block-open');
 });
 
 /***/ })
@@ -174,7 +133,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.header-burger').on('click', func
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"elements": 0
+/******/ 			"additional": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -214,7 +173,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.header-burger').on('click', func
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
 /******/ 		
-/******/ 		var chunkLoadingGlobal = self["webpackChunkmaxgraph_webpack"] = self["webpackChunkmaxgraph_webpack"] || [];
+/******/ 		var chunkLoadingGlobal = self["webpackChunkzubr_webpack"] = self["webpackChunkzubr_webpack"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	})();
@@ -224,9 +183,9 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.header-burger').on('click', func
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_jquery_dist_jquery_js"], () => (__webpack_require__("./src/js/elements.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_jquery_dist_jquery_js"], () => (__webpack_require__("./src/js/additional.js")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=elements.f1dd3726e8188c53a122.js.map
+//# sourceMappingURL=additional.9038ff066d65bed46641.js.map

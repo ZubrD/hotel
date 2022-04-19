@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const webpack = require('webpack');
 
 const path = require('path');
 const { CssSyntaxError } = require('postcss');
@@ -32,6 +33,10 @@ module.exports = {
     clean: true,
   },  
   plugins: [
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+    }),    
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css'
     }),
