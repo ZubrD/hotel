@@ -1,15 +1,10 @@
-// import $ from "jquery";
 import datepicker from "air-datepicker"
-
-// new AirDatepicker('.dates-form__input', {
-//   inline: true
-// })
 
 $('.dates-form__input').datepicker({
     position: "bottom right",
     range: true,
     minDate: new Date(),
-    inline: true,
+    // inline: true,
     navTitles: {
         days: 'MM yyyy'
     },

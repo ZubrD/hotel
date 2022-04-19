@@ -12,26 +12,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! air-datepicker */ "./node_modules/air-datepicker/src/js/air-datepicker.js");
 /* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(air_datepicker__WEBPACK_IMPORTED_MODULE_0__);
 /* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-// import $ from "jquery";
- // new AirDatepicker('.dates-form__input', {
-//   inline: true
-// })
-// $('.dates-form__input').datepicker({
-//     position: "bottom right",
-//     range: true,
-//     minDate: new Date(),
-//     inline: true,
-//     navTitles: {
-//         days: 'MM yyyy'
-//     },
-//     onSelect(formattedDate, date, inst) {
-//         month_1 = parseInt(date[0].getMonth(), 10) + 1;
-//         month_2 = parseInt(date[1].getMonth(), 10) + 1;
-//         $('#date_1').val(date[0].getDate() + '.' + month_1 + '.' + date[0].getFullYear());
-//         $('#date_2').val(date[1].getDate() + '.' + month_2 + '.' + date[1].getFullYear());
-//     }
-// })
 
+$('.dates-form__input').datepicker({
+  position: "bottom right",
+  range: true,
+  minDate: new Date(),
+  inline: true,
+  navTitles: {
+    days: 'MM yyyy'
+  },
+  onSelect: function onSelect(formattedDate, date, inst) {
+    month_1 = parseInt(date[0].getMonth(), 10) + 1;
+    month_2 = parseInt(date[1].getMonth(), 10) + 1;
+    $('#date_1').val(date[0].getDate() + '.' + month_1 + '.' + date[0].getFullYear());
+    $('#date_2').val(date[1].getDate() + '.' + month_2 + '.' + date[1].getFullYear());
+  }
+});
 $('.datepicker__clear').on('click', function () {
   $('#date_1').val('');
   $('#date_2').val('');
@@ -231,4 +227,4 @@ $('.header-burger').on('click', function () {
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=elements.4cfde8f6b1c62abc8735.js.map
+//# sourceMappingURL=elements.a6af179571075e5831bd.js.map
