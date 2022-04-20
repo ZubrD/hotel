@@ -9,10 +9,15 @@ $('#calendar').datepicker({
         days: 'MM yyyy'
     },
     onSelect(formattedDate, date, inst) {
-        month_1 = parseInt(date[0].getMonth(), 10) + 1;
-        month_2 = parseInt(date[1].getMonth(), 10) + 1;
-        $('#date_1').val(date[0].getDate() + '.' + month_1 + '.' + date[0].getFullYear());
-        $('#date_2').val(date[1].getDate() + '.' + month_2 + '.' + date[1].getFullYear());
+        console.log(date)
+        if (date[0]) {
+            let month_1 = parseInt(date[0].getMonth(), 10) + 1;
+            $('#date_1').val(date[0].getDate() + '.' + month_1 + '.' + date[0].getFullYear());
+        }
+        if (date[1]) {
+            let month_2 = parseInt(date[1].getMonth(), 10) + 1;
+            $('#date_2').val(date[1].getDate() + '.' + month_2 + '.' + date[1].getFullYear());
+        }
     }
 })
 
@@ -30,9 +35,9 @@ $('.dates-form__input').on('click', function(){
     console.log('Is this working?');
 })
 
-$(function() {
-    $('.iqdropdown').iqDropdown();
-})
+// $(function() {
+//     $('.iqdropdown').iqDropdown();
+// })
 
 $('.header-burger').on('click', function(){
     $('.substrate').toggleClass('substrate-burger')
