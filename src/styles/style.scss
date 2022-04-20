@@ -1,20 +1,19 @@
-@font-face {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: local("Montserrat"),
-            url("../fonts/Montserrat-Regular.ttf") format("ttf")
-} 
-  
-@font-face {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: local("Montserrat"),
-            url("../fonts/Montserrat-Bold.ttf") format("ttf")
-} 
+@use './fonts.scss';
+
+.whisper-style {
+  font-family: Whisper;
+  margin: 0;
+}
+
+.montserrat-regular-style {
+  font-family: "Montserrat Regular";
+  margin: 0;
+}
+
+.montserrat-bold-style {
+  font-family: "Montserrat Bold";
+  margin: 0;
+}
 
 body {
     font-family: 'Montserrat', sans-serif;
