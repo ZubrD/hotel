@@ -2,63 +2,48 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/js/elements.js":
-/*!****************************!*\
-  !*** ./src/js/elements.js ***!
-  \****************************/
+/***/ "./src/js/noui_slider.js":
+/*!*******************************!*\
+  !*** ./src/js/noui_slider.js ***!
+  \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! air-datepicker */ "./node_modules/air-datepicker/src/js/air-datepicker.js");
-/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(air_datepicker__WEBPACK_IMPORTED_MODULE_0__);
-/* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var nouislider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! nouislider */ "./node_modules/nouislider/dist/nouislider.js");
+/* harmony import */ var nouislider__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(nouislider__WEBPACK_IMPORTED_MODULE_0__);
 
-$('.dates-form__input').datepicker({
-  position: "bottom right",
-  range: true,
-  minDate: new Date(),
-  inline: true,
-  navTitles: {
-    days: 'MM yyyy'
-  },
-  onSelect: function onSelect(formattedDate, date, inst) {
-    month_1 = parseInt(date[0].getMonth(), 10) + 1;
-    month_2 = parseInt(date[1].getMonth(), 10) + 1;
-    $('#date_1').val(date[0].getDate() + '.' + month_1 + '.' + date[0].getFullYear());
-    $('#date_2').val(date[1].getDate() + '.' + month_2 + '.' + date[1].getFullYear());
-  }
-});
-$('.datepicker__clear').on('click', function () {
-  $('#date_1').val('');
-  $('#date_2').val('');
-});
-$('.datepicker__ok').on('click', function () {
-  $('.datepicker-form').hide();
-});
-$('.dates-form__input').on('click', function () {
-  $('.datepicker-form').show();
-  console.log('Is this working?');
-});
-$(function () {
-  $('.iqdropdown').iqDropdown();
-});
-$('.header-burger').on('click', function () {
-  $('.substrate').toggleClass('substrate-burger');
+var slider = document.getElementById('nouislider');
 
-  if ($('.right-menu-list').css('display') == 'none') {
-    $('.right-menu-list').addClass('display-block');
-    $('.right-menu-list').removeClass('display-none');
-  } else {
-    if ($('.right-menu-list').css('display') == 'block') {
-      $('.right-menu-list').removeClass('display-block');
-      $('.right-menu-list').addClass('display-none');
+if (slider) {
+  nouislider__WEBPACK_IMPORTED_MODULE_0___default().create(slider, {
+    start: [5000, 10000],
+    connect: true,
+    range: {
+      'min': 3000,
+      'max': 15000
     }
-  }
+  });
+  var input0 = document.getElementById('input-0');
+  var input1 = document.getElementById('input-1');
+  var inputs = [input0, input1];
+  slider.noUiSlider.on('update', function (values, handle) {
+    inputs[handle].value = Math.round(values[handle]);
+  });
 
-  $('.right-menu-list').toggleClass('right-menu-list-burger');
-  $('.right-menu__link').toggleClass('right-menu__link-burger');
-  $('.right-menu__item').toggleClass('right-menu__item-burger');
-});
+  var setRangeSlider = function setRangeSlider(i, value) {
+    var arr = [null, null];
+    arr[i] = value;
+    console.log(arr);
+    slider.noUiSlider.set(arr);
+  };
+
+  inputs.forEach(function (el, index) {
+    el.addEventListener('change', function (e) {
+      console.log(index);
+      setRangeSlider(index, e.currentTarget.value);
+    });
+  });
+}
 
 /***/ })
 
@@ -172,7 +157,7 @@ $('.header-burger').on('click', function () {
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"elements": 0
+/******/ 			"noui_slider": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -222,9 +207,9 @@ $('.header-burger').on('click', function () {
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_jquery_dist_jquery_js","vendors-node_modules_air-datepicker_src_js_air-datepicker_js"], () => (__webpack_require__("./src/js/elements.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_nouislider_dist_nouislider_js"], () => (__webpack_require__("./src/js/noui_slider.js")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=elements.a6af179571075e5831bd.js.map
+//# sourceMappingURL=noui_slider.007d05e368f33e8c23e1.js.map

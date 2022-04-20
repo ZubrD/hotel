@@ -1,50 +1,30 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/js/noui_slider.js":
-/*!*******************************!*\
-  !*** ./src/js/noui_slider.js ***!
-  \*******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/js/search.js":
+/*!**************************!*\
+  !*** ./src/js/search.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
- // const nouislider = $('#nouislider')[0]
+/* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+$('.header-burger').on('click', function () {
+  $('.substrate').toggleClass('substrate-burger');
 
-var slider = document.getElementById('nouislider');
-
-if (slider) {
-  noUiSlider.create(slider, {
-    start: [5000, 10000],
-    connect: true,
-    range: {
-      'min': 3000,
-      'max': 15000
+  if ($('.right-menu-list').css('display') == 'none') {
+    $('.right-menu-list').addClass('display-block');
+    $('.right-menu-list').removeClass('display-none');
+  } else {
+    if ($('.right-menu-list').css('display') == 'block') {
+      $('.right-menu-list').removeClass('display-block');
+      $('.right-menu-list').addClass('display-none');
     }
-  });
-  var input0 = document.getElementById('input-0');
-  var input1 = document.getElementById('input-1');
-  var inputs = [input0, input1];
-  slider.noUiSlider.on('update', function (values, handle) {
-    inputs[handle].value = Math.round(values[handle]);
-  });
+  }
 
-  var setRangeSlider = function setRangeSlider(i, value) {
-    var arr = [null, null];
-    arr[i] = value;
-    console.log(arr);
-    slider.noUiSlider.set(arr);
-  };
-
-  inputs.forEach(function (el, index) {
-    el.addEventListener('change', function (e) {
-      console.log(index);
-      setRangeSlider(index, e.currentTarget.value);
-    });
-  });
-}
+  $('.right-menu-list').toggleClass('right-menu-list-burger');
+  $('.right-menu__link').toggleClass('right-menu__link-burger');
+  $('.right-menu__item').toggleClass('right-menu__item-burger');
+});
 
 /***/ })
 
@@ -110,44 +90,9 @@ if (slider) {
 /******/ 		};
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	(() => {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = (module) => {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				() => (module['default']) :
-/******/ 				() => (module);
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
-/******/ 			}
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/make namespace object */
-/******/ 	(() => {
-/******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = (exports) => {
-/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 			}
-/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 		};
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */
@@ -158,7 +103,7 @@ if (slider) {
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"noui_slider": 0
+/******/ 			"search": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -208,9 +153,9 @@ if (slider) {
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_jquery_dist_jquery_js"], () => (__webpack_require__("./src/js/noui_slider.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_jquery_dist_jquery_js"], () => (__webpack_require__("./src/js/search.js")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=noui_slider.a3ec081556849b86f87c.js.map
+//# sourceMappingURL=search.7e32594a5d0dd6b3842a.js.map
