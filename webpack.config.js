@@ -42,26 +42,32 @@ module.exports = {
       filename: '[name].[contenthash].css'
     }),
     new HtmlWebpackPlugin({
+      favicon: "./src/favicon.png",
       filename: "index.html",
       template: "./src/index.pug"
     }),
     new HtmlWebpackPlugin({
+      favicon: "./src/favicon.png",
       filename: "search.html",
       template: "./src/search.pug"
     }),
     new HtmlWebpackPlugin({
+      favicon: "./src/favicon.png",
       filename: "registration.html",
       template: "./src/registration.pug"
     }),
     new HtmlWebpackPlugin({
+      favicon: "./src/favicon.png",
       filename: "login.html",
       template: "./src/login.pug"
     }),
     new HtmlWebpackPlugin({
+      favicon: "./src/favicon.png",
       filename: "empty.html",
       template: "./src/empty.pug"
     }),
     new HtmlWebpackPlugin({
+      favicon: "./src/favicon.png",
       filename: "details.html",
       template: "./src/details.pug"
     })                          
