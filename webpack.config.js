@@ -21,8 +21,6 @@ module.exports = {
     index: './src/index.js',
     amenity: './src/js/amenity.js',
     guests: './src/js/guests.js',
-    datepicker: './src/js/datepicker.js',
-    // datepicker_lib: './src/js/datepicker.min.js',
     elements: './src/js/elements.js',
     additional: './src/js/additional.js',
     noui_slider: './src/js/noui_slider.js',
