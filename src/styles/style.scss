@@ -145,26 +145,6 @@ ul {
         text-transform: uppercase;
         border: none;
         cursor: pointer;
-
-        // &-in {
-        //     width: 87px;
-        //     background: #FFFFFF;
-        //     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-        //     color: #BC9CFF;
-        //     position: relative;
-        //     cursor: pointer;
-        //     // margin-right: 20px;
-        //     &::after {
-        //         position: absolute;
-        //         content: '';
-        //         background-image: url(images/border_in.png);
-        //         width: 87px;
-        //         height: 34px;
-        //         top: -1px;
-        //         left: -1px;
-                
-        //     }
-        // }
         &-linear {
             position: relative;
             width: 86px;
@@ -218,7 +198,6 @@ ul {
     &__img {
         height: 830px;
         width: 100%;
-        // background-image: url("images/index_image.png");
     }
     &__title {
         position: absolute;
@@ -748,8 +727,7 @@ button {
         box-sizing: border-box;
     }
     &-room {
-        // width: 974px;
-        // flex-grow: 1;
+
     }
 }
 
@@ -771,7 +749,6 @@ button {
     }
     &__input {
         width: 100%;
-        // width: 266px;
         height: 44px;
         font-family: 'Montserrat';
         font-weight: 400;
@@ -1347,9 +1324,7 @@ input[type=number] {
         margin-right: 12px;
         margin-bottom: 20px;
     }
-    // &__link {
 
-    // }
     &__img {
         width: 100%;
         margin-bottom: 19px;
@@ -1417,9 +1392,7 @@ input[type=number] {
         justify-content: space-between;
         padding-bottom: 20px;
     }
-    // &-stars {
 
-    // }
     &__star {
         font-family: 'Material Icons';
         font-weight: normal;
@@ -1453,7 +1426,6 @@ input[type=number] {
 
 .paginator {
     width: 241px;
-    // margin: 0 auto;
     margin-left: 299px;
     margin-top: 23px;
     margin-bottom: 60px;
@@ -1513,7 +1485,6 @@ input[type=number] {
     }    
     &-slides {
         width: 1084px;
-        // transform: translate(-500px);
     }
     &__input {
         display: none;
@@ -1532,7 +1503,6 @@ input[type=number] {
         height: 8px;
         border: 1px solid rgba(255, 255, 255, 1);
         border-radius: 50%;
-        // box-shadow: 0 0 2px rgba(255, 255, 255, 1);
         cursor: pointer;
     }
 }
@@ -1772,8 +1742,7 @@ input[type=number] {
                 font-size: 10px;
                 line-height: 9px;
                 vertical-align: middle;
-                // color: rgb(188,156,255);   
-                // background: linear-gradient(151deg, rgba(188,156,255,1) 0%, rgba(139,164,249,1) 100%);             
+            
             }
             &__favortext {
                 font-family: 'Montserrat', sans-serif;
@@ -1882,9 +1851,7 @@ input[type=number] {
         width: 155px;
         height: 155px;
         margin-left: -17px;
-        // &-hole {
 
-        // }
         &-ring {                /* кольцо - незаполненная область */
             stroke-width: 1;    
         }
@@ -2142,9 +2109,7 @@ input[type=number] {
         color: rgba(31, 32, 65, 1);
         margin-top: 32px;
         margin-bottom: 20px;
-        // &__text {
 
-        // }
         &__box {
             width: 183px;
             border-bottom: 1px dashed rgba(31, 32, 65, 0.25);
@@ -2242,7 +2207,6 @@ input[type=number] {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    // margin-bottom: 70px;  
     height: 744px;  
 }
 
@@ -2250,7 +2214,6 @@ input[type=number] {
     &__img {
         height: 753px;
         background: url("../images/registration.png");
-        // position: relative;
         padding-top: 17px;
         box-sizing: border-box;
         &-enter {
@@ -2258,7 +2221,6 @@ input[type=number] {
         }
     }
     &-card {
-        // position: absolute;
         width: 380px;
         margin: 0 auto;
         box-sizing: border-box;
@@ -2527,7 +2489,6 @@ input[type=number] {
     .search-room {
       width: 600px;
     }
-    // .search-room__item:nth-child(7), .search-room__item:nth-child(8),
     .search-room__item:nth-child(9), .search-room__item:nth-child(10),
     .search-room__item:nth-child(11), .search-room__item:nth-child(12) {
         display: none;
@@ -2554,13 +2515,7 @@ input[type=number] {
 }
 
 @media (max-width: 1330px) {
-    // .search-room__item:nth-child(7), .search-room__item:nth-child(8), .search-room__item:nth-child(9), 
-    // .search-room__item:nth-child(10), .search-room__item:nth-child(11), .search-room__item:nth-child(12) {
-    //     display: none;
-    // }
-    // .paginator {
-    //     margin: 23px auto 60px;
-    // }   
+  
 }
 
 @media (max-width:1210px) {
@@ -2787,9 +2742,7 @@ input[type=number] {
   .reviews {
     width: 420px;
   }  
-  // .reviews-item-right__text {
-  //   width: 400px;
-  // }
+
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
