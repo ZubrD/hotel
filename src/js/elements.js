@@ -35,9 +35,6 @@ $('.dates-form__input').on('click', function(){
     console.log('Is this working?');
 })
 
-// $(function() {
-//     $('.iqdropdown').iqDropdown();
-// })
 
 $('.header-burger').on('click', function(){
     $('.substrate').toggleClass('substrate-burger')
