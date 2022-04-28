@@ -45,10 +45,7 @@ $('.datepicker__ok').on('click', function () {
 $('.dates-form__input').on('click', function () {
   $('.datepicker-form').show();
   console.log('Is this working?');
-}); // $(function() {
-//     $('.iqdropdown').iqDropdown();
-// })
-
+});
 $('.header-burger').on('click', function () {
   $('.substrate').toggleClass('substrate-burger');
 
@@ -234,4 +231,4 @@ $('.header-burger').on('click', function () {
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=elements.d572c9c618183eaa5b99.js.map
+//# sourceMappingURL=elements.cbb1b9992a822e34c135.js.map
