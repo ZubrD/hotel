@@ -737,6 +737,7 @@ button {
     position: relative;
     &__item {
         position: relative;
+        width: 100%;
         &:last-child {
             margin-top: 22px;
         }
@@ -2352,7 +2353,7 @@ input[type=number] {
                     &::after {
                         position: absolute;
                         top: 2px;
-                        right: 241px;
+                        right: 214px;
                         content: '';
                         width: 12px;
                         height: 12px;
@@ -2747,7 +2748,60 @@ input[type=number] {
   .reviews {
     width: 420px;
   }  
+}
 
+@media (max-width:470px) {
+  .wishes {
+    left: 0px;
+  }
+  .registration-card {
+    width: 350px;
+  }
+}
+
+@media (max-width:420px) {
+  .wishes {
+    width: 302px;
+  }
+  .dates-form {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .guests {
+    margin-left: 0;
+    width: 301px;
+  }
+  .stay-guest-form__icon-index {
+    left: 268px;
+  }  
+  .index-main__title {
+    left: 0;
+  }
+  .index-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .copyright-text {
+    width: 100%;
+  }
+  .copyright-list__item {
+    margin-left: 0;
+  }
+  .registration-card {
+    width: 280px;
+  }
+  .registration-card-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .registration-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
