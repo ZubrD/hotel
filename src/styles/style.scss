@@ -20,7 +20,8 @@ body {
 }  
 
 .container {
-    max-width: 1440px;
+    max-width: 1920px;
+    min-width: 320px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -185,7 +186,8 @@ ul {
 ///////////////////////INDEX MAIN CONTENT /////////////////////////////////////////////////
 
 .index-wrapper {
-    max-width: 1440px;
+    max-width: 1920px;
+    min-width: 320px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -712,10 +714,10 @@ button {
 
 .search {
     &-wrapper {
-        // display: flex;
         display: grid;
         grid-template-columns: 466px 860px;
-        max-width: 1440px;
+        max-width: 1920px;
+        min-width: 320px;
         padding-left: 15px;
         padding-right: 15px;
         margin: 0 auto; 
@@ -1627,7 +1629,8 @@ input[type=number] {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .photo-wrapper {
-    max-width: 1440px;
+    max-width: 1920px;
+    min-width: 320px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -2203,7 +2206,8 @@ input[type=number] {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .registration-wrapper {
-    max-width: 1440px;
+    max-width: 1920px;
+    min-width: 320px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -2463,7 +2467,8 @@ input[type=number] {
 
 .empty {
     &-wrapper {
-        max-width: 1440px;
+        max-width: 1920px;
+        min-width: 320px;
         padding-left: 15px;
         padding-right: 15px;
         margin: 0 auto;
