@@ -2757,6 +2757,16 @@ input[type=number] {
   .registration-card {
     width: 350px;
   }
+  .reviews {
+    width: 340px;
+  }
+  .summary-room {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .summary {
+    width: 320px;
+  }
 }
 
 @media (max-width:420px) {
@@ -2799,6 +2809,10 @@ input[type=number] {
     padding-right: 0;
   }
   .registration-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .search-wrapper {
     padding-left: 0;
     padding-right: 0;
   }
