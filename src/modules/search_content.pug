@@ -72,31 +72,31 @@ include ../pug/libs/_libs
         .amenity
             .amenity__title Удобства номера
             form(action="").amenity-form
-                input(type="text" placeholder="Укажите количество удобств" sleep=0 bed=0 bath=0 ).amenity-form__input
+                input(type="text" placeholder="Укажите количество удобств" sleep=0 bed=0 bath=0 ).amenity-form__input.js-amenity-form__input
                 span.amenity-form__icon expand_more
-            .amenity-block.block-open
+            .amenity-block.js-amenity-block.block-open
                 .amenity-item 
                     .amenity-item__title Спальни
                     .amenity-item-buttons
-                        button.amenity-item__button.amenity-item__button-minus.minus-sleep -
-                        .amenity-item__result.sleep-result 0              
-                        button.amenity-item__button.plus-sleep +
+                        button.amenity-item__button.amenity-item__button-minus.minus-sleep.js-minus-sleep -
+                        .amenity-item__result.sleep-result.js-sleep-result 0              
+                        button.amenity-item__button.plus-sleep.js-plus-sleep +
                 .amenity-item 
                     .amenity-item__title Кровати
                     .amenity-item-buttons
-                        button.amenity-item__button.amenity-item__button-minus.minus-bed -
-                        .amenity-item__result.bed-result 0              
-                        button.amenity-item__button.plus-bed +
+                        button.amenity-item__button.amenity-item__button-minus.minus-bed.js-minus-bed -
+                        .amenity-item__result.bed-result.js-bed-result 0              
+                        button.amenity-item__button.plus-bed.js-plus-bed +
                 .amenity-item 
                     .amenity-item__title Ванные комнаты
                     .amenity-item-buttons
-                        button.amenity-item__button.amenity-item__button-minus.minus-bath -
-                        .amenity-item__result.bath-result 0              
-                        button.amenity-item__button.plus-bath +                                                
+                        button.amenity-item__button.amenity-item__button-minus.minus-bath.js-minus-bath -
+                        .amenity-item__result.bath-result.js-bath-result 0              
+                        button.amenity-item__button.plus-bath.js-plus-bath +                                                
         .additional 
-            .additional__title Дополнительные удобства
-            .additional__icon expand_more
-            .additional-block.block-open
+            .additional__title.js-additional__title Дополнительные удобства
+            .additional__icon.js-additional__icon expand_more
+            .additional-block.js-additional-block.block-open
                 form(action="").additional-block-form
                     .additional-block-form__item 
                         input(type="checkbox" id="breakfast").additional-block-form__input

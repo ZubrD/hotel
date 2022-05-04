@@ -1,98 +1,99 @@
 import $ from "jquery";
 
-$('.amenity-form__input').on('focus', function(){
-  $('.amenity-block').toggleClass('block-open')
+$('.js-amenity-form__input').on('focus', function(){
+  $('.js-amenity-block').toggleClass('block-open')
 }) 
 
 //////////////////////////////////////////СПАЛЬНИ/////////////////////////////////////////////////////////////////
 
-$('.plus-sleep').on('click', function(){
-  console.log(this)
-    let value = parseInt($('.amenity-form__input').attr('sleep'))
+$('.js-plus-sleep').on('click', function(){
+    let value = parseInt($('.js-amenity-form__input').attr('sleep'))
     if (value < 3) {
         value = value + 1
-        $('.amenity-form__input').attr({'sleep': value})        
+        $('.js-amenity-form__input').attr({'sleep': value})        
     }
     if (value > 0) {
-        $('.minus-sleep').css('border', '1px solid rgba(31, 32, 65, 0.25)')
+        $('.js-minus-sleep').css('border', '1px solid rgba(31, 32, 65, 0.25)')
     }
-    $('.amenity-form__input').val(my_select())
-    $('.sleep-result').text(value)
+    $('.js-amenity-form__input').val(my_select())
+    $('.js-sleep-result').text(value)
 })
 
-$('.minus-sleep').on('click', function(){
-    let value = $('.amenity-form__input').attr('sleep')
+$('.js-minus-sleep').on('click', function(){
+    let value = $('.js-amenity-form__input').attr('sleep')
     if (value != 0) {
         value = value - 1
-        $('.amenity-form__input').attr({'sleep': value})         
+        $('.js-amenity-form__input').attr({'sleep': value})         
     } 
     if (value == 0) {
          $(this).css('border', '1px solid rgba(31, 32, 65, 0.1)')
     }
-    $('.amenity-form__input').val(my_select())
-    $('.sleep-result').text(value)
+    $('.js-amenity-form__input').val(my_select())
+    $('.js-sleep-result').text(value)
 })
 
 /////////////////////////////////////////////////////КРОВАТИ///////////////////////////////////////////////////////
 
-$('.plus-bed').on('click', function(){
-    let value = parseInt($('.amenity-form__input').attr('bed'))
+$('.js-plus-bed').on('click', function(){
+    let value = parseInt($('.js-amenity-form__input').attr('bed'))
     if (value < 6) {
         value = value + 1
-        $('.amenity-form__input').attr({'bed': value})        
+        $('.js-amenity-form__input').attr({'bed': value})        
     }
     if (value > 0) {
-        $('.minus-bed').css('border', '1px solid rgba(31, 32, 65, 0.25)')
+        $('.js-minus-bed').css('border', '1px solid rgba(31, 32, 65, 0.25)')
     }    
-    $('.amenity-form__input').val(my_select())
-    $('.bed-result').text(value)
+    $('.js-amenity-form__input').val(my_select())
+    $('.js-bed-result').text(value)
 })
 
-$('.minus-bed').on('click', function(){
-    let value = $('.amenity-form__input').attr('bed')
+$('.js-minus-bed').on('click', function(){
+    let value = $('.js-amenity-form__input').attr('bed')
     if (value != 0) {
         value = value - 1
-        $('.amenity-form__input').attr({'bed': value})         
+        $('.js-amenity-form__input').attr({'bed': value})         
     }
     if (value == 0) {
         $(this).css('border', '1px solid rgba(31, 32, 65, 0.1)')
    }     
-    $('.amenity-form__input').val(my_select())
-    $('.bed-result').text(value)
+    $('.js-amenity-form__input').val(my_select())
+    $('.js-bed-result').text(value)
 })
 
 ////////////////////////////////////////////////////////ВАННЫЕ КОМНАТЫ//////////////////////////////////////////////
 
-$('.plus-bath').on('click', function(){
-    let value = parseInt($('.amenity-form__input').attr('bath'))
+$('.js-plus-bath').on('click', function(){
+    let value = parseInt($('.js-amenity-form__input').attr('bath'))
     if (value < 3) {
         value = value + 1
-        $('.amenity-form__input').attr({'bath': value})        
+        $('.js-amenity-form__input').attr({'bath': value})        
     }
     if (value > 0) {
-        $('.minus-bath').css('border', '1px solid rgba(31, 32, 65, 0.25)')
+        $('.js-minus-bath').css('border', '1px solid rgba(31, 32, 65, 0.25)')
     }    
-    $('.amenity-form__input').val(my_select())
-    $('.bath-result').text(value)
+    $('.js-amenity-form__input').val(my_select())
+    $('.js-bath-result').text(value)
 })
 
-$('.minus-bath').on('click', function(){
-    let value = $('.amenity-form__input').attr('bath')
+$('.js-minus-bath').on('click', function(){
+    let value = $('.js-amenity-form__input').attr('bath')
     if (value != 0) {
         value = value - 1
-        $('.amenity-form__input').attr({'bath': value})         
+        $('.js-amenity-form__input').attr({'bath': value})         
     }
     if (value == 0) {
         $(this).css('border', '1px solid rgba(31, 32, 65, 0.1)')
     }    
-    $('.amenity-form__input').val(my_select())
-    $('.bath-result').text(value)
+    $('.js-amenity-form__input').val(my_select())
+    $('.js-bath-result').text(value)
 })
 
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
 function my_select() {
-    let sleep = parseInt($('.amenity-form__input').attr('sleep'))
-    let bed = parseInt($('.amenity-form__input').attr('bed'))
-    let bath = parseInt($('.amenity-form__input').attr('bath'))
+    let sleep = parseInt($('.js-amenity-form__input').attr('sleep'))
+    let bed = parseInt($('.js-amenity-form__input').attr('bed'))
+    let bath = parseInt($('.js-amenity-form__input').attr('bath'))
     let sleep_pl, bed_pl, bath_pl
     let sleep_ms
     let bed_ms
