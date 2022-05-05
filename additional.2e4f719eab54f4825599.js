@@ -1,29 +1,20 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/js/search.js":
-/*!**************************!*\
-  !*** ./src/js/search.js ***!
-  \**************************/
+/***/ "./src/js/additional.js":
+/*!******************************!*\
+  !*** ./src/js/additional.js ***!
+  \******************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 /* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-$('.header-burger').on('click', function () {
-  $('.substrate').toggleClass('substrate-burger');
-
-  if ($('.right-menu-list').css('display') == 'none') {
-    $('.right-menu-list').addClass('display-block');
-    $('.right-menu-list').removeClass('display-none');
-  } else {
-    if ($('.right-menu-list').css('display') == 'block') {
-      $('.right-menu-list').removeClass('display-block');
-      $('.right-menu-list').addClass('display-none');
-    }
-  }
-
-  $('.right-menu-list').toggleClass('right-menu-list-burger');
-  $('.right-menu__link').toggleClass('right-menu__link-burger');
-  $('.right-menu__item').toggleClass('right-menu__item-burger');
+$('.js-additional__title').on('click', function () {
+  $('.js-additional__icon').toggleClass('rotated__icon');
+  $('.js-additional-block').toggleClass('block-open');
+});
+$('.js-additional__icon').on('click', function () {
+  $(this).toggleClass('rotated__icon');
+  $('.js-additional-block').toggleClass('block-open');
 });
 
 /***/ })
@@ -103,7 +94,7 @@ $('.header-burger').on('click', function () {
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"search": 0
+/******/ 			"additional": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -153,9 +144,9 @@ $('.header-burger').on('click', function () {
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_jquery_dist_jquery_js"], () => (__webpack_require__("./src/js/search.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_jquery_dist_jquery_js"], () => (__webpack_require__("./src/js/additional.js")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=search.7e32594a5d0dd6b3842a.js.map
+//# sourceMappingURL=additional.2e4f719eab54f4825599.js.map
