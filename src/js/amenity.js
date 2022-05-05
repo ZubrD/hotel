@@ -1,5 +1,3 @@
-import $ from "jquery";
-
 $('.js-amenity-form__input').on('focus', function(){
   $('.js-amenity-block').toggleClass('block-open')
 }) 

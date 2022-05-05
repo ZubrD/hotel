@@ -1,68 +1,209 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/js/elements.js":
-/*!****************************!*\
-  !*** ./src/js/elements.js ***!
-  \****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/js/amenity.js":
+/*!***************************!*\
+  !*** ./src/js/amenity.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! air-datepicker */ "./node_modules/air-datepicker/src/js/air-datepicker.js");
-/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(air_datepicker__WEBPACK_IMPORTED_MODULE_0__);
 /* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+$('.js-amenity-form__input').on('focus', function () {
+  $('.js-amenity-block').toggleClass('block-open');
+}); //////////////////////////////////////////СПАЛЬНИ/////////////////////////////////////////////////////////////////
 
-$('#calendar').datepicker({
-  position: "bottom right",
-  range: true,
-  minDate: new Date(),
-  inline: true,
-  navTitles: {
-    days: 'MM yyyy'
-  },
-  onSelect: function onSelect(formattedDate, date, inst) {
-    console.log(date);
+$('.js-plus-sleep').on('click', function () {
+  var value = parseInt($('.js-amenity-form__input').attr('sleep'));
 
-    if (date[0]) {
-      var month_1 = parseInt(date[0].getMonth(), 10) + 1;
-      $('#date_1').val(date[0].getDate() + '.' + month_1 + '.' + date[0].getFullYear());
-    }
-
-    if (date[1]) {
-      var month_2 = parseInt(date[1].getMonth(), 10) + 1;
-      $('#date_2').val(date[1].getDate() + '.' + month_2 + '.' + date[1].getFullYear());
-    }
+  if (value < 3) {
+    value = value + 1;
+    $('.js-amenity-form__input').attr({
+      'sleep': value
+    });
   }
-});
-$('.datepicker__clear').on('click', function () {
-  $('#date_1').val('');
-  $('#date_2').val('');
-});
-$('.datepicker__ok').on('click', function () {
-  $('.datepicker-form').hide();
-});
-$('.dates-form__input').on('click', function () {
-  $('.datepicker-form').show();
-  console.log('Is this working?');
-});
-$('.header-burger').on('click', function () {
-  $('.substrate').toggleClass('substrate-burger');
 
-  if ($('.right-menu-list').css('display') == 'none') {
-    $('.right-menu-list').addClass('display-block');
-    $('.right-menu-list').removeClass('display-none');
+  if (value > 0) {
+    $('.js-minus-sleep').css('border', '1px solid rgba(31, 32, 65, 0.25)');
+  }
+
+  $('.js-amenity-form__input').val(my_select());
+  $('.js-sleep-result').text(value);
+});
+$('.js-minus-sleep').on('click', function () {
+  var value = $('.js-amenity-form__input').attr('sleep');
+
+  if (value != 0) {
+    value = value - 1;
+    $('.js-amenity-form__input').attr({
+      'sleep': value
+    });
+  }
+
+  if (value == 0) {
+    $(this).css('border', '1px solid rgba(31, 32, 65, 0.1)');
+  }
+
+  $('.js-amenity-form__input').val(my_select());
+  $('.js-sleep-result').text(value);
+}); /////////////////////////////////////////////////////КРОВАТИ///////////////////////////////////////////////////////
+
+$('.js-plus-bed').on('click', function () {
+  var value = parseInt($('.js-amenity-form__input').attr('bed'));
+
+  if (value < 6) {
+    value = value + 1;
+    $('.js-amenity-form__input').attr({
+      'bed': value
+    });
+  }
+
+  if (value > 0) {
+    $('.js-minus-bed').css('border', '1px solid rgba(31, 32, 65, 0.25)');
+  }
+
+  $('.js-amenity-form__input').val(my_select());
+  $('.js-bed-result').text(value);
+});
+$('.js-minus-bed').on('click', function () {
+  var value = $('.js-amenity-form__input').attr('bed');
+
+  if (value != 0) {
+    value = value - 1;
+    $('.js-amenity-form__input').attr({
+      'bed': value
+    });
+  }
+
+  if (value == 0) {
+    $(this).css('border', '1px solid rgba(31, 32, 65, 0.1)');
+  }
+
+  $('.js-amenity-form__input').val(my_select());
+  $('.js-bed-result').text(value);
+}); ////////////////////////////////////////////////////////ВАННЫЕ КОМНАТЫ//////////////////////////////////////////////
+
+$('.js-plus-bath').on('click', function () {
+  var value = parseInt($('.js-amenity-form__input').attr('bath'));
+
+  if (value < 3) {
+    value = value + 1;
+    $('.js-amenity-form__input').attr({
+      'bath': value
+    });
+  }
+
+  if (value > 0) {
+    $('.js-minus-bath').css('border', '1px solid rgba(31, 32, 65, 0.25)');
+  }
+
+  $('.js-amenity-form__input').val(my_select());
+  $('.js-bath-result').text(value);
+});
+$('.js-minus-bath').on('click', function () {
+  var value = $('.js-amenity-form__input').attr('bath');
+
+  if (value != 0) {
+    value = value - 1;
+    $('.js-amenity-form__input').attr({
+      'bath': value
+    });
+  }
+
+  if (value == 0) {
+    $(this).css('border', '1px solid rgba(31, 32, 65, 0.1)');
+  }
+
+  $('.js-amenity-form__input').val(my_select());
+  $('.js-bath-result').text(value);
+}); ////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function my_select() {
+  var sleep = parseInt($('.js-amenity-form__input').attr('sleep'));
+  var bed = parseInt($('.js-amenity-form__input').attr('bed'));
+  var bath = parseInt($('.js-amenity-form__input').attr('bath'));
+  var sleep_pl, bed_pl, bath_pl;
+  var sleep_ms;
+  var bed_ms;
+  var bath_ms;
+
+  switch (sleep) {
+    case 1:
+      sleep_pl = 'спальня';
+      break;
+
+    case 2:
+      sleep_pl = 'спальни';
+      break;
+
+    case 3:
+      sleep_pl = 'спальни';
+      break;
+  }
+
+  switch (bed) {
+    case 1:
+      bed_pl = 'кровать';
+      break;
+
+    case 2:
+      bed_pl = 'кровати';
+      break;
+
+    case 3:
+      bed_pl = 'кровати';
+      break;
+
+    case 4:
+      bed_pl = 'кровати';
+      break;
+
+    case 5:
+      bed_pl = 'кроватей';
+      break;
+
+    case 6:
+      bed_pl = 'кроватей';
+      break;
+  }
+
+  switch (bath) {
+    case 1:
+      bath_pl = 'ванная комната';
+      break;
+
+    case 2:
+      bath_pl = 'ванных комнаты';
+      break;
+
+    case 3:
+      bath_pl = 'ванных комнаты';
+      break;
+  }
+
+  if (sleep == 0) {
+    sleep_ms = '';
+  } else if (bed != 0 || bath != 0) {
+    sleep_ms = sleep + ' ' + sleep_pl + ', ';
   } else {
-    if ($('.right-menu-list').css('display') == 'block') {
-      $('.right-menu-list').removeClass('display-block');
-      $('.right-menu-list').addClass('display-none');
-    }
+    sleep_ms = sleep + ' ' + sleep_pl;
   }
 
-  $('.right-menu-list').toggleClass('right-menu-list-burger');
-  $('.right-menu__link').toggleClass('right-menu__link-burger');
-  $('.right-menu__item').toggleClass('right-menu__item-burger');
-});
+  if (bed == 0) {
+    bed_ms = '';
+  } else if (bath != 0) {
+    bed_ms = bed + ' ' + bed_pl + ', ';
+  } else {
+    bed_ms = bed + ' ' + bed_pl;
+  }
+
+  if (bath == 0) {
+    bath_ms = '';
+  } else {
+    bath_ms = bath + ' ' + bath_pl;
+  }
+
+  return sleep_ms + bed_ms + bath_ms;
+}
 
 /***/ })
 
@@ -128,44 +269,9 @@ $('.header-burger').on('click', function () {
 /******/ 		};
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	(() => {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = (module) => {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				() => (module['default']) :
-/******/ 				() => (module);
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
-/******/ 			}
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/make namespace object */
-/******/ 	(() => {
-/******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = (exports) => {
-/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 			}
-/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 		};
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */
@@ -176,7 +282,7 @@ $('.header-burger').on('click', function () {
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"elements": 0
+/******/ 			"amenity": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -226,9 +332,9 @@ $('.header-burger').on('click', function () {
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_jquery_dist_jquery_js","vendors-node_modules_air-datepicker_src_js_air-datepicker_js"], () => (__webpack_require__("./src/js/elements.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_jquery_dist_jquery_js"], () => (__webpack_require__("./src/js/amenity.js")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=elements.cbb1b9992a822e34c135.js.map
+//# sourceMappingURL=amenity.21f556896616f80f8ca5.js.map

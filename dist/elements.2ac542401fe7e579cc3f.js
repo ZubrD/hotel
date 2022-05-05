@@ -2,23 +2,66 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/js/additional.js":
-/*!******************************!*\
-  !*** ./src/js/additional.js ***!
-  \******************************/
+/***/ "./src/js/elements.js":
+/*!****************************!*\
+  !*** ./src/js/elements.js ***!
+  \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! air-datepicker */ "./node_modules/air-datepicker/src/js/air-datepicker.js");
+/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(air_datepicker__WEBPACK_IMPORTED_MODULE_0__);
+/* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-additional__title').on('click', function () {
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-additional__icon').toggleClass('rotated__icon');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-additional-block').toggleClass('block-open');
+$('#calendar').datepicker({
+  position: "bottom right",
+  range: true,
+  minDate: new Date(),
+  inline: true,
+  navTitles: {
+    days: 'MM yyyy'
+  },
+  onSelect: function onSelect(formattedDate, date, inst) {
+    console.log(date);
+
+    if (date[0]) {
+      var month_1 = parseInt(date[0].getMonth(), 10) + 1;
+      $('#date_1').val(date[0].getDate() + '.' + month_1 + '.' + date[0].getFullYear());
+    }
+
+    if (date[1]) {
+      var month_2 = parseInt(date[1].getMonth(), 10) + 1;
+      $('#date_2').val(date[1].getDate() + '.' + month_2 + '.' + date[1].getFullYear());
+    }
+  }
 });
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-additional__icon').on('click', function () {
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).toggleClass('rotated__icon');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-additional-block').toggleClass('block-open');
+$('.datepicker__clear').on('click', function () {
+  $('#date_1').val('');
+  $('#date_2').val('');
+});
+$('.datepicker__ok').on('click', function () {
+  $('.datepicker-form').hide();
+});
+$('.dates-form__input').on('click', function () {
+  $('.datepicker-form').show();
+  console.log('Is this working?');
+});
+$('.js-header-burger').on('click', function () {
+  $('.js-substrate').toggleClass('substrate-burger');
+
+  if ($('.js-right-menu-list').css('display') == 'none') {
+    $('.js-right-menu-list').addClass('display-block');
+    $('.js-right-menu-list').removeClass('display-none');
+  } else {
+    if ($('.js-right-menu-list').css('display') == 'block') {
+      $('.js-right-menu-list').removeClass('display-block');
+      $('.js-right-menu-list').addClass('display-none');
+    }
+  }
+
+  $('.js-right-menu-list').toggleClass('right-menu-list-burger');
+  $('.js-right-menu__link').toggleClass('right-menu__link-burger');
+  $('.js-right-menu__item').toggleClass('right-menu__item-burger');
 });
 
 /***/ })
@@ -133,7 +176,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-additional__icon').on('click'
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"additional": 0
+/******/ 			"elements": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -183,9 +226,9 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-additional__icon').on('click'
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_jquery_dist_jquery_js"], () => (__webpack_require__("./src/js/additional.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_jquery_dist_jquery_js","vendors-node_modules_air-datepicker_src_js_air-datepicker_js"], () => (__webpack_require__("./src/js/elements.js")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=additional.90c615ba405a22e48ede.js.map
+//# sourceMappingURL=elements.2ac542401fe7e579cc3f.js.map

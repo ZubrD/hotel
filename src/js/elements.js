@@ -36,21 +36,23 @@ $('.dates-form__input').on('click', function(){
 })
 
 
-$('.header-burger').on('click', function(){
-    $('.substrate').toggleClass('substrate-burger')
-    if($('.right-menu-list').css('display') ==  'none') {
-        $('.right-menu-list').addClass('display-block')
-        $('.right-menu-list').removeClass('display-none')
+$('.js-header-burger').on('click', function(){
+    $('.js-substrate').toggleClass('substrate-burger')
+    if($('.js-right-menu-list').css('display') ==  'none') {
+        $('.js-right-menu-list').addClass('display-block')
+        $('.js-right-menu-list').removeClass('display-none')
     } else {
-        if($('.right-menu-list').css('display') ==  'block') {
-            $('.right-menu-list').removeClass('display-block')
-            $('.right-menu-list').addClass('display-none') 
+        if($('.js-right-menu-list').css('display') ==  'block') {
+            $('.js-right-menu-list').removeClass('display-block')
+            $('.js-right-menu-list').addClass('display-none') 
         }
     }
-    $('.right-menu-list').toggleClass('right-menu-list-burger')
-    $('.right-menu__link').toggleClass('right-menu__link-burger')
-    $('.right-menu__item').toggleClass('right-menu__item-burger')
+    $('.js-right-menu-list').toggleClass('right-menu-list-burger')
+    $('.js-right-menu__link').toggleClass('right-menu__link-burger')
+    $('.js-right-menu__item').toggleClass('right-menu__item-burger')
 })
+
+
 
 
 

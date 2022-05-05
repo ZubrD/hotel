@@ -2,36 +2,36 @@ import $ from "jquery";
 
 // 10 человек, в том числе не больше 2 младенцев
 
-$('.guest__input').on('focus', function(){
-  $('.guests-block').toggleClass('block-open')
+$('.js-guest__input').on('focus', function(){
+  $('.js-guests-block').toggleClass('block-open')
 }) 
 
 //////////////////////////////////////////ВЗРОСЛЫЕ/////////////////////////////////////////////////////////////////
 
-$('.plus-adult').on('click', function(event){
+$('.js-plus-adult').on('click', function(event){
   event.preventDefault()
-  $('.guests-confirmation__clear').removeClass('opaque')
-  let value = parseInt($('.guest__input').attr('adult'))
-  let guests = parseInt($('.guest__input').attr('guests'))
+  $('.js-guests-confirmation__clear').removeClass('opaque')
+  let value = parseInt($('.js-guest__input').attr('adult'))
+  let guests = parseInt($('.js-guest__input').attr('guests'))
   if (guests < 10) {
       value = value + 1
       guests = guests + 1
-      $('.guest__input').attr({'adult': value})        
-      $('.guest__input').attr({'guests': guests})        
+      $('.js-guest__input').attr({'adult': value})        
+      $('.js-guest__input').attr({'guests': guests})        
   }
   if (value > 0) {
-      $('.minus-adult').css('border', '1px solid rgba(31, 32, 65, 0.25)')
+      $('.js-minus-adult').css('border', '1px solid rgba(31, 32, 65, 0.25)')
   }
-  $('.guest__input').val(messangeInput())
-  $('.adult-result').text(value)
+  $('.js-guest__input').val(messangeInput())
+  $('.js-adult-result').text(value)
   messangeInput()
 })
 
-$('.minus-adult').on('click', function(event){
+$('.js-minus-adult').on('click', function(event){
   event.preventDefault()
-  let value = $('.guest__input').attr('adult')
-  let guests = parseInt($('.guest__input').attr('guests'))
-  let child = parseInt($('.guest__input').attr('child'))
+  let value = $('.js-guest__input').attr('adult')
+  let guests = parseInt($('.js-guest__input').attr('guests'))
+  let child = parseInt($('.js-guest__input').attr('child'))
 
   
   if (value != 0) {
@@ -40,8 +40,8 @@ $('.minus-adult').on('click', function(event){
     if (!(value == 1 && guests > 1)) {
       value = value - 1
       guests = guests - 1
-      $('.guest__input').attr({'adult': value})         
-      $('.guest__input').attr({'guests': guests})       
+      $('.js-guest__input').attr({'adult': value})         
+      $('.js-guest__input').attr({'guests': guests})       
     }
   }
 
@@ -50,21 +50,21 @@ $('.minus-adult').on('click', function(event){
   }
 
   if (guests == 0) {
-    $('.guests-confirmation__clear').addClass('opaque')    
+    $('.js-guests-confirmation__clear').addClass('opaque')    
   }
 
-  $('.guest__input').val(messangeInput())
-  $('.adult-result').text(value)
+  $('.js-guest__input').val(messangeInput())
+  $('.js-adult-result').text(value)
 })
 
 /////////////////////////////////////////////////////ДЕТИ///////////////////////////////////////////////////////
 
-$('.plus-child').on('click', function(event){
+$('.js-plus-child').on('click', function(event){
   event.preventDefault()
-  $('.guests-confirmation__clear').removeClass('opaque')
-  let value = parseInt($('.guest__input').attr('child'))
-  let guests = parseInt($('.guest__input').attr('guests'))
-  let adult = parseInt($('.guest__input').attr('adult'))
+  $('.js-guests-confirmation__clear').removeClass('opaque')
+  let value = parseInt($('.js-guest__input').attr('child'))
+  let guests = parseInt($('.js-guest__input').attr('guests'))
+  let adult = parseInt($('.js-guest__input').attr('adult'))
 
   /* Не более 5 детей */
   if (value < 5 && guests < 10) {
@@ -77,45 +77,45 @@ $('.plus-child').on('click', function(event){
 
     value = value + 1
     guests = guests + 1
-    $('.guest__input').attr({'child': value})        
-    $('.guest__input').attr({'guests': guests})        
-    $('.guest__input').attr({'adult': adult})        
+    $('.js-guest__input').attr({'child': value})        
+    $('.js-guest__input').attr({'guests': guests})        
+    $('.js-guest__input').attr({'adult': adult})        
   }
   if (value > 0) {
-      $('.minus-child').css('border', '1px solid rgba(31, 32, 65, 0.25)')
+      $('.js-minus-child').css('border', '1px solid rgba(31, 32, 65, 0.25)')
   }    
-  $('.guest__input').val(messangeInput())
-  $('.child-result').text(value)
-  $('.adult-result').text(adult)
+  $('.js-guest__input').val(messangeInput())
+  $('.js-child-result').text(value)
+  $('.js-adult-result').text(adult)
 })
 
-$('.minus-child').on('click', function(event){
+$('.js-minus-child').on('click', function(event){
   event.preventDefault()
-  let value = $('.guest__input').attr('child')
-  let guests = $('.guest__input').attr('guests')
+  let value = $('.js-guest__input').attr('child')
+  let guests = $('.js-guest__input').attr('guests')
   if (value != 0) {
       value = value - 1
       guests = guests - 1
-      $('.guest__input').attr({'child': value})         
-      $('.guest__input').attr({'guests': guests})         
+      $('.js-guest__input').attr({'child': value})         
+      $('.js-guest__input').attr({'guests': guests})         
   }
 
   if (value == 0) {
       $(this).css('border', '1px solid rgba(31, 32, 65, 0.1)')
   }     
  
-  $('.guest__input').val(messangeInput())
-  $('.child-result').text(value)
+  $('.js-guest__input').val(messangeInput())
+  $('.js-child-result').text(value)
 })
 
 ////////////////////////////////////////////////////////МЛАДЕНЦЫ//////////////////////////////////////////////
 
 $('.plus-baby').on('click', function(event){
   event.preventDefault()
-  $('.guests-confirmation__clear').removeClass('opaque')
-  let value = parseInt($('.guest__input').attr('baby'))
-  let guests = parseInt($('.guest__input').attr('guests'))
-  let adult = parseInt($('.guest__input').attr('adult'))
+  $('.js-guests-confirmation__clear').removeClass('opaque')
+  let value = parseInt($('.js-guest__input').attr('baby'))
+  let guests = parseInt($('.js-guest__input').attr('guests'))
+  let adult = parseInt($('.js-guest__input').attr('adult'))
 
   /* Не более 2 младенцев */
   if (value < 2 && guests < 10) {
@@ -128,42 +128,42 @@ $('.plus-baby').on('click', function(event){
 
     value = value + 1
     guests = guests + 1
-    $('.guest__input').attr({'baby': value})        
-    $('.guest__input').attr({'guests': guests})  
-    $('.guest__input').attr({'adult': adult})      
+    $('.js-guest__input').attr({'baby': value})        
+    $('.js-guest__input').attr({'guests': guests})  
+    $('.js-guest__input').attr({'adult': adult})      
   }
   if (value > 0) {
-      $('.minus-baby').css('border', '1px solid rgba(31, 32, 65, 0.25)')
+      $('.js-minus-baby').css('border', '1px solid rgba(31, 32, 65, 0.25)')
   }    
-  $('.guest__input').val(messangeInput())
-  $('.baby-result').text(value)
-  $('.adult-result').text(adult)
+  $('.js-guest__input').val(messangeInput())
+  $('.js-baby-result').text(value)
+  $('.js-adult-result').text(adult)
 })
 
-$('.minus-baby').on('click', function(event){
+$('.js-minus-baby').on('click', function(event){
   event.preventDefault()
-  let value = $('.guest__input').attr('baby')
-  let guests = $('.guest__input').attr('guests')
+  let value = $('.js-guest__input').attr('baby')
+  let guests = $('.js-guest__input').attr('guests')
   if (value != 0) {
       value = value - 1
       guests = guests - 1
-      $('.guest__input').attr({'baby': value})         
-      $('.guest__input').attr({'guests': guests})         
+      $('.js-guest__input').attr({'baby': value})         
+      $('.js-guest__input').attr({'guests': guests})         
   }
 
   if (value == 0) {
       $(this).css('border', '1px solid rgba(31, 32, 65, 0.1)')
   }    
 
-  $('.guest__input').val(messangeInput())
-  $('.baby-result').text(value)
+  $('.js-guest__input').val(messangeInput())
+  $('.js-baby-result').text(value)
 })
 
 ///////////////////////////СОСТАВЛЕНИЕ СООБЩЕНИЯ ВЫВОДА В ИНПУТ КОЛИЧЕСТВА ГОСТЕЙ////////////////////////////////////
 
 function messangeInput() {
-    let guests = parseInt($('.guest__input').attr('guests'))
-    let baby = parseInt($('.guest__input').attr('baby'))
+    let guests = parseInt($('.js-guest__input').attr('guests'))
+    let baby = parseInt($('.js-guest__input').attr('baby'))
     let guestsPl, babyPl
     let messange
     let onlyGuests = guests - baby
@@ -193,26 +193,26 @@ function messangeInput() {
 
 ///////////////////////////////////СБРОС ЗНАЧЕНИЙ В ФОРМЕ ПОДБОРА КОЛИЧЕСТВА ГОСТЕЙ///////////////////////////////
 
-$('.guests-confirmation__clear').on('click', function () {
-  $('.guest__input').val('')
-  $('.guest__input').attr('adult', 0)
-  $('.guest__input').attr('child', 0)
-  $('.guest__input').attr('baby', 0)
-  $('.guest__input').attr('guests', 0)
+$('.js-guests-confirmation__clear').on('click', function () {
+  $('.js-guest__input').val('')
+  $('.js-guest__input').attr('adult', 0)
+  $('.js-guest__input').attr('child', 0)
+  $('.js-guest__input').attr('baby', 0)
+  $('.js-guest__input').attr('guests', 0)
 
-  $('.adult-result').text('0')
-  $('.child-result').text('0')
-  $('.baby-result').text('0')
+  $('.js-adult-result').text('0')
+  $('.js-child-result').text('0')
+  $('.js-baby-result').text('0')
 
-  $('.minus-adult').css('border', '1px solid rgba(31, 32, 65, 0.1)')
-  $('.minus-child').css('border', '1px solid rgba(31, 32, 65, 0.1)')
-  $('.minus-baby').css('border', '1px solid rgba(31, 32, 65, 0.1)')
+  $('.js-minus-adult').css('border', '1px solid rgba(31, 32, 65, 0.1)')
+  $('.js-minus-child').css('border', '1px solid rgba(31, 32, 65, 0.1)')
+  $('.js-minus-baby').css('border', '1px solid rgba(31, 32, 65, 0.1)')
   
-  $('.guests-confirmation__clear').addClass('opaque')    
+  $('.js-guests-confirmation__clear').addClass('opaque')    
 })
 
 ///////////////////////////////////ПРИНЯТЬ ЗНАЧЕНИЯ (СКРЫТЬ ФОРМУ)///////////////////////////////
 
-$('.guests-confirmation__assume').on('click', function () {
-  $('.guests-block').addClass('block-open')
+$('.js-guests-confirmation__assume').on('click', function () {
+  $('.js-guests-block').addClass('block-open')
 })

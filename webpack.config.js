@@ -24,8 +24,6 @@ module.exports = {
     elements: './src/js/elements.js',
     additional: './src/js/additional.js',
     noui_slider: './src/js/noui_slider.js',
-    search: './src/js/search.js',
-    details: './src/js/details.js'
   },
   output: {
     filename: '[name].[contenthash].js',   

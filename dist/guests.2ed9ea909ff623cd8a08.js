@@ -13,50 +13,50 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
  // 10 человек, в том числе не больше 2 младенцев
 
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').on('focus', function () {
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guests-block').toggleClass('block-open');
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').on('focus', function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guests-block').toggleClass('block-open');
 }); //////////////////////////////////////////ВЗРОСЛЫЕ/////////////////////////////////////////////////////////////////
 
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.plus-adult').on('click', function (event) {
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-plus-adult').on('click', function (event) {
   event.preventDefault();
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guests-confirmation__clear').removeClass('opaque');
-  var value = parseInt(jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').attr('adult'));
-  var guests = parseInt(jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').attr('guests'));
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guests-confirmation__clear').removeClass('opaque');
+  var value = parseInt(jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').attr('adult'));
+  var guests = parseInt(jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').attr('guests'));
 
   if (guests < 10) {
     value = value + 1;
     guests = guests + 1;
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').attr({
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').attr({
       'adult': value
     });
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').attr({
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').attr({
       'guests': guests
     });
   }
 
   if (value > 0) {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.minus-adult').css('border', '1px solid rgba(31, 32, 65, 0.25)');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-minus-adult').css('border', '1px solid rgba(31, 32, 65, 0.25)');
   }
 
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').val(messangeInput());
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.adult-result').text(value);
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').val(messangeInput());
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-adult-result').text(value);
   messangeInput();
 });
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.minus-adult').on('click', function (event) {
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-minus-adult').on('click', function (event) {
   event.preventDefault();
-  var value = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').attr('adult');
-  var guests = parseInt(jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').attr('guests'));
-  var child = parseInt(jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').attr('child'));
+  var value = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').attr('adult');
+  var guests = parseInt(jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').attr('guests'));
+  var child = parseInt(jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').attr('child'));
 
   if (value != 0) {
     /* Если есть дети, то должен остаться хоть один взрослый */
     if (!(value == 1 && guests > 1)) {
       value = value - 1;
       guests = guests - 1;
-      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').attr({
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').attr({
         'adult': value
       });
-      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').attr({
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').attr({
         'guests': guests
       });
     }
@@ -67,19 +67,19 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.minus-adult').on('click', functi
   }
 
   if (guests == 0) {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guests-confirmation__clear').addClass('opaque');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guests-confirmation__clear').addClass('opaque');
   }
 
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').val(messangeInput());
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.adult-result').text(value);
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').val(messangeInput());
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-adult-result').text(value);
 }); /////////////////////////////////////////////////////ДЕТИ///////////////////////////////////////////////////////
 
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.plus-child').on('click', function (event) {
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-plus-child').on('click', function (event) {
   event.preventDefault();
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guests-confirmation__clear').removeClass('opaque');
-  var value = parseInt(jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').attr('child'));
-  var guests = parseInt(jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').attr('guests'));
-  var adult = parseInt(jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').attr('adult'));
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guests-confirmation__clear').removeClass('opaque');
+  var value = parseInt(jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').attr('child'));
+  var guests = parseInt(jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').attr('guests'));
+  var adult = parseInt(jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').attr('adult'));
   /* Не более 5 детей */
 
   if (value < 5 && guests < 10) {
@@ -91,37 +91,37 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.plus-child').on('click', functio
 
     value = value + 1;
     guests = guests + 1;
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').attr({
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').attr({
       'child': value
     });
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').attr({
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').attr({
       'guests': guests
     });
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').attr({
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').attr({
       'adult': adult
     });
   }
 
   if (value > 0) {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.minus-child').css('border', '1px solid rgba(31, 32, 65, 0.25)');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-minus-child').css('border', '1px solid rgba(31, 32, 65, 0.25)');
   }
 
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').val(messangeInput());
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.child-result').text(value);
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.adult-result').text(adult);
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').val(messangeInput());
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-child-result').text(value);
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-adult-result').text(adult);
 });
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.minus-child').on('click', function (event) {
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-minus-child').on('click', function (event) {
   event.preventDefault();
-  var value = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').attr('child');
-  var guests = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').attr('guests');
+  var value = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').attr('child');
+  var guests = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').attr('guests');
 
   if (value != 0) {
     value = value - 1;
     guests = guests - 1;
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').attr({
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').attr({
       'child': value
     });
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').attr({
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').attr({
       'guests': guests
     });
   }
@@ -130,16 +130,16 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.minus-child').on('click', functi
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).css('border', '1px solid rgba(31, 32, 65, 0.1)');
   }
 
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').val(messangeInput());
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.child-result').text(value);
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').val(messangeInput());
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-child-result').text(value);
 }); ////////////////////////////////////////////////////////МЛАДЕНЦЫ//////////////////////////////////////////////
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('.plus-baby').on('click', function (event) {
   event.preventDefault();
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guests-confirmation__clear').removeClass('opaque');
-  var value = parseInt(jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').attr('baby'));
-  var guests = parseInt(jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').attr('guests'));
-  var adult = parseInt(jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').attr('adult'));
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guests-confirmation__clear').removeClass('opaque');
+  var value = parseInt(jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').attr('baby'));
+  var guests = parseInt(jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').attr('guests'));
+  var adult = parseInt(jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').attr('adult'));
   /* Не более 2 младенцев */
 
   if (value < 2 && guests < 10) {
@@ -151,37 +151,37 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.plus-baby').on('click', function
 
     value = value + 1;
     guests = guests + 1;
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').attr({
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').attr({
       'baby': value
     });
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').attr({
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').attr({
       'guests': guests
     });
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').attr({
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').attr({
       'adult': adult
     });
   }
 
   if (value > 0) {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.minus-baby').css('border', '1px solid rgba(31, 32, 65, 0.25)');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-minus-baby').css('border', '1px solid rgba(31, 32, 65, 0.25)');
   }
 
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').val(messangeInput());
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.baby-result').text(value);
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.adult-result').text(adult);
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').val(messangeInput());
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-baby-result').text(value);
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-adult-result').text(adult);
 });
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.minus-baby').on('click', function (event) {
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-minus-baby').on('click', function (event) {
   event.preventDefault();
-  var value = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').attr('baby');
-  var guests = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').attr('guests');
+  var value = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').attr('baby');
+  var guests = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').attr('guests');
 
   if (value != 0) {
     value = value - 1;
     guests = guests - 1;
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').attr({
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').attr({
       'baby': value
     });
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').attr({
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').attr({
       'guests': guests
     });
   }
@@ -190,13 +190,13 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.minus-baby').on('click', functio
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).css('border', '1px solid rgba(31, 32, 65, 0.1)');
   }
 
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').val(messangeInput());
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.baby-result').text(value);
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').val(messangeInput());
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-baby-result').text(value);
 }); ///////////////////////////СОСТАВЛЕНИЕ СООБЩЕНИЯ ВЫВОДА В ИНПУТ КОЛИЧЕСТВА ГОСТЕЙ////////////////////////////////////
 
 function messangeInput() {
-  var guests = parseInt(jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').attr('guests'));
-  var baby = parseInt(jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').attr('baby'));
+  var guests = parseInt(jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').attr('guests'));
+  var baby = parseInt(jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').attr('baby'));
   var guestsPl, babyPl;
   var messange;
   var onlyGuests = guests - baby;
@@ -225,23 +225,23 @@ function messangeInput() {
 } ///////////////////////////////////СБРОС ЗНАЧЕНИЙ В ФОРМЕ ПОДБОРА КОЛИЧЕСТВА ГОСТЕЙ///////////////////////////////
 
 
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guests-confirmation__clear').on('click', function () {
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').val('');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').attr('adult', 0);
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').attr('child', 0);
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').attr('baby', 0);
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guest__input').attr('guests', 0);
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.adult-result').text('0');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.child-result').text('0');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.baby-result').text('0');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.minus-adult').css('border', '1px solid rgba(31, 32, 65, 0.1)');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.minus-child').css('border', '1px solid rgba(31, 32, 65, 0.1)');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.minus-baby').css('border', '1px solid rgba(31, 32, 65, 0.1)');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guests-confirmation__clear').addClass('opaque');
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guests-confirmation__clear').on('click', function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').val('');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').attr('adult', 0);
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').attr('child', 0);
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').attr('baby', 0);
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').attr('guests', 0);
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-adult-result').text('0');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-child-result').text('0');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-baby-result').text('0');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-minus-adult').css('border', '1px solid rgba(31, 32, 65, 0.1)');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-minus-child').css('border', '1px solid rgba(31, 32, 65, 0.1)');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-minus-baby').css('border', '1px solid rgba(31, 32, 65, 0.1)');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guests-confirmation__clear').addClass('opaque');
 }); ///////////////////////////////////ПРИНЯТЬ ЗНАЧЕНИЯ (СКРЫТЬ ФОРМУ)///////////////////////////////
 
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guests-confirmation__assume').on('click', function () {
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guests-block').addClass('block-open');
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guests-confirmation__assume').on('click', function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guests-block').addClass('block-open');
 });
 
 /***/ })
@@ -411,4 +411,4 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.guests-confirmation__assume').on
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=guests.acb14fa67c290dbbe99a.js.map
+//# sourceMappingURL=guests.2ed9ea909ff623cd8a08.js.map
