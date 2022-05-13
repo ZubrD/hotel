@@ -51,6 +51,10 @@ body {
     }
 }
 
+.logo {
+  margin-top: 5px;
+}
+
 
 ul {
     margin: 0;
@@ -71,7 +75,9 @@ ul {
             }
         }
         &__item {
-            margin-right: 20px;
+            margin-right: 21px;
+            letter-spacing: 1px;
+            margin-top: 5px;
             align-self: center;
             display: block;
             &:nth-child(2) {
@@ -81,10 +87,10 @@ ul {
                 margin-right: 44px;
             }            
             &:nth-child(6) {
-                margin-right: 0px;
+                margin-right: -2px;
             }
             &:nth-child(7) {
-                margin-right: 0px;
+                margin-right: -4px;
             }
             &-burger {
                 margin-bottom: 30px;
@@ -147,9 +153,10 @@ ul {
         text-transform: uppercase;
         border: none;
         cursor: pointer;
+        letter-spacing: 1px;
         &-linear {
             position: relative;
-            width: 86px;
+            width: 84px;
             height: 30px;
             border-radius: 22px;
             font-weight: 700;
@@ -208,18 +215,20 @@ ul {
         font-weight: 400;
         font-size: 14px;
         color: rgba(31, 32, 65, 0.75);
-        top: 91%;
-        left: 68%;          /* Если в пиксель, то 70%, но при сжатии выпадает */
-        width: 297px;
+        top: 763px;
+        left: 1029px;          /* Если в пиксель, то 70%, но при сжатии выпадает */
+        width: 281px;
         text-align: end;
         line-height: 24px;
+        letter-spacing: 1px;
+        text-align: right;
     }
 }
 
 .wishes {
     position: absolute;
-    top: 67px;
-    left: 138px;
+    top: 71px;
+    left: 141px;
     width: 380px;
     height: 374;
     background: #FFFFFF;
@@ -230,12 +239,13 @@ ul {
     &__title {
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
-        font-size: 24px;
+        font-size: 25px;
         line-height: 30px;
         margin-top: 40px;
         margin-left: 30px;
         margin-right: 30px;
         margin-bottom: 21px;
+        letter-spacing: 1px;
     }
 }
 
@@ -262,7 +272,6 @@ ul {
     &__input {
         width: 150px;
         height: 44px;
-        font-family: 'Montserrat';
         font-weight: 400;
         font-size: 14px;
         line-height: 18px;
@@ -274,6 +283,7 @@ ul {
         text-transform: uppercase;
         border: 1px solid rgba(31, 32, 65, 0.25);
         border-radius: 4px;
+        letter-spacing: 1px;
     }
     &__icon {
         position: absolute;
@@ -361,7 +371,7 @@ ul {
 
 .pickup {           
     &-wrapper {
-        margin-top: 35px;
+        margin-top: 32px;
         margin-bottom: 30px;
         margin-left: 30px;
         margin-right: 30px;
@@ -383,11 +393,12 @@ ul {
         color: #FFFFFF;
         border: none;
         cursor: pointer;
+        letter-spacing: 1px;
     }
     &__icon {
         position: absolute;
-        top: 10px;
-        right: 8px;
+        top: 9px;
+        right: 10px;
         font-family: 'Material Icons';
         font-weight: normal;
         font-style: normal;
@@ -565,6 +576,9 @@ button {
     padding-right: 140px;
     border-bottom: 1px solid #E5E5E5;
     padding-bottom: 100px;
+    &-logo__img {
+      margin-top: 2px;
+    }
     &-logo-adopted {
       display: none;
     }
@@ -580,21 +594,33 @@ button {
             width: 143px;
             grid-column-start: 2;
             grid-column-end: 3;
+            margin-top: 2px;
+            margin-left: 2px;
+            letter-spacing: 1px;
         }
         &-2 {
             width: 108px;
             grid-column-start: 3;
             grid-column-end: 4;
+            margin-top: 2px;
+            margin-left: 2px;
+            letter-spacing: 1px;
         }  
         &-3 {
             width: 149px;
             grid-column-start: 4;
             grid-column-end: 5;
+            margin-top: 2px;
+            margin-left: 5px;
+            letter-spacing: 1px;
         }  
         &-4 {
             width: 260px;
             grid-column-start: 5;
             grid-column-end: 6;
+            margin-top: 2px;
+            margin-left: 5px;
+            letter-spacing: 1px;
         }                    
     }
     &-text {
@@ -606,7 +632,7 @@ button {
         opacity: 0.75;
         line-height: 24px;
         margin-top: 12px;
-        letter-spacing: 0;
+        letter-spacing: 1px;
     }
     &-text-subscribe {
         font-family: 'Montserrat', sans-serif;
@@ -617,7 +643,7 @@ button {
         opacity: 0.75;
         line-height: 24px;
         margin-top: 19px;
-        letter-spacing: 0;
+        letter-spacing: 1px;
     }
     &-list {
         list-style: none;
@@ -641,6 +667,7 @@ button {
             text-decoration: none;
             color: #1F2041;
             opacity: 0.5;
+            letter-spacing: 1px;
         }
     }
 
@@ -678,7 +705,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 13px;
+    margin-top: 11px;
     margin-bottom: 13px;
     &-block {
         padding-left: 125px;
@@ -691,7 +718,7 @@ button {
         font-size: 14px;
         line-height: 17,07px;
         color: rgba(31, 32, 65, 0.75);
-        letter-spacing: 0;
+        letter-spacing: 1px;
     }
     &-list {
         display: flex;
@@ -748,23 +775,23 @@ button {
         font-weight: 700;
         font-size: 12px;
         text-transform: uppercase; 
-        margin-top: 27px;
+        margin-top: 22px;
         margin-bottom: 5px;
     }
     &__input {
         width: 100%;
         height: 44px;
-        font-family: 'Montserrat';
         font-weight: 400;
         font-size: 14px;
         line-height: 18px;
         color: rgba(31, 32, 65, 0.75);
-        padding-top: 11px;
+        padding-top: 15px;
         padding-bottom: 13px;
-        padding-left: 15px;
+        padding-left: 13px;
         box-sizing: border-box;
         border: 1px solid rgba(31, 32, 65, 0.25);
         border-radius: 4px;
+        letter-spacing: 1px;
     }
     &__icon {
         position: absolute;
