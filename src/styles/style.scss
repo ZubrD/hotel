@@ -773,25 +773,28 @@ button {
     &__title {
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
-        font-size: 12px;
+        font-size: 13px;
         text-transform: uppercase; 
-        margin-top: 22px;
+        margin-top: 32px;
         margin-bottom: 5px;
+        &-second {
+          margin-top: 20px;
+        }
     }
     &__input {
         width: 100%;
         height: 44px;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 15px;
         line-height: 18px;
         color: rgba(31, 32, 65, 0.75);
-        padding-top: 15px;
+        padding-top: 12px;
         padding-bottom: 13px;
         padding-left: 13px;
         box-sizing: border-box;
         border: 1px solid rgba(31, 32, 65, 0.25);
         border-radius: 4px;
-        letter-spacing: 1px;
+        letter-spacing: 0;
     }
     &__icon {
         position: absolute;
@@ -826,7 +829,7 @@ input[type=number] {
     &-title-wrapper {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 20px;
+        margin-bottom: 17px;
         margin-top: 30px;
     }
     &-label-wrapper {
@@ -836,7 +839,7 @@ input[type=number] {
     &-title {
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
-        font-size: 12px;
+        font-size: 13px;
         text-transform: uppercase; 
         margin-top: 0;
         margin-bottom: 5px;
@@ -868,7 +871,7 @@ input[type=number] {
     &-bottom-title {
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
-        font-size: 12px;
+        font-size: 13px;
         line-height: 14px;
         color: rgba(31, 32, 65, 0.5);
     }
@@ -898,10 +901,10 @@ input[type=number] {
 }
 
 .noUi-horizontal .noUi-handle {
-    width: 12px;
-    height: 12px;
+    width: 17px;
+    height: 17px;
     right: -4px;
-    top: -4px;
+    top: -7px;
 }
 
 .noUi-handle:after, .noUi-handle:before {
@@ -909,18 +912,19 @@ input[type=number] {
 }
 
 .home-rule-form {
-    margin-top: 24px;
+    margin-top: 29px;
     &__title {
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
-        font-size: 12px;
+        font-size: 13px;
         text-transform: uppercase; 
         margin-top: 0;
-        margin-bottom: 18px;
+        margin-bottom: 17px;
     }
     &__item {
-        margin-bottom: 10px;
+        margin-bottom: 12px;
         margin-left: 30px;
+        width: 202px;
     }
     &__input {
         &[type="checkbox"] {
@@ -951,15 +955,16 @@ input[type=number] {
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
         font-size: 14px;
-        line-height: 19px;
+        line-height: 16px;
         color: rgba(31, 32, 65, 0.5);
         cursor: pointer;
+        letter-spacing: 1px;
         &::before {
             position: absolute;
             content: '';
-            width: 20px;
-            height: 20px;
-            left: -32px;
+            width: 18px;
+            height: 18px;
+            left: -30px;
             top: -3px;
             border: 1px solid rgba(31, 32, 65, 0.25);
             border-radius: 4px;
@@ -968,11 +973,11 @@ input[type=number] {
 }
 
 .availability-form {
-    margin-top: 15px;
+    margin-top: 28px;
     &__title {
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
-        font-size: 12px;
+        font-size: 13px;
         text-transform: uppercase; 
         margin-top: 0;
         margin-bottom: 18px;
@@ -1161,17 +1166,17 @@ input[type=number] {
     &__title {
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
-        font-size: 12px;
+        font-size: 13px;
         text-transform: uppercase; 
-        margin-top: 31px;
-        margin-bottom: 6px;
+        margin-top: 29px;
+        margin-bottom: 3px;
     }
     &-form {
         position: relative;
         &__input {
             font-family: 'Montserrat', sans-serif;
             font-weight: 400;
-            font-size: 14px;
+            font-size: 15px;
             line-height: 24px;
             color: rgba(31, 32, 65, 0.75);
             width: 100%;
@@ -1180,9 +1185,9 @@ input[type=number] {
             border-top-left-radius: 4px;
             border-top-right-radius: 4px;
             height: 44px;
-            padding-left: 15px;
+            padding-left: 17px;
             padding-right: 30px;
-            padding-top: 0px;
+            padding-top: 5px;
         }
         &__icon {
             position: absolute;
@@ -1258,9 +1263,9 @@ input[type=number] {
     &__title {
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
-        font-size: 12px;
+        font-size: 13px;
         text-transform: uppercase; 
-        margin-top: 31px;
+        margin-top: 32px;
         margin-bottom: 6px;
         cursor: pointer;
     }
