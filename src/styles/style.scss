@@ -1530,7 +1530,7 @@ input[type=number] {
         position: absolute;
         top: 129px;
         left: 195px;
-        z-index: 10;
+        z-index: 15;
     }
     &__label {
         display: inline-block;
@@ -1541,7 +1541,99 @@ input[type=number] {
         border-radius: 50%;
         cursor: pointer;
     }
+    &-prev-controls {
+        position: absolute;
+        z-index: 10;      
+    }
+    &-next-controls {
+        position: absolute;
+        z-index: 10;      
+    }    
+    &__prev {
+      position: absolute;
+      padding-top: 46px;
+      box-sizing: border-box;
+      width: 50px;
+      height: 152px;
+      font-size: 45px;
+      color: white;
+      cursor: pointer;
+      opacity: 0;
+      &:hover {
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+        opacity: 1;
+        transition: opacity 0.2s ease-in-out
+      } 
+    }
+    &__next {
+      position: absolute;
+      padding-top: 46px;
+      box-sizing: border-box;
+      left: 220px;
+      width: 50px;
+      height: 152px;
+      font-size: 45px;
+      color: white;
+      cursor: pointer;
+      opacity: 0;
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+      &:hover {
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        opacity: 1;
+        transition: opacity 0.2s ease-in-out
+      }                       
+    }    
 }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////  НАВИГАЦИЯ ПО СЛАЙДЕРУ ФОТОГРАФИЙ НОМЕРА    ///////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+#room1-btn-1:checked ~ .slider-prev-controls label[for="room1-btn-1"],
+#room1-btn-1:checked ~ .slider-prev-controls label[for="room1-btn-2"],
+#room1-btn-1:checked ~ .slider-prev-controls label[for="room1-btn-3"],
+#room1-btn-1:checked ~ .slider-prev-controls label[for="room1-btn-4"],
+#room1-btn-1:checked ~ .slider-next-controls label[for="room1-btn-1"],
+#room1-btn-1:checked ~ .slider-next-controls label[for="room1-btn-3"],
+#room1-btn-1:checked ~ .slider-next-controls label[for="room1-btn-4"]
+{
+  display: none;
+}
+
+#room1-btn-2:checked ~ .slider-prev-controls label[for="room1-btn-2"],
+#room1-btn-2:checked ~ .slider-prev-controls label[for="room1-btn-3"],
+#room1-btn-2:checked ~ .slider-prev-controls label[for="room1-btn-4"],
+#room1-btn-2:checked ~ .slider-next-controls label[for="room1-btn-1"],
+#room1-btn-2:checked ~ .slider-next-controls label[for="room1-btn-2"],
+#room1-btn-2:checked ~ .slider-next-controls label[for="room1-btn-4"]
+{
+  display: none;
+}
+
+#room1-btn-3:checked ~ .slider-prev-controls label[for="room1-btn-1"],
+#room1-btn-3:checked ~ .slider-prev-controls label[for="room1-btn-3"],
+#room1-btn-3:checked ~ .slider-prev-controls label[for="room1-btn-4"],
+#room1-btn-3:checked ~ .slider-next-controls label[for="room1-btn-1"],
+#room1-btn-3:checked ~ .slider-next-controls label[for="room1-btn-2"],
+#room1-btn-3:checked ~ .slider-next-controls label[for="room1-btn-3"]
+{
+  display: none;
+}
+
+#room1-btn-4:checked ~ .slider-prev-controls label[for="room1-btn-1"],
+#room1-btn-4:checked ~ .slider-prev-controls label[for="room1-btn-2"],
+#room1-btn-4:checked ~ .slider-prev-controls label[for="room1-btn-4"],
+#room1-btn-4:checked ~ .slider-next-controls label[for="room1-btn-1"],
+#room1-btn-4:checked ~ .slider-next-controls label[for="room1-btn-2"],
+#room1-btn-4:checked ~ .slider-next-controls label[for="room1-btn-3"],
+#room1-btn-4:checked ~ .slider-next-controls label[for="room1-btn-4"]
+{
+  display: none;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////
 
 #room1-btn-1:checked ~ .slider-controls label[for="room1-btn-1"],
 #room1-btn-2:checked ~ .slider-controls label[for="room1-btn-2"],
