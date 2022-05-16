@@ -1345,9 +1345,9 @@ input[type=number] {
     &__title {
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
-        font-size: 24px;
+        font-size: 26px;
         line-height: 30px;
-        margin-top: 30px;
+        margin-top: 33px;
         margin-bottom: 20px;
     }
     &-items {
@@ -1407,18 +1407,20 @@ input[type=number] {
     }
     &-price {
         display: flex;
+        margin-top: 2px;
     }
     &__rubl {
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 18px;
         color: rgba(31, 32, 65, 0.5);
+        margin-right: 5px;
     }
     &__period {
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
-        font-size: 12px;
+        font-size: 14px;
         line-height: 18px;
         color: rgba(31, 32, 65, 0.5);
         margin-left: 5px;
@@ -1444,9 +1446,11 @@ input[type=number] {
         &__numbers {
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
-            font-size: 14px;
+            font-size: 15px;
             line-height: 18px;
             color: rgba(31, 32, 65, 0.5);
+            padding-bottom: 1px;
+            padding-right: 6px;
         }
         &__title {
             font-family: 'Montserrat', sans-serif;
@@ -1454,16 +1458,16 @@ input[type=number] {
             font-size: 14px;
             line-height: 18px;  
             color: rgba(31, 32, 65, 0.5); 
-            margin-left: 5px; 
-            margin-right: 4px;        
+            margin-right: 10px;
+            padding-bottom: 1px;        
         }
     }
 }
 
 .paginator {
     width: 241px;
-    margin-left: 299px;
-    margin-top: 23px;
+    margin-left: 289px;
+    margin-top: 16px;
     margin-bottom: 60px;
     &__item {
         display: inline-block;
@@ -1502,10 +1506,10 @@ input[type=number] {
     &__text {
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 15px;
         line-height: 24px;
         color: rgba(31, 32, 65, 0.75);
-        margin-top: 5px;
+        margin-top: 8px;
         text-align: center;
     }
 }
@@ -1528,15 +1532,15 @@ input[type=number] {
     }
     &-controls {
         position: absolute;
-        top: 129px;
-        left: 195px;
+        top: 121px;
+        left: 216px;
         z-index: 15;
     }
     &__label {
         display: inline-block;
         margin-right: 4px;
-        width: 8px;
-        height: 8px;
+        width: 5px;
+        height: 5px;
         border: 1px solid rgba(255, 255, 255, 1);
         border-radius: 50%;
         cursor: pointer;
