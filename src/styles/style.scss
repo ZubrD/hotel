@@ -2828,17 +2828,16 @@ input[type=number] {
 .registration-wrapper {
     max-width: 1920px;
     min-width: 320px;
-    padding-left: 15px;
-    padding-right: 15px;
     margin: 0 auto;
-    height: 744px;  
+    height: 673px;  
 }
 
 .registration {
     &__img {
-        height: 753px;
+        height: 686px;
         background: url("../images/registration.png");
-        padding-top: 17px;
+        background-size: cover;
+        padding-top: 20px;
         box-sizing: border-box;
         &-enter {
             padding-top: 233px;
@@ -2860,7 +2859,7 @@ input[type=number] {
         }
         &__title {
             font-weight: 700;
-            font-size: 24px;
+            font-size: 27px;
             line-height: 29px;
             margin-bottom: 20px;
         }
@@ -2898,7 +2897,7 @@ input[type=number] {
                     margin-left: 0px;
                     cursor: pointer;
                     font-weight: 400;
-                    font-size: 14px;
+                    font-size: 16px;
                     line-height: 24px;
                     &::before {
                         position: absolute;
@@ -2928,7 +2927,7 @@ input[type=number] {
             }
             &__title {
                 font-weight: 700;
-                font-size: 12px;
+                font-size: 13px;
                 line-height: 14px;
                 margin-top: 10px;
                 margin-bottom: 5px;
@@ -2955,7 +2954,7 @@ input[type=number] {
                     position: relative;
                     margin-left: 50px;
                     font-weight: 400;
-                    font-size: 14px;
+                    font-size: 16px;
                     line-height: 24px;
                     color: rgba(31, 32, 65, 0.75);
                     cursor: pointer;
@@ -2972,7 +2971,7 @@ input[type=number] {
                     &::after {
                         position: absolute;
                         top: 2px;
-                        right: 214px;
+                        right: 241px;
                         content: '';
                         width: 12px;
                         height: 12px;
@@ -3026,7 +3025,7 @@ input[type=number] {
                 &__link {
                     text-decoration: none;
                     font-weight: 400;
-                    font-size: 14px;
+                    font-size: 16px;
                     line-height: 18;
                     color: rgba(0, 0, 0, 1);
                 }
