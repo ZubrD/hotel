@@ -19,3 +19,7 @@
 
 - Выбор удобств номера - количество спален, кроватей, ванных комнат (src/js/amenity.js) 
 - Выбор количества гостей - взрослых, детей, младенцев (src/js/guests.js)
+
+## UI kit
+
+Компоненты UI kit можно посмотреть здесь: https://zubrd.github.io/hotel/uikit/uikit_index.html
