@@ -2840,17 +2840,18 @@ input[type=number] {
     min-width: 320px;
     margin: 0 auto;
     height: 673px;  
+    margin-bottom: 128px;
 }
 
 .registration {
     &__img {
-        height: 686px;
+        height: 703px;
         background: url("../images/registration.png");
         background-size: cover;
         padding-top: 20px;
         box-sizing: border-box;
         &-enter {
-            padding-top: 233px;
+            padding-top: 172px;
         }
     }
     &-card {
@@ -2995,7 +2996,7 @@ input[type=number] {
             }
             &-send {
                 position: relative;
-                margin-top: 22px;
+                margin-top: 12px;
                 margin-bottom: 32px;
                 &__button {
                     width: 100%;
