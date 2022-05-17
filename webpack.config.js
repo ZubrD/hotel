@@ -67,7 +67,27 @@ module.exports = {
       favicon: "./src/favicon.png",
       filename: "details.html",
       template: "./src/details.pug"
-    })                          
+    }),  
+    new HtmlWebpackPlugin({
+      favicon: "./src/favicon.png",
+      filename: "uikit/uikit_cards.html",
+      template: "./src/uikit_cards.pug"
+    }),       
+    new HtmlWebpackPlugin({
+      favicon: "./src/favicon.png",
+      filename: "uikit/uikit_colors.html",
+      template: "./src/uikit_colors.pug"
+    }),
+    new HtmlWebpackPlugin({
+      favicon: "./src/favicon.png",
+      filename: "uikit/uikit_form.html",
+      template: "./src/uikit_form.pug"
+    }), 
+    new HtmlWebpackPlugin({
+      favicon: "./src/favicon.png",
+      filename: "uikit/uikit_headers_footers.html",
+      template: "./src/uikit_headers_footers.pug"
+    })                               
   ],
   module: {
     rules: [
