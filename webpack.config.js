@@ -70,9 +70,14 @@ module.exports = {
     }),  
     new HtmlWebpackPlugin({
       favicon: "./src/favicon.png",
+      filename: "uikit/uikit_index.html",
+      template: "./src/uikit/uikit_index.pug"
+    }),    
+    new HtmlWebpackPlugin({
+      favicon: "./src/favicon.png",
       filename: "uikit/uikit_cards.html",
       template: "./src/uikit/uikit_cards.pug"
-    }),       
+    }),    
     new HtmlWebpackPlugin({
       favicon: "./src/favicon.png",
       filename: "uikit/uikit_colors.html",
