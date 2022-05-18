@@ -3572,6 +3572,7 @@ input[type=number] {
   }
   &-rule {
     width: 222px;
+    margin-top: 18px;
   }
   &-registration-sex {
     margin-top: 35px;
@@ -3954,12 +3955,18 @@ input[type=number] {
   opacity: 0;
 }
 
+input:-moz-placeholder {
+  font-family: 'Montserrat';
+}
+
 .uikit-forms {
   display: grid;
   grid-template-columns: 329px 276px 320px;
   grid-template-rows: 713px 265px 341px 158px;
   column-gap: 116px;
   row-gap: 40px;
+  margin-top: 43px;
+  margin-left: 142px;
 }
 
 .uikit-form-block {
