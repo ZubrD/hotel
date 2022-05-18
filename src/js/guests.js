@@ -110,7 +110,7 @@ $('.js-minus-child').on('click', function(event){
 
 ////////////////////////////////////////////////////////МЛАДЕНЦЫ//////////////////////////////////////////////
 
-$('.plus-baby').on('click', function(event){
+$('.js-plus-baby').on('click', function(event){
   event.preventDefault()
   $('.js-guests-confirmation__clear').removeClass('opaque')
   let value = parseInt($('.js-guest__input').attr('baby'))

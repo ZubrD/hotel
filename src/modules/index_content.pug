@@ -25,30 +25,30 @@ include ../pug/libs/_libs
         form(action="").guest-form 
           .stay-guest-form__item
               p.stay-guest-form__title-index Гости 
-              input(type="text" placeholder='Сколько гостей' adult=0 child=0 baby=0 guests=0).stay-guest-form__input.guest__input
+              input(type="text" placeholder='Сколько гостей' adult=0 child=0 baby=0 guests=0).stay-guest-form__input.guest__input.js-guest__input
               span.stay-guest-form__icon.stay-guest-form__icon-index expand_more 
-          .guests-block.block-open           
+          .guests-block.js-guests-block.block-open           
               .guests-item 
                   .guests-item__title Взрослые
                   .guests-item-buttons
-                      button.guests-item__button.guests-item__button-minus.minus-adult -
-                      .guests-item__result.adult-result 0              
-                      button.guests-item__button.plus-adult +
+                      button.guests-item__button.guests-item__button-minus.minus-adult.js-minus-adult -
+                      .guests-item__result.adult-result.js-adult-result 0              
+                      button.guests-item__button.plus-adult.js-plus-adult +
               .guests-item 
                   .guests-item__title Дети
                   .guests-item-buttons
-                      button.guests-item__button.guests-item__button-minus.minus-child -
-                      .guests-item__result.child-result 0              
-                      button.guests-item__button.plus-child +
+                      button.guests-item__button.guests-item__button-minus.minus-child.js-minus-child -
+                      .guests-item__result.child-result.js-child-result 0              
+                      button.guests-item__button.plus-child.js-plus-child +
               .guests-item 
                   .guests-item__title Младенцы
                   .guests-item-buttons
-                      button.guests-item__button.guests-item__button-minus.minus-baby -
-                      .guests-item__result.baby-result 0              
-                      button.guests-item__button.plus-baby +  
+                      button.guests-item__button.guests-item__button-minus.minus-baby.js-minus-baby -
+                      .guests-item__result.baby-result.js-baby-result 0              
+                      button.guests-item__button.plus-baby.js-plus-baby +  
               .guests-item 
-                  .guests-confirmation__clear.opaque Очистить
-                  .guests-confirmation__assume Применить
+                  .guests-confirmation__clear.js-guests-confirmation__clear.opaque Очистить
+                  .guests-confirmation__assume.js-guests-confirmation__assume Применить
 
       .pickup
         .pickup-wrapper
