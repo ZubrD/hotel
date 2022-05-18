@@ -134,7 +134,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-minus-child').on('click', fun
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-child-result').text(value);
 }); ////////////////////////////////////////////////////////МЛАДЕНЦЫ//////////////////////////////////////////////
 
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.plus-baby').on('click', function (event) {
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-plus-baby').on('click', function (event) {
   event.preventDefault();
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guests-confirmation__clear').removeClass('opaque');
   var value = parseInt(jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guest__input').attr('baby'));
@@ -411,4 +411,4 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-guests-confirmation__assume')
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=guests.2ed9ea909ff623cd8a08.js.map
+//# sourceMappingURL=guests.3f76a8c87a70eb111867.js.map
