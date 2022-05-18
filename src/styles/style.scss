@@ -3829,6 +3829,9 @@ input[type=number] {
   &-headers-footers {
     display: grid;
     row-gap: 40px;
+    margin-top: 56px;
+    margin-left: -14px;
+    margin-right: 14px;
   }
   &-footer {
     padding-top: 96px;
