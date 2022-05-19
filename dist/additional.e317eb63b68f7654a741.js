@@ -1,209 +1,52 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/js/amenity.js":
-/*!***************************!*\
-  !*** ./src/js/amenity.js ***!
-  \***************************/
+/***/ "./src/js/additional.js":
+/*!******************************!*\
+  !*** ./src/js/additional.js ***!
+  \******************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 /* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-$('.js-amenity-form__input').on('focus', function () {
-  $('.js-amenity-block').toggleClass('block-open');
-}); //////////////////////////////////////////СПАЛЬНИ/////////////////////////////////////////////////////////////////
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-$('.js-plus-sleep').on('click', function () {
-  var value = parseInt($('.js-amenity-form__input').attr('sleep'));
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-  if (value < 3) {
-    value = value + 1;
-    $('.js-amenity-form__input').attr({
-      'sleep': value
-    });
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+var additionalTitle = document.querySelector('.js-additional__title');
+var additionalIcon = document.querySelector('.js-additional__icon');
+
+var Additional = /*#__PURE__*/function () {
+  function Additional() {
+    _classCallCheck(this, Additional);
   }
 
-  if (value > 0) {
-    $('.js-minus-sleep').css('border', '1px solid rgba(31, 32, 65, 0.25)');
-  }
+  _createClass(Additional, [{
+    key: "bindEventListeners",
+    value: function bindEventListeners() {
+      additionalTitle.addEventListener('click', this.additionalTitleClick);
+      additionalIcon.addEventListener('click', this.additionalIconClick);
+    }
+  }, {
+    key: "additionalTitleClick",
+    value: function additionalTitleClick() {
+      $('.js-additional__icon').toggleClass('rotated__icon');
+      $('.js-additional-block').toggleClass('block-open');
+    }
+  }, {
+    key: "additionalIconClick",
+    value: function additionalIconClick(event) {
+      $(event.target).toggleClass('rotated__icon');
+      $('.js-additional-block').toggleClass('block-open');
+    }
+  }]);
 
-  $('.js-amenity-form__input').val(my_select());
-  $('.js-sleep-result').text(value);
-});
-$('.js-minus-sleep').on('click', function () {
-  var value = $('.js-amenity-form__input').attr('sleep');
+  return Additional;
+}();
 
-  if (value != 0) {
-    value = value - 1;
-    $('.js-amenity-form__input').attr({
-      'sleep': value
-    });
-  }
-
-  if (value == 0) {
-    $(this).css('border', '1px solid rgba(31, 32, 65, 0.1)');
-  }
-
-  $('.js-amenity-form__input').val(my_select());
-  $('.js-sleep-result').text(value);
-}); /////////////////////////////////////////////////////КРОВАТИ///////////////////////////////////////////////////////
-
-$('.js-plus-bed').on('click', function () {
-  var value = parseInt($('.js-amenity-form__input').attr('bed'));
-
-  if (value < 6) {
-    value = value + 1;
-    $('.js-amenity-form__input').attr({
-      'bed': value
-    });
-  }
-
-  if (value > 0) {
-    $('.js-minus-bed').css('border', '1px solid rgba(31, 32, 65, 0.25)');
-  }
-
-  $('.js-amenity-form__input').val(my_select());
-  $('.js-bed-result').text(value);
-});
-$('.js-minus-bed').on('click', function () {
-  var value = $('.js-amenity-form__input').attr('bed');
-
-  if (value != 0) {
-    value = value - 1;
-    $('.js-amenity-form__input').attr({
-      'bed': value
-    });
-  }
-
-  if (value == 0) {
-    $(this).css('border', '1px solid rgba(31, 32, 65, 0.1)');
-  }
-
-  $('.js-amenity-form__input').val(my_select());
-  $('.js-bed-result').text(value);
-}); ////////////////////////////////////////////////////////ВАННЫЕ КОМНАТЫ//////////////////////////////////////////////
-
-$('.js-plus-bath').on('click', function () {
-  var value = parseInt($('.js-amenity-form__input').attr('bath'));
-
-  if (value < 3) {
-    value = value + 1;
-    $('.js-amenity-form__input').attr({
-      'bath': value
-    });
-  }
-
-  if (value > 0) {
-    $('.js-minus-bath').css('border', '1px solid rgba(31, 32, 65, 0.25)');
-  }
-
-  $('.js-amenity-form__input').val(my_select());
-  $('.js-bath-result').text(value);
-});
-$('.js-minus-bath').on('click', function () {
-  var value = $('.js-amenity-form__input').attr('bath');
-
-  if (value != 0) {
-    value = value - 1;
-    $('.js-amenity-form__input').attr({
-      'bath': value
-    });
-  }
-
-  if (value == 0) {
-    $(this).css('border', '1px solid rgba(31, 32, 65, 0.1)');
-  }
-
-  $('.js-amenity-form__input').val(my_select());
-  $('.js-bath-result').text(value);
-}); ////////////////////////////////////////////////////////////////////////////////////////////////////
-
-function my_select() {
-  var sleep = parseInt($('.js-amenity-form__input').attr('sleep'));
-  var bed = parseInt($('.js-amenity-form__input').attr('bed'));
-  var bath = parseInt($('.js-amenity-form__input').attr('bath'));
-  var sleep_pl, bed_pl, bath_pl;
-  var sleep_ms;
-  var bed_ms;
-  var bath_ms;
-
-  switch (sleep) {
-    case 1:
-      sleep_pl = 'спальня';
-      break;
-
-    case 2:
-      sleep_pl = 'спальни';
-      break;
-
-    case 3:
-      sleep_pl = 'спальни';
-      break;
-  }
-
-  switch (bed) {
-    case 1:
-      bed_pl = 'кровать';
-      break;
-
-    case 2:
-      bed_pl = 'кровати';
-      break;
-
-    case 3:
-      bed_pl = 'кровати';
-      break;
-
-    case 4:
-      bed_pl = 'кровати';
-      break;
-
-    case 5:
-      bed_pl = 'кроватей';
-      break;
-
-    case 6:
-      bed_pl = 'кроватей';
-      break;
-  }
-
-  switch (bath) {
-    case 1:
-      bath_pl = 'ванная комната';
-      break;
-
-    case 2:
-      bath_pl = 'ванных комнаты';
-      break;
-
-    case 3:
-      bath_pl = 'ванных комнаты';
-      break;
-  }
-
-  if (sleep == 0) {
-    sleep_ms = '';
-  } else if (bed != 0 || bath != 0) {
-    sleep_ms = sleep + ' ' + sleep_pl + ', ';
-  } else {
-    sleep_ms = sleep + ' ' + sleep_pl;
-  }
-
-  if (bed == 0) {
-    bed_ms = '';
-  } else if (bath != 0) {
-    bed_ms = bed + ' ' + bed_pl + ', ';
-  } else {
-    bed_ms = bed + ' ' + bed_pl;
-  }
-
-  if (bath == 0) {
-    bath_ms = '';
-  } else {
-    bath_ms = bath + ' ' + bath_pl;
-  }
-
-  return sleep_ms + bed_ms + bath_ms;
-}
+var additional = new Additional();
+additional.bindEventListeners();
 
 /***/ })
 
@@ -282,7 +125,7 @@ function my_select() {
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"amenity": 0
+/******/ 			"additional": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -332,9 +175,9 @@ function my_select() {
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_jquery_dist_jquery_js"], () => (__webpack_require__("./src/js/amenity.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_jquery_dist_jquery_js"], () => (__webpack_require__("./src/js/additional.js")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=amenity.21f556896616f80f8ca5.js.map
+//# sourceMappingURL=additional.e317eb63b68f7654a741.js.map

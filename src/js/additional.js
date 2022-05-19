@@ -1,6 +1,5 @@
 const additionalTitle = document.querySelector('.js-additional__title');
 const additionalIcon = document.querySelector('.js-additional__icon');
-console.log(additionalTitle)
 
 class Additional {
     bindEventListeners() {
@@ -9,7 +8,6 @@ class Additional {
     }
 
     additionalTitleClick() {
-        console.log('Дополнительный титул')
         $('.js-additional__icon').toggleClass('rotated__icon')
         $('.js-additional-block').toggleClass('block-open')        
     }
@@ -22,13 +20,3 @@ class Additional {
 
 const additional = new Additional()
 additional.bindEventListeners()
-
-// $('.js-additional__title').on('click', function(){
-//     $('.js-additional__icon').toggleClass('rotated__icon')
-//     $('.js-additional-block').toggleClass('block-open')
-// })
-
-// $('.js-additional__icon').on('click', function(){
-//     $(this).toggleClass('rotated__icon')
-//     $('.js-additional-block').toggleClass('block-open')
-// })
