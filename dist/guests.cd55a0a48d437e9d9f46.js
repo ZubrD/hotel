@@ -296,10 +296,7 @@ function messangeInput() {
   }
 
   return messange;
-} ///////////////////////////////////ПРИНЯТЬ ЗНАЧЕНИЯ (СКРЫТЬ ФОРМУ)///////////////////////////////
-// $('.js-guests-confirmation__assume').on('click', function () {
-//   $('.js-guests-block').addClass('block-open')
-// })
+}
 
 /***/ })
 
@@ -433,4 +430,4 @@ function messangeInput() {
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=guests.74a3ae974c0c1e0c5fb7.js.map
+//# sourceMappingURL=guests.cd55a0a48d437e9d9f46.js.map
