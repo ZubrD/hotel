@@ -26,8 +26,8 @@ module.exports = {
     noui_slider: './src/js/noui_slider.js',
   },
   output: {
-    filename: '[name].[contenthash].js',   
-    assetModuleFilename: "assets/[hash][ext][query]",
+    filename: '[name].js',   
+    assetModuleFilename: "assets/[name][ext][query]",
     clean: true,
   },  
   plugins: [

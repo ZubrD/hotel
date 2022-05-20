@@ -1,12 +1,16 @@
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/js/additional.js":
-/*!******************************!*\
-  !*** ./src/js/additional.js ***!
-  \******************************/
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+/***/ "./src/js/elements.js":
+/*!****************************!*\
+  !*** ./src/js/elements.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! air-datepicker */ "./node_modules/air-datepicker/src/js/air-datepicker.js");
+/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(air_datepicker__WEBPACK_IMPORTED_MODULE_0__);
 /* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -14,39 +18,96 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
-var additionalTitle = document.querySelector('.js-additional__title');
-var additionalIcon = document.querySelector('.js-additional__icon');
 
-var Additional = /*#__PURE__*/function () {
-  function Additional() {
-    _classCallCheck(this, Additional);
+var datepickerClear = document.querySelector('.datepicker__clear');
+var datepickerOk = document.querySelector('.datepicker__ok');
+var dateFormInput_1 = document.querySelector('#date_1');
+var dateFormInput_2 = document.querySelector('#date_2');
+var headerBurger = document.querySelector('.js-header-burger');
+
+var MyDatepicker = /*#__PURE__*/function () {
+  function MyDatepicker() {
+    _classCallCheck(this, MyDatepicker);
   }
 
-  _createClass(Additional, [{
+  _createClass(MyDatepicker, [{
     key: "bindEventListeners",
     value: function bindEventListeners() {
-      additionalTitle.addEventListener('click', this.additionalTitleClick);
-      additionalIcon.addEventListener('click', this.additionalIconClick);
+      datepickerClear.addEventListener('click', this.datepickerClearClick);
+      datepickerOk.addEventListener('click', this.datepickerOkClick);
+      dateFormInput_1.addEventListener('click', this.dateFormInputClick_1);
+      dateFormInput_2.addEventListener('click', this.dateFormInputClick_2);
+      headerBurger.addEventListener('click', this.headerBurgerClick);
     }
   }, {
-    key: "additionalTitleClick",
-    value: function additionalTitleClick() {
-      $('.js-additional__icon').toggleClass('rotated__icon');
-      $('.js-additional-block').toggleClass('block-open');
+    key: "datepickerClearClick",
+    value: function datepickerClearClick() {
+      $('#date_1').val('');
+      $('#date_2').val('');
     }
   }, {
-    key: "additionalIconClick",
-    value: function additionalIconClick(event) {
-      $(event.target).toggleClass('rotated__icon');
-      $('.js-additional-block').toggleClass('block-open');
+    key: "datepickerOkClick",
+    value: function datepickerOkClick() {
+      $('.datepicker-form').hide();
+    }
+  }, {
+    key: "dateFormInputClick_1",
+    value: function dateFormInputClick_1() {
+      $('.datepicker-form').show();
+    }
+  }, {
+    key: "dateFormInputClick_2",
+    value: function dateFormInputClick_2() {
+      $('.datepicker-form').show();
+    }
+  }, {
+    key: "headerBurgerClick",
+    value: function headerBurgerClick() {
+      $('.js-substrate').toggleClass('substrate-burger');
+
+      if ($('.js-right-menu-list').css('display') == 'none') {
+        $('.js-right-menu-list').addClass('display-block');
+        $('.js-right-menu-list').removeClass('display-none');
+      } else {
+        if ($('.js-right-menu-list').css('display') == 'block') {
+          $('.js-right-menu-list').removeClass('display-block');
+          $('.js-right-menu-list').addClass('display-none');
+        }
+      }
+
+      $('.js-right-menu-list').toggleClass('right-menu-list-burger');
+      $('.js-right-menu__link').toggleClass('right-menu__link-burger');
+      $('.js-right-menu__item').toggleClass('right-menu__item-burger');
     }
   }]);
 
-  return Additional;
+  return MyDatepicker;
 }();
 
-var additional = new Additional();
-additional.bindEventListeners();
+var myDatepicker = new MyDatepicker();
+myDatepicker.bindEventListeners();
+$('#calendar').datepicker({
+  position: "bottom right",
+  range: true,
+  minDate: new Date(),
+  inline: true,
+  navTitles: {
+    days: 'MM yyyy'
+  },
+  onSelect: function onSelect(formattedDate, date, inst) {
+    console.log(date);
+
+    if (date[0]) {
+      var month_1 = parseInt(date[0].getMonth(), 10) + 1;
+      $('#date_1').val(date[0].getDate() + '.' + month_1 + '.' + date[0].getFullYear());
+    }
+
+    if (date[1]) {
+      var month_2 = parseInt(date[1].getMonth(), 10) + 1;
+      $('#date_2').val(date[1].getDate() + '.' + month_2 + '.' + date[1].getFullYear());
+    }
+  }
+});
 
 /***/ })
 
@@ -112,9 +173,44 @@ additional.bindEventListeners();
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */
@@ -125,7 +221,7 @@ additional.bindEventListeners();
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"additional": 0
+/******/ 			"elements": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -175,9 +271,9 @@ additional.bindEventListeners();
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_jquery_dist_jquery_js"], () => (__webpack_require__("./src/js/additional.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_jquery_dist_jquery_js","vendors-node_modules_air-datepicker_src_js_air-datepicker_js"], () => (__webpack_require__("./src/js/elements.js")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=additional.e317eb63b68f7654a741.js.map
+//# sourceMappingURL=elements.js.map
