@@ -1,5 +1,57 @@
 import datepicker from "air-datepicker"
 
+const datepickerClear = document.querySelector('.datepicker__clear');
+const datepickerOk = document.querySelector('.datepicker__ok');
+const dateFormInput_1 = document.querySelector('#date_1');
+const dateFormInput_2 = document.querySelector('#date_2');
+const headerBurger = document.querySelector('.js-header-burger');
+
+class MyDatepicker {
+    bindEventListeners() {
+        datepickerClear.addEventListener('click', this.datepickerClearClick);
+        datepickerOk.addEventListener('click', this.datepickerOkClick);
+        dateFormInput_1.addEventListener('click', this.dateFormInputClick_1);
+        dateFormInput_2.addEventListener('click', this.dateFormInputClick_2);
+        headerBurger.addEventListener('click', this.headerBurgerClick);
+    }
+
+    datepickerClearClick() {
+        $('#date_1').val('');
+        $('#date_2').val('');
+    }
+
+    datepickerOkClick() {
+        $('.datepicker-form').hide()
+    }
+
+    dateFormInputClick_1() {
+        $('.datepicker-form').show()
+    }
+
+    dateFormInputClick_2() {
+        $('.datepicker-form').show()
+    }
+
+    headerBurgerClick() {
+        $('.js-substrate').toggleClass('substrate-burger')
+        if($('.js-right-menu-list').css('display') ==  'none') {
+            $('.js-right-menu-list').addClass('display-block');
+            $('.js-right-menu-list').removeClass('display-none');
+        } else {
+            if($('.js-right-menu-list').css('display') ==  'block') {
+                $('.js-right-menu-list').removeClass('display-block');
+                $('.js-right-menu-list').addClass('display-none'); 
+            }
+        }
+        $('.js-right-menu-list').toggleClass('right-menu-list-burger');
+        $('.js-right-menu__link').toggleClass('right-menu__link-burger');
+        $('.js-right-menu__item').toggleClass('right-menu__item-burger') ;       
+    }
+}
+
+const myDatepicker = new MyDatepicker()
+myDatepicker.bindEventListeners()
+
 $('#calendar').datepicker({
     position: "bottom right",
     range: true,
@@ -20,40 +72,3 @@ $('#calendar').datepicker({
         }
     }
 })
-
-$('.datepicker__clear').on('click', function(){
-    $('#date_1').val('');
-    $('#date_2').val('');
-})
-
-$('.datepicker__ok').on('click', function(){
-    $('.datepicker-form').hide()
-})
-
-$('.dates-form__input').on('click', function(){
-    $('.datepicker-form').show()
-    console.log('Is this working?');
-})
-
-
-$('.js-header-burger').on('click', function(){
-    $('.js-substrate').toggleClass('substrate-burger')
-    if($('.js-right-menu-list').css('display') ==  'none') {
-        $('.js-right-menu-list').addClass('display-block')
-        $('.js-right-menu-list').removeClass('display-none')
-    } else {
-        if($('.js-right-menu-list').css('display') ==  'block') {
-            $('.js-right-menu-list').removeClass('display-block')
-            $('.js-right-menu-list').addClass('display-none') 
-        }
-    }
-    $('.js-right-menu-list').toggleClass('right-menu-list-burger')
-    $('.js-right-menu__link').toggleClass('right-menu__link-burger')
-    $('.js-right-menu__item').toggleClass('right-menu__item-burger')
-})
-
-
-
-
-
-

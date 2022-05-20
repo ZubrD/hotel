@@ -12,7 +12,80 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! air-datepicker */ "./node_modules/air-datepicker/src/js/air-datepicker.js");
 /* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(air_datepicker__WEBPACK_IMPORTED_MODULE_0__);
 /* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+
+var datepickerClear = document.querySelector('.datepicker__clear');
+var datepickerOk = document.querySelector('.datepicker__ok');
+var dateFormInput_1 = document.querySelector('#date_1');
+var dateFormInput_2 = document.querySelector('#date_2');
+var headerBurger = document.querySelector('.js-header-burger');
+
+var MyDatepicker = /*#__PURE__*/function () {
+  function MyDatepicker() {
+    _classCallCheck(this, MyDatepicker);
+  }
+
+  _createClass(MyDatepicker, [{
+    key: "bindEventListeners",
+    value: function bindEventListeners() {
+      datepickerClear.addEventListener('click', this.datepickerClearClick);
+      datepickerOk.addEventListener('click', this.datepickerOkClick);
+      dateFormInput_1.addEventListener('click', this.dateFormInputClick_1);
+      dateFormInput_2.addEventListener('click', this.dateFormInputClick_2);
+      headerBurger.addEventListener('click', this.headerBurgerClick);
+    }
+  }, {
+    key: "datepickerClearClick",
+    value: function datepickerClearClick() {
+      $('#date_1').val('');
+      $('#date_2').val('');
+    }
+  }, {
+    key: "datepickerOkClick",
+    value: function datepickerOkClick() {
+      $('.datepicker-form').hide();
+    }
+  }, {
+    key: "dateFormInputClick_1",
+    value: function dateFormInputClick_1() {
+      $('.datepicker-form').show();
+    }
+  }, {
+    key: "dateFormInputClick_2",
+    value: function dateFormInputClick_2() {
+      $('.datepicker-form').show();
+    }
+  }, {
+    key: "headerBurgerClick",
+    value: function headerBurgerClick() {
+      $('.js-substrate').toggleClass('substrate-burger');
+
+      if ($('.js-right-menu-list').css('display') == 'none') {
+        $('.js-right-menu-list').addClass('display-block');
+        $('.js-right-menu-list').removeClass('display-none');
+      } else {
+        if ($('.js-right-menu-list').css('display') == 'block') {
+          $('.js-right-menu-list').removeClass('display-block');
+          $('.js-right-menu-list').addClass('display-none');
+        }
+      }
+
+      $('.js-right-menu-list').toggleClass('right-menu-list-burger');
+      $('.js-right-menu__link').toggleClass('right-menu__link-burger');
+      $('.js-right-menu__item').toggleClass('right-menu__item-burger');
+    }
+  }]);
+
+  return MyDatepicker;
+}();
+
+var myDatepicker = new MyDatepicker();
+myDatepicker.bindEventListeners();
 $('#calendar').datepicker({
   position: "bottom right",
   range: true,
@@ -34,34 +107,6 @@ $('#calendar').datepicker({
       $('#date_2').val(date[1].getDate() + '.' + month_2 + '.' + date[1].getFullYear());
     }
   }
-});
-$('.datepicker__clear').on('click', function () {
-  $('#date_1').val('');
-  $('#date_2').val('');
-});
-$('.datepicker__ok').on('click', function () {
-  $('.datepicker-form').hide();
-});
-$('.dates-form__input').on('click', function () {
-  $('.datepicker-form').show();
-  console.log('Is this working?');
-});
-$('.js-header-burger').on('click', function () {
-  $('.js-substrate').toggleClass('substrate-burger');
-
-  if ($('.js-right-menu-list').css('display') == 'none') {
-    $('.js-right-menu-list').addClass('display-block');
-    $('.js-right-menu-list').removeClass('display-none');
-  } else {
-    if ($('.js-right-menu-list').css('display') == 'block') {
-      $('.js-right-menu-list').removeClass('display-block');
-      $('.js-right-menu-list').addClass('display-none');
-    }
-  }
-
-  $('.js-right-menu-list').toggleClass('right-menu-list-burger');
-  $('.js-right-menu__link').toggleClass('right-menu__link-burger');
-  $('.js-right-menu__item').toggleClass('right-menu__item-burger');
 });
 
 /***/ })
@@ -231,4 +276,4 @@ $('.js-header-burger').on('click', function () {
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=elements.2ac542401fe7e579cc3f.js.map
+//# sourceMappingURL=elements.5dc6f4f0eddfc574f552.js.map
