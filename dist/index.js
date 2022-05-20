@@ -1,5 +1,4 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/index.js":
@@ -8,13 +7,676 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_nouislider_dist_nouislider_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/nouislider/dist/nouislider.css */ "./node_modules/nouislider/dist/nouislider.css");
 /* harmony import */ var _node_modules_air_datepicker_dist_css_datepicker_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/air-datepicker/dist/css/datepicker.css */ "./node_modules/air-datepicker/dist/css/datepicker.css");
 /* harmony import */ var _styles_index_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/index.scss */ "./src/styles/index.scss");
+/* harmony import */ var _js_guests_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/guests.js */ "./src/js/guests.js");
+/* harmony import */ var _js_guests_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_js_guests_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _js_amenity_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/amenity.js */ "./src/js/amenity.js");
+/* harmony import */ var _js_amenity_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_js_amenity_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _js_additional_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./js/additional.js */ "./src/js/additional.js");
+/* harmony import */ var _js_additional_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_js_additional_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _js_noui_slider_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./js/noui_slider.js */ "./src/js/noui_slider.js");
 
 
 
+
+
+
+ // import './js/elements.js';
+
+/***/ }),
+
+/***/ "./src/js/additional.js":
+/*!******************************!*\
+  !*** ./src/js/additional.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+/* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+var additionalTitle = document.querySelector('.js-additional__title');
+var additionalIcon = document.querySelector('.js-additional__icon');
+
+var Additional = /*#__PURE__*/function () {
+  function Additional() {
+    _classCallCheck(this, Additional);
+  }
+
+  _createClass(Additional, [{
+    key: "bindEventListeners",
+    value: function bindEventListeners() {
+      additionalTitle.addEventListener('click', this.additionalTitleClick);
+      additionalIcon.addEventListener('click', this.additionalIconClick);
+    }
+  }, {
+    key: "additionalTitleClick",
+    value: function additionalTitleClick() {
+      $('.js-additional__icon').toggleClass('rotated__icon');
+      $('.js-additional-block').toggleClass('block-open');
+    }
+  }, {
+    key: "additionalIconClick",
+    value: function additionalIconClick(event) {
+      $(event.target).toggleClass('rotated__icon');
+      $('.js-additional-block').toggleClass('block-open');
+    }
+  }]);
+
+  return Additional;
+}();
+
+var additional = new Additional();
+additional.bindEventListeners();
+
+/***/ }),
+
+/***/ "./src/js/amenity.js":
+/*!***************************!*\
+  !*** ./src/js/amenity.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+/* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+var amenityFormInput = document.querySelector('.js-amenity-form__input');
+var plusSleep = document.querySelector('.js-plus-sleep');
+var minusSleep = document.querySelector('.js-minus-sleep');
+var plusBed = document.querySelector('.js-plus-bed');
+var minusBed = document.querySelector('.js-minus-bed');
+var plusBath = document.querySelector('.js-plus-bath');
+var minusBath = document.querySelector('.js-minus-bath');
+
+var Amenity = /*#__PURE__*/function () {
+  function Amenity() {
+    _classCallCheck(this, Amenity);
+  }
+
+  _createClass(Amenity, [{
+    key: "bindEventListeners",
+    value: function bindEventListeners() {
+      amenityFormInput.addEventListener('click', this.amenityFormInputClick);
+      plusSleep.addEventListener('click', this.plusSleepClick);
+      minusSleep.addEventListener('click', this.minusSleepClick);
+      plusBed.addEventListener('click', this.plusBedClick);
+      minusBed.addEventListener('click', this.minusBedClick);
+      plusBath.addEventListener('click', this.plusBathClick);
+      minusBath.addEventListener('click', this.minusBathClick);
+    }
+  }, {
+    key: "amenityFormInputClick",
+    value: function amenityFormInputClick() {
+      $('.js-amenity-block').toggleClass('block-open');
+    } ///////////////СПАЛЬНИ/////////////////
+
+  }, {
+    key: "plusSleepClick",
+    value: function plusSleepClick() {
+      var value = parseInt($('.js-amenity-form__input').attr('sleep'));
+
+      if (value < 3) {
+        value = value + 1;
+        $('.js-amenity-form__input').attr({
+          'sleep': value
+        });
+      }
+
+      if (value > 0) {
+        $('.js-minus-sleep').css('border', '1px solid rgba(31, 32, 65, 0.25)');
+      }
+
+      $('.js-amenity-form__input').val(my_select());
+      $('.js-sleep-result').text(value);
+    }
+  }, {
+    key: "minusSleepClick",
+    value: function minusSleepClick() {
+      var value = $('.js-amenity-form__input').attr('sleep');
+
+      if (value != 0) {
+        value = value - 1;
+        $('.js-amenity-form__input').attr({
+          'sleep': value
+        });
+      }
+
+      if (value == 0) {
+        $(this).css('border', '1px solid rgba(31, 32, 65, 0.1)');
+      }
+
+      $('.js-amenity-form__input').val(my_select());
+      $('.js-sleep-result').text(value);
+    } //////////////////КРОВАТИ///////////////////
+
+  }, {
+    key: "plusBedClick",
+    value: function plusBedClick() {
+      var value = parseInt($('.js-amenity-form__input').attr('bed'));
+
+      if (value < 6) {
+        value = value + 1;
+        $('.js-amenity-form__input').attr({
+          'bed': value
+        });
+      }
+
+      if (value > 0) {
+        $('.js-minus-bed').css('border', '1px solid rgba(31, 32, 65, 0.25)');
+      }
+
+      $('.js-amenity-form__input').val(my_select());
+      $('.js-bed-result').text(value);
+    }
+  }, {
+    key: "minusBedClick",
+    value: function minusBedClick() {
+      var value = $('.js-amenity-form__input').attr('bed');
+
+      if (value != 0) {
+        value = value - 1;
+        $('.js-amenity-form__input').attr({
+          'bed': value
+        });
+      }
+
+      if (value == 0) {
+        $(this).css('border', '1px solid rgba(31, 32, 65, 0.1)');
+      }
+
+      $('.js-amenity-form__input').val(my_select());
+      $('.js-bed-result').text(value);
+    } /////////////ВАННЫЕ КОМНАТЫ/////////////
+
+  }, {
+    key: "plusBathClick",
+    value: function plusBathClick() {
+      var value = parseInt($('.js-amenity-form__input').attr('bath'));
+
+      if (value < 3) {
+        value = value + 1;
+        $('.js-amenity-form__input').attr({
+          'bath': value
+        });
+      }
+
+      if (value > 0) {
+        $('.js-minus-bath').css('border', '1px solid rgba(31, 32, 65, 0.25)');
+      }
+
+      $('.js-amenity-form__input').val(my_select());
+      $('.js-bath-result').text(value);
+    }
+  }, {
+    key: "minusBathClick",
+    value: function minusBathClick() {
+      var value = $('.js-amenity-form__input').attr('bath');
+
+      if (value != 0) {
+        value = value - 1;
+        $('.js-amenity-form__input').attr({
+          'bath': value
+        });
+      }
+
+      if (value == 0) {
+        $(this).css('border', '1px solid rgba(31, 32, 65, 0.1)');
+      }
+
+      $('.js-amenity-form__input').val(my_select());
+      $('.js-bath-result').text(value);
+    }
+  }]);
+
+  return Amenity;
+}();
+
+var amenity = new Amenity();
+amenity.bindEventListeners(); ////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function my_select() {
+  var sleep = parseInt($('.js-amenity-form__input').attr('sleep'));
+  var bed = parseInt($('.js-amenity-form__input').attr('bed'));
+  var bath = parseInt($('.js-amenity-form__input').attr('bath'));
+  var sleep_pl, bed_pl, bath_pl;
+  var sleep_ms;
+  var bed_ms;
+  var bath_ms;
+
+  switch (sleep) {
+    case 1:
+      sleep_pl = 'спальня';
+      break;
+
+    case 2:
+      sleep_pl = 'спальни';
+      break;
+
+    case 3:
+      sleep_pl = 'спальни';
+      break;
+  }
+
+  switch (bed) {
+    case 1:
+      bed_pl = 'кровать';
+      break;
+
+    case 2:
+      bed_pl = 'кровати';
+      break;
+
+    case 3:
+      bed_pl = 'кровати';
+      break;
+
+    case 4:
+      bed_pl = 'кровати';
+      break;
+
+    case 5:
+      bed_pl = 'кроватей';
+      break;
+
+    case 6:
+      bed_pl = 'кроватей';
+      break;
+  }
+
+  switch (bath) {
+    case 1:
+      bath_pl = 'ванная комната';
+      break;
+
+    case 2:
+      bath_pl = 'ванных комнаты';
+      break;
+
+    case 3:
+      bath_pl = 'ванных комнаты';
+      break;
+  }
+
+  if (sleep == 0) {
+    sleep_ms = '';
+  } else if (bed != 0 || bath != 0) {
+    sleep_ms = sleep + ' ' + sleep_pl + ', ';
+  } else {
+    sleep_ms = sleep + ' ' + sleep_pl;
+  }
+
+  if (bed == 0) {
+    bed_ms = '';
+  } else if (bath != 0) {
+    bed_ms = bed + ' ' + bed_pl + ', ';
+  } else {
+    bed_ms = bed + ' ' + bed_pl;
+  }
+
+  if (bath == 0) {
+    bath_ms = '';
+  } else {
+    bath_ms = bath + ' ' + bath_pl;
+  }
+
+  return sleep_ms + bed_ms + bath_ms;
+}
+
+/***/ }),
+
+/***/ "./src/js/guests.js":
+/*!**************************!*\
+  !*** ./src/js/guests.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+/* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+// 10 человек, в том числе не больше 2 младенцев
+var guestInput = document.querySelector('.js-guest__input');
+var plusAdult = document.querySelector('.js-plus-adult');
+var minusAdult = document.querySelector('.js-minus-adult');
+var plusChild = document.querySelector('.js-plus-child');
+var minusChild = document.querySelector('.js-minus-child');
+var plusBaby = document.querySelector('.js-plus-baby');
+var minusBaby = document.querySelector('.js-minus-baby');
+var guestsConfirmationClear = document.querySelector('.js-guests-confirmation__clear');
+var guestsConfirmationAssume = document.querySelector('.js-guests-confirmation__assume');
+
+var Guests = /*#__PURE__*/function () {
+  function Guests() {
+    _classCallCheck(this, Guests);
+  }
+
+  _createClass(Guests, [{
+    key: "bindEventListers",
+    value: function bindEventListers() {
+      guestInput.addEventListener('click', this.openBlock);
+      plusAdult.addEventListener('click', this.plusAdultClick);
+      minusAdult.addEventListener('click', this.minusAdultClick);
+      plusChild.addEventListener('click', this.plusChildClick);
+      minusChild.addEventListener('click', this.minusChildClick);
+      plusBaby.addEventListener('click', this.plusBabyClick);
+      minusBaby.addEventListener('click', this.minusBabyClick);
+      guestsConfirmationClear.addEventListener('click', this.guestsConfirmationClearClick);
+      guestsConfirmationAssume.addEventListener('click', this.guestsConfirmationAssumeClick);
+    }
+  }, {
+    key: "openBlock",
+    value: function openBlock() {
+      $('.js-guests-block').toggleClass('block-open');
+    } /////////////////////ВЗРОСЛЫЕ/////////////////////
+
+  }, {
+    key: "plusAdultClick",
+    value: function plusAdultClick(event) {
+      event.preventDefault();
+      $('.js-guests-confirmation__clear').removeClass('opaque');
+      var value = parseInt($('.js-guest__input').attr('adult'));
+      var guests = parseInt($('.js-guest__input').attr('guests'));
+
+      if (guests < 10) {
+        value = value + 1;
+        guests = guests + 1;
+        $('.js-guest__input').attr({
+          'adult': value
+        });
+        $('.js-guest__input').attr({
+          'guests': guests
+        });
+      }
+
+      if (value > 0) {
+        $('.js-minus-adult').css('border', '1px solid rgba(31, 32, 65, 0.25)');
+      }
+
+      $('.js-guest__input').val(messangeInput());
+      $('.js-adult-result').text(value);
+      messangeInput();
+    }
+  }, {
+    key: "minusAdultClick",
+    value: function minusAdultClick(event) {
+      event.preventDefault();
+      var value = $('.js-guest__input').attr('adult');
+      var guests = parseInt($('.js-guest__input').attr('guests'));
+      var child = parseInt($('.js-guest__input').attr('child'));
+
+      if (value != 0) {
+        /* Если есть дети, то должен остаться хоть один взрослый */
+        if (!(value == 1 && guests > 1)) {
+          value = value - 1;
+          guests = guests - 1;
+          $('.js-guest__input').attr({
+            'adult': value
+          });
+          $('.js-guest__input').attr({
+            'guests': guests
+          });
+        }
+      }
+
+      if (value == 0) {
+        $(this).css('border', '1px solid rgba(31, 32, 65, 0.1)');
+      }
+
+      if (guests == 0) {
+        $('.js-guests-confirmation__clear').addClass('opaque');
+      }
+
+      $('.js-guest__input').val(messangeInput());
+      $('.js-adult-result').text(value);
+    } //////////////////////////ДЕТИ////////////////////////////
+
+  }, {
+    key: "plusChildClick",
+    value: function plusChildClick(event) {
+      event.preventDefault();
+      $('.js-guests-confirmation__clear').removeClass('opaque');
+      var value = parseInt($('.js-guest__input').attr('child'));
+      var guests = parseInt($('.js-guest__input').attr('guests'));
+      var adult = parseInt($('.js-guest__input').attr('adult'));
+      /* Не более 5 детей */
+
+      if (value < 5 && guests < 10) {
+        /* Должен быть как минимум один взрослый */
+        if (adult === 0) {
+          adult = 1;
+          guests = guests + 1;
+        }
+
+        value = value + 1;
+        guests = guests + 1;
+        $('.js-guest__input').attr({
+          'child': value
+        });
+        $('.js-guest__input').attr({
+          'guests': guests
+        });
+        $('.js-guest__input').attr({
+          'adult': adult
+        });
+      }
+
+      if (value > 0) {
+        $('.js-minus-child').css('border', '1px solid rgba(31, 32, 65, 0.25)');
+      }
+
+      $('.js-guest__input').val(messangeInput());
+      $('.js-child-result').text(value);
+      $('.js-adult-result').text(adult);
+    }
+  }, {
+    key: "minusChildClick",
+    value: function minusChildClick(event) {
+      event.preventDefault();
+      var value = $('.js-guest__input').attr('child');
+      var guests = $('.js-guest__input').attr('guests');
+
+      if (value != 0) {
+        value = value - 1;
+        guests = guests - 1;
+        $('.js-guest__input').attr({
+          'child': value
+        });
+        $('.js-guest__input').attr({
+          'guests': guests
+        });
+      }
+
+      if (value == 0) {
+        $(this).css('border', '1px solid rgba(31, 32, 65, 0.1)');
+      }
+
+      $('.js-guest__input').val(messangeInput());
+      $('.js-child-result').text(value);
+    } ////////////////////////////МЛАДЕНЦЫ////////////////////////
+
+  }, {
+    key: "plusBabyClick",
+    value: function plusBabyClick(event) {
+      event.preventDefault();
+      $('.js-guests-confirmation__clear').removeClass('opaque');
+      var value = parseInt($('.js-guest__input').attr('baby'));
+      var guests = parseInt($('.js-guest__input').attr('guests'));
+      var adult = parseInt($('.js-guest__input').attr('adult'));
+      /* Не более 2 младенцев */
+
+      if (value < 2 && guests < 10) {
+        /* Должен быть как минимум один взрослый */
+        if (adult === 0) {
+          adult = 1;
+          guests = guests + 1;
+        }
+
+        value = value + 1;
+        guests = guests + 1;
+        $('.js-guest__input').attr({
+          'baby': value
+        });
+        $('.js-guest__input').attr({
+          'guests': guests
+        });
+        $('.js-guest__input').attr({
+          'adult': adult
+        });
+      }
+
+      if (value > 0) {
+        $('.js-minus-baby').css('border', '1px solid rgba(31, 32, 65, 0.25)');
+      }
+
+      $('.js-guest__input').val(messangeInput());
+      $('.js-baby-result').text(value);
+      $('.js-adult-result').text(adult);
+    }
+  }, {
+    key: "minusBabyClick",
+    value: function minusBabyClick(event) {
+      event.preventDefault();
+      var value = $('.js-guest__input').attr('baby');
+      var guests = $('.js-guest__input').attr('guests');
+
+      if (value != 0) {
+        value = value - 1;
+        guests = guests - 1;
+        $('.js-guest__input').attr({
+          'baby': value
+        });
+        $('.js-guest__input').attr({
+          'guests': guests
+        });
+      }
+
+      if (value == 0) {
+        $(this).css('border', '1px solid rgba(31, 32, 65, 0.1)');
+      }
+
+      $('.js-guest__input').val(messangeInput());
+      $('.js-baby-result').text(value);
+    } ////////////СБРОС ЗНАЧЕНИЙ В ФОРМЕ ПОДБОРА КОЛИЧЕСТВА ГОСТЕЙ/////////
+
+  }, {
+    key: "guestsConfirmationClearClick",
+    value: function guestsConfirmationClearClick() {
+      $('.js-guest__input').val('');
+      $('.js-guest__input').attr('adult', 0);
+      $('.js-guest__input').attr('child', 0);
+      $('.js-guest__input').attr('baby', 0);
+      $('.js-guest__input').attr('guests', 0);
+      $('.js-adult-result').text('0');
+      $('.js-child-result').text('0');
+      $('.js-baby-result').text('0');
+      $('.js-minus-adult').css('border', '1px solid rgba(31, 32, 65, 0.1)');
+      $('.js-minus-child').css('border', '1px solid rgba(31, 32, 65, 0.1)');
+      $('.js-minus-baby').css('border', '1px solid rgba(31, 32, 65, 0.1)');
+      $('.js-guests-confirmation__clear').addClass('opaque');
+    } //////////////ПРИНЯТЬ ЗНАЧЕНИЯ (СКРЫТЬ ФОРМУ)///////////////
+
+  }, {
+    key: "guestsConfirmationAssumeClick",
+    value: function guestsConfirmationAssumeClick() {
+      $('.js-guests-block').addClass('block-open');
+    }
+  }]);
+
+  return Guests;
+}();
+
+var guests = new Guests();
+guests.bindEventListers(); ///////////////////////////СОСТАВЛЕНИЕ СООБЩЕНИЯ ВЫВОДА В ИНПУТ КОЛИЧЕСТВА ГОСТЕЙ////////////////////////////////////
+
+function messangeInput() {
+  var guests = parseInt($('.js-guest__input').attr('guests'));
+  var baby = parseInt($('.js-guest__input').attr('baby'));
+  var guestsPl, babyPl;
+  var messange;
+  var onlyGuests = guests - baby;
+
+  if (onlyGuests == 1) {
+    guestsPl = 'гость';
+  } else if (onlyGuests > 1 && onlyGuests < 5) {
+    guestsPl = 'гостя';
+  } else if (guests > 4) {
+    guestsPl = 'гостей';
+  }
+
+  if (baby == 1) {
+    babyPl = 'младенец';
+  } else {
+    babyPl = 'младенца';
+  }
+
+  if (onlyGuests > 0 && baby == 0) {
+    messange = onlyGuests + ' ' + guestsPl;
+  } else if (onlyGuests > 0 && baby > 0) {
+    messange = onlyGuests + ' ' + guestsPl + ', ' + baby + ' ' + babyPl;
+  }
+
+  return messange;
+}
+
+/***/ }),
+
+/***/ "./src/js/noui_slider.js":
+/*!*******************************!*\
+  !*** ./src/js/noui_slider.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var nouislider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! nouislider */ "./node_modules/nouislider/dist/nouislider.js");
+/* harmony import */ var nouislider__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(nouislider__WEBPACK_IMPORTED_MODULE_0__);
+
+var slider = document.getElementById('nouislider');
+
+if (slider) {
+  nouislider__WEBPACK_IMPORTED_MODULE_0___default().create(slider, {
+    start: [5000, 10000],
+    connect: true,
+    range: {
+      'min': 3000,
+      'max': 15000
+    }
+  });
+  var input0 = document.getElementById('input-0');
+  var input1 = document.getElementById('input-1');
+  var inputs = [input0, input1];
+  slider.noUiSlider.on('update', function (values, handle) {
+    inputs[handle].value = Math.round(values[handle]);
+  });
+
+  var setRangeSlider = function setRangeSlider(i, value) {
+    var arr = [null, null];
+    arr[i] = value;
+    console.log(arr);
+    slider.noUiSlider.set(arr);
+  };
+
+  inputs.forEach(function (el, index) {
+    el.addEventListener('change', function (e) {
+      console.log(index);
+      setRangeSlider(index, e.currentTarget.value);
+    });
+  });
+}
 
 /***/ }),
 
@@ -24,6 +686,7 @@ __webpack_require__.r(__webpack_exports__);
   \**********************************************************************************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -71,6 +734,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, "@charset \"UTF-8\";\n@font-face {\n  f
   \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -125,6 +789,7 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
   \***************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 module.exports = __webpack_require__.p + "assets/Montserrat-Bold.ttf";
 
 /***/ }),
@@ -135,6 +800,7 @@ module.exports = __webpack_require__.p + "assets/Montserrat-Bold.ttf";
   \******************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 module.exports = __webpack_require__.p + "assets/Montserrat-Regular.ttf";
 
 /***/ }),
@@ -145,6 +811,7 @@ module.exports = __webpack_require__.p + "assets/Montserrat-Regular.ttf";
   \***************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 module.exports = __webpack_require__.p + "assets/Whisper-Regular.ttf";
 
 /***/ }),
@@ -155,6 +822,7 @@ module.exports = __webpack_require__.p + "assets/Whisper-Regular.ttf";
   \*****************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 module.exports = __webpack_require__.p + "assets/detail_photo_1.png";
 
 /***/ }),
@@ -165,6 +833,7 @@ module.exports = __webpack_require__.p + "assets/detail_photo_1.png";
   \*****************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 module.exports = __webpack_require__.p + "assets/detail_photo_2.png";
 
 /***/ }),
@@ -175,6 +844,7 @@ module.exports = __webpack_require__.p + "assets/detail_photo_2.png";
   \*****************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 module.exports = __webpack_require__.p + "assets/detail_photo_3.png";
 
 /***/ }),
@@ -185,6 +855,7 @@ module.exports = __webpack_require__.p + "assets/detail_photo_3.png";
   \************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 module.exports = __webpack_require__.p + "assets/index_image.png";
 
 /***/ }),
@@ -195,6 +866,7 @@ module.exports = __webpack_require__.p + "assets/index_image.png";
   \********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 module.exports = __webpack_require__.p + "assets/reconst.jpg";
 
 /***/ }),
@@ -205,6 +877,7 @@ module.exports = __webpack_require__.p + "assets/reconst.jpg";
   \*************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 module.exports = __webpack_require__.p + "assets/registration.png";
 
 /***/ })
@@ -229,7 +902,7 @@ module.exports = __webpack_require__.p + "assets/registration.png";
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
 /******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
@@ -401,7 +1074,7 @@ module.exports = __webpack_require__.p + "assets/registration.png";
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_css-loader_dist_runtime_getUrl_js-node_modules_air-datepicker_dist_css_d-363006"], () => (__webpack_require__("./src/index.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_jquery_dist_jquery_js","vendors-node_modules_css-loader_dist_runtime_getUrl_js-node_modules_nouislider_dist_nouislide-2d5acf"], () => (__webpack_require__("./src/index.js")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

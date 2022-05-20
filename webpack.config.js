@@ -19,11 +19,7 @@ module.exports = {
   },  
   entry: {
     index: './src/index.js',
-    amenity: './src/js/amenity.js',
-    guests: './src/js/guests.js',
     elements: './src/js/elements.js',
-    additional: './src/js/additional.js',
-    noui_slider: './src/js/noui_slider.js',
   },
   output: {
     filename: '[name].js',   
