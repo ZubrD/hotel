@@ -1,49 +1,52 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/js/noui_slider.js":
-/*!*******************************!*\
-  !*** ./src/js/noui_slider.js ***!
-  \*******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/js/additional.js":
+/*!******************************!*\
+  !*** ./src/js/additional.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var nouislider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! nouislider */ "./node_modules/nouislider/dist/nouislider.js");
-/* harmony import */ var nouislider__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(nouislider__WEBPACK_IMPORTED_MODULE_0__);
+/* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var slider = document.getElementById('nouislider');
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-if (slider) {
-  nouislider__WEBPACK_IMPORTED_MODULE_0___default().create(slider, {
-    start: [5000, 10000],
-    connect: true,
-    range: {
-      'min': 3000,
-      'max': 15000
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+var additionalTitle = document.querySelector('.js-additional__title');
+var additionalIcon = document.querySelector('.js-additional__icon');
+
+var Additional = /*#__PURE__*/function () {
+  function Additional() {
+    _classCallCheck(this, Additional);
+  }
+
+  _createClass(Additional, [{
+    key: "bindEventListeners",
+    value: function bindEventListeners() {
+      additionalTitle.addEventListener('click', this.additionalTitleClick);
+      additionalIcon.addEventListener('click', this.additionalIconClick);
     }
-  });
-  var input0 = document.getElementById('input-0');
-  var input1 = document.getElementById('input-1');
-  var inputs = [input0, input1];
-  slider.noUiSlider.on('update', function (values, handle) {
-    inputs[handle].value = Math.round(values[handle]);
-  });
+  }, {
+    key: "additionalTitleClick",
+    value: function additionalTitleClick() {
+      $('.js-additional__icon').toggleClass('rotated__icon');
+      $('.js-additional-block').toggleClass('block-open');
+    }
+  }, {
+    key: "additionalIconClick",
+    value: function additionalIconClick(event) {
+      $(event.target).toggleClass('rotated__icon');
+      $('.js-additional-block').toggleClass('block-open');
+    }
+  }]);
 
-  var setRangeSlider = function setRangeSlider(i, value) {
-    var arr = [null, null];
-    arr[i] = value;
-    console.log(arr);
-    slider.noUiSlider.set(arr);
-  };
+  return Additional;
+}();
 
-  inputs.forEach(function (el, index) {
-    el.addEventListener('change', function (e) {
-      console.log(index);
-      setRangeSlider(index, e.currentTarget.value);
-    });
-  });
-}
+var additional = new Additional();
+additional.bindEventListeners();
 
 /***/ })
 
@@ -109,44 +112,9 @@ if (slider) {
 /******/ 		};
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	(() => {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = (module) => {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				() => (module['default']) :
-/******/ 				() => (module);
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
-/******/ 			}
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/make namespace object */
-/******/ 	(() => {
-/******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = (exports) => {
-/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 			}
-/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 		};
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */
@@ -157,7 +125,7 @@ if (slider) {
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"noui_slider": 0
+/******/ 			"additional": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -207,9 +175,9 @@ if (slider) {
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_nouislider_dist_nouislider_js"], () => (__webpack_require__("./src/js/noui_slider.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_jquery_dist_jquery_js"], () => (__webpack_require__("./src/js/additional.js")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=noui_slider.007d05e368f33e8c23e1.js.map
+//# sourceMappingURL=additional.js.map

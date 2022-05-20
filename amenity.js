@@ -388,4 +388,4 @@ function my_select() {
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=amenity.7ddc529097a5da39c667.js.map
+//# sourceMappingURL=amenity.js.map
