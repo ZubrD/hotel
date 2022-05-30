@@ -1,0 +1,13 @@
+.empty {
+    &-wrapper {
+        max-width: 1920px;
+        min-width: 320px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+    }
+    &__img {
+        background-image: url("../images/reconst.jpg");
+        height: 500px;
+    }
+}

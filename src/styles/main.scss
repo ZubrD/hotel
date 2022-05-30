@@ -1,0 +1,12 @@
+// Подключение файлов стилей
+
+@use './fonts';
+@use '../modules/registration/registration';
+@use '../modules/empty/empty';
+@use '../modules/header/header';
+@use '../modules/footer/footer';
+@use '../uikit/uikit';
+@use '../modules/index/index';
+@use '../modules/search/search';
+@use '../modules//details/details';
+@use './adaptive';

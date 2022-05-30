@@ -1,0 +1,1509 @@
+.search {
+    &-wrapper {
+        display: grid;
+        grid-template-columns: 466px 860px;
+        max-width: 1920px;
+        min-width: 320px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto; 
+    }
+    &-sidebar {
+        max-width: 466px;
+        padding-right: 60px;
+        padding-left: 140px;
+        box-sizing: border-box;
+    }
+    &-room {
+
+    }
+}
+
+.stay-guest-form {
+    position: relative;
+    &__item {
+        position: relative;
+        width: 100%;
+        &:last-child {
+            margin-top: 22px;
+        }
+    }
+    &__title {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 13px;
+        text-transform: uppercase; 
+        margin-top: 33px;
+        margin-bottom: 5px;
+        margin-left: -2px;
+        &-index {
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 700;
+          font-size: 13px;
+          text-transform: uppercase; 
+          margin-top: 21px;
+          margin-bottom: 5px;
+          margin-left: -2px;          
+        }
+        &-second {
+          margin-top: 20px;
+        }
+    }
+    &__input {
+        width: 100%;
+        height: 44px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        color: rgba(31, 32, 65, 0.75);
+        padding-top: 12px;
+        padding-bottom: 13px;
+        padding-left: 13px;
+        box-sizing: border-box;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 4px;
+        letter-spacing: 0;
+    }
+    &__icon {
+        position: absolute;
+        top: 30px;
+        left: 234px;
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 1;
+        vertical-align: middle;
+        color: rgba(31, 32, 65, 0.5);
+        &-index {
+          left: 284px;
+        }
+    }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.sliderp {
+    &-title-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 17px;
+        margin-top: 30px;
+    }
+    &-label-wrapper {
+      display: flex;
+      align-items: flex-start;
+    }
+    &-title {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 13px;
+        text-transform: uppercase; 
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    &__label {
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    &__input {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: rgba(31, 32, 65, 0.5);
+        border: none;
+        width: 45px;
+        text-align: right;
+        padding: 0;
+    }
+    &__span {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: rgba(31, 32, 65, 0.5);
+        margin-left: 5px;
+    }
+    &-bottom-title {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 14px;
+        color: rgba(31, 32, 65, 0.5);
+    }
+}
+
+#nouislider {
+    margin-bottom: 15px;
+}
+
+.noUi-target {
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    height: 6px;
+}
+
+.noUi-connect {
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    border: none;
+}
+
+.noUi-handle {
+    cursor: default;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+}
+
+.noUi-horizontal .noUi-handle {
+    width: 17px;
+    height: 17px;
+    right: -4px;
+    top: -7px;
+}
+
+.noUi-handle:after, .noUi-handle:before {
+    display: none;
+}
+
+.home-rule-form {
+    margin-top: 29px;
+    &__title {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 13px;
+        text-transform: uppercase; 
+        margin-top: 0;
+        margin-bottom: 17px;
+    }
+    &__item {
+        margin-bottom: 12px;
+        margin-left: 30px;
+        width: 202px;
+    }
+    &__input {
+        &[type="checkbox"] {
+            display: none;
+        }
+        &[type="checkbox"]:hover ~ label::before {
+            border-color: #BC9CFF;
+
+        }
+        &[type="checkbox"]:checked ~ label::after {
+            position: absolute;
+            content: '';
+            width: 8px;
+            height: 6px;
+            top: 2px;
+            left: -25px;
+            transform: rotate(-45deg);
+            border: 2px solid transparent;
+            border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+            border-image-slice: 1;
+            border-top-style: none;
+            border-right-style: none;
+        }     
+    }
+    &__label {
+        position: relative;
+        margin-left: 0px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: rgba(31, 32, 65, 0.5);
+        cursor: pointer;
+        letter-spacing: 1px;
+        &::before {
+            position: absolute;
+            content: '';
+            width: 18px;
+            height: 18px;
+            left: -30px;
+            top: -3px;
+            border: 1px solid rgba(31, 32, 65, 0.25);
+            border-radius: 4px;
+        }
+    }
+}
+
+.availability-form {
+    margin-top: 28px;
+    &__title {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 13px;
+        text-transform: uppercase; 
+        margin-top: 0;
+        margin-bottom: 18px;
+    }
+    &__item {
+        margin-bottom: 10px;
+        margin-left: 30px;
+    }
+    &__label {
+        position: relative;
+        margin-left: 0px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+        color: rgba(31, 32, 65, 0.75);
+        cursor: pointer;
+        &::before {
+            position: absolute;
+            content: '';
+            width: 20px;
+            height: 20px;
+            left: -32px;
+            top: -3px;
+            border: 1px solid rgba(31, 32, 65, 0.25);
+            border-radius: 4px;
+        }
+    }
+    &__input {
+        &[type="checkbox"] {
+            display: none;
+        }
+        &[type="checkbox"]:hover ~ label::before {
+            border-color: #BC9CFF;
+
+        }
+        &[type="checkbox"]:checked ~ label::after {
+            position: absolute;
+            content: '';
+            width: 8px;
+            height: 6px;
+            top: 2px;
+            left: -25px;
+            transform: rotate(-45deg);
+            border: 2px solid transparent;
+            border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+            border-image-slice: 1;
+            border-top-style: none;
+            border-right-style: none;
+        }    
+    }
+    &__text {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: rgba(31, 32, 65, 0.5);
+        margin: 0;
+        margin-top: 5px;
+    }
+}
+
+.guests {
+  position: relative;
+  &__title {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 12px;
+      text-transform: uppercase; 
+      margin-top: 31px;
+      margin-bottom: 6px;
+  }
+  &-form {
+      position: relative;
+      &__input {
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 24px;
+          color: rgba(31, 32, 65, 0.75);
+          width: 100%;
+          box-sizing: border-box;
+          border: 1px solid rgba(31, 32, 65, 0.5);
+          border-top-left-radius: 4px;
+          border-top-right-radius: 4px;
+          height: 44px;
+          padding-left: 15px;
+          padding-right: 30px;
+          padding-top: 0px;
+      }
+      &__icon {
+          position: absolute;
+          top: 10px;
+          left: 232px;
+          font-family: 'Material Icons';
+          font-weight: normal;
+          font-style: normal;
+          font-size: 24px;  /* Preferred icon size */
+          line-height: 1;
+          vertical-align: middle;
+          color: rgba(31, 32, 65, 0.75);
+      }
+  }
+  &-block {
+      position: absolute;
+      border: 1px solid rgba(31, 32, 65, 0.5);
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+      background-color: #fff;
+      z-index: 10;
+      width: 100%;
+      box-sizing: border-box;
+  }
+  &-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 5px;
+      &__title {
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 700;
+          font-size: 12px;
+          text-transform: uppercase; 
+          line-height: 14,63px;
+          padding-left: 15px;
+      }
+      &-buttons {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 92px;
+          padding-right: 5px;
+      }
+      &__button {
+          border-radius: 50%;
+          width: 30px;
+          height: 30px;
+          cursor: pointer;
+          background-color: #fff;
+          border: 1px solid rgba(31, 32, 65, 0.25);
+          &-minus {
+              border: 1px solid rgba(31, 32, 65, 0.1);
+          }
+      }
+      &__result {
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 700;
+          font-size: 12px;
+      }
+      &:last-child {
+          padding-bottom: 10px;
+      }      
+  }
+  &-confirmation {
+    &__clear {
+      padding-left: 15px;
+      margin-top: 20px;
+      color: rgba(188, 156, 255, 1);
+
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 12px;
+      text-transform: uppercase; 
+      line-height: 14,63px;
+      padding-left: 15px;
+      cursor: pointer;
+    }
+    &__assume {
+      padding-right: 5px;
+      margin-top: 20px;
+      color: rgba(188, 156, 255, 1);
+
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 12px;
+      text-transform: uppercase; 
+      line-height: 14,63px;
+      padding-left: 15px;
+      cursor: pointer;
+    }
+  }
+}
+
+.amenity {
+    position: relative;
+    &__title {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 13px;
+        text-transform: uppercase; 
+        margin-top: 29px;
+        margin-bottom: 3px;
+    }
+    &-form {
+        position: relative;
+        &__input {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 24px;
+            color: rgba(31, 32, 65, 0.75);
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid rgba(31, 32, 65, 0.5);
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            height: 44px;
+            padding-left: 17px;
+            padding-right: 30px;
+            padding-top: 5px;
+        }
+        &__icon {
+            position: absolute;
+            top: 10px;
+            left: 232px;
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;  /* Preferred icon size */
+            line-height: 1;
+            vertical-align: middle;
+            color: rgba(31, 32, 65, 0.75);
+        }
+    }
+    &-block {
+        position: absolute;
+        border: 1px solid rgba(31, 32, 65, 0.5);
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        background-color: #fff;
+        z-index: 10;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    &-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 5px;
+        &__title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 12px;
+            text-transform: uppercase; 
+            line-height: 14,63px;
+            padding-left: 15px;
+        }
+        &-buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 92px;
+            padding-right: 5px;
+        }
+        &__button {
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            background-color: #fff;
+            border: 1px solid rgba(31, 32, 65, 0.25);
+            &-minus {
+                border: 1px solid rgba(31, 32, 65, 0.1);
+            }
+        }
+        &__result {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 12px;
+        }
+        &:last-child {
+            padding-bottom: 10px;
+        }      
+    }      
+}
+
+.block-open {
+    display: none;
+}
+
+.additional {
+    position: relative;
+    &__title {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 13px;
+        text-transform: uppercase; 
+        margin-top: 32px;
+        margin-bottom: 6px;
+        cursor: pointer;
+    }
+    &__icon {
+        position: absolute;
+        top: -5px;
+        left: 232px;
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;  /* Preferred icon size */
+        line-height: 1;
+        vertical-align: middle;
+        color: rgba(31, 32, 65, 0.75);
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    &-block {
+        &-form {
+            margin-top: 20px;
+            &__item {
+                margin-bottom: 11px;
+                margin-left: 30px;                
+            }
+            &__input {
+                &[type="checkbox"] {
+                    display: none;
+                }
+                &[type="checkbox"]:hover ~ label::before {
+                    border-color: #BC9CFF;
+        
+                }
+                &[type="checkbox"]:checked ~ label::after {
+                    position: absolute;
+                    content: '';
+                    width: 8px;
+                    height: 6px;
+                    top: 2px;
+                    left: -25px;
+                    transform: rotate(-45deg);
+                    border: 2px solid transparent;
+                    border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+                    border-image-slice: 1;
+                    border-top-style: none;
+                    border-right-style: none;
+                } 
+            }
+            &__label {
+                position: relative;
+                margin-left: 0px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 18px;
+                color: rgba(31, 32, 65, 0.5);
+                cursor: pointer;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 20px;
+                    height: 20px;
+                    left: -32px;
+                    top: -3px;
+                    border: 1px solid rgba(31, 32, 65, 0.25);
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+}
+.rotated__icon {
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+
+.search-room {
+    &__title {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 30px;
+        margin-top: 33px;
+        margin-bottom: 20px;
+    }
+    &-items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item {
+        width: 270px;
+        box-shadow: 0 0 20px rgba(31, 32, 65, 0.2);
+        margin-right: 12px;
+        margin-bottom: 20px;
+    }
+
+    &__img {
+        width: 100%;
+        margin-bottom: 19px;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+    &-wrapper {
+        margin-left: 23px;
+        margin-right: 14px;
+    }
+    &-digits{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+        padding-bottom: 10px;
+        margin-bottom: 9px;
+    }
+    &-numbers {
+        display: flex;
+    }
+    &__symbol {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17.5px;
+        padding-top: 2px;
+    }
+    &__number {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 700;
+        font-size: 23px;
+        line-height: 17.5px;
+        margin-left: 3px;
+    }
+    &__rank {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        text-transform: uppercase;
+        line-height: 14.6px;
+        padding-top: 2px;
+        color: rgba(188, 156, 255, 1);
+        margin-left: 10px;
+    }
+    &-price {
+        display: flex;
+        margin-top: 2px;
+    }
+    &__rubl {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        color: rgba(31, 32, 65, 0.5);
+        margin-right: 5px;
+    }
+    &__period {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: rgba(31, 32, 65, 0.5);
+        margin-left: 5px;
+    }
+    &-bottom {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 20px;
+    }
+
+    &__star {
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;  /* Preferred icon size */
+        line-height: 1;
+        vertical-align: middle;
+        color: rgb(188,156,255);
+    }
+    &-feedback {
+        display: flex;
+        align-items: flex-end;
+        &__numbers {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 18px;
+            color: rgba(31, 32, 65, 0.5);
+            padding-bottom: 1px;
+            padding-right: 6px;
+        }
+        &__title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;  
+            color: rgba(31, 32, 65, 0.5); 
+            margin-right: 10px;
+            padding-bottom: 1px;        
+        }
+    }
+}
+
+.paginator {
+    width: 241px;
+    margin-left: 289px;
+    margin-top: 16px;
+    margin-bottom: 60px;
+    &__item {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 50%;
+        color: rgba(31, 32, 65, 0.5);
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+    }
+    &__current {
+        background: linear-gradient(151deg, rgba(188,156,255,1) 0%, rgba(139,164,249,0.4962359943977591) 100%);
+        color: #fff;
+    }
+    &__icon {
+        display: inline-block;
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;  /* Preferred icon size */
+        vertical-align: middle;
+        color: #fff;
+        background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%); 
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 50%;
+        text-decoration: none;
+    }
+    &__text {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+        color: rgba(31, 32, 65, 0.75);
+        margin-top: 8px;
+        text-align: center;
+    }
+}
+
+.slider {
+    position: relative;
+    &-inner {
+        width: 270px;
+        overflow: hidden;
+        margin-bottom: 19px;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    }    
+    &-slides {
+        width: 1084px;
+    }
+    &__input {
+        display: none;
+
+    }
+    &-controls {
+        position: absolute;
+        top: 121px;
+        left: 216px;
+        z-index: 15;
+    }
+    &__label {
+        display: inline-block;
+        margin-right: 4px;
+        width: 5px;
+        height: 5px;
+        border: 1px solid rgba(255, 255, 255, 1);
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    &-prev-controls {
+        position: absolute;
+        z-index: 10;      
+    }
+    &-next-controls {
+        position: absolute;
+        z-index: 10;      
+    }    
+    &__prev {
+      position: absolute;
+      padding-top: 46px;
+      box-sizing: border-box;
+      width: 50px;
+      height: 152px;
+      font-size: 45px;
+      color: white;
+      cursor: pointer;
+      opacity: 0;
+      &:hover {
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+        opacity: 1;
+        transition: opacity 0.2s ease-in-out
+      } 
+    }
+    &__next {
+      position: absolute;
+      padding-top: 46px;
+      box-sizing: border-box;
+      left: 220px;
+      width: 50px;
+      height: 152px;
+      font-size: 45px;
+      color: white;
+      cursor: pointer;
+      opacity: 0;
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+      &:hover {
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        opacity: 1;
+        transition: opacity 0.2s ease-in-out
+      }                       
+    }    
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////  НАВИГАЦИЯ ПО СЛАЙДЕРУ ФОТОГРАФИЙ НОМЕРА    ///////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+#room1-btn-1:checked ~ .slider-prev-controls label[for="room1-btn-1"],
+#room1-btn-1:checked ~ .slider-prev-controls label[for="room1-btn-2"],
+#room1-btn-1:checked ~ .slider-prev-controls label[for="room1-btn-3"],
+#room1-btn-1:checked ~ .slider-prev-controls label[for="room1-btn-4"],
+#room1-btn-1:checked ~ .slider-next-controls label[for="room1-btn-1"],
+#room1-btn-1:checked ~ .slider-next-controls label[for="room1-btn-3"],
+#room1-btn-1:checked ~ .slider-next-controls label[for="room1-btn-4"]
+{
+  display: none;
+}
+
+#room1-btn-2:checked ~ .slider-prev-controls label[for="room1-btn-2"],
+#room1-btn-2:checked ~ .slider-prev-controls label[for="room1-btn-3"],
+#room1-btn-2:checked ~ .slider-prev-controls label[for="room1-btn-4"],
+#room1-btn-2:checked ~ .slider-next-controls label[for="room1-btn-1"],
+#room1-btn-2:checked ~ .slider-next-controls label[for="room1-btn-2"],
+#room1-btn-2:checked ~ .slider-next-controls label[for="room1-btn-4"]
+{
+  display: none;
+}
+
+#room1-btn-3:checked ~ .slider-prev-controls label[for="room1-btn-1"],
+#room1-btn-3:checked ~ .slider-prev-controls label[for="room1-btn-3"],
+#room1-btn-3:checked ~ .slider-prev-controls label[for="room1-btn-4"],
+#room1-btn-3:checked ~ .slider-next-controls label[for="room1-btn-1"],
+#room1-btn-3:checked ~ .slider-next-controls label[for="room1-btn-2"],
+#room1-btn-3:checked ~ .slider-next-controls label[for="room1-btn-3"]
+{
+  display: none;
+}
+
+#room1-btn-4:checked ~ .slider-prev-controls label[for="room1-btn-1"],
+#room1-btn-4:checked ~ .slider-prev-controls label[for="room1-btn-2"],
+#room1-btn-4:checked ~ .slider-prev-controls label[for="room1-btn-4"],
+#room1-btn-4:checked ~ .slider-next-controls label[for="room1-btn-1"],
+#room1-btn-4:checked ~ .slider-next-controls label[for="room1-btn-2"],
+#room1-btn-4:checked ~ .slider-next-controls label[for="room1-btn-3"],
+#room1-btn-4:checked ~ .slider-next-controls label[for="room1-btn-4"]
+{
+  display: none;
+}
+
+//////////////////////////////////////////////////////////////////////////////////
+
+#room2-btn-1:checked ~ .slider-prev-controls label[for="room2-btn-1"],
+#room2-btn-1:checked ~ .slider-prev-controls label[for="room2-btn-2"],
+#room2-btn-1:checked ~ .slider-prev-controls label[for="room2-btn-3"],
+#room2-btn-1:checked ~ .slider-prev-controls label[for="room2-btn-4"],
+#room2-btn-1:checked ~ .slider-next-controls label[for="room2-btn-1"],
+#room2-btn-1:checked ~ .slider-next-controls label[for="room2-btn-3"],
+#room2-btn-1:checked ~ .slider-next-controls label[for="room2-btn-4"]
+{
+  display: none;
+}
+
+#room2-btn-2:checked ~ .slider-prev-controls label[for="room2-btn-2"],
+#room2-btn-2:checked ~ .slider-prev-controls label[for="room2-btn-3"],
+#room2-btn-2:checked ~ .slider-prev-controls label[for="room2-btn-4"],
+#room2-btn-2:checked ~ .slider-next-controls label[for="room2-btn-1"],
+#room2-btn-2:checked ~ .slider-next-controls label[for="room2-btn-2"],
+#room2-btn-2:checked ~ .slider-next-controls label[for="room2-btn-4"]
+{
+  display: none;
+}
+
+#room2-btn-3:checked ~ .slider-prev-controls label[for="room2-btn-1"],
+#room2-btn-3:checked ~ .slider-prev-controls label[for="room2-btn-3"],
+#room2-btn-3:checked ~ .slider-prev-controls label[for="room2-btn-4"],
+#room2-btn-3:checked ~ .slider-next-controls label[for="room2-btn-1"],
+#room2-btn-3:checked ~ .slider-next-controls label[for="room2-btn-2"],
+#room2-btn-3:checked ~ .slider-next-controls label[for="room2-btn-3"]
+{
+  display: none;
+}
+
+#room2-btn-4:checked ~ .slider-prev-controls label[for="room2-btn-1"],
+#room2-btn-4:checked ~ .slider-prev-controls label[for="room2-btn-2"],
+#room2-btn-4:checked ~ .slider-prev-controls label[for="room2-btn-4"],
+#room2-btn-4:checked ~ .slider-next-controls label[for="room2-btn-1"],
+#room2-btn-4:checked ~ .slider-next-controls label[for="room2-btn-2"],
+#room2-btn-4:checked ~ .slider-next-controls label[for="room2-btn-3"],
+#room2-btn-4:checked ~ .slider-next-controls label[for="room2-btn-4"]
+{
+  display: none;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+#room3-btn-1:checked ~ .slider-prev-controls label[for="room3-btn-1"],
+#room3-btn-1:checked ~ .slider-prev-controls label[for="room3-btn-2"],
+#room3-btn-1:checked ~ .slider-prev-controls label[for="room3-btn-3"],
+#room3-btn-1:checked ~ .slider-prev-controls label[for="room3-btn-4"],
+#room3-btn-1:checked ~ .slider-next-controls label[for="room3-btn-1"],
+#room3-btn-1:checked ~ .slider-next-controls label[for="room3-btn-3"],
+#room3-btn-1:checked ~ .slider-next-controls label[for="room3-btn-4"]
+{
+  display: none;
+}
+
+#room3-btn-2:checked ~ .slider-prev-controls label[for="room3-btn-2"],
+#room3-btn-2:checked ~ .slider-prev-controls label[for="room3-btn-3"],
+#room3-btn-2:checked ~ .slider-prev-controls label[for="room3-btn-4"],
+#room3-btn-2:checked ~ .slider-next-controls label[for="room3-btn-1"],
+#room3-btn-2:checked ~ .slider-next-controls label[for="room3-btn-2"],
+#room3-btn-2:checked ~ .slider-next-controls label[for="room3-btn-4"]
+{
+  display: none;
+}
+
+#room3-btn-3:checked ~ .slider-prev-controls label[for="room3-btn-1"],
+#room3-btn-3:checked ~ .slider-prev-controls label[for="room3-btn-3"],
+#room3-btn-3:checked ~ .slider-prev-controls label[for="room3-btn-4"],
+#room3-btn-3:checked ~ .slider-next-controls label[for="room3-btn-1"],
+#room3-btn-3:checked ~ .slider-next-controls label[for="room3-btn-2"],
+#room3-btn-3:checked ~ .slider-next-controls label[for="room3-btn-3"]
+{
+  display: none;
+}
+
+#room3-btn-4:checked ~ .slider-prev-controls label[for="room3-btn-1"],
+#room3-btn-4:checked ~ .slider-prev-controls label[for="room3-btn-2"],
+#room3-btn-4:checked ~ .slider-prev-controls label[for="room3-btn-4"],
+#room3-btn-4:checked ~ .slider-next-controls label[for="room3-btn-1"],
+#room3-btn-4:checked ~ .slider-next-controls label[for="room3-btn-2"],
+#room3-btn-4:checked ~ .slider-next-controls label[for="room3-btn-3"],
+#room3-btn-4:checked ~ .slider-next-controls label[for="room3-btn-4"]
+{
+  display: none;
+}
+
+//////////////////////////////////////////////////////////////////////////
+
+#room4-btn-1:checked ~ .slider-prev-controls label[for="room4-btn-1"],
+#room4-btn-1:checked ~ .slider-prev-controls label[for="room4-btn-2"],
+#room4-btn-1:checked ~ .slider-prev-controls label[for="room4-btn-3"],
+#room4-btn-1:checked ~ .slider-prev-controls label[for="room4-btn-4"],
+#room4-btn-1:checked ~ .slider-next-controls label[for="room4-btn-1"],
+#room4-btn-1:checked ~ .slider-next-controls label[for="room4-btn-3"],
+#room4-btn-1:checked ~ .slider-next-controls label[for="room4-btn-4"]
+{
+  display: none;
+}
+
+#room4-btn-2:checked ~ .slider-prev-controls label[for="room4-btn-2"],
+#room4-btn-2:checked ~ .slider-prev-controls label[for="room4-btn-3"],
+#room4-btn-2:checked ~ .slider-prev-controls label[for="room4-btn-4"],
+#room4-btn-2:checked ~ .slider-next-controls label[for="room4-btn-1"],
+#room4-btn-2:checked ~ .slider-next-controls label[for="room4-btn-2"],
+#room4-btn-2:checked ~ .slider-next-controls label[for="room4-btn-4"]
+{
+  display: none;
+}
+
+#room4-btn-3:checked ~ .slider-prev-controls label[for="room4-btn-1"],
+#room4-btn-3:checked ~ .slider-prev-controls label[for="room4-btn-3"],
+#room4-btn-3:checked ~ .slider-prev-controls label[for="room4-btn-4"],
+#room4-btn-3:checked ~ .slider-next-controls label[for="room4-btn-1"],
+#room4-btn-3:checked ~ .slider-next-controls label[for="room4-btn-2"],
+#room4-btn-3:checked ~ .slider-next-controls label[for="room4-btn-3"]
+{
+  display: none;
+}
+
+#room4-btn-4:checked ~ .slider-prev-controls label[for="room4-btn-1"],
+#room4-btn-4:checked ~ .slider-prev-controls label[for="room4-btn-2"],
+#room4-btn-4:checked ~ .slider-prev-controls label[for="room4-btn-4"],
+#room4-btn-4:checked ~ .slider-next-controls label[for="room4-btn-1"],
+#room4-btn-4:checked ~ .slider-next-controls label[for="room4-btn-2"],
+#room4-btn-4:checked ~ .slider-next-controls label[for="room4-btn-3"],
+#room4-btn-4:checked ~ .slider-next-controls label[for="room4-btn-4"]
+{
+  display: none;
+}
+
+///////////////////////////////////////////////////////////////////////////
+
+#room5-btn-1:checked ~ .slider-prev-controls label[for="room5-btn-1"],
+#room5-btn-1:checked ~ .slider-prev-controls label[for="room5-btn-2"],
+#room5-btn-1:checked ~ .slider-prev-controls label[for="room5-btn-3"],
+#room5-btn-1:checked ~ .slider-prev-controls label[for="room5-btn-4"],
+#room5-btn-1:checked ~ .slider-next-controls label[for="room5-btn-1"],
+#room5-btn-1:checked ~ .slider-next-controls label[for="room5-btn-3"],
+#room5-btn-1:checked ~ .slider-next-controls label[for="room5-btn-4"]
+{
+  display: none;
+}
+
+#room5-btn-2:checked ~ .slider-prev-controls label[for="room5-btn-2"],
+#room5-btn-2:checked ~ .slider-prev-controls label[for="room5-btn-3"],
+#room5-btn-2:checked ~ .slider-prev-controls label[for="room5-btn-4"],
+#room5-btn-2:checked ~ .slider-next-controls label[for="room5-btn-1"],
+#room5-btn-2:checked ~ .slider-next-controls label[for="room5-btn-2"],
+#room5-btn-2:checked ~ .slider-next-controls label[for="room5-btn-4"]
+{
+  display: none;
+}
+
+#room5-btn-3:checked ~ .slider-prev-controls label[for="room5-btn-1"],
+#room5-btn-3:checked ~ .slider-prev-controls label[for="room5-btn-3"],
+#room5-btn-3:checked ~ .slider-prev-controls label[for="room5-btn-4"],
+#room5-btn-3:checked ~ .slider-next-controls label[for="room5-btn-1"],
+#room5-btn-3:checked ~ .slider-next-controls label[for="room5-btn-2"],
+#room5-btn-3:checked ~ .slider-next-controls label[for="room5-btn-3"]
+{
+  display: none;
+}
+
+#room5-btn-4:checked ~ .slider-prev-controls label[for="room5-btn-1"],
+#room5-btn-4:checked ~ .slider-prev-controls label[for="room5-btn-2"],
+#room5-btn-4:checked ~ .slider-prev-controls label[for="room5-btn-4"],
+#room5-btn-4:checked ~ .slider-next-controls label[for="room5-btn-1"],
+#room5-btn-4:checked ~ .slider-next-controls label[for="room5-btn-2"],
+#room5-btn-4:checked ~ .slider-next-controls label[for="room5-btn-3"],
+#room5-btn-4:checked ~ .slider-next-controls label[for="room5-btn-4"]
+{
+  display: none;
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+#room6-btn-1:checked ~ .slider-prev-controls label[for="room6-btn-1"],
+#room6-btn-1:checked ~ .slider-prev-controls label[for="room6-btn-2"],
+#room6-btn-1:checked ~ .slider-prev-controls label[for="room6-btn-3"],
+#room6-btn-1:checked ~ .slider-prev-controls label[for="room6-btn-4"],
+#room6-btn-1:checked ~ .slider-next-controls label[for="room6-btn-1"],
+#room6-btn-1:checked ~ .slider-next-controls label[for="room6-btn-3"],
+#room6-btn-1:checked ~ .slider-next-controls label[for="room6-btn-4"]
+{
+  display: none;
+}
+
+#room6-btn-2:checked ~ .slider-prev-controls label[for="room6-btn-2"],
+#room6-btn-2:checked ~ .slider-prev-controls label[for="room6-btn-3"],
+#room6-btn-2:checked ~ .slider-prev-controls label[for="room6-btn-4"],
+#room6-btn-2:checked ~ .slider-next-controls label[for="room6-btn-1"],
+#room6-btn-2:checked ~ .slider-next-controls label[for="room6-btn-2"],
+#room6-btn-2:checked ~ .slider-next-controls label[for="room6-btn-4"]
+{
+  display: none;
+}
+
+#room6-btn-3:checked ~ .slider-prev-controls label[for="room6-btn-1"],
+#room6-btn-3:checked ~ .slider-prev-controls label[for="room6-btn-3"],
+#room6-btn-3:checked ~ .slider-prev-controls label[for="room6-btn-4"],
+#room6-btn-3:checked ~ .slider-next-controls label[for="room6-btn-1"],
+#room6-btn-3:checked ~ .slider-next-controls label[for="room6-btn-2"],
+#room6-btn-3:checked ~ .slider-next-controls label[for="room6-btn-3"]
+{
+  display: none;
+}
+
+#room6-btn-4:checked ~ .slider-prev-controls label[for="room6-btn-1"],
+#room6-btn-4:checked ~ .slider-prev-controls label[for="room6-btn-2"],
+#room6-btn-4:checked ~ .slider-prev-controls label[for="room6-btn-4"],
+#room6-btn-4:checked ~ .slider-next-controls label[for="room6-btn-1"],
+#room6-btn-4:checked ~ .slider-next-controls label[for="room6-btn-2"],
+#room6-btn-4:checked ~ .slider-next-controls label[for="room6-btn-3"],
+#room6-btn-4:checked ~ .slider-next-controls label[for="room6-btn-4"]
+{
+  display: none;
+}
+
+///////////////////////////////////////////////////////////////////////////
+
+#room7-btn-1:checked ~ .slider-prev-controls label[for="room7-btn-1"],
+#room7-btn-1:checked ~ .slider-prev-controls label[for="room7-btn-2"],
+#room7-btn-1:checked ~ .slider-prev-controls label[for="room7-btn-3"],
+#room7-btn-1:checked ~ .slider-prev-controls label[for="room7-btn-4"],
+#room7-btn-1:checked ~ .slider-next-controls label[for="room7-btn-1"],
+#room7-btn-1:checked ~ .slider-next-controls label[for="room7-btn-3"],
+#room7-btn-1:checked ~ .slider-next-controls label[for="room7-btn-4"]
+{
+  display: none;
+}
+
+#room7-btn-2:checked ~ .slider-prev-controls label[for="room7-btn-2"],
+#room7-btn-2:checked ~ .slider-prev-controls label[for="room7-btn-3"],
+#room7-btn-2:checked ~ .slider-prev-controls label[for="room7-btn-4"],
+#room7-btn-2:checked ~ .slider-next-controls label[for="room7-btn-1"],
+#room7-btn-2:checked ~ .slider-next-controls label[for="room7-btn-2"],
+#room7-btn-2:checked ~ .slider-next-controls label[for="room7-btn-4"]
+{
+  display: none;
+}
+
+#room7-btn-3:checked ~ .slider-prev-controls label[for="room7-btn-1"],
+#room7-btn-3:checked ~ .slider-prev-controls label[for="room7-btn-3"],
+#room7-btn-3:checked ~ .slider-prev-controls label[for="room7-btn-4"],
+#room7-btn-3:checked ~ .slider-next-controls label[for="room7-btn-1"],
+#room7-btn-3:checked ~ .slider-next-controls label[for="room7-btn-2"],
+#room7-btn-3:checked ~ .slider-next-controls label[for="room7-btn-3"]
+{
+  display: none;
+}
+
+#room7-btn-4:checked ~ .slider-prev-controls label[for="room7-btn-1"],
+#room7-btn-4:checked ~ .slider-prev-controls label[for="room7-btn-2"],
+#room7-btn-4:checked ~ .slider-prev-controls label[for="room7-btn-4"],
+#room7-btn-4:checked ~ .slider-next-controls label[for="room7-btn-1"],
+#room7-btn-4:checked ~ .slider-next-controls label[for="room7-btn-2"],
+#room7-btn-4:checked ~ .slider-next-controls label[for="room7-btn-3"],
+#room7-btn-4:checked ~ .slider-next-controls label[for="room7-btn-4"]
+{
+  display: none;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+
+#room8-btn-1:checked ~ .slider-prev-controls label[for="room8-btn-1"],
+#room8-btn-1:checked ~ .slider-prev-controls label[for="room8-btn-2"],
+#room8-btn-1:checked ~ .slider-prev-controls label[for="room8-btn-3"],
+#room8-btn-1:checked ~ .slider-prev-controls label[for="room8-btn-4"],
+#room8-btn-1:checked ~ .slider-next-controls label[for="room8-btn-1"],
+#room8-btn-1:checked ~ .slider-next-controls label[for="room8-btn-3"],
+#room8-btn-1:checked ~ .slider-next-controls label[for="room8-btn-4"]
+{
+  display: none;
+}
+
+#room8-btn-2:checked ~ .slider-prev-controls label[for="room8-btn-2"],
+#room8-btn-2:checked ~ .slider-prev-controls label[for="room8-btn-3"],
+#room8-btn-2:checked ~ .slider-prev-controls label[for="room8-btn-4"],
+#room8-btn-2:checked ~ .slider-next-controls label[for="room8-btn-1"],
+#room8-btn-2:checked ~ .slider-next-controls label[for="room8-btn-2"],
+#room8-btn-2:checked ~ .slider-next-controls label[for="room8-btn-4"]
+{
+  display: none;
+}
+
+#room8-btn-3:checked ~ .slider-prev-controls label[for="room8-btn-1"],
+#room8-btn-3:checked ~ .slider-prev-controls label[for="room8-btn-3"],
+#room8-btn-3:checked ~ .slider-prev-controls label[for="room8-btn-4"],
+#room8-btn-3:checked ~ .slider-next-controls label[for="room8-btn-1"],
+#room8-btn-3:checked ~ .slider-next-controls label[for="room8-btn-2"],
+#room8-btn-3:checked ~ .slider-next-controls label[for="room8-btn-3"]
+{
+  display: none;
+}
+
+#room8-btn-4:checked ~ .slider-prev-controls label[for="room8-btn-1"],
+#room8-btn-4:checked ~ .slider-prev-controls label[for="room8-btn-2"],
+#room8-btn-4:checked ~ .slider-prev-controls label[for="room8-btn-4"],
+#room8-btn-4:checked ~ .slider-next-controls label[for="room8-btn-1"],
+#room8-btn-4:checked ~ .slider-next-controls label[for="room8-btn-2"],
+#room8-btn-4:checked ~ .slider-next-controls label[for="room8-btn-3"],
+#room8-btn-4:checked ~ .slider-next-controls label[for="room8-btn-4"]
+{
+  display: none;
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+#room9-btn-1:checked ~ .slider-prev-controls label[for="room9-btn-1"],
+#room9-btn-1:checked ~ .slider-prev-controls label[for="room9-btn-2"],
+#room9-btn-1:checked ~ .slider-prev-controls label[for="room9-btn-3"],
+#room9-btn-1:checked ~ .slider-prev-controls label[for="room9-btn-4"],
+#room9-btn-1:checked ~ .slider-next-controls label[for="room9-btn-1"],
+#room9-btn-1:checked ~ .slider-next-controls label[for="room9-btn-3"],
+#room9-btn-1:checked ~ .slider-next-controls label[for="room9-btn-4"]
+{
+  display: none;
+}
+
+#room9-btn-2:checked ~ .slider-prev-controls label[for="room9-btn-2"],
+#room9-btn-2:checked ~ .slider-prev-controls label[for="room9-btn-3"],
+#room9-btn-2:checked ~ .slider-prev-controls label[for="room9-btn-4"],
+#room9-btn-2:checked ~ .slider-next-controls label[for="room9-btn-1"],
+#room9-btn-2:checked ~ .slider-next-controls label[for="room9-btn-2"],
+#room9-btn-2:checked ~ .slider-next-controls label[for="room9-btn-4"]
+{
+  display: none;
+}
+
+#room9-btn-3:checked ~ .slider-prev-controls label[for="room9-btn-1"],
+#room9-btn-3:checked ~ .slider-prev-controls label[for="room9-btn-3"],
+#room9-btn-3:checked ~ .slider-prev-controls label[for="room9-btn-4"],
+#room9-btn-3:checked ~ .slider-next-controls label[for="room9-btn-1"],
+#room9-btn-3:checked ~ .slider-next-controls label[for="room9-btn-2"],
+#room9-btn-3:checked ~ .slider-next-controls label[for="room9-btn-3"]
+{
+  display: none;
+}
+
+#room9-btn-4:checked ~ .slider-prev-controls label[for="room9-btn-1"],
+#room9-btn-4:checked ~ .slider-prev-controls label[for="room9-btn-2"],
+#room9-btn-4:checked ~ .slider-prev-controls label[for="room9-btn-4"],
+#room9-btn-4:checked ~ .slider-next-controls label[for="room9-btn-1"],
+#room9-btn-4:checked ~ .slider-next-controls label[for="room9-btn-2"],
+#room9-btn-4:checked ~ .slider-next-controls label[for="room9-btn-3"],
+#room9-btn-4:checked ~ .slider-next-controls label[for="room9-btn-4"]
+{
+  display: none;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+
+#room10-btn-1:checked ~ .slider-prev-controls label[for="room10-btn-1"],
+#room10-btn-1:checked ~ .slider-prev-controls label[for="room10-btn-2"],
+#room10-btn-1:checked ~ .slider-prev-controls label[for="room10-btn-3"],
+#room10-btn-1:checked ~ .slider-prev-controls label[for="room10-btn-4"],
+#room10-btn-1:checked ~ .slider-next-controls label[for="room10-btn-1"],
+#room10-btn-1:checked ~ .slider-next-controls label[for="room10-btn-3"],
+#room10-btn-1:checked ~ .slider-next-controls label[for="room10-btn-4"]
+{
+  display: none;
+}
+
+#room10-btn-2:checked ~ .slider-prev-controls label[for="room10-btn-2"],
+#room10-btn-2:checked ~ .slider-prev-controls label[for="room10-btn-3"],
+#room10-btn-2:checked ~ .slider-prev-controls label[for="room10-btn-4"],
+#room10-btn-2:checked ~ .slider-next-controls label[for="room10-btn-1"],
+#room10-btn-2:checked ~ .slider-next-controls label[for="room10-btn-2"],
+#room10-btn-2:checked ~ .slider-next-controls label[for="room10-btn-4"]
+{
+  display: none;
+}
+
+#room10-btn-3:checked ~ .slider-prev-controls label[for="room10-btn-1"],
+#room10-btn-3:checked ~ .slider-prev-controls label[for="room10-btn-3"],
+#room10-btn-3:checked ~ .slider-prev-controls label[for="room10-btn-4"],
+#room10-btn-3:checked ~ .slider-next-controls label[for="room10-btn-1"],
+#room10-btn-3:checked ~ .slider-next-controls label[for="room10-btn-2"],
+#room10-btn-3:checked ~ .slider-next-controls label[for="room10-btn-3"]
+{
+  display: none;
+}
+
+#room10-btn-4:checked ~ .slider-prev-controls label[for="room10-btn-1"],
+#room10-btn-4:checked ~ .slider-prev-controls label[for="room10-btn-2"],
+#room10-btn-4:checked ~ .slider-prev-controls label[for="room10-btn-4"],
+#room10-btn-4:checked ~ .slider-next-controls label[for="room10-btn-1"],
+#room10-btn-4:checked ~ .slider-next-controls label[for="room10-btn-2"],
+#room10-btn-4:checked ~ .slider-next-controls label[for="room10-btn-3"],
+#room10-btn-4:checked ~ .slider-next-controls label[for="room10-btn-4"]
+{
+  display: none;
+}
+
+////////////////////////////////////////////////////////////////////////////
+
+#room11-btn-1:checked ~ .slider-prev-controls label[for="room11-btn-1"],
+#room11-btn-1:checked ~ .slider-prev-controls label[for="room11-btn-2"],
+#room11-btn-1:checked ~ .slider-prev-controls label[for="room11-btn-3"],
+#room11-btn-1:checked ~ .slider-prev-controls label[for="room11-btn-4"],
+#room11-btn-1:checked ~ .slider-next-controls label[for="room11-btn-1"],
+#room11-btn-1:checked ~ .slider-next-controls label[for="room11-btn-3"],
+#room11-btn-1:checked ~ .slider-next-controls label[for="room11-btn-4"]
+{
+  display: none;
+}
+
+#room11-btn-2:checked ~ .slider-prev-controls label[for="room11-btn-2"],
+#room11-btn-2:checked ~ .slider-prev-controls label[for="room11-btn-3"],
+#room11-btn-2:checked ~ .slider-prev-controls label[for="room11-btn-4"],
+#room11-btn-2:checked ~ .slider-next-controls label[for="room11-btn-1"],
+#room11-btn-2:checked ~ .slider-next-controls label[for="room11-btn-2"],
+#room11-btn-2:checked ~ .slider-next-controls label[for="room11-btn-4"]
+{
+  display: none;
+}
+
+#room11-btn-3:checked ~ .slider-prev-controls label[for="room11-btn-1"],
+#room11-btn-3:checked ~ .slider-prev-controls label[for="room11-btn-3"],
+#room11-btn-3:checked ~ .slider-prev-controls label[for="room11-btn-4"],
+#room11-btn-3:checked ~ .slider-next-controls label[for="room11-btn-1"],
+#room11-btn-3:checked ~ .slider-next-controls label[for="room11-btn-2"],
+#room11-btn-3:checked ~ .slider-next-controls label[for="room11-btn-3"]
+{
+  display: none;
+}
+
+#room11-btn-4:checked ~ .slider-prev-controls label[for="room11-btn-1"],
+#room11-btn-4:checked ~ .slider-prev-controls label[for="room11-btn-2"],
+#room11-btn-4:checked ~ .slider-prev-controls label[for="room11-btn-4"],
+#room11-btn-4:checked ~ .slider-next-controls label[for="room11-btn-1"],
+#room11-btn-4:checked ~ .slider-next-controls label[for="room11-btn-2"],
+#room11-btn-4:checked ~ .slider-next-controls label[for="room11-btn-3"],
+#room11-btn-4:checked ~ .slider-next-controls label[for="room11-btn-4"]
+{
+  display: none;
+}
+
+/////////////////////////////////////////////////////////////////////////////////
+
+#room12-btn-1:checked ~ .slider-prev-controls label[for="room12-btn-1"],
+#room12-btn-1:checked ~ .slider-prev-controls label[for="room12-btn-2"],
+#room12-btn-1:checked ~ .slider-prev-controls label[for="room12-btn-3"],
+#room12-btn-1:checked ~ .slider-prev-controls label[for="room12-btn-4"],
+#room12-btn-1:checked ~ .slider-next-controls label[for="room12-btn-1"],
+#room12-btn-1:checked ~ .slider-next-controls label[for="room12-btn-3"],
+#room12-btn-1:checked ~ .slider-next-controls label[for="room12-btn-4"]
+{
+  display: none;
+}
+
+#room12-btn-2:checked ~ .slider-prev-controls label[for="room12-btn-2"],
+#room12-btn-2:checked ~ .slider-prev-controls label[for="room12-btn-3"],
+#room12-btn-2:checked ~ .slider-prev-controls label[for="room12-btn-4"],
+#room12-btn-2:checked ~ .slider-next-controls label[for="room12-btn-1"],
+#room12-btn-2:checked ~ .slider-next-controls label[for="room12-btn-2"],
+#room12-btn-2:checked ~ .slider-next-controls label[for="room12-btn-4"]
+{
+  display: none;
+}
+
+#room12-btn-3:checked ~ .slider-prev-controls label[for="room12-btn-1"],
+#room12-btn-3:checked ~ .slider-prev-controls label[for="room12-btn-3"],
+#room12-btn-3:checked ~ .slider-prev-controls label[for="room12-btn-4"],
+#room12-btn-3:checked ~ .slider-next-controls label[for="room12-btn-1"],
+#room12-btn-3:checked ~ .slider-next-controls label[for="room12-btn-2"],
+#room12-btn-3:checked ~ .slider-next-controls label[for="room12-btn-3"]
+{
+  display: none;
+}
+
+#room12-btn-4:checked ~ .slider-prev-controls label[for="room12-btn-1"],
+#room12-btn-4:checked ~ .slider-prev-controls label[for="room12-btn-2"],
+#room12-btn-4:checked ~ .slider-prev-controls label[for="room12-btn-4"],
+#room12-btn-4:checked ~ .slider-next-controls label[for="room12-btn-1"],
+#room12-btn-4:checked ~ .slider-next-controls label[for="room12-btn-2"],
+#room12-btn-4:checked ~ .slider-next-controls label[for="room12-btn-3"],
+#room12-btn-4:checked ~ .slider-next-controls label[for="room12-btn-4"]
+{
+  display: none;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+#room1-btn-1:checked ~ .slider-controls label[for="room1-btn-1"],
+#room1-btn-2:checked ~ .slider-controls label[for="room1-btn-2"],
+#room1-btn-3:checked ~ .slider-controls label[for="room1-btn-3"],
+#room1-btn-4:checked ~ .slider-controls label[for="room1-btn-4"],
+#room2-btn-1:checked ~ .slider-controls label[for="room2-btn-1"],
+#room2-btn-2:checked ~ .slider-controls label[for="room2-btn-2"],
+#room2-btn-3:checked ~ .slider-controls label[for="room2-btn-3"],
+#room2-btn-4:checked ~ .slider-controls label[for="room2-btn-4"],
+#room3-btn-1:checked ~ .slider-controls label[for="room3-btn-1"],
+#room3-btn-2:checked ~ .slider-controls label[for="room3-btn-2"],
+#room3-btn-3:checked ~ .slider-controls label[for="room3-btn-3"],
+#room3-btn-4:checked ~ .slider-controls label[for="room3-btn-4"],
+#room4-btn-1:checked ~ .slider-controls label[for="room4-btn-1"],
+#room4-btn-2:checked ~ .slider-controls label[for="room4-btn-2"],
+#room4-btn-3:checked ~ .slider-controls label[for="room4-btn-3"],
+#room4-btn-4:checked ~ .slider-controls label[for="room4-btn-4"],
+#room5-btn-1:checked ~ .slider-controls label[for="room5-btn-1"],
+#room5-btn-2:checked ~ .slider-controls label[for="room5-btn-2"],
+#room5-btn-3:checked ~ .slider-controls label[for="room5-btn-3"],
+#room5-btn-4:checked ~ .slider-controls label[for="room5-btn-4"],
+#room6-btn-1:checked ~ .slider-controls label[for="room6-btn-1"],
+#room6-btn-2:checked ~ .slider-controls label[for="room6-btn-2"],
+#room6-btn-3:checked ~ .slider-controls label[for="room6-btn-3"],
+#room6-btn-4:checked ~ .slider-controls label[for="room6-btn-4"],
+#room7-btn-1:checked ~ .slider-controls label[for="room7-btn-1"],
+#room7-btn-2:checked ~ .slider-controls label[for="room7-btn-2"],
+#room7-btn-3:checked ~ .slider-controls label[for="room7-btn-3"],
+#room7-btn-4:checked ~ .slider-controls label[for="room7-btn-4"],
+#room8-btn-1:checked ~ .slider-controls label[for="room8-btn-1"],
+#room8-btn-2:checked ~ .slider-controls label[for="room8-btn-2"],
+#room8-btn-3:checked ~ .slider-controls label[for="room8-btn-3"],
+#room8-btn-4:checked ~ .slider-controls label[for="room8-btn-4"],
+#room9-btn-1:checked ~ .slider-controls label[for="room9-btn-1"],
+#room9-btn-2:checked ~ .slider-controls label[for="room9-btn-2"],
+#room9-btn-3:checked ~ .slider-controls label[for="room9-btn-3"],
+#room9-btn-4:checked ~ .slider-controls label[for="room9-btn-4"],
+#room10-btn-1:checked ~ .slider-controls label[for="room10-btn-1"],
+#room10-btn-2:checked ~ .slider-controls label[for="room10-btn-2"],
+#room10-btn-3:checked ~ .slider-controls label[for="room10-btn-3"],
+#room10-btn-4:checked ~ .slider-controls label[for="room10-btn-4"],
+#room11-btn-1:checked ~ .slider-controls label[for="room11-btn-1"],
+#room11-btn-2:checked ~ .slider-controls label[for="room11-btn-2"],
+#room11-btn-3:checked ~ .slider-controls label[for="room11-btn-3"],
+#room11-btn-4:checked ~ .slider-controls label[for="room11-btn-4"],
+#room12-btn-1:checked ~ .slider-controls label[for="room12-btn-1"],
+#room12-btn-2:checked ~ .slider-controls label[for="room12-btn-2"],
+#room12-btn-3:checked ~ .slider-controls label[for="room12-btn-3"],
+#room12-btn-4:checked ~ .slider-controls label[for="room12-btn-4"] {
+  background-color: #fff;
+}
+
+#room1-btn-1:checked ~ .slider-inner .slider-slides,
+#room2-btn-1:checked ~ .slider-inner .slider-slides,
+#room3-btn-1:checked ~ .slider-inner .slider-slides,
+#room4-btn-1:checked ~ .slider-inner .slider-slides,
+#room5-btn-1:checked ~ .slider-inner .slider-slides,
+#room6-btn-1:checked ~ .slider-inner .slider-slides,
+#room7-btn-1:checked ~ .slider-inner .slider-slides,
+#room8-btn-1:checked ~ .slider-inner .slider-slides,
+#room9-btn-1:checked ~ .slider-inner .slider-slides,
+#room10-btn-1:checked ~ .slider-inner .slider-slides,
+#room11-btn-1:checked ~ .slider-inner .slider-slides,
+#room12-btn-1:checked ~ .slider-inner .slider-slides {
+    transform: translate(0);
+    transition: 1s;
+}
+
+#room1-btn-2:checked ~ .slider-inner .slider-slides,
+#room2-btn-2:checked ~ .slider-inner .slider-slides,
+#room3-btn-2:checked ~ .slider-inner .slider-slides,
+#room4-btn-2:checked ~ .slider-inner .slider-slides,
+#room5-btn-2:checked ~ .slider-inner .slider-slides,
+#room6-btn-2:checked ~ .slider-inner .slider-slides,
+#room7-btn-2:checked ~ .slider-inner .slider-slides,
+#room8-btn-2:checked ~ .slider-inner .slider-slides,
+#room9-btn-2:checked ~ .slider-inner .slider-slides,
+#room10-btn-2:checked ~ .slider-inner .slider-slides,
+#room11-btn-2:checked ~ .slider-inner .slider-slides,
+#room12-btn-2:checked ~ .slider-inner .slider-slides {
+    transform: translate(-270px);
+    transition: 1s;
+}
+
+#room1-btn-3:checked ~ .slider-inner .slider-slides,
+#room2-btn-3:checked ~ .slider-inner .slider-slides,
+#room3-btn-3:checked ~ .slider-inner .slider-slides,
+#room4-btn-3:checked ~ .slider-inner .slider-slides,
+#room5-btn-3:checked ~ .slider-inner .slider-slides,
+#room6-btn-3:checked ~ .slider-inner .slider-slides,
+#room7-btn-3:checked ~ .slider-inner .slider-slides,
+#room8-btn-3:checked ~ .slider-inner .slider-slides,
+#room9-btn-3:checked ~ .slider-inner .slider-slides,
+#room10-btn-3:checked ~ .slider-inner .slider-slides,
+#room11-btn-3:checked ~ .slider-inner .slider-slides,
+#room12-btn-3:checked ~ .slider-inner .slider-slides {
+    transform: translate(-540px);
+    transition: 1s;
+}
+
+#room1-btn-4:checked ~ .slider-inner .slider-slides,
+#room2-btn-4:checked ~ .slider-inner .slider-slides,
+#room3-btn-4:checked ~ .slider-inner .slider-slides,
+#room4-btn-4:checked ~ .slider-inner .slider-slides,
+#room5-btn-4:checked ~ .slider-inner .slider-slides,
+#room6-btn-4:checked ~ .slider-inner .slider-slides,
+#room7-btn-4:checked ~ .slider-inner .slider-slides,
+#room8-btn-4:checked ~ .slider-inner .slider-slides,
+#room9-btn-4:checked ~ .slider-inner .slider-slides,
+#room10-btn-4:checked ~ .slider-inner .slider-slides,
+#room11-btn-4:checked ~ .slider-inner .slider-slides,
+#room12-btn-4:checked ~ .slider-inner .slider-slides {
+    transform: translate(-810px);
+    transition: 1s;
+}

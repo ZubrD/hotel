@@ -1,0 +1,165 @@
+.footer {
+    // display: flex;
+    display: grid;
+    grid-template-columns: 214px 115px 115px 116px 260px;
+    justify-content: space-between;
+    padding-left: 140px;
+    padding-right: 140px;
+    border-bottom: 1px solid #E5E5E5;
+    padding-bottom: 100px;
+    &-logo__img {
+      margin-top: 2px;
+    }
+    &-logo-adopted {
+      display: none;
+    }
+    &-line {
+        height: 1px;
+        background-color: rgba(31, 32, 65, 0.25);
+        color: rgba(31, 32, 65, 0.25);
+        margin-bottom: 100px;
+    }
+    &-item {
+        font-family: 'Montserrat', sans-serif;
+        &-1 {
+            width: 143px;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            margin-top: 2px;
+            margin-left: 2px;
+            letter-spacing: 1px;
+        }
+        &-2 {
+            width: 108px;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            margin-top: 2px;
+            margin-left: 2px;
+            letter-spacing: 1px;
+        }  
+        &-3 {
+            width: 149px;
+            grid-column-start: 4;
+            grid-column-end: 5;
+            margin-top: 2px;
+            margin-left: 5px;
+            letter-spacing: 1px;
+        }  
+        &-4 {
+            width: 260px;
+            grid-column-start: 5;
+            grid-column-end: 6;
+            margin-top: 2px;
+            margin-left: 5px;
+            letter-spacing: 1px;
+        }                    
+    }
+    &-text {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        width: 260px;
+        color: #1F2041;
+        font-size: 14px;
+        opacity: 0.75;
+        line-height: 24px;
+        margin-top: 12px;
+        letter-spacing: 1px;
+    }
+    &-text-subscribe {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        width: 260px;
+        color: #1F2041;
+        font-size: 14px;
+        opacity: 0.75;
+        line-height: 24px;
+        margin-top: 19px;
+        letter-spacing: 1px;
+    }
+    &-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        &__title {
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 0;
+            margin: 0;
+            margin-top: 5px;
+        }
+        &__item {
+            margin-top: 22px;
+            line-height: 17px;
+            font-size: 14px;
+            letter-spacing: 0;
+        }
+        &__link {
+            text-decoration: none;
+            color: #1F2041;
+            opacity: 0.5;
+            letter-spacing: 1px;
+        }
+    }
+
+    &-form {
+        position: relative;
+        &__input {
+            height: 44px;
+            width: 260px;
+            border: 1px solid rgba(31, 32, 65, 0.25);
+            box-sizing: border-box;
+            border-radius: 4px;
+            margin-top: 20px;
+            padding-top: 12px;
+            padding-bottom: 8px;
+            padding-left: 15px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+        }
+        &__icon {
+            position: absolute;
+            top: 30px;
+            right: 8px;
+            font-family: 'Material Icons';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 24px;
+            color: rgb(188,156,255);
+            
+        } 
+    }
+}
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 11px;
+    margin-bottom: 13px;
+    &-block {
+        padding-left: 125px;
+        padding-right: 125px;
+        margin-top: 6px;        
+    }
+    &-text {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17,07px;
+        color: rgba(31, 32, 65, 0.75);
+        letter-spacing: 1px;
+    }
+    &-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+
+        &__item {
+            margin-left: 20px;
+            
+        }
+    }
+}
