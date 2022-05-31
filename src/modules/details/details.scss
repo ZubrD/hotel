@@ -528,7 +528,7 @@
         grid-column-end: 2;
         grid-row-start: 1;
         grid-row-end: 3;
-        background-image: url('../images/details_photo/detail_photo_1.png');
+        background-image: url('../modules/details/detail_photo_1.png');
     }
     &__img-2 {
         width: 459px;
@@ -536,7 +536,7 @@
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 2;
-        background-image: url('../images/details_photo/detail_photo_2.png');
+        background-image: url('../modules/details/detail_photo_2.png');
     }  
     &__img-3 {
         width: 459px;
@@ -545,7 +545,7 @@
         grid-row-start: 2;
         grid-row-end: 3;
         margin-top: -1px;
-        background-image: url('../images/details_photo/detail_photo_3.png');
+        background-image: url('../modules/details/detail_photo_3.png');
     }        
 }
 .roominfo {
