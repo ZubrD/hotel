@@ -2,10 +2,10 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/js/elements.js":
-/*!****************************!*\
-  !*** ./src/js/elements.js ***!
-  \****************************/
+/***/ "./src/modules/index/elements.js":
+/*!***************************************!*\
+  !*** ./src/modules/index/elements.js ***!
+  \***************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -271,7 +271,7 @@ $('#calendar').datepicker({
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_jquery_dist_jquery_js","vendors-node_modules_air-datepicker_src_js_air-datepicker_js"], () => (__webpack_require__("./src/js/elements.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_jquery_dist_jquery_js","vendors-node_modules_air-datepicker_src_js_air-datepicker_js"], () => (__webpack_require__("./src/modules/index/elements.js")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

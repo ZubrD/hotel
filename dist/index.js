@@ -12,13 +12,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_nouislider_dist_nouislider_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/nouislider/dist/nouislider.css */ "./node_modules/nouislider/dist/nouislider.css");
 /* harmony import */ var _node_modules_air_datepicker_dist_css_datepicker_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/air-datepicker/dist/css/datepicker.css */ "./node_modules/air-datepicker/dist/css/datepicker.css");
 /* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/main.scss */ "./src/styles/main.scss");
-/* harmony import */ var _js_guests_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/guests.js */ "./src/js/guests.js");
-/* harmony import */ var _js_guests_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_js_guests_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _js_amenity_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/amenity.js */ "./src/js/amenity.js");
-/* harmony import */ var _js_amenity_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_js_amenity_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _js_additional_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./js/additional.js */ "./src/js/additional.js");
-/* harmony import */ var _js_additional_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_js_additional_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _js_noui_slider_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./js/noui_slider.js */ "./src/js/noui_slider.js");
+/* harmony import */ var _modules_search_guests_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/search/guests.js */ "./src/modules/search/guests.js");
+/* harmony import */ var _modules_search_guests_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_search_guests_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _modules_search_amenity_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/search/amenity.js */ "./src/modules/search/amenity.js");
+/* harmony import */ var _modules_search_amenity_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_modules_search_amenity_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _modules_search_additional_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/search/additional.js */ "./src/modules/search/additional.js");
+/* harmony import */ var _modules_search_additional_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_modules_search_additional_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _modules_search_noui_slider_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/search/noui_slider.js */ "./src/modules/search/noui_slider.js");
 
 
 
@@ -29,10 +29,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/js/additional.js":
-/*!******************************!*\
-  !*** ./src/js/additional.js ***!
-  \******************************/
+/***/ "./src/modules/search/additional.js":
+/*!******************************************!*\
+  !*** ./src/modules/search/additional.js ***!
+  \******************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 /* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
@@ -78,10 +78,10 @@ additional.bindEventListeners();
 
 /***/ }),
 
-/***/ "./src/js/amenity.js":
-/*!***************************!*\
-  !*** ./src/js/amenity.js ***!
-  \***************************/
+/***/ "./src/modules/search/amenity.js":
+/*!***************************************!*\
+  !*** ./src/modules/search/amenity.js ***!
+  \***************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 /* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
@@ -335,10 +335,10 @@ function my_select() {
 
 /***/ }),
 
-/***/ "./src/js/guests.js":
-/*!**************************!*\
-  !*** ./src/js/guests.js ***!
-  \**************************/
+/***/ "./src/modules/search/guests.js":
+/*!**************************************!*\
+  !*** ./src/modules/search/guests.js ***!
+  \**************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 /* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
@@ -634,10 +634,10 @@ function messangeInput() {
 
 /***/ }),
 
-/***/ "./src/js/noui_slider.js":
-/*!*******************************!*\
-  !*** ./src/js/noui_slider.js ***!
-  \*******************************/
+/***/ "./src/modules/search/noui_slider.js":
+/*!*******************************************!*\
+  !*** ./src/modules/search/noui_slider.js ***!
+  \*******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";

@@ -19,7 +19,7 @@ module.exports = {
   },  
   entry: {
     index: './src/index.js',
-    elements: './src/js/elements.js',
+    elements: './src/modules/index/elements.js',
   },
   output: {
     filename: '[name].js',   

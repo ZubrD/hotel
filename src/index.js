@@ -3,8 +3,8 @@ import '../node_modules/air-datepicker/dist/css/datepicker.css'
 import './styles/main.scss';
 
 
-import './js/guests.js';
-import './js/amenity.js';
-import './js/additional.js';
-import './js/noui_slider.js';
+import './modules/search/guests.js';
+import './modules/search/amenity.js';
+import './modules/search/additional.js';
+import './modules/search/noui_slider.js';
 // import './js/elements.js';
