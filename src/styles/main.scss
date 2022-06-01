@@ -4,7 +4,6 @@
 @use '../modules/registration/registration';
 @use '../modules/empty/empty';
 @use '../modules/header/header';
-@use '../modules/footer/footer';
 @use '../uikit/uikit';
 @use '../modules/index/index';
 @use '../modules/search/search';
@@ -15,5 +14,7 @@
 @use '../modules/details/canceling/canceling';
 @use '../modules/details/chart/chart';
 @use '../modules/details/summary/summary';
+@use '../modules/footer/basement/basement';
+@use '../modules/footer/copyright/copyright';
 
 @use './adaptive';

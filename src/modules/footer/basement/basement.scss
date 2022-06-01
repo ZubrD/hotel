@@ -1,4 +1,4 @@
-.footer {
+.basement {
     // display: flex;
     display: grid;
     grid-template-columns: 214px 115px 115px 116px 260px;
@@ -130,36 +130,5 @@
             color: rgb(188,156,255);
             
         } 
-    }
-}
-.copyright {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 11px;
-    margin-bottom: 13px;
-    &-block {
-        padding-left: 125px;
-        padding-right: 125px;
-        margin-top: 6px;        
-    }
-    &-text {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17,07px;
-        color: rgba(31, 32, 65, 0.75);
-        letter-spacing: 1px;
-    }
-    &-list {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        list-style: none;
-
-        &__item {
-            margin-left: 20px;
-            
-        }
     }
 }
