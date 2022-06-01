@@ -1,0 +1,35 @@
+section.chart
+    .chart__title Впечатления от номера
+    .chart-wrapper
+        svg(viewBox="0 0 42 42").chart-donut
+            lineargradient#linearColors-1(x1='0' y1='0' x2='1' y2='1')
+                stop(offset='0%' stop-color='#BC9CFF')
+                stop(offset='100%' stop-color='#8BA4F9')
+            lineargradient#linearColors-2(x1='0' y1='0' x2='1' y2='1')
+                stop(offset='0%' stop-color='#6FCF97')
+                stop(offset='100%' stop-color='#66D2EA')
+            lineargradient#linearColors-3(x1='0' y1='0' x2='1' y2='1')
+                stop(offset='0%' stop-color='#FFE39C')
+                stop(offset='100%' stop-color='#FFBA9C')        
+            circle(cx="21" cy="21" r="15.91549430918954" fill="#fff").chart-donut-hole 
+            circle(cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#fff").chart-donut-ring
+            circle(cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="url(#linearColors-1)" stroke-dasharray="24.7 75").chart-donut-segment__1
+            circle(cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="url(#linearColors-2)" stroke-dasharray="24.7 75").chart-donut-segment__2
+            circle(cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="url(#linearColors-3)" stroke-dasharray="49.7 49.7").chart-donut-segment__3
+            g.chart-donut-text
+                text(x="50%" y="50%").chart-donut-text__number 260
+                text(x="50%" y="50%").chart-donut-text__label голосов
+        .chart-legend
+            .chart-legend-list 
+                .chart-legend-list-item 
+                    .chart-legend-list-item__marker.chart-legend-list-item__marker--fine 
+                    .chart-legend-list-item__text Великолепно
+                .chart-legend-list-item 
+                    .chart-legend-list-item__marker.chart-legend-list-item__marker--good 
+                    .chart-legend-list-item__text Хорошо
+                .chart-legend-list-item 
+                    .chart-legend-list-item__marker.chart-legend-list-item__marker--notbad 
+                    .chart-legend-list-item__text Удовлетворительно
+                .chart-legend-list-item 
+                    .chart-legend-list-item__marker.chart-legend-list-item__marker--disappointed 
+                    .chart-legend-list-item__text Разочарован   

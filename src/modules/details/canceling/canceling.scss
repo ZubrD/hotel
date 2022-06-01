@@ -1,0 +1,18 @@
+.canceling {
+    width: 341px;
+    &__title {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 23px;
+        color: rgba(31, 32, 65, 1);
+        margin-bottom: 20px;
+    }
+    &__text {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(31, 32, 65, 0.75);
+    }
+}

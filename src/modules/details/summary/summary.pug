@@ -1,0 +1,44 @@
+section.summary 
+    .summary-room
+        .summary-room-digits 
+            .summary-room-numbers 
+                .summary-room__symbol №
+                .summary-room__number 888
+                .summary-room__rank Люкс 
+            .summary-room-price 
+                .summary-room__rubl 9 990₽
+                .summary-room__period в сутки
+        form(action="").summary-dates-form
+            .summary-dates-form__item
+                p.summary-dates-form__title Прибытие 
+                input(type="text" placeholder='19.08.2019').summary-dates-form__input
+                span.summary-dates-form__icon expand_more
+            .summary-dates-form__item
+                p.summary-dates-form__title Выезд 
+                input(type="text" placeholder='23.08.2019').summary-dates-form__input
+                span.summary-dates-form__icon expand_more   
+        form(action="").summary-guests-form
+            .summary-guests-form__title Гости
+            input(type="text" placeholder="Сколько гостей").summary-guests-form__input
+            span.summary-guests-form__icon expand_more
+        .summary-totalprice 
+            .summary-totalprice__left 9 990₽ х 4 суток
+            .summary-totalprice__right 39 960₽
+        .summary-services 
+            .summary-services-left
+                .summary-services-left__text Сбор за услуги: скидка 2 179₽
+                .summary-services-left__icon &#9432;
+            .summary-services-right 0₽
+        .summary-services 
+            .summary-services-left
+                .summary-services-left__text-1 Сбор за дополнительные услуги
+                .summary-services-left__icon &#9432;
+            .summary-services-right 300₽ 
+        .summary-total 
+            .summary-total__text Итого
+            .summary-total__box 
+            .summary-total__number 38 081₽
+            .pickup
+        .summary-pickup
+            button.pickup__button Забронировать
+            span.pickup__icon arrow_forward

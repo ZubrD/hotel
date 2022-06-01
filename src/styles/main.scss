@@ -8,5 +8,12 @@
 @use '../uikit/uikit';
 @use '../modules/index/index';
 @use '../modules/search/search';
-@use '../modules//details/details';
+@use '../modules/details/details';
+@use '../modules/details/roominfo/roominfo';
+@use '../modules/details/reviews/reviews';
+@use '../modules/details/rules/rules';
+@use '../modules/details/canceling/canceling';
+@use '../modules/details/chart/chart';
+@use '../modules/details/summary/summary';
+
 @use './adaptive';
