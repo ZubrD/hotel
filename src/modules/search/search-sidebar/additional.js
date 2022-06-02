@@ -8,12 +8,12 @@ class Additional {
     }
 
     additionalTitleClick() {
-        $('.js-additional__icon').toggleClass('rotated__icon')
+        $('.js-additional__icon').toggleClass('js-rotated__icon')
         $('.js-additional-block').toggleClass('block-open')        
     }
 
     additionalIconClick (event) {
-        $(event.target).toggleClass('rotated__icon')
+        $(event.target).toggleClass('js-rotated__icon')
         $('.js-additional-block').toggleClass('block-open')
     }
 }
