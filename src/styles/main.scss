@@ -16,5 +16,7 @@
 @use '../modules/details/summary/summary';
 @use '../modules/footer/basement/basement';
 @use '../modules/footer/copyright/copyright';
+@use '../modules/header/logo/logo';
+@use '../modules/header/right/right';
 
 @use './adaptive';
