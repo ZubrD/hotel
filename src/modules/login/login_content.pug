@@ -1,15 +1,3 @@
 .registration-wrapper
     .registration__img.registration__img-enter
-        .registration-card.registration-card
-            .registration-card-wrapper
-                .registration-card__title Войти
-                form(action="").registration-card-form 
-                    input(type="email" placeholder="Email").registration-card-form__input
-                    input(type="password" placeholder="Пароль").registration-card-form__input                  
-                    .registration-card-form-send.registration-card-form-send-login
-                        a(href="/src/login.html").registration-card-form-send__link 
-                        button.registration-card-form-send__button Войти
-                        span.registration-card-form-send__icon arrow_forward
-                    .registration-card-form-enter 
-                        .registration-card-form-enter__link Нет аккаунта на Toxin?
-                        a(href="registration.html").registration-card-form-enter__button-create
+        include login-card/login-card
