@@ -1,30 +1,3 @@
 .registration-wrapper
     .registration__img
-        .registration-card
-            .registration-card-wrapper
-                .registration-card__title Регистрация аккаунта
-                form(action="").registration-card-form 
-                    input(type="text" placeholder="Имя").registration-card-form__input
-                    input(type="text" placeholder="Фамилия").registration-card-form__input
-                    .registration-card-form-sex
-                        .registration-card-form-sex-item
-                            input(type="radio" id="male" name="sex" checked).registration-card-form-sex__input
-                            label(for="male").registration-card-form-sex__label Мужчина
-                        .registration-card-form-sex-item                           
-                            input(type="radio" id="female" name="sex").registration-card-form-sex__input
-                            label(for="female").registration-card-form-sex__label Женщина                     
-                    .registration-card-form__title Дата рождения
-                    input(type="date" placeholder="ДД.ММ.ГГГГ").registration-card-form__input
-                    .registration-card-form__title Данные для входа в сервис
-                    input(type="email" placeholder="Email").registration-card-form__input
-                    input(type="password" placeholder="Пароль").registration-card-form__input
-                    .registration-card-form-proposal
-                        input(type="checkbox" id="proposal" name="proposal").registration-card-form-proposal__input
-                        label(for="proposal").registration-card-form-proposal__label Получать спецпредложения
-                    .registration-card-form-send
-                        a(href="empty.html").registration-card-form-send__link
-                            button.registration-card-form-send__button Зарегистрироваться
-                            span.registration-card-form-send__icon arrow_forward
-                    .registration-card-form-enter 
-                        .registration-card-form-enter__link Уже есть аккаунт на Toxin
-                        a(href="login.html").registration-card-form-enter__button
+        include registration-card/registration-card
