@@ -30,7 +30,20 @@
 
 @use '../modules/search/search-sidebar/search-sidebar';
 @use '../modules/search/search-room/paginator/paginator';
-@use '../modules/search/search-room/search-room-items/search-room-controls';
+// @use '../modules/search/search-room/search-room-items/search-room-controls';
 @use '../modules/search/search-room/search-room-items/search-room-items';
+
+@use '../modules/search/search-room/search-room-items/search-room-item_1/search-room-controls_1';
+@use '../modules/search/search-room/search-room-items/search-room-item_2/search-room-controls_2';
+@use '../modules/search/search-room/search-room-items/search-room-item_3/search-room-controls_3';
+@use '../modules/search/search-room/search-room-items/search-room-item_4/search-room-controls_4';
+@use '../modules/search/search-room/search-room-items/search-room-item_5/search-room-controls_5';
+@use '../modules/search/search-room/search-room-items/search-room-item_6/search-room-controls_6';
+@use '../modules/search/search-room/search-room-items/search-room-item_7/search-room-controls_7';
+@use '../modules/search/search-room/search-room-items/search-room-item_8/search-room-controls_8';
+@use '../modules/search/search-room/search-room-items/search-room-item_9/search-room-controls_9';
+@use '../modules/search/search-room/search-room-items/search-room-item_10/search-room-controls_10';
+@use '../modules/search/search-room/search-room-items/search-room-item_11/search-room-controls_11';
+@use '../modules/search/search-room/search-room-items/search-room-item_12/search-room-controls_12';
 
 @use './adaptive';

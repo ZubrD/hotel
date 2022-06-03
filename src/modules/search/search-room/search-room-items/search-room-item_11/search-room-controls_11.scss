@@ -1,0 +1,80 @@
+/////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////  НАВИГАЦИЯ ПО СЛАЙДЕРУ ФОТОГРАФИЙ НОМЕРА 11 ///////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+#room11-btn-1:checked ~ .slider-prev-controls label[for="room11-btn-1"],
+#room11-btn-1:checked ~ .slider-prev-controls label[for="room11-btn-2"],
+#room11-btn-1:checked ~ .slider-prev-controls label[for="room11-btn-3"],
+#room11-btn-1:checked ~ .slider-prev-controls label[for="room11-btn-4"],
+#room11-btn-1:checked ~ .slider-next-controls label[for="room11-btn-1"],
+#room11-btn-1:checked ~ .slider-next-controls label[for="room11-btn-3"],
+#room11-btn-1:checked ~ .slider-next-controls label[for="room11-btn-4"]
+{
+  display: none;
+}
+
+#room11-btn-2:checked ~ .slider-prev-controls label[for="room11-btn-2"],
+#room11-btn-2:checked ~ .slider-prev-controls label[for="room11-btn-3"],
+#room11-btn-2:checked ~ .slider-prev-controls label[for="room11-btn-4"],
+#room11-btn-2:checked ~ .slider-next-controls label[for="room11-btn-1"],
+#room11-btn-2:checked ~ .slider-next-controls label[for="room11-btn-2"],
+#room11-btn-2:checked ~ .slider-next-controls label[for="room11-btn-4"]
+{
+  display: none;
+}
+
+#room11-btn-3:checked ~ .slider-prev-controls label[for="room11-btn-1"],
+#room11-btn-3:checked ~ .slider-prev-controls label[for="room11-btn-3"],
+#room11-btn-3:checked ~ .slider-prev-controls label[for="room11-btn-4"],
+#room11-btn-3:checked ~ .slider-next-controls label[for="room11-btn-1"],
+#room11-btn-3:checked ~ .slider-next-controls label[for="room11-btn-2"],
+#room11-btn-3:checked ~ .slider-next-controls label[for="room11-btn-3"]
+{
+  display: none;
+}
+
+#room11-btn-4:checked ~ .slider-prev-controls label[for="room11-btn-1"],
+#room11-btn-4:checked ~ .slider-prev-controls label[for="room11-btn-2"],
+#room11-btn-4:checked ~ .slider-prev-controls label[for="room11-btn-4"],
+#room11-btn-4:checked ~ .slider-next-controls label[for="room11-btn-1"],
+#room11-btn-4:checked ~ .slider-next-controls label[for="room11-btn-2"],
+#room11-btn-4:checked ~ .slider-next-controls label[for="room11-btn-3"],
+#room11-btn-4:checked ~ .slider-next-controls label[for="room11-btn-4"]
+{
+  display: none;
+}
+
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////// ПЕРЕХОД МЕЖДУ ФОТОГРАФИЯМИ ПО КРУЖОЧКАМ В ПРАВОМ НИЖНЕМ УГЛУ ///////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+#room11-btn-1:checked ~ .slider-controls label[for="room11-btn-1"],
+#room11-btn-2:checked ~ .slider-controls label[for="room11-btn-2"],
+#room11-btn-3:checked ~ .slider-controls label[for="room11-btn-3"],
+#room11-btn-4:checked ~ .slider-controls label[for="room11-btn-4"] {
+  background-color: #fff;
+}
+
+#room11-btn-1:checked ~ .slider-inner .slider-slides {
+    transform: translate(0);
+    transition: 1s;
+}
+
+
+#room11-btn-2:checked ~ .slider-inner .slider-slides {
+    transform: translate(-270px);
+    transition: 1s;
+}
+
+#room11-btn-3:checked ~ .slider-inner .slider-slides {
+    transform: translate(-540px);
+    transition: 1s;
+}
+
+#room11-btn-4:checked ~ .slider-inner .slider-slides {
+    transform: translate(-810px);
+    transition: 1s;
+}
