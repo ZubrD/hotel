@@ -29,7 +29,8 @@
 @use '../modules/registration/registration-card/registration-card';
 
 @use '../modules/search/search-sidebar/search-sidebar';
-@use '../modules/search/search-room/search-room';
-@use '../modules/search/search-room/search-room-controls';
+@use '../modules/search/search-room/paginator/paginator';
+@use '../modules/search/search-room/search-room-items/search-room-controls';
+@use '../modules/search/search-room/search-room-items/search-room-items';
 
 @use './adaptive';

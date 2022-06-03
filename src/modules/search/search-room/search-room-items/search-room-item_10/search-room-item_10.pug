@@ -1,0 +1,47 @@
+.search-room__item
+    a(href="empty.html").search-room__link
+        .slider
+            input(type="radio" id="room10-btn-1" name="toggle-10" checked).slider__input           
+            input(type="radio" id="room10-btn-2" name="toggle-10").slider__input
+            input(type="radio" id="room10-btn-3" name="toggle-10").slider__input
+            input(type="radio" id="room10-btn-4" name="toggle-10").slider__input
+            .slider-controls 
+                label(for="room10-btn-1").slider__label  
+                label(for="room10-btn-2").slider__label  
+                label(for="room10-btn-3").slider__label   
+                label(for="room10-btn-4").slider__label  
+            .slider-prev-controls 
+                label(for="room10-btn-1").slider__prev &#x2039;  
+                label(for="room10-btn-2").slider__prev &#x2039; 
+                label(for="room10-btn-3").slider__prev &#x2039; 
+                label(for="room10-btn-4").slider__prev &#x2039;
+            .slider-next-controls 
+                label(for="room10-btn-1").slider__next &#x2039;  
+                label(for="room10-btn-2").slider__next &#x2039;
+                label(for="room10-btn-3").slider__next &#x2039;
+                label(for="room10-btn-4").slider__next &#x2039;                              
+            .slider-inner
+                .slider-slides  
+                    img(src=require(`/src/modules/search/search-room/search-room-items/search-room-item_10/room10.png`), alt="Фото номера").slider__img                            
+                    img(src=require(`/src/modules/search/search-room/search-room-items/search-room-item_10/room10.png`), alt="Фото номера").slider__img                            
+                    img(src=require(`/src/modules/search/search-room/search-room-items/search-room-item_10/room10.png`), alt="Фото номера").slider__img                            
+                    img(src=require(`/src/modules/search/search-room/search-room-items/search-room-item_10/room10.png`), alt="Фото номера").slider__img                                             
+    .search-room-wrapper
+        .search-room-digits 
+            .search-room-numbers 
+                .search-room__symbol №
+                .search-room__number 666
+                .search-room__rank 
+            .search-room-price 
+                .search-room__rubl 5 000₽
+                .search-room__period в сутки
+        .search-room-bottom 
+            .search-room-stars
+                span.search-room__star star
+                span.search-room__star star
+                span.search-room__star star
+                span.search-room__star star
+                span.search-room__star star
+            .search-room-feedback 
+                .search-room-feedback__numbers 25
+                .search-room-feedback__title Отзывов
