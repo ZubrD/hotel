@@ -7,6 +7,7 @@
 @use '../uikit/uikit';
 @use '../modules/index/index';
 @use '../modules/search/search';
+
 @use '../modules/details/details';
 @use '../modules/details/roominfo/roominfo';
 @use '../modules/details/reviews/reviews';
@@ -14,13 +15,21 @@
 @use '../modules/details/canceling/canceling';
 @use '../modules/details/chart/chart';
 @use '../modules/details/summary/summary';
+
 @use '../modules/footer/basement/basement';
 @use '../modules/footer/copyright/copyright';
+
 @use '../modules/header/logo/logo';
 @use '../modules/header/right/right';
+
 @use '../modules/index/wishes/wishes';
+
 @use '../modules/login/login-card/login-card';
+
 @use '../modules/registration/registration-card/registration-card';
+
 @use '../modules/search/search-sidebar/search-sidebar';
+@use '../modules/search/search-room/search-room';
+@use '../modules/search/search-room/search-room-controls';
 
 @use './adaptive';

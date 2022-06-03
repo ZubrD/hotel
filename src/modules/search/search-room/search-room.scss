@@ -1,0 +1,248 @@
+.search-room {
+    &__title {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 30px;
+        margin-top: 33px;
+        margin-bottom: 20px;
+    }
+    &-items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item {
+        width: 270px;
+        box-shadow: 0 0 20px rgba(31, 32, 65, 0.2);
+        margin-right: 12px;
+        margin-bottom: 20px;
+    }
+
+    &__img {
+        width: 100%;
+        margin-bottom: 19px;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+    &-wrapper {
+        margin-left: 23px;
+        margin-right: 14px;
+    }
+    &-digits{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+        padding-bottom: 10px;
+        margin-bottom: 9px;
+    }
+    &-numbers {
+        display: flex;
+    }
+    &__symbol {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17.5px;
+        padding-top: 2px;
+    }
+    &__number {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 700;
+        font-size: 23px;
+        line-height: 17.5px;
+        margin-left: 3px;
+    }
+    &__rank {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        text-transform: uppercase;
+        line-height: 14.6px;
+        padding-top: 2px;
+        color: rgba(188, 156, 255, 1);
+        margin-left: 10px;
+    }
+    &-price {
+        display: flex;
+        margin-top: 2px;
+    }
+    &__rubl {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        color: rgba(31, 32, 65, 0.5);
+        margin-right: 5px;
+    }
+    &__period {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: rgba(31, 32, 65, 0.5);
+        margin-left: 5px;
+    }
+    &-bottom {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 20px;
+    }
+
+    &__star {
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;  /* Preferred icon size */
+        line-height: 1;
+        vertical-align: middle;
+        color: rgb(188,156,255);
+    }
+    &-feedback {
+        display: flex;
+        align-items: flex-end;
+        &__numbers {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 18px;
+            color: rgba(31, 32, 65, 0.5);
+            padding-bottom: 1px;
+            padding-right: 6px;
+        }
+        &__title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;  
+            color: rgba(31, 32, 65, 0.5); 
+            margin-right: 10px;
+            padding-bottom: 1px;        
+        }
+    }
+}
+
+.paginator {
+    width: 241px;
+    margin-left: 289px;
+    margin-top: 16px;
+    margin-bottom: 60px;
+    &__item {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 50%;
+        color: rgba(31, 32, 65, 0.5);
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+    }
+    &__current {
+        background: linear-gradient(151deg, rgba(188,156,255,1) 0%, rgba(139,164,249,0.4962359943977591) 100%);
+        color: #fff;
+    }
+    &__icon {
+        display: inline-block;
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;  /* Preferred icon size */
+        vertical-align: middle;
+        color: #fff;
+        background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%); 
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 50%;
+        text-decoration: none;
+    }
+    &__text {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+        color: rgba(31, 32, 65, 0.75);
+        margin-top: 8px;
+        text-align: center;
+    }
+}
+
+.slider {
+    position: relative;
+    &-inner {
+        width: 270px;
+        overflow: hidden;
+        margin-bottom: 19px;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    }    
+    &-slides {
+        width: 1084px;
+    }
+    &__input {
+        display: none;
+
+    }
+    &-controls {
+        position: absolute;
+        top: 121px;
+        left: 216px;
+        z-index: 15;
+    }
+    &__label {
+        display: inline-block;
+        margin-right: 4px;
+        width: 5px;
+        height: 5px;
+        border: 1px solid rgba(255, 255, 255, 1);
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    &-prev-controls {
+        position: absolute;
+        z-index: 10;      
+    }
+    &-next-controls {
+        position: absolute;
+        z-index: 10;      
+    }    
+    &__prev {
+      position: absolute;
+      padding-top: 46px;
+      box-sizing: border-box;
+      width: 50px;
+      height: 152px;
+      font-size: 45px;
+      color: white;
+      cursor: pointer;
+      opacity: 0;
+      &:hover {
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+        opacity: 1;
+        transition: opacity 0.2s ease-in-out
+      } 
+    }
+    &__next {
+      position: absolute;
+      padding-top: 46px;
+      box-sizing: border-box;
+      left: 220px;
+      width: 50px;
+      height: 152px;
+      font-size: 45px;
+      color: white;
+      cursor: pointer;
+      opacity: 0;
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+      &:hover {
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        opacity: 1;
+        transition: opacity 0.2s ease-in-out
+      }                       
+    }    
+}
