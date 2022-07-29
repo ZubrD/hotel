@@ -1,17 +1,12 @@
+mixin roomInfo(icon, title, text)
+    .roominfo-item 
+        span.roominfo-item__span= icon 
+        .roominfo-item-text
+            .roominfo-item-text__title= title
+            .roominfo-item-text__desc= text
+
 section.roominfo 
     .roominfo__title Сведения о номере
-    .roominfo-item 
-        span.roominfo-item__span insert_emoticon
-        .roominfo-item-text
-            .roominfo-item-text__title Комфорт
-            .roominfo-item-text__desc Шумопоглощающие стены
-    .roominfo-item 
-        span.roominfo-item__span location_city
-        .roominfo-item-text
-            .roominfo-item-text__title Удобство 
-            .roominfo-item-text__desc Окно в каждой из спален
-    .roominfo-item 
-        span.roominfo-item__span whatshot
-        .roominfo-item-text
-            .roominfo-item-text__title Уют
-            .roominfo-item-text__desc Номер оснащён камином  
+    +roomInfo('insert_emoticon', 'Комфорт', 'Шумопоглощающие стены')
+    +roomInfo('location_city', 'Удобство', 'Окно в каждой из спален')
+    +roomInfo('whatshot', 'Уют', 'Номер оснащён камином')
