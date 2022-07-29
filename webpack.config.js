@@ -35,57 +35,57 @@ module.exports = {
       filename: '[name].[contenthash].css'
     }),
     new HtmlWebpackPlugin({
-      favicon: "./src/favicon.png",
+      favicon: "./src/assets/favicon.png",
       filename: "index.html",
       template: "./src/pages/index.pug"
     }),
     new HtmlWebpackPlugin({
-      favicon: "./src/favicon.png",
+      favicon: "./src/assets/favicon.png",
       filename: "search.html",
       template: "./src/pages/search.pug"
     }),
     new HtmlWebpackPlugin({
-      favicon: "./src/favicon.png",
+      favicon: "./src/assets/favicon.png",
       filename: "registration.html",
       template: "./src/pages/registration.pug"
     }),
     new HtmlWebpackPlugin({
-      favicon: "./src/favicon.png",
+      favicon: "./src/assets/favicon.png",
       filename: "login.html",
       template: "./src/pages/login.pug"
     }),
     new HtmlWebpackPlugin({
-      favicon: "./src/favicon.png",
+      favicon: "./src/assets/favicon.png",
       filename: "empty.html",
       template: "./src/pages/empty.pug"
     }),
     new HtmlWebpackPlugin({
-      favicon: "./src/favicon.png",
+      favicon: "./src/assets/favicon.png",
       filename: "details.html",
       template: "./src/pages/details.pug"
     }),  
     new HtmlWebpackPlugin({
-      favicon: "./src/favicon.png",
+      favicon: "./src/assets/favicon.png",
       filename: "uikit/uikit_index.html",
       template: "./src/uikit/uikit_index.pug"
     }),    
     new HtmlWebpackPlugin({
-      favicon: "./src/favicon.png",
+      favicon: "./src/assets/favicon.png",
       filename: "uikit/uikit_cards.html",
       template: "./src/uikit/uikit_cards.pug"
     }),    
     new HtmlWebpackPlugin({
-      favicon: "./src/favicon.png",
+      favicon: "./src/assets/favicon.png",
       filename: "uikit/uikit_colors.html",
       template: "./src/uikit/uikit_colors.pug"
     }),
     new HtmlWebpackPlugin({
-      favicon: "./src/favicon.png",
+      favicon: "./src/assets/favicon.png",
       filename: "uikit/uikit_form.html",
       template: "./src/uikit/uikit_form.pug"
     }), 
     new HtmlWebpackPlugin({
-      favicon: "./src/favicon.png",
+      favicon: "./src/assets/favicon.png",
       filename: "uikit/uikit_headers_footers.html",
       template: "./src/uikit/uikit_headers_footers.pug"
     })                               
