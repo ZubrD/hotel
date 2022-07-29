@@ -1,3 +1,8 @@
+mixin chart(legend, decor)
+    .chart-legend-list-item 
+        .chart-legend-list-item__marker(class=decor) 
+        .chart-legend-list-item__text= legend
+
 section.chart
     .chart__title Впечатления от номера
     .chart-wrapper
@@ -21,15 +26,7 @@ section.chart
                 text(x="50%" y="50%").chart-donut-text__label голосов
         .chart-legend
             .chart-legend-list 
-                .chart-legend-list-item 
-                    .chart-legend-list-item__marker.chart-legend-list-item__marker--fine 
-                    .chart-legend-list-item__text Великолепно
-                .chart-legend-list-item 
-                    .chart-legend-list-item__marker.chart-legend-list-item__marker--good 
-                    .chart-legend-list-item__text Хорошо
-                .chart-legend-list-item 
-                    .chart-legend-list-item__marker.chart-legend-list-item__marker--notbad 
-                    .chart-legend-list-item__text Удовлетворительно
-                .chart-legend-list-item 
-                    .chart-legend-list-item__marker.chart-legend-list-item__marker--disappointed 
-                    .chart-legend-list-item__text Разочарован   
+                +chart('Великолепно', 'chart-legend-list-item__marker--fine')
+                +chart('Хорошо', 'chart-legend-list-item__marker--good')
+                +chart('Удовлетворительно', 'chart-legend-list-item__marker--notbad')                     
+                +chart('Разочарован', 'chart-legend-list-item__marker--disappointed')                     
