@@ -37,32 +37,32 @@ module.exports = {
     new HtmlWebpackPlugin({
       favicon: "./src/favicon.png",
       filename: "index.html",
-      template: "./src/index.pug"
+      template: "./src/pages/index.pug"
     }),
     new HtmlWebpackPlugin({
       favicon: "./src/favicon.png",
       filename: "search.html",
-      template: "./src/search.pug"
+      template: "./src/pages/search.pug"
     }),
     new HtmlWebpackPlugin({
       favicon: "./src/favicon.png",
       filename: "registration.html",
-      template: "./src/registration.pug"
+      template: "./src/pages/registration.pug"
     }),
     new HtmlWebpackPlugin({
       favicon: "./src/favicon.png",
       filename: "login.html",
-      template: "./src/login.pug"
+      template: "./src/pages/login.pug"
     }),
     new HtmlWebpackPlugin({
       favicon: "./src/favicon.png",
       filename: "empty.html",
-      template: "./src/empty.pug"
+      template: "./src/pages/empty.pug"
     }),
     new HtmlWebpackPlugin({
       favicon: "./src/favicon.png",
       filename: "details.html",
-      template: "./src/details.pug"
+      template: "./src/pages/details.pug"
     }),  
     new HtmlWebpackPlugin({
       favicon: "./src/favicon.png",
