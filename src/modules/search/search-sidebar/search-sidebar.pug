@@ -1,3 +1,8 @@
+mixin additional(item, addition)
+    .additional-block-form__item 
+        input(type="checkbox" id=item).additional-block-form__input
+        label(for=item).additional-block-form__label= addition
+
 section.search-sidebar
     form(action="").stay-guest-form
         .stay-guest-form__item
@@ -92,27 +97,11 @@ section.search-sidebar
         .additional__icon.js-additional__icon expand_more
         .additional-block.js-additional-block.block-open
             form(action="").additional-block-form
-                .additional-block-form__item 
-                    input(type="checkbox" id="breakfast").additional-block-form__input
-                    label(for="breakfast").additional-block-form__label Завтрак
-                .additional-block-form__item 
-                    input(type="checkbox" id="desk").additional-block-form__input
-                    label(for="desk").additional-block-form__label Письменный стол
-                .additional-block-form__item 
-                    input(type="checkbox" id="chair").additional-block-form__input
-                    label(for="chair").additional-block-form__label Стул для кормления
-                .additional-block-form__item 
-                    input(type="checkbox" id="little-bed").additional-block-form__input
-                    label(for="little-bed").additional-block-form__label Кроватка
-                .additional-block-form__item 
-                    input(type="checkbox" id="TV-1").additional-block-form__input
-                    label(for="TV-1").additional-block-form__label Телевизор
-                .additional-block-form__item 
-                    input(type="checkbox" id="shampoo-1").additional-block-form__input
-                    label(for="shampoo-1").additional-block-form__label Шампунь
-                .additional-block-form__item 
-                    input(type="checkbox" id="TV-2").additional-block-form__input
-                    label(for="TV-2").additional-block-form__label Телевизор
-                .additional-block-form__item 
-                    input(type="checkbox" id="shampoo-2").additional-block-form__input
-                    label(for="shampoo-2").additional-block-form__label Шампунь                                                                                                                                                                        
+                +additional("breakfast", "Завтрак")
+                +additional("desk", "Письменный стол")
+                +additional("chair", "Стул для кормления")
+                +additional("little-bed", "Кроватка")
+                +additional("TV-1", "Телевизор")
+                +additional("shampoo-1", "Шампунь")
+                +additional("TV-2", "Телевизор")
+                +additional("shampoo-2", "Шампунь")                                                                                                                                                                       
