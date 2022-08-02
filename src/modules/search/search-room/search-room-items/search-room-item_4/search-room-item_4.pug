@@ -6,26 +6,18 @@
             input(type="radio" id="room4-btn-3" name="toggle-4").slider__input
             input(type="radio" id="room4-btn-4" name="toggle-4").slider__input
             .slider-controls 
-                label(for="room4-btn-1").slider__label  
-                label(for="room4-btn-2").slider__label  
-                label(for="room4-btn-3").slider__label   
-                label(for="room4-btn-4").slider__label 
+                each el in [1, 2, 3, 4]
+                    label(for="room4-btn-" + el).slider__label  
             .slider-prev-controls 
-                label(for="room4-btn-1").slider__prev &#x2039;  
-                label(for="room4-btn-2").slider__prev &#x2039; 
-                label(for="room4-btn-3").slider__prev &#x2039; 
-                label(for="room4-btn-4").slider__prev &#x2039;
-            .slider-next-controls 
-                label(for="room4-btn-1").slider__next &#x2039;  
-                label(for="room4-btn-2").slider__next &#x2039;
-                label(for="room4-btn-3").slider__next &#x2039;
-                label(for="room4-btn-4").slider__next &#x2039;                               
+                each el in [1, 2, 3, 4]
+                    label(for="room4-btn-" + el).slider__prev &#x2039;  
+            .slider-next-controls
+                each el in [1, 2, 3, 4]             
+                    label(for="room4-btn-" + el).slider__next &#x2039;                               
             .slider-inner
-                .slider-slides 
-                    img(src=require(`/src/modules/search/search-room/search-room-items/search-room-item_4/room4.png`), alt="Фото номера").slider__img                            
-                    img(src=require(`/src/modules/search/search-room/search-room-items/search-room-item_4/room4.png`), alt="Фото номера").slider__img                            
-                    img(src=require(`/src/modules/search/search-room/search-room-items/search-room-item_4/room4.png`), alt="Фото номера").slider__img                            
-                    img(src=require(`/src/modules/search/search-room/search-room-items/search-room-item_4/room4.png`), alt="Фото номера").slider__img                                                
+                .slider-slides
+                    each el in [1, 2, 3, 4] 
+                        img(src=require(`/src/modules/search/search-room/search-room-items/search-room-item_4/room4.png`), alt="Фото номера").slider__img                            
     .search-room-wrapper
         .search-room-digits 
             .search-room-numbers 
@@ -37,11 +29,8 @@
                 .search-room__period в сутки
         .search-room-bottom 
             .search-room-stars
-                span.search-room__star star
-                span.search-room__star star
-                span.search-room__star star
-                span.search-room__star star
-                span.search-room__star star
+                each el in [1, 2, 3, 4, 5]
+                    span.search-room__star star
             .search-room-feedback 
                 .search-room-feedback__numbers 19
                 .search-room-feedback__title Отзывов  
