@@ -66,28 +66,28 @@ module.exports = {
     }),  
     new HtmlWebpackPlugin({
       favicon: "./src/assets/favicon.png",
-      filename: "uikit/uikit_index.html",
-      template: "./src/uikit/uikit_index.pug"
+      filename: "pages/uikit/uikit_index.html",
+      template: "./src/pages/uikit/uikit_index.pug"
     }),    
     new HtmlWebpackPlugin({
       favicon: "./src/assets/favicon.png",
-      filename: "uikit/uikit_cards.html",
-      template: "./src/uikit/uikit_cards.pug"
+      filename: "pages/uikit/uikit_cards.html",
+      template: "./src/pages/uikit/uikit_cards.pug"
     }),    
     new HtmlWebpackPlugin({
       favicon: "./src/assets/favicon.png",
-      filename: "uikit/uikit_colors.html",
-      template: "./src/uikit/uikit_colors.pug"
+      filename: "pages/uikit/uikit_colors.html",
+      template: "./src/pages/uikit/uikit_colors.pug"
     }),
     new HtmlWebpackPlugin({
       favicon: "./src/assets/favicon.png",
-      filename: "uikit/uikit_form.html",
-      template: "./src/uikit/uikit_form.pug"
+      filename: "pages/uikit/uikit_form.html",
+      template: "./src/pages/uikit/uikit_form.pug"
     }), 
     new HtmlWebpackPlugin({
       favicon: "./src/assets/favicon.png",
-      filename: "uikit/uikit_headers_footers.html",
-      template: "./src/uikit/uikit_headers_footers.pug"
+      filename: "pages/uikit/uikit_headers_footers.html",
+      template: "./src/pages/uikit/uikit_headers_footers.pug"
     })                               
   ],
   module: {
