@@ -3,6 +3,11 @@ mixin additional(item, addition)
         input(type="checkbox" id=item).additional-block-form__input
         label(for=item).additional-block-form__label= addition
 
+mixin rules(item, rule)
+    .home-rule-form__item 
+        input(type="checkbox" id=item).home-rule-form__input
+        label(for=item).home-rule-form__label= rule 
+
 section.search-sidebar
     form(action="").stay-guest-form
         .stay-guest-form__item
@@ -49,15 +54,9 @@ section.search-sidebar
         .sliderp-bottom-title Стоимость за сутки пребывания в номере
     form(action="").home-rule-form
         .home-rule-form__title Правила дома
-        .home-rule-form__item 
-            input(type="checkbox" id="smoke").home-rule-form__input
-            label(for="smoke").home-rule-form__label Можно курить 
-        .home-rule-form__item 
-            input(type="checkbox" id="pets").home-rule-form__input
-            label(for="pets").home-rule-form__label Можно с питомцами
-        .home-rule-form__item 
-            input(type="checkbox" id="guests").home-rule-form__input
-            label(for="guests").home-rule-form__label Можно пригласить гостей (до 10 человек) 
+        +rules("smoke", "Можно курить")
+        +rules("pets", "Можно с питомцами")
+        +rules("guests", "Можно пригласить гостей (до 10 человек)")
     form(action="").availability-form
         .availability-form__title Доступность
         .availability-form__item
