@@ -10,10 +10,10 @@
 
 ## Страницы
 
-Главная страница https://zubrd.github.io/hotel/index.html
-Выбор номера (переход по кнопке "Подобрать номер") https://zubrd.github.io/hotel/search.html
-Инофрмация о номере (переход по номеру "888 Люкс") https://zubrd.github.io/hotel/details.html
-Страница-заглушка (переход при нажати на все номера, кроме "888 Люкс") https://zubrd.github.io/hotel/empty.html
+- Главная страница https://zubrd.github.io/hotel/index.html
+- Выбор номера (переход по кнопке "Подобрать номер") https://zubrd.github.io/hotel/search.html
+- Инофрмация о номере (переход по номеру "888 Люкс") https://zubrd.github.io/hotel/details.html
+- Страница-заглушка (переход при нажати на все номера, кроме "888 Люкс") https://zubrd.github.io/hotel/empty.html
 
 ## Внешние библиотеки
 
